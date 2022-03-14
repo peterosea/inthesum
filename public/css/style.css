@@ -1,3 +1,217 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Pretendard';
+  src: url("./fonts/Pretendard-Black.eot");
+  src: url("./fonts/Pretendard-Black.eot?#iefix") format("embedded-opentype"), url("./fonts/Pretendard-Black.woff2") format("woff2"), url("./fonts/Pretendard-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url("./fonts/Pretendard-ExtraBold.eot");
+  src: url("./fonts/Pretendard-ExtraBold.eot?#iefix") format("embedded-opentype"), url("./fonts/Pretendard-ExtraBold.woff2") format("woff2"), url("./fonts/Pretendard-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url("./fonts/Pretendard-Bold.eot");
+  src: url("./fonts/Pretendard-Bold.eot?#iefix") format("embedded-opentype"), url("./fonts/Pretendard-Bold.woff2") format("woff2"), url("./fonts/Pretendard-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url("./fonts/Pretendard-Light.eot");
+  src: url("./fonts/Pretendard-Light.eot?#iefix") format("embedded-opentype"), url("./fonts/Pretendard-Light.woff2") format("woff2"), url("./fonts/Pretendard-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url("./fonts/Pretendard-Medium.eot");
+  src: url("./fonts/Pretendard-Medium.eot?#iefix") format("embedded-opentype"), url("./fonts/Pretendard-Medium.woff2") format("woff2"), url("./fonts/Pretendard-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url("./fonts/Pretendard-ExtraLight.eot");
+  src: url("./fonts/Pretendard-ExtraLight.eot?#iefix") format("embedded-opentype"), url("./fonts/Pretendard-ExtraLight.woff2") format("woff2"), url("./fonts/Pretendard-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url("./fonts/Pretendard-Thin.eot");
+  src: url("./fonts/Pretendard-Thin.eot?#iefix") format("embedded-opentype"), url("./fonts/Pretendard-Thin.woff2") format("woff2"), url("./fonts/Pretendard-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url("./fonts/Pretendard-Regular.eot");
+  src: url("./fonts/Pretendard-Regular.eot?#iefix") format("embedded-opentype"), url("./fonts/Pretendard-Regular.woff2") format("woff2"), url("./fonts/Pretendard-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url("./fonts/Pretendard-SemiBold.eot");
+  src: url("./fonts/Pretendard-SemiBold.eot?#iefix") format("embedded-opentype"), url("./fonts/Pretendard-SemiBold.woff2") format("woff2"), url("./fonts/Pretendard-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nunito Sans';
+  src: url("./fonts/NunitoSans-Bold.eot");
+  src: url("./fonts/NunitoSans-Bold.eot?#iefix") format("embedded-opentype"), url("./fonts/NunitoSans-Bold.woff2") format("woff2"), url("./fonts/NunitoSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nunito Sans';
+  src: url("./fonts/NunitoSans-BlackItalic.eot");
+  src: url("./fonts/NunitoSans-BlackItalic.eot?#iefix") format("embedded-opentype"), url("./fonts/NunitoSans-BlackItalic.woff2") format("woff2"), url("./fonts/NunitoSans-BlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nunito Sans';
+  src: url("./fonts/NunitoSans-Black.eot");
+  src: url("./fonts/NunitoSans-Black.eot?#iefix") format("embedded-opentype"), url("./fonts/NunitoSans-Black.woff2") format("woff2"), url("./fonts/NunitoSans-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nunito Sans';
+  src: url("./fonts/NunitoSans-ExtraBoldItalic.eot");
+  src: url("./fonts/NunitoSans-ExtraBoldItalic.eot?#iefix") format("embedded-opentype"), url("./fonts/NunitoSans-ExtraBoldItalic.woff2") format("woff2"), url("./fonts/NunitoSans-ExtraBoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nunito Sans';
+  src: url("./fonts/NunitoSans-ExtraBold.eot");
+  src: url("./fonts/NunitoSans-ExtraBold.eot?#iefix") format("embedded-opentype"), url("./fonts/NunitoSans-ExtraBold.woff2") format("woff2"), url("./fonts/NunitoSans-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nunito Sans';
+  src: url("./fonts/NunitoSans-ExtraLight.eot");
+  src: url("./fonts/NunitoSans-ExtraLight.eot?#iefix") format("embedded-opentype"), url("./fonts/NunitoSans-ExtraLight.woff2") format("woff2"), url("./fonts/NunitoSans-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nunito Sans';
+  src: url("./fonts/NunitoSans-ExtraLightItalic.eot");
+  src: url("./fonts/NunitoSans-ExtraLightItalic.eot?#iefix") format("embedded-opentype"), url("./fonts/NunitoSans-ExtraLightItalic.woff2") format("woff2"), url("./fonts/NunitoSans-ExtraLightItalic.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nunito Sans';
+  src: url("./fonts/NunitoSans-BoldItalic.eot");
+  src: url("./fonts/NunitoSans-BoldItalic.eot?#iefix") format("embedded-opentype"), url("./fonts/NunitoSans-BoldItalic.woff2") format("woff2"), url("./fonts/NunitoSans-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nunito Sans';
+  src: url("./fonts/NunitoSans-Italic.eot");
+  src: url("./fonts/NunitoSans-Italic.eot?#iefix") format("embedded-opentype"), url("./fonts/NunitoSans-Italic.woff2") format("woff2"), url("./fonts/NunitoSans-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nunito Sans';
+  src: url("./fonts/NunitoSans-Regular.eot");
+  src: url("./fonts/NunitoSans-Regular.eot?#iefix") format("embedded-opentype"), url("./fonts/NunitoSans-Regular.woff2") format("woff2"), url("./fonts/NunitoSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nunito Sans';
+  src: url("./fonts/NunitoSans-LightItalic.eot");
+  src: url("./fonts/NunitoSans-LightItalic.eot?#iefix") format("embedded-opentype"), url("./fonts/NunitoSans-LightItalic.woff2") format("woff2"), url("./fonts/NunitoSans-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nunito Sans';
+  src: url("./fonts/NunitoSans-Light.eot");
+  src: url("./fonts/NunitoSans-Light.eot?#iefix") format("embedded-opentype"), url("./fonts/NunitoSans-Light.woff2") format("woff2"), url("./fonts/NunitoSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nunito Sans';
+  src: url("./fonts/NunitoSans-SemiBoldItalic.eot");
+  src: url("./fonts/NunitoSans-SemiBoldItalic.eot?#iefix") format("embedded-opentype"), url("./fonts/NunitoSans-SemiBoldItalic.woff2") format("woff2"), url("./fonts/NunitoSans-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nunito Sans';
+  src: url("./fonts/NunitoSans-SemiBold.eot");
+  src: url("./fonts/NunitoSans-SemiBold.eot?#iefix") format("embedded-opentype"), url("./fonts/NunitoSans-SemiBold.woff2") format("woff2"), url("./fonts/NunitoSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NanumGothic';
+  src: url("./fonts/NanumGothic.eot");
+  src: local(※), url("./fonts/NanumGothic.eot?#iefix") format(‘embedded-opentype’), url("./fonts/NanumGothic.woff") format("woff");
+}
+
 * {
   box-sizing: border-box;
 }
@@ -42,6 +256,10 @@ img {
 .btn {
   padding: 20px;
   font-weight: bold;
+}
+
+body {
+  font-family: "Pretendard";
 }
 
 .page_container {

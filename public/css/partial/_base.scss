@@ -8,8 +8,9 @@ $size5: 18px;
 $size6: 21px;
 $size7: 24px;
 
-// jqGrid Font Size
-$jqFont_td: $size3;
+$fontFamNunito: 'Nunito Sans';
+$fontFamPretendard: 'Pretendard';
+$fontFamNanum: 'NanumGothic';
 
 $point_color:#1a73c4;
 
@@ -52,8 +53,8 @@ img {
 
 
 ::placeholder {
-    color: #999999; 
-    font-size: $size4;   
+    color: #999999;
+    font-size: $size4;
 }
 
 .btn {
