@@ -1,0 +1,62 @@
+
+// Font Size
+$size1: 13px;
+$size2: 14px;
+$size3: 15px;
+$size4: 16px;
+$size5: 18px;
+$size6: 21px;
+$size7: 24px;
+
+// jqGrid Font Size
+$jqFont_td: $size3;
+
+$point_color:#1a73c4;
+
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin:0;
+    height:100%;
+}
+
+body, div, a, li, p {
+    color: #333333;
+    line-height:1.4em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #333333;
+}
+
+a {
+    text-decoration:none;
+}
+
+ul {
+    margin:0;
+    padding:0;
+}
+
+li {
+    list-style:none;
+}
+
+img {
+    display:block;
+    max-width: 100%;
+}
+
+
+::placeholder {
+    color: #999999; 
+    font-size: $size4;   
+}
+
+.btn {
+    padding: 20px;
+    font-weight: bold;
+}
