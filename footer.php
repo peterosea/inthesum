@@ -1,6 +1,6 @@
 
             <footer class="main_footer">
-              footer
+              <!-- footer -->
                 <!-- <div class="logo">
                     <img src="public/img/logo_footer.png" alt="GST Logo">
                 </div>
@@ -21,5 +21,7 @@
     </body>
 
     <!-- peterosea Script -->
+    <script src="public/js/jquery-3.6.0.js"></script>
+    <script src="public/js/jquery-ui.js"></script>
     <script type="text/javascript" src="public/js/script.js"></script>
 </html>
