@@ -263,21 +263,66 @@ body {
   background-color: cornflowerblue;
 }
 
+body .overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
+  -webkit-backdrop-filter: blur(25px);
+  backdrop-filter: blur(25px);
+}
+
+header li {
+  position: relative;
+}
+
+header li .lang {
+  display: flex;
+  width: 19.5px;
+  height: 19.5px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 100%;
+  box-sizing: border-box;
+}
+
+header li .lang select {
+  display: inline-block;
+  border: 0;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  background: none;
+  font-family: "Nunito Sans";
+  font-size: 9px;
+  color: white;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
 header .gnb-toggle-btn {
   position: absolute;
   z-index: 10;
-  top: 10px;
-  right: 10px;
+  top: 24px;
+  right: 18px;
   display: inline-block;
-  width: 33px;
-  height: 27px;
+  width: 22px;
+  height: 18px;
+}
+
+header .gnb-toggle-btn.close {
+  top: 24px;
+  right: 20px;
 }
 
 header .gnb-toggle-btn.close:before, header .gnb-toggle-btn.close:after {
   position: absolute;
   display: block;
   width: 100%;
-  height: 3px;
+  height: 2px;
   top: 50%;
   right: 0;
   border-radius: 1.5px;
@@ -295,9 +340,9 @@ header .gnb-toggle-btn.close:after {
 header .gnb-toggle-btn:before, header .gnb-toggle-btn:after {
   position: absolute;
   display: block;
-  height: 3px;
+  height: 2px;
   right: 0;
-  border-radius: 1.5px;
+  border-radius: 1px;
   background-color: white;
 }
 
@@ -309,20 +354,19 @@ header .gnb-toggle-btn:before {
 
 header .gnb-toggle-btn:after {
   content: '';
-  width: 27px;
+  width: 18px;
   bottom: 0;
 }
 
 header .gnb-toggle-btn span {
   position: absolute;
   display: block;
-  height: 3px;
-  border-radius: 1.5px;
+  height: 2px;
+  border-radius: 1px;
   background-color: white;
-  width: 22.5px;
-  top: 50%;
+  width: 15px;
+  top: calc( 50% - 1px);
   right: 0;
-  transform: translateY(-50%);
 }
 
 header .logo img {
@@ -330,16 +374,33 @@ header .logo img {
 }
 
 header .m-inner {
-  display: none;
+  position: fixed;
+  width: 100%;
   height: 55px;
   padding: 10px 10px;
+  box-sizing: border-box;
+  z-index: 3;
+  display: none;
+}
+
+header .m-inner .logo {
+  position: absolute;
+  top: 14px;
+  left: 30px;
+}
+
+header .m-inner .logo img {
+  height: 36px;
 }
 
 header .inner {
-  position: relative;
+  position: fixed;
+  width: 100%;
   height: 55px;
   padding: 10px 25px;
+  box-sizing: border-box;
   display: flex;
+  z-index: 50;
   justify-content: space-between;
 }
 
@@ -372,6 +433,7 @@ header .inner #gnb ul {
 header .inner #gnb ul li a {
   line-height: 1;
   color: #ffff;
+  font-family: "Pretendard";
 }
 
 header .inner .right-menu ul {
@@ -399,14 +461,16 @@ header .inner .right-menu ul li a {
     justify-content: space-between;
   }
   header .inner {
-    position: fixed;
-    z-index: 50;
     width: 80%;
     height: 100vh;
     top: 0;
+    padding-left: 32px;
     right: -100%;
+    box-sizing: border-box;
     transition: .3s;
-    background: rgba(0, 0, 0, 0.8);
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
+    box-shadow: 0 15px 30px 0 rgba(28, 0, 60, 0.35);
     flex-direction: column;
     justify-content: flex-start;
   }
@@ -416,10 +480,29 @@ header .inner .right-menu ul li a {
   header .inner .gnb-toggle-btn {
     display: inline-block;
   }
+  header .inner .logo {
+    position: relative;
+    top: 14px;
+  }
   header .inner #gnb ul {
     align-items: flex-start;
     flex-direction: column;
+    margin-top: 48px;
   }
+  header .inner #gnb ul li {
+    margin-bottom: 10px;
+  }
+  header .inner #gnb ul li a {
+    font-size: 20px;
+  }
+}
+
+.main-banner {
+  background-color: #000000;
+}
+
+.main-banner img {
+  opacity: .3;
 }
 
 .login_wrapper .title {
