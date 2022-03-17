@@ -18,7 +18,7 @@
 <!-- Initialize Swiper -->
 <script>
   var swiper = new Swiper(".mySwiper", {
-    speed: 2000,
+    speed: 4000,
     autoplay: {
       delay: 0,
       disableOnInteraction: false,
@@ -32,5 +32,5 @@
       prevEl: ".swiper-button-prev"
     }
   });
-  swiper.setProgress(1, 1000)
+  // swiper.setProgress(1, 4000)
 </script>
