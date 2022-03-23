@@ -246,6 +246,7 @@ li {
 img {
   display: block;
   max-width: 100%;
+  width: 100%;
 }
 
 ::placeholder {
@@ -260,7 +261,6 @@ img {
 
 body {
   font-family: "Nunito Sans";
-  background-color: cornflowerblue;
 }
 
 body .overlay {
@@ -404,6 +404,15 @@ header .inner {
   justify-content: space-between;
 }
 
+header .inner .wrap-box {
+  max-width: 1920px;
+  width: 100%;
+  height: 55px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
 header .inner .gnb-toggle-btn {
   display: none;
 }
@@ -455,6 +464,10 @@ header .inner .right-menu ul li a {
   line-height: 1;
 }
 
+header .inner .bottom-menu {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   header .m-inner {
     display: flex;
@@ -477,6 +490,10 @@ header .inner .right-menu ul li a {
   header .inner.on {
     right: 0;
   }
+  header .inner .wrap-box {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
   header .inner .gnb-toggle-btn {
     display: inline-block;
   }
@@ -495,10 +512,20 @@ header .inner .right-menu ul li a {
   header .inner #gnb ul li a {
     font-size: 20px;
   }
+  header .inner .right-menu {
+    display: none;
+  }
+  header .inner .bottom-menu {
+    display: flex;
+  }
 }
 
 .main-banner {
   background-color: #000000;
+  height: 80vh;
+  background-image: url("../img/img-main-top@3x.png");
+  background-size: cover;
+  background-position: center top;
 }
 
 .main-banner img {
@@ -616,4 +643,75 @@ header .inner .right-menu ul li a {
 
 .swiper-pagination-progressbar-fill {
   transition-timing-function: linear;
+}
+
+.main-contents {
+  font-family: "Pretendard";
+}
+
+.main-contents section {
+  margin-top: 90px;
+  border-bottom: 1px solid #ddd;
+}
+
+.main-contents section .inner {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.main-contents section .inner .box-title {
+  position: relative;
+  width: 270px;
+  min-height: 490px;
+}
+
+.main-contents section .inner .box-title:after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  width: 110px;
+  height: 1px;
+  background: white;
+  bottom: -1px;
+  right: 0;
+}
+
+.main-contents section .inner .box-title .box-inner {
+  width: 160px;
+}
+
+.main-contents section .inner .box-title .box-inner .title {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: justify;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.main-contents section .inner .box-title .box-inner p {
+  margin: 30px 0;
+  font-weight: 400;
+}
+
+.main-contents section .inner .box-items-wrap {
+  flex-grow: 1;
+}
+
+.main-contents section .inner .box-items-wrap .inner {
+  display: flex;
+}
+
+.main-contents section .inner .box-items-wrap .inner .items {
+  flex-basis: 260px;
+  flex-grow: 1;
+}
+
+.main-contents section .inner .box-items-wrap .inner .items .items-inner {
+  margin-right: 60px;
+}
+
+.main-contents section .inner .box-items-wrap .inner .items .items-inner .thumb img {
+  width: 100%;
 }
