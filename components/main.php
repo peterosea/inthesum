@@ -6,8 +6,8 @@
             <div class="box-inner">
               <img src="./public/img/img-withbts-title@3x.png" alt="with BTS">
               <p>BTS가 개발에 직접 참여한 인더섬 업데이트 소식</p>
+              <a href="#">arrow btn</a>
             </div>
-            <a href="#">arrow btn</a>
           </div>
           <div class="box-items-wrap">
             <div class="inner">
@@ -49,8 +49,8 @@
               <img src="./public/img/img-madebyarmy-title@3x.png" alt="made by army">
               <div class="title">주간 인더섬 매거진</div>
               <p>아미와 함께 만드어 나가는 인더섬 이야기</p>
+              <a href="#">arrow btn</a>
             </div>
-            <a href="#">arrow btn</a>
           </div>
           <div class="box-items-wrap">
             <div class="inner">

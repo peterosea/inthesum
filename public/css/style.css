@@ -663,7 +663,6 @@ header .inner .bottom-menu {
 
 .main-contents section .inner .box-title {
   position: relative;
-  width: 270px;
   min-height: 490px;
 }
 
@@ -680,6 +679,7 @@ header .inner .bottom-menu {
 
 .main-contents section .inner .box-title .box-inner {
   width: 160px;
+  margin-right: 110px;
 }
 
 .main-contents section .inner .box-title .box-inner .title {

@@ -10,7 +10,6 @@
       height: 100%;
       .box-title {
         position: relative;
-        width: 270px;
         min-height: 490px;
         &:after {
           content: '';
@@ -24,6 +23,7 @@
         }
         .box-inner {
           width: 160px;
+          margin-right: 110px;
           .title {
             font-size: 22px;
             font-weight: bold;
