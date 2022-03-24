@@ -45,6 +45,9 @@ header {
         text-align: center;
         margin: 0;
         padding: 0;
+        option {
+          color: black;
+        }
       }
     }
   }
@@ -142,7 +145,7 @@ header {
     .wrap-box {
       max-width: $maxWidth;
       width: 100%;
-      height: 55px;
+      height: 110px;
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
@@ -154,6 +157,7 @@ header {
       display: flex;
     }
     .logo {
+      align-items: center;
       img { height: 70px; }
     }
     #gnb {

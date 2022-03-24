@@ -54,7 +54,7 @@ include 'header.php';
                 <div class="lang">
                   <select>
                     <option value="KR">KR</option>
-                    <option value="JP">JP</option>
+                    <option value="JP" class="on">JP</option>
                     <option value="US">US</option>
                   </select>
                 </div>
