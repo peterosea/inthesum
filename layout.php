@@ -47,7 +47,7 @@ include 'header.php';
               </li>
               <li>
                 <a href="#">
-                  <img src="./public/img/icon-logout@3x.png" alt="logout img">
+                  <img class="logout" src="./public/img/icon-logout@3x.png" alt="logout img">
                 </a>
               </li>
               <li>

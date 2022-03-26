@@ -45,7 +45,7 @@
           </div>
       </div>
     </section>
-    <section>
+    <section class="magazine">
       <div class="inner">
           <div class="box-title">
             <div class="box-inner">
@@ -107,6 +107,114 @@
               </div>
             </div>
           </div>
+      </div>
+    </section>
+    <section class="middle-banner">
+      <div class="inner">
+        <div class="banner-items">
+          <a href="#">
+            <div class="text-item">
+                <h4>개발 PD 노트</h4>
+                <div class="title">인더섬 with BTS<br>전세계 동시 오픈!!</div>
+                <div class="desc">인더섬 2022년 4월 1일 GMT 00:00에<br>전세계 양대 마켓에서 동시 오픈합니다.</div>
+            </div>
+          </a>
+        </div>
+        <div class="banner-items">
+          <a href="#">
+            <div class="text-item">
+                <h4>개발 PD 노트</h4>
+                <div class="title">인더섬 with BTS<br>전세계 동시 오픈!!</div>
+                <div class="desc">인더섬 2022년 4월 1일 GMT 00:00에<br>전세계 양대 마켓에서 동시 오픈합니다.</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="news">
+      <div class="title-area">
+        <h2>인더섬 뉴스</h2>
+        <div class="subtxt">인더섬에서는 과연 어떠한 일이 일어나고 있고 일어날까요?</div>
+      </div>
+      <div class="inner">
+        <div class="new-items">
+          <div class="img-box">
+            <img src="./public/img/img-sample1@3x.png" alt="">
+          </div>
+          <div class="txt-area">
+            <h3>4월 14일(목) 오전 4시 업데이트 점검 안내</h3>
+            <p>
+              새로운 버전 업데이트를 위해 6월 4일(목) 오전 4시부터 9시까지 점검을 실시합니다.<br>
+              해당 시간동안은 이용이 불가능하며, 이용중 해당 시간이..
+            </p>
+            <div class="date">2022년 4월 13일 오후 5시 53분</div>
+          </div>
+        </div>
+        <div class="new-items">
+          <div class="img-box">
+            <img src="./public/img/img-sample1@3x.png" alt="">
+          </div>
+          <div class="txt-area">
+            <h3>4월 14일(목) 오전 4시 업데이트 점검 안내</h3>
+            <p>
+              새로운 버전 업데이트를 위해 6월 4일(목) 오전 4시부터 9시까지 점검을 실시합니다.<br>
+              해당 시간동안은 이용이 불가능하며, 이용중 해당 시간이..
+            </p>
+            <div class="date">2022년 4월 13일 오후 5시 53분</div>
+          </div>
+        </div>
+        <div class="new-items">
+          <div class="img-box">
+            <img src="./public/img/img-sample1@3x.png" alt="">
+          </div>
+          <div class="txt-area">
+            <h3>4월 14일(목) 오전 4시 업데이트 점검 안내</h3>
+            <p>
+              새로운 버전 업데이트를 위해 6월 4일(목) 오전 4시부터 9시까지 점검을 실시합니다.<br>
+              해당 시간동안은 이용이 불가능하며, 이용중 해당 시간이..
+            </p>
+            <div class="date">2022년 4월 13일 오후 5시 53분</div>
+          </div>
+        </div>
+        <div class="new-items">
+          <div class="img-box">
+            <img src="./public/img/img-sample1@3x.png" alt="">
+          </div>
+          <div class="txt-area">
+            <h3>4월 14일(목) 오전 4시 업데이트 점검 안내</h3>
+            <p>
+              새로운 버전 업데이트를 위해 6월 4일(목) 오전 4시부터 9시까지 점검을 실시합니다.<br>
+              해당 시간동안은 이용이 불가능하며, 이용중 해당 시간이..
+            </p>
+            <div class="date">2022년 4월 13일 오후 5시 53분</div>
+          </div>
+        </div>
+        <div class="new-items">
+          <div class="img-box">
+            <img src="./public/img/img-sample1@3x.png" alt="">
+          </div>
+          <div class="txt-area">
+            <h3>4월 14일(목) 오전 4시 업데이트 점검 안내</h3>
+            <p>
+              새로운 버전 업데이트를 위해 6월 4일(목) 오전 4시부터 9시까지 점검을 실시합니다.<br>
+              해당 시간동안은 이용이 불가능하며, 이용중 해당 시간이..
+            </p>
+            <div class="date">2022년 4월 13일 오후 5시 53분</div>
+          </div>
+        </div>
+        <div class="new-items">
+          <div class="img-box">
+            <img src="./public/img/img-sample1@3x.png" alt="">
+          </div>
+          <div class="txt-area">
+            <h3>4월 14일(목) 오전 4시 업데이트 점검 안내</h3>
+            <p>
+              새로운 버전 업데이트를 위해 6월 4일(목) 오전 4시부터 9시까지 점검을 실시합니다.<br>
+              해당 시간동안은 이용이 불가능하며, 이용중 해당 시간이..
+            </p>
+            <div class="date">2022년 4월 13일 오후 5시 53분</div>
+          </div>
+        </div>
       </div>
     </section>
 </div>

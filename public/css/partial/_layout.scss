@@ -192,6 +192,10 @@ header {
           &:last-child {margin-right: 0px;}
           a{
             line-height: 1;
+            img.logout {
+              width: 95%;
+              height: 95%;
+            }
           }
         }
       }
