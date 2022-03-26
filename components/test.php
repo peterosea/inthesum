@@ -1,4 +1,4 @@
-<div class="swiper mySwiper">
+<div class="swiper charactor">
   <div class="swiper-wrapper">
     <div class="swiper-slide">Slide 1</div>
     <div class="swiper-slide">Slide 2</div>
@@ -14,23 +14,3 @@
   <div class="swiper-button-prev"></div>
   <div class="swiper-pagination"></div>
 </div>
-<script src="public/js/main_slider.js"></script>
-<!-- Initialize Swiper -->
-<script>
-  var swiper = new Swiper(".mySwiper", {
-    speed: 4000,
-    autoplay: {
-      delay: 0,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      type: "progressbar"
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
-    }
-  });
-  // swiper.setProgress(1, 4000)
-</script>

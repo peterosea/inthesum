@@ -85,7 +85,7 @@ include 'header.php';
         <section class="content_inner">
             <?php
                 // 01. jQgrid 테이블
-                // include 'components/test.php';
+                //include 'components/test.php';
                 // main contents
                 include 'components/main.php';
             ?>

@@ -28,3 +28,21 @@ $(window).resize(function(){
 // }
 //
 // gTBFunc(gnbTBtn);
+
+var swiper = new Swiper(".charactor", {
+  speed: 4000,
+  slidesPerView: 3,
+  autoplay: {
+    //delay: 0,
+    //disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    type: "progressbar"
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  }
+});
+// swiper.setProgress(1, 4000)
