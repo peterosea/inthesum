@@ -25,16 +25,65 @@ include 'header.php';
           <nav id="gnb">
             <ul>
               <li>
-                <a href="#1">개임소개</a>
+                <div class="menu-wrap">
+                  <a href="#1">개임소개</a>
+                  <div class="submenu">
+                    <div class="items">
+                      <a href="#">소개영상</a>
+                    </div>
+                    <div class="items">
+                      <a href="#">주요스토리</a>
+                    </div>
+                  </div>
+                </div>
               </li>
               <li>
-                <a href="#2">인더섬 개발일지</a>
+                <div class="menu-wrap">
+                  <a href="#2">인더섬 개발일지</a>
+                  <div class="submenu">
+                    <div class="items">
+                      <a href="#">with BTS</a>
+                    </div>
+                    <div class="items">
+                      <a href="#">개발 PD 노트</a>
+                    </div>
+                  </div>
+                </div>
               </li>
               <li>
-                <a href="#">made by ARMY</a>
+                <div class="menu-wrap">
+                  <a href="#">made by ARMY</a>
+                  <div class="submenu">
+                    <div class="items">
+                      <a href="#">인더섬 가이드</a>
+                    </div>
+                    <div class="items">
+                      <a href="#">BTS 의상실</a>
+                    </div>
+                    <div class="items">
+                      <a href="#">주간 인더섬 매거진</a>
+                    </div>
+                    <div class="items">
+                      <a href="#">BTS 의뢰 컨텐츠</a>
+                    </div>
+                  </div>
+                </div>
               </li>
               <li>
-                <a href="#">커뮤니티</a>
+                <div class="menu-wrap">
+                  <a href="#">커뮤니티</a>
+                  <div class="submenu">
+                    <div class="items">
+                      <a href="#">공지사항</a>
+                    </div>
+                    <div class="items">
+                      <a href="#">설문공간</a>
+                    </div>
+                    <div class="items">
+                      <a href="#">FAQ</a>
+                    </div>
+                  </div>
+                </div>
               </li>
             </ul>
           </nav>

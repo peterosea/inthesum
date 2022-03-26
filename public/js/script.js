@@ -17,7 +17,17 @@ $(window).resize(function(){
   $('#menu-wrap').removeClass('on');
   $('body').removeClass('blur');
   $('.overlay').remove();
-})
+});
+
+$(window).scroll(function(){
+  let thisTop = $(this).scrollTop();
+  let windowHeight = $(window).innerHeight();
+  if( thisTop > windowHeight*0.8 - 110 ) {
+      $('header .inner').addClass('over');
+  }else{
+    $('header .inner').removeClass('over');
+  }
+});
 // const gnbTBtn = document.querySelector('.gnb-toggle-btn');
 //
 // function gTBFunc(elem) {
