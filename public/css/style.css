@@ -570,8 +570,6 @@ header #mobile-menu-wrap .m-menu {
   width: 80%;
   height: 100%;
   padding: 0 30px;
-  box-sizing: border-box;
-  background-color: red;
   top: 0;
   right: -100%;
   background: rgba(70, 26, 79, 0.3);
@@ -1358,10 +1356,11 @@ header #dt-menu-wrap .right-menu ul li a img.logout {
 .main-contents section .inner .box-items-wrap .inner .items {
   position: relative;
   flex-grow: 1;
+  margin-left: 60px;
 }
 
-.main-contents section .inner .box-items-wrap .inner .items .items-inner {
-  margin-right: 60px;
+.main-contents section .inner .box-items-wrap .inner .items:nth-of-type(1) {
+  margin-left: 0;
 }
 
 .main-contents section .inner .box-items-wrap .inner .items .items-inner.type-a {
@@ -1454,7 +1453,120 @@ header #dt-menu-wrap .right-menu ul li a img.logout {
 }
 
 .main-contents section.charactor .inner .box-items-wrap {
-  width: 930px;
+  position: relative;
+  width: calc( 100% - 270px);
+}
+
+.main-contents section.charactor .inner .box-items-wrap #charactor .swiper-pagination-progressbar {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: unset;
+  bottom: 0px;
+  background: transparent;
+}
+
+.main-contents section.charactor .inner .box-items-wrap #charactor .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background: #bc83ff;
+}
+
+.main-contents section.charactor .inner .box-items-wrap #charactor .inner .swiper-slide {
+  align-items: stretch;
+}
+
+.main-contents section.charactor .inner .box-items-wrap #charactor .inner .swiper-slide .items {
+  padding: 0 20px;
+}
+
+.main-contents section.charactor .inner .box-items-wrap #charactor .inner .swiper-slide .items .items-inner.type-a {
+  background-image: url("../img/img-baloon1@3x.png"), url("../img/img-baloon-arrow@3x.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center top, calc( 50% - 25px) 227px;
+  background-size: 100%, 18%;
+  height: 100%;
+}
+
+.main-contents section.charactor .inner .box-items-wrap #charactor .inner .swiper-slide .items .items-inner.type-a .title {
+  font-size: 30px;
+  font-weight: 800;
+  text-align: left;
+}
+
+.main-contents section.charactor .inner .box-items-wrap #charactor .inner .swiper-slide .items .items-inner.type-a .title .icon {
+  position: relative;
+  display: inline-block;
+  top: 6px;
+}
+
+.main-contents section.charactor .inner .box-items-wrap #charactor .inner .swiper-slide .items .items-inner.type-a .title .icon.new {
+  width: 39px;
+}
+
+.main-contents section.charactor .inner .box-items-wrap #charactor .inner .swiper-slide .items .items-inner.type-a .title .icon.new img {
+  width: 100%;
+}
+
+.main-contents section.charactor .inner .box-items-wrap #charactor .inner .swiper-slide .items .items-inner.type-a .title .time {
+  font-size: 14px;
+  font-weight: 400;
+  color: #999999;
+}
+
+.main-contents section.charactor .inner .box-items-wrap #charactor .inner .swiper-slide .items .items-inner.type-a .charactor-img {
+  display: inline-block;
+  position: absolute;
+  width: auto;
+  height: 180px;
+  bottom: 90px;
+  right: 0px;
+}
+
+.main-contents section.charactor .inner .box-items-wrap #charactor .inner .swiper-slide .items .items-inner.type-a p {
+  margin-top: 21px;
+  padding: 0 20px;
+  font-size: 14px;
+  color: #000000;
+  text-align: left;
+}
+
+.main-contents section.charactor .inner .box-items-wrap #charactor .inner .swiper-slide .items .items-inner.type-b .thumb {
+  box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.25);
+}
+
+.main-contents section.charactor .inner .box-items-wrap #charactor .inner .swiper-slide .items .items-inner.type-b .title {
+  margin-top: 36px;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.main-contents section.charactor .inner .box-items-wrap #charactor .inner .swiper-slide .items .items-inner.type-b .title + .spec {
+  margin-top: 20px;
+}
+
+.main-contents section.charactor .inner .box-items-wrap #charactor .inner .swiper-slide .items .items-inner.type-b .title span, .main-contents section.charactor .inner .box-items-wrap #charactor .inner .swiper-slide .items .items-inner.type-b .title p {
+  line-height: 1;
+  display: block;
+}
+
+.main-contents section.charactor .inner .box-items-wrap #charactor .inner .swiper-slide .items .items-inner.type-b .title .vol {
+  font-size: 18px;
+  color: #bc83ff;
+}
+
+.main-contents section.charactor .inner .box-items-wrap #charactor .inner .swiper-slide .items .items-inner.type-b .title .name {
+  margin: 8px 0 0;
+  padding: 0;
+}
+
+.main-contents section.charactor .inner .box-items-wrap #charactor .inner .swiper-slide .items .items-inner.type-b .title .date {
+  margin: 10px 0 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.main-contents section.charactor .inner .box-items-wrap #charactor .inner .swiper-slide .items .items-inner .thumb img {
+  width: 100%;
 }
 
 @media screen and (max-width: 1250px) {
@@ -1472,7 +1584,7 @@ header #dt-menu-wrap .right-menu ul li a img.logout {
   .main-contents section .inner .box-title .box-inner a {
     position: absolute;
     top: 50%;
-    right: 30px;
+    right: 20px;
     transform: translateY(-50%);
   }
   .main-contents section .inner .box-title .box-inner p {
@@ -1481,12 +1593,43 @@ header #dt-menu-wrap .right-menu ul li a img.logout {
   .main-contents section .inner .box-items-wrap .inner {
     flex-direction: row;
   }
-  .main-contents section.magazine .inner .box-items-wrap .inner {
-    flex-wrap: nowrap;
+  .main-contents section.charactor {
+    padding: 0;
+  }
+  .main-contents section.charactor .inner .box-title {
+    margin-bottom: 0px;
+    padding: 0 20px;
+  }
+  .main-contents section.charactor .inner .box-items-wrap {
+    width: 100%;
+    height: 500px;
+    padding-top: 35px;
+  }
+  .main-contents section.magazine {
+    padding: 0 0px;
+  }
+  .main-contents section.magazine .inner .box-title {
+    margin-bottom: 0px;
+    padding: 0 20px;
+  }
+  .main-contents section.magazine .inner .box-items-wrap {
+    position: relative;
+    height: 530px;
     overflow-x: scroll;
+    overflow-y: hidden;
+    padding-top: 35px;
+  }
+  .main-contents section.magazine .inner .box-items-wrap .inner {
+    position: absolute;
+    max-width: none;
   }
   .main-contents section.magazine .inner .box-items-wrap .inner .items {
     width: 250px;
+    margin-left: 30px;
+  }
+  .main-contents section.magazine .inner .box-items-wrap .inner .items .items-inner {
+    margin-right: 0;
+    margin-left: 0px;
   }
   .main-contents section.middle-banner .inner {
     flex-direction: column;

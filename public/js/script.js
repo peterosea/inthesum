@@ -2,6 +2,27 @@
 common script
 */
 $(function(){
+  // initialize
+  function itemsResetWidth(width) {
+    $('.magazine .items').width(width);
+    $('.magazine .box-items-wrap').height($('.magazine .items-inner').height() + 18 );
+  }
+
+  if( $(window).innerWidth() <= 1280 ) {
+    let halfwindowWidth = $(window).innerWidth()/2 + 10;
+    itemsResetWidth(halfwindowWidth);
+  }else if( $(window).innerWidth() > 1280 ){
+    itemsResetWidth(250);
+  }
+
+  $(window).resize(function(){
+    if( $(window).innerWidth() <= 1280 ) {
+      halfwindowWidth = $(window).innerWidth()/2 + 10;
+      itemsResetWidth(halfwindowWidth);
+    }else if( $(window).innerWidth() > 1280 ){
+      itemsResetWidth(250);
+    }
+  });
 
   $('.gnb-toggle-btn').on('click',function(e){
     $('#m-gnb ul li').removeClass('active');
@@ -34,9 +55,9 @@ $(function(){
     let thisTop = $(this).scrollTop();
     let windowHeight = $(window).innerHeight();
     if( thisTop > windowHeight*0.8 - 110 ) {
-        $('#mobile-menu-wrap').addClass('over');
+        $('#dt-menu-wrap').addClass('over');
     }else{
-      $('#mobile-menu-wrap').removeClass('over');
+      $('#dt-menu-wrap').removeClass('over');
     }
     //mobile
     if( thisTop > 0 ) {
@@ -58,13 +79,16 @@ $(function(){
 //
 // gTBFunc(gnbTBtn);
 
-var swiper = new Swiper(".charactor", {
+var swiper = new Swiper("#charactor", {
   speed: 4000,
-  slidesPerView: 3,
-  autoplay: {
+  slidesPerView: 1,
+  spaceBetween: 0,
+  // loop: true,
+  mousewheel: true,
+  // autoplay: {
     //delay: 0,
     //disableOnInteraction: false,
-  },
+  // },
   pagination: {
     el: ".swiper-pagination",
     type: "progressbar"
@@ -72,6 +96,27 @@ var swiper = new Swiper(".charactor", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev"
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    // 320: {
+    //   slidesPerView: 1,
+    //   spaceBetween: 20
+    // },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 15
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
+    1250: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    }
   }
 });
 // swiper.setProgress(1, 4000)

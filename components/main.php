@@ -1,6 +1,6 @@
 
 <div class="main-contents">
-    <section>
+    <section class="charactor">
       <div class="inner">
           <div class="box-title">
             <div class="box-inner">
@@ -10,41 +10,7 @@
             </div>
           </div>
           <div class="box-items-wrap">
-            <div class="inner">
-              <div class="items">
-                <div class="items-inner type-a">
-                  <div class="title">뷔
-                    <span class="icon new"><img src="./public/img/new@3x.png" alt="new"></span>
-                    <span class="time">10분전</span>
-                  </div>
-                  <p>훗~ 이번에는 인더섬의 과일로 카테일을 만들 수 있는 칵테일바를 오픈했어요, 무알콜 칵테일도 있으니 걱정은 놉!</p>
-                  <img class="charactor-img" src="./public/img/img-bts-v@3x.png" alt="슈가 캐릭터">
-                </div>
-              </div>
-              <div class="items">
-                <div class="items-inner type-a">
-                  <div class="title">지민
-                    <span class="icon new"><img src="./public/img/new@3x.png" alt="new"></span>
-                    <span class="time">2시간전</span>
-                  </div>
-                  <p>훗~ 이번에는 인더섬의 과일로 카테일을 만들 수 있는 칵테일바를 오픈했어요, 무알콜 칵테일도 있으니 걱정은 놉!</p>
-                  <img class="charactor-img" src="./public/img/img-bts-jimin@3x.png" alt="지민 캐릭터">
-                </div>
-              </div>
-              <div class="items">
-                <div class="items-inner type-a">
-                  <div class="title">슈가
-                    <span class="icon new"><img src="./public/img/new@3x.png" alt="new"></span>
-                    <span class="time">03.21</span>
-                  </div>
-                  <p>훗~ 이번에는 인더섬의 과일로 카테일을 만들 수 있는 칵테일바를 오픈했어요, 무알콜 칵테일도 있으니 걱정은 놉!</p>
-                  <img class="charactor-img" src="./public/img/img-bts-suga@3x.png" alt="슈가 캐릭터">
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- <div class="box-items-wrap">
-            <div class="swiper charactor">
+            <div id="charactor" class="swiper">
               <div class="inner swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="items">
@@ -58,18 +24,46 @@
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
-                <div class="swiper-slide">Slide 4</div>
-                <div class="swiper-slide">Slide 5</div>
-                <div class="swiper-slide">Slide 6</div>
-                <div class="swiper-slide">Slide 7</div>
-                <div class="swiper-slide">Slide 8</div>
-                <div class="swiper-slide">Slide 9</div>
+                <div class="swiper-slide">
+                  <div class="items">
+                    <div class="items-inner type-a">
+                      <div class="title">지민
+                        <span class="icon new"><img src="./public/img/new@3x.png" alt="new"></span>
+                        <span class="time">2시간전</span>
+                      </div>
+                      <p>훗~ 이번에는 인더섬의 과일로 카테일을 만들 수 있는 칵테일바를 오픈했어요, 무알콜 칵테일도 있으니 걱정은 놉!</p>
+                      <img class="charactor-img" src="./public/img/img-bts-jimin@3x.png" alt="지민 캐릭터">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="items">
+                    <div class="items-inner type-a">
+                      <div class="title">슈가
+                        <span class="icon new"><img src="./public/img/new@3x.png" alt="new"></span>
+                        <span class="time">03.21</span>
+                      </div>
+                      <p>훗~ 이번에는 인더섬의 과일로 카테일을 만들 수 있는 칵테일바를 오픈했어요, 무알콜 칵테일도 있으니 걱정은 놉!</p>
+                      <img class="charactor-img" src="./public/img/img-bts-suga@3x.png" alt="슈가 캐릭터">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="items">
+                    <div class="items-inner type-a">
+                      <div class="title">뷔
+                        <span class="icon new"><img src="./public/img/new@3x.png" alt="new"></span>
+                        <span class="time">10분전</span>
+                      </div>
+                      <p>훗~ 이번에는 인더섬의 과일로 카테일을 만들 수 있는 칵테일바를 오픈했어요, 무알콜 칵테일도 있으니 걱정은 놉!</p>
+                      <img class="charactor-img" src="./public/img/img-bts-v@3x.png" alt="슈가 캐릭터">
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="swiper-pagination"></div>
             </div>
-          </div> -->
+          </div>
       </div>
     </section>
     <section class="magazine">
