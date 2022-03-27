@@ -164,7 +164,7 @@
         <div class="subtxt">인더섬에서는 과연 어떠한 일이 일어나고 있고 일어날까요?</div>
       </div>
       <div class="inner">
-        <div class="new-items">
+        <div class="news-items">
           <div class="img-box">
             <img src="./public/img/img-sample1@3x.png" alt="">
           </div>
@@ -177,7 +177,7 @@
             <div class="date">2022년 4월 12일 오후 6시 53분</div>
           </div>
         </div>
-        <div class="new-items">
+        <div class="news-items">
           <div class="img-box">
             <img src="./public/img/img-sample2@3x.png" alt="">
           </div>
@@ -191,7 +191,7 @@
             <div class="date">2022년 4월 12일 오전 9시 34분</div>
           </div>
         </div>
-        <div class="new-items">
+        <div class="news-items">
           <div class="img-box">
             <img src="./public/img/img-sample3@3x.png" alt="">
           </div>
@@ -205,7 +205,7 @@
             <div class="date">2022년 4월 11일 오후 3시 53분</div>
           </div>
         </div>
-        <div class="new-items">
+        <div class="news-items">
           <div class="img-box">
             <img src="./public/img/img-sample4@3x.png" alt="">
           </div>
@@ -219,7 +219,7 @@
             <div class="date">2022년 4월 10일 오후 1시 53분</div>
           </div>
         </div>
-        <div class="new-items">
+        <div class="news-items">
           <div class="img-box">
             <img src="./public/img/img-sample5@3x.png" alt="">
           </div>
@@ -233,7 +233,7 @@
             <div class="date">2022년 4월 9일 오후 4시 53분</div>
           </div>
         </div>
-        <div class="new-items">
+        <div class="news-items">
           <div class="img-box">
             <img src="./public/img/img-sample6@3x.png" alt="">
           </div>

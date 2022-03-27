@@ -89,7 +89,7 @@
         margin-top: 60px;
         justify-content: space-between;
         flex-wrap: wrap;
-        .new-items {
+        .news-items {
           display: flex;
           justify-content: space-between;
           width: calc( 50% - 50px );
@@ -322,7 +322,7 @@
       }
       &.news {
         .inner {
-          .new-items {
+          .news-items {
             width: 100%;
             .img-box {
               img {
@@ -335,6 +335,9 @@
     }
   }//중단배너
   //break point 1200px
+  @media screen and ( max-width: 980px ) {
+
+  }//break point 980px
   @media screen and ( max-width: 680px ) {
     section {
       &.middle-banner {
@@ -374,6 +377,19 @@
                   display: none
                 }
               }
+            }
+          }
+        }
+      }
+      &.news {
+        .inner {
+          .news-items {
+            .img-box {
+              width: 80px;
+              height: 80px;
+            }
+            .txt-area {
+              width: calc( 100% - 100px );
             }
           }
         }
