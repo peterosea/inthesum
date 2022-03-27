@@ -1468,6 +1468,7 @@ header #dt-menu-wrap .right-menu ul li a img.logout {
 
 .main-contents section.charactor .inner .box-items-wrap #charactor .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
   background: #bc83ff;
+  transition-timing-function: linear;
 }
 
 .main-contents section.charactor .inner .box-items-wrap #charactor .inner .swiper-slide {

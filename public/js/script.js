@@ -80,15 +80,15 @@ $(function(){
 // gTBFunc(gnbTBtn);
 
 var swiper = new Swiper("#charactor", {
-  speed: 4000,
+  speed: 2500,
   slidesPerView: 1,
-  spaceBetween: 0,
+  spaceBetween: 50,
   // loop: true,
   mousewheel: true,
-  // autoplay: {
-    //delay: 0,
-    //disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
+  },
   pagination: {
     el: ".swiper-pagination",
     type: "progressbar"
@@ -119,4 +119,10 @@ var swiper = new Swiper("#charactor", {
     }
   }
 });
+
+swiper.on('slideChange', function () {
+  console.log('slide changed');
+  console.log(swiper.realIndex)
+});
+
 // swiper.setProgress(1, 4000)

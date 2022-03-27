@@ -272,6 +272,7 @@
               background: transparent;
               .swiper-pagination-progressbar-fill {
                 background: #bc83ff;
+                transition-timing-function: linear;
               }
             }
             .inner {

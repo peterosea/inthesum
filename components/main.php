@@ -60,6 +60,30 @@
                     </div>
                   </div>
                 </div>
+                <div class="swiper-slide">
+                  <div class="items">
+                    <div class="items-inner type-a">
+                      <div class="title">지민
+                        <span class="icon new"><img src="./public/img/new@3x.png" alt="new"></span>
+                        <span class="time">2시간전</span>
+                      </div>
+                      <p>훗~ 이번에는 인더섬의 과일로 카테일을 만들 수 있는 칵테일바를 오픈했어요, 무알콜 칵테일도 있으니 걱정은 놉!</p>
+                      <img class="charactor-img" src="./public/img/img-bts-jimin@3x.png" alt="지민 캐릭터">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="items">
+                    <div class="items-inner type-a">
+                      <div class="title">슈가
+                        <span class="icon new"><img src="./public/img/new@3x.png" alt="new"></span>
+                        <span class="time">03.21</span>
+                      </div>
+                      <p>훗~ 이번에는 인더섬의 과일로 카테일을 만들 수 있는 칵테일바를 오픈했어요, 무알콜 칵테일도 있으니 걱정은 놉!</p>
+                      <img class="charactor-img" src="./public/img/img-bts-suga@3x.png" alt="슈가 캐릭터">
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="swiper-pagination"></div>
             </div>
