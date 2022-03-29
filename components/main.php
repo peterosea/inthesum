@@ -20,6 +20,15 @@
                         <span class="time">10분전</span>
                       </div>
                       <p>훗~ 이번에는 인더섬의 과일로 카테일을 만들 수 있는 칵테일바를 오픈했어요, 무알콜 칵테일도 있으니 걱정은 놉!</p>
+                      <div class="thumb-group">
+                        <div class="box">
+                          <img src="https://via.placeholder.com/300"><!--가로 세로 동일 정사각형 이미지 50px 등록 무관 -->
+                        </div>
+                        <div class="box video">
+                          <img src="https://via.placeholder.com/300"><!--가로 세로 동일 정사각형 이미지 50px 등록 무관 -->
+                        </div>
+                        <span class="ellip">...</span>
+                      </div>
                       <img class="charactor-img" src="./public/img/img-bts-v@3x.png" alt="슈가 캐릭터">
                     </div>
                   </div>
