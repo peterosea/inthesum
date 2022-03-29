@@ -867,6 +867,10 @@ header #dt-menu-wrap .right-menu ul li a img.logout {
   object-fit: fill;
 }
 
+.main-banner #main-banner-swiper .swiper-wrapper .swiper-slide .video-js .vjs-big-play-button {
+  display: none;
+}
+
 .main-banner #main-banner-swiper .swiper-pagination-progressbar {
   top: unset;
   bottom: 0;
