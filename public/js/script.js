@@ -90,12 +90,8 @@ var mbswiper = new Swiper("#main-banner-swiper", {
   speed: 2500,
   slidesPerView: 1,
   spaceBetween: 0,
-  // loop: true,
+  loop: true,
   mousewheel: true,
-  autoplay: {
-    // delay: 0,
-    // disableOnInteraction: false,
-  },
   pagination: {
     el: ".swiper-pagination",
     type: "progressbar"
@@ -145,11 +141,11 @@ mbswiper.on('slideChangeTransitionEnd', function () {
 
 // global function
 function prev() {
-  swiper.slidePrev();
+  mbswiper.slidePrev();
 }
 
 function next() {
-  swiper.slideNext();
+  mbswiper.slideNext();
 }
 
 function runNext() {

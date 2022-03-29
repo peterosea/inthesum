@@ -438,6 +438,9 @@ header {
           overflow: hidden;
           object-fit: fill;
         }
+        .video-js .vjs-big-play-button {
+          display: none;
+        }
       }
     }
     .swiper-pagination-progressbar {
