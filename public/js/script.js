@@ -78,6 +78,87 @@ $(function(){
 // }
 //
 // gTBFunc(gnbTBtn);
+var VIDEO_PLAYING_STATE = {
+  "PLAYING": "PLAYING",
+  "PAUSE": "PAUSE"
+}
+var videoPlayStatus = VIDEO_PLAYING_STATE.PAUSE
+var timeout = null
+var waiting = 3000
+
+var mbswiper = new Swiper("#main-banner-swiper", {
+  speed: 2500,
+  slidesPerView: 1,
+  spaceBetween: 0,
+  // loop: true,
+  mousewheel: true,
+  autoplay: {
+    // delay: 0,
+    // disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    type: "progressbar"
+  },
+  navigation: {
+    nextEl: ".mb-button-next",
+    prevEl: ".mb-button-prev"
+  }
+});
+
+// HTML5 vdo object
+var options = {};
+var player = videojs('demo', options);
+player.on('ended', function() {
+  next()
+})
+
+
+
+
+// swiper object
+mbswiper.on('slideChangeTransitionEnd', function () {
+  var index = mbswiper.activeIndex
+  var currentSlide =   $(mbswiper.slides[index])
+  var currentSlideType = currentSlide.data('slide-type')
+
+  // incase user click next before video ended
+  if (videoPlayStatus === VIDEO_PLAYING_STATE.PLAYING) {
+    player.pause()
+  }
+
+  clearTimeout(timeout)
+
+  switch (currentSlideType) {
+    case 'img':
+      runNext()
+      break;
+    case 'video':
+      player.currentTime(0)
+      player.play()
+      videoPlayStatus = VIDEO_PLAYING_STATE.PLAYING
+      break;
+    default:
+      throw new Error('invalid slide type');
+  }
+})
+
+// global function
+function prev() {
+  swiper.slidePrev();
+}
+
+function next() {
+  swiper.slideNext();
+}
+
+function runNext() {
+  timeout = setTimeout(function () {
+    next()
+  }, waiting)
+}
+
+runNext()
 
 var swiper = new Swiper("#charactor", {
   speed: 2500,
@@ -85,10 +166,10 @@ var swiper = new Swiper("#charactor", {
   spaceBetween: 50,
   // loop: true,
   mousewheel: true,
-  autoplay: {
-    delay: 0,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 0,
+  //   disableOnInteraction: false,
+  // },
   pagination: {
     el: ".swiper-pagination",
     type: "progressbar"
@@ -109,11 +190,7 @@ var swiper = new Swiper("#charactor", {
       spaceBetween: 15
     },
     // when window width is >= 640px
-    640: {
-      slidesPerView: 2,
-      spaceBetween: 30
-    },
-    1250: {
+    780: {
       slidesPerView: 3,
       spaceBetween: 30
     }

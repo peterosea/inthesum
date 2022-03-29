@@ -21,7 +21,7 @@
       <h1>퍼블리싱 사이트맵</h1>
       <ul>
         <li>
-          <a href="/layout.php">/layout.php</a>
+          <a href="./layout.php">/layout.php</a>
         </li>
       </ul>
     </div>
