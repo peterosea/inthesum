@@ -33,6 +33,20 @@
       "search": [
         "volume"
       ]
+    },
+    {
+      "uid": "96d3ff4a79ae87d1848ad372d51ed0c4",
+      "css": "arrow",
+      "code": 59394,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M806.3 312.5L850 356.3 518.7 687.5 187.5 356.3 231.2 312.5 518.7 600 806.3 312.5Z",
+        "width": 1000
+      },
+      "search": [
+        "arrow"
+      ]
     }
   ]
 }
