@@ -71,7 +71,109 @@ EOD;
       </div>
     </section>
     <section class="my-[96px]">
+      <?php echo $sectionHeader ?>
+      <!-- tab components -->
+      <div class="mt-[40px]">
+        <div>
+          <div id="tab" class="font-TmoneyRoundWind font-bold">
+            <div class="sm:hidden">
+              <label for="tabs" class="sr-only">Select a tab</label>
+              <!-- Use an "onChange" listener to redirect the user to the selected tab URL. -->
+              <select id="tabs" name="tabs" class="block w-full focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md">
+                <option selected>My Account</option>
 
+                <option>Company</option>
+
+                <option>Team Members</option>
+
+                <option>Billing</option>
+              </select>
+            </div>
+            <div class="hidden sm:block">
+              <nav class="relative z-0 flex divide-x divide-gray-200 border-x" aria-label="Tabs">
+                <!-- Current: "text-gray-900", Default: "text-gray-500 hover:text-gray-700" -->
+                <?php
+                foreach (['전체', '게임플레이', '회원', '홈페이지', '결제', '이벤트'] as $key => $tab) {
+                  if ($key === 0) {
+                    echo <<<EOD
+                    <a href="#" class="text-[18px] text-primary group relative min-w-0 flex-1 overflow-hidden bg-white py-4 px-4 text-center hover:bg-gray-50 focus:z-10" aria-current="page">
+                      <span>$tab</span>
+                      <span aria-hidden="true" class="bg-primary absolute inset-x-0 top-0 h-px"></span>
+                      <span aria-hidden="true" class="bg-primary absolute inset-y-0 right-0 w-px h-full"></span>
+                      <span aria-hidden="true" class="bg-primary absolute inset-x-0 bottom-0 h-px"></span>
+                      <span aria-hidden="true" class="bg-primary absolute inset-y-0 left-0 w-px h-full"></span>
+                    </a>
+EOD;
+                  } else {
+                    echo <<<EOD
+                    <a href="#" class="text-[18px] text-gray-500 hover:text-gray-700 group relative min-w-0 flex-1 overflow-hidden bg-white py-4 px-4 text-center hover:bg-gray-50 focus:z-10">
+                      <span>$tab</span>
+                      <span aria-hidden="true" class="bg-gray-200 absolute inset-x-0 top-0 h-px"></span>
+                      <span aria-hidden="true" class="bg-gray-200 absolute inset-x-0 bottom-0 h-px"></span>
+                    </a>
+EOD;
+                  }
+                } ?>
+              </nav>
+            </div>
+          </div>
+          <div id="tabContent">
+            <ul class="tabs">
+              <?php for ($i = 0; $i < 5; $i++) {
+                echo <<<EOD
+                <li class="border-b border-[#e6eaf2] overflow-hidden">
+                  <input class="accordion hidden" type="checkbox" id="accordion-$i">
+                  <label for="accordion-$i" class="tab-label cursor-pointer flex justify-between gap-x-4 py-[30px] items-center">
+                    <div class="flex gap-x-[16px]">
+                      <div class="w-[55px] h-[55px] bg-primary rounded-full text-white font-TmoneyRoundWind font-bold items-center justify-center flex text-[24px]">
+                        <span class="leading-1">Q</span>
+                      </div>
+                      <div>
+                        <div class="font-TmoneyRoundWind font-bold text-primary">게임플레이</div>
+                        <div class="text-[20px] font-Pretendard font-bold tracking-[-0.07px]">서버 목록이 보이지 않거나 방화벽 오류 메시지가 떠요</div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="text-[28px]">
+                        <i class="icon-arrow text-[#CECECE]"></i>
+                      </div>
+                    </div>
+                  </label>
+                  <div class="tab-content">
+                    <div class="prose">
+                      <p>
+                        1.0.1 패치가 업데이트 되었어요.<br/>
+                        1.0.1 버전에서는 칼테일바와 미니게임 3종(슬롯, 룰렛, 주사위)가 추가되었어요.<br/>
+                        미니게임을 하다보면 대박의 찬스가 있을지도?
+                      </p>
+                    </div>
+                  </div>
+                </li>
+EOD;
+              } ?>
+            </ul>
+            <!-- <div class="hidden">tab contnet</div>
+            <div class="hidden">tab contnet</div>
+            <div class="hidden">tab contnet</div>
+            <div class="hidden">tab contnet</div>
+            <div class="hidden">tab contnet</div> -->
+          </div>
+        </div>
+        <script>
+
+        </script>
+        <style>
+          input:checked.accordion~.tab-content {
+            max-height: 6.4em;
+            padding-bottom: 30px;
+          }
+
+          .tab-content {
+            max-height: 0;
+            transition: .5s;
+          }
+        </style>
+      </div>
     </section>
   </div>
 </div>
