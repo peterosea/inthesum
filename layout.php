@@ -5,6 +5,7 @@ include 'header.php';
     <header>
       <!-- mobile 버전 -->
       <div id="mobile-menu-wrap">
+        <div class="overlay"></div>
         <h1 class="logo">
           <a href="/">
             <img src="./public/img/logo-inthesum-small@3x.png" alt="inthesum logo">

@@ -144,6 +144,10 @@ header {
       z-index: $zindexOvery;
       -webkit-backdrop-filter: blur(25px);
       backdrop-filter: blur(25px);
+      display: none;
+      &.on{
+        display: inline-block;
+      }
     }
     .logo {
       position: absolute;
