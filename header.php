@@ -1,6 +1,7 @@
 <header>
   <!-- mobile 버전 -->
   <div id="mobile-menu-wrap">
+    <div class="overlay"></div>
     <h1 class="logo">
       <a href="/">
         <img src="./public/img/logo-inthesum-small@3x.png" alt="inthesum logo">
@@ -187,11 +188,12 @@
           </li>
           <li>
             <div class="lang">
-              <select>
-                <option value="KR">KR</option>
-                <option value="JP" class="on">JP</option>
-                <option value="US">US</option>
-              </select>
+              <span id="lang-txt">KR</span>
+              <ul class="lang-menu">
+                <li>KR</li>
+                <li>JP</li>
+                <li>US</li>
+              </ul>
             </div>
           </li>
         </ul>

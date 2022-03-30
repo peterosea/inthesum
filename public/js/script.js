@@ -1,29 +1,6 @@
 /*
 common script
 */
-$(function(){
-  // initialize
-  // function itemsResetWidth(width) {
-  //   $('.magazine .items').width(width);
-  //   $('.magazine .box-items-wrap').height($('.magazine .items-inner').height() + 18 );
-  // }
-  //
-  // if( $(window).innerWidth() <= 1280 ) {
-  //   let halfwindowWidth = $(window).innerWidth()/2 + 10;
-  //   itemsResetWidth(halfwindowWidth);
-  // }else if( $(window).innerWidth() > 1280 ){
-  //   itemsResetWidth(250);
-  // }
-  //
-  // $(window).resize(function(){
-  //   if( $(window).innerWidth() <= 1280 ) {
-  //     halfwindowWidth = $(window).innerWidth()/2 + 10;
-  //     itemsResetWidth(halfwindowWidth);
-  //   }else if( $(window).innerWidth() > 1280 ){
-  //     itemsResetWidth(250);
-  //   }
-  // });
-});
 
 window.onload = function(){
   const mMenu = document.querySelector('.m-menu');
@@ -88,7 +65,7 @@ window.onload = function(){
       event.preventDefault();
       return false
     });
-  })
+  });
 
   // 모바일 메뉴 아코디언 메뉴
   mgnbLi.forEach( items => {
@@ -100,7 +77,20 @@ window.onload = function(){
         event.preventDefault();
         return false
     });
-  })
+  });
+
+  const langElem = document.querySelector('#lang-txt');
+  const langLi = document.querySelectorAll('.lang ul.lang-menu li');
+  langElem.addEventListener('click', function handleClick(event) {
+      event.target.parentElement.classList.toggle('active');
+  });
+  langLi.forEach((item, i) => {
+    item.addEventListener('click', function handleClick(event) {
+        langElem.innerHTML = event.target.innerText
+        event.target.parentElement.parentElement.classList.toggle('active')
+    });
+  });
+
 
   // 매거진 반응형
   let mItems = document.querySelectorAll('.magazine .items');
@@ -111,26 +101,22 @@ window.onload = function(){
     mItems.forEach( elem => {
       elem.style.width = width + 'px';
       mitemsWrap.style.height = ( mitemsInner.offsetHeight + 55 ) + 'px';
-      console.log(`inner height: ${mitemsInner.offsetHeight}`)
+      // console.log(`inner height: ${mitemsInner.offsetHeight}`)
     })
   }
-  console.log(window.innerWidth)
+  // console.log(window.innerWidth)
   if( window.innerWidth <= 1280 ) {
     let halfwindowWidth = window.innerWidth/2 + 10;
-    // console.log('1280보다 작다')
     itemsResetWidth(halfwindowWidth);
   }else if( window.innerWidth > 1280 ){
-    // console.log('1280보다 크다')
     itemsResetWidth(250);
   }
 
   window.onresize = function(event){
-    console.log(event)
+    // console.log(event)
     if( window.innerWidth <= 1280 ) {
-      // console.log(halfwindowWidth+'1280보다 작다')
       itemsResetWidth(window.innerWidth/2 + 10);
     }else if( window.innerWidth > 1280 ){
-      // console.log(halfwindowWidth+'1280보다 크다')
       itemsResetWidth(250);
     }
   }
