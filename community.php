@@ -20,6 +20,19 @@ include 'header.php';
       </div>
     </div>
   </div>
+  <div class="absolute bottom-0 py-[35px] w-full z-20">
+    <div class="max-w-[1920px] mx-auto">
+      <div class="flex gap-x-[13px]">
+        <div class="text-white">
+          <i class="icon-volume-off text-[24px]"></i>
+          <i class="icon-volume text-[24px]"></i>
+        </div>
+        <div class="text-white">
+          <span class="font-Pretendard">방탄소년단 - DYNAMITE</span>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div class="content">
@@ -27,13 +40,13 @@ include 'header.php';
   $sectionHeader = <<<EOD
     <div class="flex gap-x-[30px] justify-between font-Pretendard">
       <div>
-        <h1 class="text-[36px] mb-[15px] font-TmoneyRoundWind font-bold">인더섬 뉴스</h1>
+        <h1 class="text-[36px] mb-[15px] font-TmoneyRoundWind font-bold leading-[0.69]">자주 묻는 질문</h1>
         <div class="text-[18px]">
-          <p>인더섬에서는 과연 어떠한 일이 일어나고 있고 일어날까요?</p>
+          <p>질문 전에 확인하시면 빠르게 해결하실 수도 있어요</p>
         </div>
       </div>
       <div>
-        arrow
+        <i class="icon-arrow2 text-[31px] rotate-180 inline-block"></i>
       </div>
     </div>
 EOD;
@@ -75,18 +88,16 @@ EOD;
       <!-- tab components -->
       <div class="mt-[40px]">
         <div>
-          <div id="tab" class="font-TmoneyRoundWind font-bold">
+          <div id="tab" class="font-TmoneyRoundWind font-bold mb-[10px]">
             <div class="sm:hidden">
               <label for="tabs" class="sr-only">Select a tab</label>
               <!-- Use an "onChange" listener to redirect the user to the selected tab URL. -->
               <select id="tabs" name="tabs" class="block w-full focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md">
-                <option selected>My Account</option>
-
-                <option>Company</option>
-
-                <option>Team Members</option>
-
-                <option>Billing</option>
+                <?php foreach (['전체', '게임플레이', '회원', '홈페이지', '결제', '이벤트'] as $key => $tab) {
+                  echo <<<EOD
+                    <option>$tab</option>
+EOD;
+                } ?>
               </select>
             </div>
             <div class="hidden sm:block">
@@ -123,7 +134,7 @@ EOD;
                 echo <<<EOD
                 <li class="border-b border-[#e6eaf2] overflow-hidden">
                   <input class="accordion hidden" type="checkbox" id="accordion-$i">
-                  <label for="accordion-$i" class="tab-label cursor-pointer flex justify-between gap-x-4 py-[30px] items-center">
+                  <label for="accordion-$i" class="tab-label cursor-pointer flex justify-between gap-x-4 py-[30px] items-center bg-white hover:bg-gray-50">
                     <div class="flex gap-x-[16px]">
                       <div class="w-[55px] h-[55px] bg-primary rounded-full text-white font-TmoneyRoundWind font-bold items-center justify-center flex text-[24px]">
                         <span class="leading-1">Q</span>
@@ -173,6 +184,21 @@ EOD;
             transition: .5s;
           }
         </style>
+      </div>
+    </section>
+    <section class="mt-[91px] mb-[120px]">
+      <!-- [react components] banner -->
+      <div class="h-[230px] relative rounded-[12px] overflow-hidden">
+        <img src="https://picsum.photos/1200/230.webp?grayscale?random=$i" class="object-cover w-full h-full absolute object-center" alt="">
+        <div class="relative z-10 w-full h-full flex items-center">
+          <div class="container mx-auto">
+            <div class="text-center">
+              <div class="font-TmoneyRoundWind text-[20px] text-white font-extrabold">COMING SOON</div>
+              <div class="font-TmoneyRoundWind text-[36px] text-white font-extrabold tracking-[-1.08px]">함께 만들어요! 인더섬</div>
+              <div class="font-Pretendard text-[16px] text-white tracking-[-0.48px]">보다 좋은 서비스를 위해 준비중이에요. 빠른 시일내에 오픈할께요</div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </div>
