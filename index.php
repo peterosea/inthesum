@@ -21,7 +21,7 @@
       <h1>퍼블리싱 사이트맵</h1>
       <ul>
         <li>
-          <a href="/layout.php">/layout.php</a>
+          <a href="./layout.php">/layout.php</a>
         </li>
         <li>
           <span class="inline-block py-[3px] px-[10px] bg-blue-500 rounded-full mr-[8px] text-sm font-bold text-white">커뮤니티</span><a href="/community.php">/community.php</a>

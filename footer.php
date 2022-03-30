@@ -40,6 +40,7 @@
     <!-- peterosea Script -->
     <script type="text/javascript" src="public/js/jquery-3.6.0.js"></script>
     <script type="text/javascript" src="public/js/jquery-ui.js"></script>
-    <script type="text/javascript" src="public/js/main_slider.js"></script>
+    <script type="text/javascript" src="./public/js/video.js"></script>
+    <script type="text/javascript" src="public/js/slider.js"></script>
     <script type="text/javascript" src="public/js/script.js"></script>
 </html>
