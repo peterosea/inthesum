@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="./public/css/main_slider.min.css">
   <link rel="stylesheet" href="./public/css/style.min.css">
   <link rel="stylesheet" href="./public/css/scss/style.css">
+  <link rel="stylesheet" href="./public/css/font/icon/css/fontello.css">
   <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
   <script>
     tailwind.config = {
@@ -34,7 +35,12 @@
           lg: '1024px',
           xl: '1200px',
         },
-        extend: {}
+        extend: {
+          fontFamily: {
+            TmoneyRoundWind: 'TmoneyRoundWind',
+            Pretendard: 'Pretendard',
+          }
+        }
       }
     }
   </script>
