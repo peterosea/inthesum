@@ -57,29 +57,7 @@ EOD;
       <div class="tw-grid tw-grid-cols-2 tw-gap-[99px] tw-mt-[60px]">
         <?php
         for ($i = 0; $i < 6; $i++) {
-          // item
-          echo <<<EOD
-          <div class="tw-grid tw-grid-cols-[140px,1fr] tw-gap-x-[30px]">
-            <div class="tw-shadow-[20px_20px_40px_rgb(0,0,0,0.1)]">
-              <div class="tw-relative tw-w-full tw-h-full">
-                <img class="tw-absolute tw-object-cover tw-object-center tw-w-full tw-h-full" src="https://picsum.photos/500/500.webp?grayscale?random=$i" alt="">
-              </div>
-            </div>
-            <div class="tw-font-Pretendard tw-flex tw-flex-col">
-              <div>
-                <div class="tw-text-[24px] tw-tracking-[-0.72px] tw-line-clamp-1 tw-whitespace-nowrap tw-mb-[12px]">4월 14일(목) 오전 4시 업데이트 점검 안내</div>
-                <div class="tw-text-[#54575d] tw-mb-[18px] tw-line-clamp-3">
-                  <p>
-                    새로운 버전 업데이트를 위해 6월 4일(목) 오전 4시부터 9시까지 점검을 실시합니다.<br>
-                    해당 시간동안은 이용이 불가능하며, 이용중 해당 시간이 새로운 버전 업데이트를 위해 6월 4일(목) 오전 4시부터 9시까지 점검을 실시합니다.<br>
-                    해당 시간동안은 이용이 불가능하며, 이용중 해당 시간이
-                  </p>
-                </div>
-              </div>
-              <div class="tw-text-[14px] tw-text-[#9ba0a8]">2022년 4월 12일 오후 6시 53분</div>
-            </div>
-          </div>
-EOD;
+          include './components/item.php';
         } ?>
       </div>
     </section>
@@ -146,7 +124,7 @@ EOD;
                     </div>
                     <div>
                       <div class="tw-text-[28px]">
-                        <i class="tw-icon-arrow text-[#CECECE]"></i>
+                        <i class="icon-arrow text-[#CECECE]"></i>
                       </div>
                     </div>
                   </label>
