@@ -9,13 +9,11 @@
   <link rel="stylesheet" href="./public/css/video_control.css">
   <link rel="stylesheet" href="./public/css/main_slider.min.css">
   <link rel="stylesheet" href="./public/css/style.min.css">
-  <link rel="stylesheet" href="./public/css/main_slider.min.css">
-  <link rel="stylesheet" href="./public/css/style.min.css">
-  <?php if (getallheaders()['Beeclover_user'] === 'hyeon') {
+  <!-- <?php if (getallheaders()['Beeclover_user'] === 'hyeon') {
     echo <<<EOD
     <link rel="stylesheet" href="./public/css/scss/style.css">
 EOD;
-  } ?>
+} ?> -->
   <link rel="stylesheet" href="/public/css/fonts/icon/css/fontello.css">
   <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
   <script>

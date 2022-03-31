@@ -8,10 +8,21 @@ window.onload = function(){
   const bodyElem = document.querySelector('body');
   const mgnbLi = document.querySelectorAll('#m-gnb ul li');
   const overlayElem = document.querySelector('#mobile-menu-wrap .overlay');
+  const header = document.querySelector('header')
   const dtmWrap = document.querySelector('#dt-menu-wrap');
+  const gnb = document.querySelector('#gnb');
   const mMenuWrap = document.querySelector('#mobile-menu-wrap');
   let currentTop = 0;
   let ticking = false;
+
+  // desktop menu over
+  gnb.addEventListener('mouseenter', function(e) {
+    dtmWrap.classList.add('active');
+  });
+
+  dtmWrap.addEventListener('mouseleave', function(e) {
+    dtmWrap.classList.remove('active');
+  })
 
   // 스크롤 체크 메뉴 배경 노출
   function scrollChcek(scroll_pos) {
@@ -157,8 +168,8 @@ player.on('ended', function() {
 // swiper object
 mbswiper.on('slideChangeTransitionEnd', function () {
   var index = mbswiper.activeIndex
-  var currentSlide =   $(mbswiper.slides[index])
-  var currentSlideType = currentSlide.data('slide-type')
+  var currentSlide = mbswiper.slides[index]
+  var currentSlideType = currentSlide.getAttribute('data-slide-type')
 
   // incase user click next before video ended
   if (videoPlayStatus === VIDEO_PLAYING_STATE.PLAYING) {
