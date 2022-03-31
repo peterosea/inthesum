@@ -1,7 +1,7 @@
 <div class="tw-p-[30px] tw-relative tw-group">
   <div class="tw-grid tw-grid-cols-[140px,auto] tw-gap-x-[30px] tw-relative tw-z-10">
     <div class="tw-shadow-[20px_20px_40px_rgb(0,0,0,0.1)]">
-      <div class="tw-relative tw-w-full tw-h-full">
+      <a href="#" class="tw-block tw-relative tw-w-full tw-h-full">
         <img class="tw-absolute tw-object-cover tw-object-center tw-w-full tw-h-full" src="https://picsum.photos/500/500.webp?grayscale?random=<?php echo rand(0, 100); ?>" alt="">
         <?php if ($pin) {
           echo <<<EOD
@@ -10,11 +10,11 @@
           </div>
 EOD;
         } ?>
-      </div>
+      </a>
     </div>
     <div class="tw-font-Pretendard tw-flex tw-flex-col">
       <div class="w-full">
-        <div class="tw-text-[24px] tw-tracking-[-0.72px] tw-line-clamp-1 tw-mb-[12px]">4월 14일(목) 오전 4시 업데이트 점검 안내</div>
+        <a href="#" class="tw-text-[24px] tw-tracking-[-0.72px] tw-line-clamp-1 tw-mb-[12px]">4월 14일(목) 오전 4시 업데이트 점검 안내</a>
         <div class="tw-text-[#54575d] tw-mb-[18px] tw-line-clamp-3">
           <p>
             새로운 버전 업데이트를 위해 6월 4일(목) 오전 4시부터 9시까지 점검을 실시합니다.<br>
