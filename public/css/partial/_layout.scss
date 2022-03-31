@@ -10,19 +10,6 @@ body {
 }
 /////////// Header
 header {
-  &:hover{
-    #dt-menu-wrap {
-      height: 310px;
-      background: rgba( 70, 26, 79, .3 );
-      -webkit-backdrop-filter: blur(25px);
-      backdrop-filter: blur(25px);
-      box-shadow: 0 15px 30px 0 rgba(28, 0, 60, .35);
-      #gnb ul li .menu-wrap .submenu {
-        opacity: 1;
-        top: 64px;
-      }
-    }
-  }
   li {
     position: relative;
     .lang {
@@ -315,6 +302,17 @@ header {
     height: 110px;
     padding: 0px 25px;
     box-sizing: border-box;
+    &.active {
+      height: 310px;
+      background: rgba( 70, 26, 79, .3 );
+      -webkit-backdrop-filter: blur(25px);
+      backdrop-filter: blur(25px);
+      box-shadow: 0 15px 30px 0 rgba(28, 0, 60, .35);
+      #gnb ul li .menu-wrap .submenu {
+        opacity: 1;
+        top: 64px;
+      }
+    }
     &.over {
       background: rgba( 70, 26, 79, .3 );
       -webkit-backdrop-filter: blur(25px);
