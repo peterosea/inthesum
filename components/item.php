@@ -3,7 +3,8 @@
     <div class="tw-shadow-[20px_20px_40px_rgb(0,0,0,0.1)]">
       <a href="#" class="tw-block tw-relative tw-w-full tw-h-full">
         <img class="tw-absolute tw-object-cover tw-object-center tw-w-full tw-h-full" src="https://picsum.photos/500/500.webp?grayscale?random=<?php echo rand(0, 100); ?>" alt="">
-        <?php if ($pin) {
+        <?php if (empty($pin)) $pin = false;
+        if ($pin) {
           echo <<<EOD
           <div class="tw-absolute tw-flex tw-items-center tw-justify-center tw-text-[19.2px] tw-top-0 tw-left-0 -tw-translate-x-1/2 -tw-translate-y-1/2 tw-w-[40px] tw-h-[40px] tw-rounded-full pin tw-bg-gradient-to-r tw-from-[#7833DC] tw-to-[#CF52E8] to-blue-500">
             <i class="icon-pin tw-text-white"></i>
