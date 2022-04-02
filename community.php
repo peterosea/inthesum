@@ -32,7 +32,9 @@ EOD;
     </section>
     <section class="tw-my-[96px]">
       <?php echo $sectionHeader ?>
-      <?php include './components/tab.php'; ?>
+      <div class="tw-mt-[40px]">
+        <?php include './components/tab.php'; ?>
+      </div>
     </section>
     <section class="tw-mt-[91px] tw-mb-[120px]">
       <!-- [react components] banner -->

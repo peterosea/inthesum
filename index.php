@@ -29,6 +29,9 @@
         <li>
           <span class="inline-block py-[3px] px-[10px] bg-blue-500 rounded-full mr-[8px] text-sm font-bold text-white">커뮤니티/공지사항</span><a href="/community-news.php">/community-news.php</a>
         </li>
+        <li>
+          <span class="inline-block py-[3px] px-[10px] bg-blue-500 rounded-full mr-[8px] text-sm font-bold text-white">커뮤니티/자주묻는 질문</span><a href="/community-qna.php">/community-qna.php</a>
+        </li>
       </ul>
     </div>
   </div>
