@@ -58,7 +58,7 @@ EOD;
                   </div>
                   <div>
                     <div class="tw-text-[28px]">
-                      <i class="icon-arrow text-[#CECECE]"></i>
+                      <i class="icon-arrow tw-text-[#CECECE] tw-inline-block"></i>
                     </div>
                   </div>
                 </label>
@@ -87,6 +87,12 @@ EOD;
 <style>
   input:checked.accordion~.tab-content {
     max-height: calc(6.4em + (40px * 2));
+  }
+
+  input:checked.accordion~label .icon-arrow {
+    opacity: 1;
+    transform: rotate(180deg);
+    color: black;
   }
 
   .tab-content {
