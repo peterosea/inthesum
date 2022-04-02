@@ -33,7 +33,10 @@ EOD;
     <section class="tw-my-[96px]">
       <?php echo $sectionHeader ?>
       <div class="tw-mt-[40px]">
-        <?php include './components/tab.php'; ?>
+        <?php
+        $tabList = ['전체', '게임플레이', '회원', '홈페이지', '결제', '이벤트'];
+        include './components/tab.php';
+        ?>
         <?php include './components/accordion.php'; ?>
       </div>
     </section>
