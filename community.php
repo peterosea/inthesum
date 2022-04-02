@@ -34,6 +34,7 @@ EOD;
       <?php echo $sectionHeader ?>
       <div class="tw-mt-[40px]">
         <?php include './components/tab.php'; ?>
+        <?php include './components/accordion.php'; ?>
       </div>
     </section>
     <section class="tw-mt-[91px] tw-mb-[120px]">
