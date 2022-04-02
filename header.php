@@ -102,7 +102,8 @@
     </div>
   </div>
   <!-- desktop 버전 -->
-  <div id="dt-menu-wrap">
+  <?php if (empty($isHeaderPage)) $isHeaderPage = false; ?>
+  <div id="dt-menu-wrap" class="tw-top-0 <?php if ($isHeaderPage) echo 'tw-bg-black' ?>">
     <div class="dt-menu">
       <h1 class="logo">
         <a href="/">
@@ -201,3 +202,6 @@
     </div>
   </div>
 </header>
+<?php if ($isHeaderPage) { ?>
+  <div class="tw-pt-[110px]"></div>
+<?php } ?>
