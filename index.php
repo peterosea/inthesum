@@ -21,7 +21,7 @@
       <h1>퍼블리싱 사이트맵</h1>
       <ul>
         <li>
-          <a href="./layout.php">/layout.php</a>
+          <span class="inline-block py-[3px] px-[10px] bg-red-500 rounded-full mr-[8px] text-sm font-semibold text-white">메인페이지</span><a href="./layout.php">/layout.php</a>
         </li>
         <li>
           <span class="inline-block py-[3px] px-[10px] bg-blue-500 rounded-full mr-[8px] text-sm font-semibold text-white">커뮤니티</span><a href="/community.php">/community.php</a>
@@ -40,6 +40,9 @@
         </li>
         <li>
           <span class="inline-block py-[3px] px-[10px] bg-green-500 rounded-full mr-[8px] text-sm font-semibold text-white">policy/이용약관</span><a href="/policy-service.php">/policy-service.php</a>
+        </li>
+        <li>
+          <span class="inline-block py-[3px] px-[10px] bg-amber-400 rounded-full mr-[8px] text-sm font-semibold text-white">게임소개</span><a href="/game-introduction.php">/game-introduction.php</a>
         </li>
       </ul>
     </div>
