@@ -33,7 +33,13 @@
           <span class="inline-block py-[3px] px-[10px] bg-blue-500 rounded-full mr-[8px] text-sm font-semibold text-white">커뮤니티/자주묻는 질문</span><a href="/community-qna.php">/community-qna.php</a>
         </li>
         <li>
-          <span class="inline-block py-[3px] px-[10px] bg-green-500 rounded-full mr-[8px] text-sm font-semibold text-white">about/개인정보처리 방침</span><a href="/about-privacy.php">/about-privacy.php</a>
+          <span class="inline-block py-[3px] px-[10px] bg-green-500 rounded-full mr-[8px] text-sm font-semibold text-white">policy/개인정보처리 방침</span><a href="/policy-privacy.php">/policy-privacy.php</a>
+        </li>
+        <li>
+          <span class="inline-block py-[3px] px-[10px] bg-green-500 rounded-full mr-[8px] text-sm font-semibold text-white">policy/운영정책</span><a href="/policy-operation.php">/policy-operation.php</a>
+        </li>
+        <li>
+          <span class="inline-block py-[3px] px-[10px] bg-green-500 rounded-full mr-[8px] text-sm font-semibold text-white">policy/이용약관</span><a href="/policy-service.php">/policy-service.php</a>
         </li>
       </ul>
     </div>
