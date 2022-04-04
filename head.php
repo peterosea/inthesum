@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="./public/css/video_control.css">
   <link rel="stylesheet" href="./public/css/main_slider.min.css">
   <link rel="stylesheet" href="./public/css/style.min.css">
+  <link href="//vjs.zencdn.net/7.10.2/video-js.min.css" rel="stylesheet">
   <!-- <?php if (getallheaders()['Beeclover_user'] === 'hyeon') {
           echo <<<EOD
     <link rel="stylesheet" href="./public/css/scss/style.css">
