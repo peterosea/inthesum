@@ -1,5 +1,0 @@
-{
-  "liveSassCompile.settings.includeItems": [
-    "/public/css/scss/hyeon.scss",
-  ],
-}
