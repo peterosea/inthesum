@@ -1,0 +1,7 @@
+- react
+- swiper
+- videojs
+- sass
+- tailwindcss
+- postcss
+- keen-slider
