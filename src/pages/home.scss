@@ -1,0 +1,42 @@
+.swiper.mainBannerSlider {
+  .swiper-pagination-progressbar.swiper-pagination {
+    top: unset;
+    bottom: 0;
+    background: none;
+
+    .swiper-pagination-progressbar-fill {
+      background: #bc83ff;
+    }
+  }
+}
+.swiper.characterSlide {
+  .swiper-pagination-progressbar.swiper-pagination {
+    top: unset;
+    bottom: 0;
+    background: none;
+    height: 1px;
+
+    .swiper-pagination-progressbar-fill {
+      background: #bc83ff;
+    }
+  }
+}
+
+.swiper-slide .video-js .vjs-big-play-button {
+  display: none;
+}
+.swiper-slide .video-js .vjs-poster {
+  background-size: cover;
+}
+.swiper-slide .video-js .vjs-tech {
+  object-fit: cover;
+}
+
+.magazineSlide {
+  .keen-slider:not([data-keen-slider-disabled]) {
+    overflow: visible;
+  }
+  .keen-slider:not([data-keen-slider-disabled]) .keen-slider__slide {
+    overflow: visible;
+  }
+}

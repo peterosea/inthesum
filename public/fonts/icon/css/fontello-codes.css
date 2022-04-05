@@ -1,0 +1,39 @@
+.icon-volume:before {
+  content: '\e800';
+} /* '' */
+.icon-volume-off:before {
+  content: '\e801';
+} /* '' */
+.icon-arrow:before {
+  content: '\e802';
+} /* '' */
+.icon-arrow2:before {
+  content: '\e803';
+} /* '' */
+.icon-paging-first:before {
+  content: '\e804';
+} /* '' */
+.icon-paging-last:before {
+  content: '\e805';
+} /* '' */
+.icon-paging-next:before {
+  content: '\e806';
+} /* '' */
+.icon-paging-prev:before {
+  content: '\e807';
+} /* '' */
+.icon-pin:before {
+  content: '\e808';
+} /* '' */
+.icon-icon-scroll:before {
+  content: '\e809';
+} /* '' */
+.icon-more-arrow:before {
+  content: '\e80a';
+} /* '' */
+.icon-logout:before {
+  content: '\e80b';
+} /* '' */
+.icon-account:before {
+  content: '\e80c';
+} /* '' */
