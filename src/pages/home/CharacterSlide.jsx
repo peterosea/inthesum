@@ -78,7 +78,7 @@ const CharacterSlide = () => (
         characterImg: 'v',
       },
     ].map((c, index) => (
-      <SwiperSlide>
+      <SwiperSlide key={`character-index-${index}`}>
         <div className="relative px-[20px] h-full" key={`key-${index}`}>
           <div className="relative z-10">
             <div className="text-[30px] font-extrabold leading-[1.4em] text-left">

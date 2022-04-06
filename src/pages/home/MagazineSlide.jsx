@@ -73,6 +73,7 @@ export default function MagazineSlide() {
     <div ref={sliderRef} className="keen-slider">
       {['test', 'test', 'test', 'test'].map((a, index) => (
         <div
+          key={`index-${index}`}
           className="keen-slider__slide"
           style={{ maxWidth: 360, minWidth: 360 }}
         >

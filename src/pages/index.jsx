@@ -12,49 +12,49 @@ const index = () => {
             <span className="inline-block py-[3px] px-[10px] bg-red-500 rounded-full mr-[8px] text-sm font-semibold text-white">
               메인페이지
             </span>
-            <Link href="/home">/home</Link>
+            <Link to="/home">/home</Link>
           </li>
           <li>
             <span className="inline-block py-[3px] px-[10px] bg-blue-500 rounded-full mr-[8px] text-sm font-semibold text-white">
               커뮤니티
             </span>
-            <Link href="/community.php">/community.php</Link>
+            <Link to="/community.php">/community.php</Link>
           </li>
           <li>
             <span className="inline-block py-[3px] px-[10px] bg-blue-500 rounded-full mr-[8px] text-sm font-semibold text-white">
               커뮤니티/공지사항
             </span>
-            <Link href="/community-news.php">/community-news.php</Link>
+            <Link to="/community-news.php">/community-news.php</Link>
           </li>
           <li>
             <span className="inline-block py-[3px] px-[10px] bg-blue-500 rounded-full mr-[8px] text-sm font-semibold text-white">
               커뮤니티/자주묻는 질문
             </span>
-            <Link href="/community-qna.php">/community-qna.php</Link>
+            <Link to="/community-qna.php">/community-qna.php</Link>
           </li>
           <li>
             <span className="inline-block py-[3px] px-[10px] bg-green-500 rounded-full mr-[8px] text-sm font-semibold text-white">
               policy/개인정보처리 방침
             </span>
-            <Link href="/policy-privacy.php">/policy-privacy.php</Link>
+            <Link to="/policy-privacy.php">/policy-privacy.php</Link>
           </li>
           <li>
             <span className="inline-block py-[3px] px-[10px] bg-green-500 rounded-full mr-[8px] text-sm font-semibold text-white">
               policy/운영정책
             </span>
-            <Link href="/policy-operation.php">/policy-operation.php</Link>
+            <Link to="/policy-operation.php">/policy-operation.php</Link>
           </li>
           <li>
             <span className="inline-block py-[3px] px-[10px] bg-green-500 rounded-full mr-[8px] text-sm font-semibold text-white">
               policy/이용약관
             </span>
-            <Link href="/policy-service.php">/policy-service.php</Link>
+            <Link to="/policy-service.php">/policy-service.php</Link>
           </li>
           <li>
             <span className="inline-block py-[3px] px-[10px] bg-amber-400 rounded-full mr-[8px] text-sm font-semibold text-white">
               게임소개
             </span>
-            <Link href="/game-introduction.php">/game-introduction.php</Link>
+            <Link to="/game-introduction.php">/game-introduction.php</Link>
           </li>
         </ul>
       </div>

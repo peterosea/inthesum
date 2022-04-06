@@ -208,8 +208,8 @@ const Main = () => {
                 ),
                 thumbnail: '/public/img/img-sample6@3x.png',
               },
-            ].map((e) => (
-              <Card pin={true} data={e} />
+            ].map((e, index) => (
+              <Card pin={true} data={e} key={`card-index-${index}`} />
             ))}
           </div>
         </div>
