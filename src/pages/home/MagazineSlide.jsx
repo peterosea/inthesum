@@ -36,17 +36,19 @@ const WheelControls = (slider) => {
   }
 
   function eventWheel(e) {
-    e.preventDefault();
-    if (!wheelActive) {
-      wheelStart(e);
-      wheelActive = true;
+    if (e.deltaX != '-0') {
+      e.preventDefault();
+      if (!wheelActive) {
+        wheelStart(e);
+        wheelActive = true;
+      }
+      wheel(e);
+      clearTimeout(touchTimeout);
+      touchTimeout = setTimeout(() => {
+        wheelActive = false;
+        wheelEnd(e);
+      }, 50);
     }
-    wheel(e);
-    clearTimeout(touchTimeout);
-    touchTimeout = setTimeout(() => {
-      wheelActive = false;
-      wheelEnd(e);
-    }, 50);
   }
 
   slider.on('created', () => {
@@ -61,9 +63,18 @@ export default function MagazineSlide() {
     {
       loop: false,
       rubberband: false,
+      breakpoints: {
+        '(min-width: 1280px)': {
+          slides: {
+            origin: 'center',
+            perView: 'auto',
+            spacing: 100,
+          },
+        },
+      },
       slides: {
         perView: 'auto',
-        spacing: 60,
+        spacing: 30,
       },
     },
     [WheelControls],
@@ -71,32 +82,62 @@ export default function MagazineSlide() {
 
   return (
     <div ref={sliderRef} className="keen-slider">
-      {['test', 'test', 'test', 'test'].map((a, index) => (
-        <div
-          key={`index-${index}`}
-          className="keen-slider__slide"
-          style={{ maxWidth: 360, minWidth: 360 }}
-        >
-          <div className="shadow-[5px_5px_40px_rgb(0,0,0,0.25)]">
-            <img src="/public/img/img-magazine1@3x.png" alt="" />
-          </div>
-          <div className="mt-[36px] leading-none">
-            <div className="text-[18px] text-[#bc83ff] font-extrabold">
-              Vol.3
-            </div>
-            <div className="mt-[8px] text-[36px] font-extrabold">
-              Fishing Life
-            </div>
-            <div className="mt-[10px] font-bold text-black text-[14px]">
-              2022.03.02
-            </div>
-            <div className="mt-[20px]">
+      {[
+        {
+          vol: 'Vol.3',
+          imageUrl: '/public/img/img-magazine1@3x.png',
+          name: 'Fishing Life',
+          date: '2022.03.02',
+          spec: () => (
+            <>
               <p>커버스토리: 인더섬에서 바다낚시하기</p>
               <p>주요기사: 칵테일 만들기</p>
+            </>
+          ),
+        },
+        {
+          vol: 'Vol.2',
+          imageUrl: '/public/img/img-magazine2@3x.png',
+          name: 'Healing Camp',
+          date: '2022.02.23',
+          spec: () => (
+            <>
+              <p>커버스토리: 베이스캠프 건설</p>
+              <p>주요기사: 요리 레시피</p>
+            </>
+          ),
+        },
+        {
+          vol: 'Vol.1',
+          imageUrl: '/public/img/img-magazine3@3x.png',
+          name: 'Grand Open',
+          date: '2022.02.16',
+          spec: () => (
+            <>
+              <p>커버스토리: 전세계 전격 오픈</p>
+              <p>주요기사: 튜토리얼</p>
+            </>
+          ),
+        },
+      ].map(({ vol, name, date, spec, imageUrl }, index) => {
+        return (
+          <div key={`index-${index}`} className="keen-slider__slide">
+            <div className="shadow-[5px_5px_40px_rgb(0,0,0,0.25)]">
+              <img src={imageUrl} alt="" />
+            </div>
+            <div className="mt-[36px] leading-none">
+              <div className="text-[18px] text-[#bc83ff] font-extrabold">
+                {vol}
+              </div>
+              <div className="mt-[8px] text-[36px] font-extrabold">{name}</div>
+              <div className="mt-[10px] font-bold text-black text-[14px]">
+                {date}
+              </div>
+              <div className="mt-[20px]">{spec()}</div>
             </div>
           </div>
-        </div>
-      ))}
+        );
+      })}
     </div>
   );
 }

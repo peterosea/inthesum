@@ -96,7 +96,7 @@ const CharacterSlide = () => (
                 오픈했어요, 무알콜 칵테일도 있으니 걱정은 놉!
               </p>
             </div>
-            <div className="flex gap-x-[10px] mt-[27px] ml-[20px]">
+            <div className="flex gap-x-[10px] mt-[27px] ml-[20px] items-center">
               <div className="w-[50px] h-[50px] rounded-[20px] overflow-hidden relative">
                 <img
                   src="https://via.placeholder.com/300"
@@ -121,11 +121,13 @@ const CharacterSlide = () => (
               alt="슈가 캐릭터"
             />
           </div>
-          <img
-            src="/public/img/img-baloon-full@3x.png"
-            alt="ballon"
-            className="absolute top-0 !w-auto !h-auto left-1/2 -translate-x-1/2"
-          />
+          <div className="absolute left-1/2 -translate-x-1/2 w-[calc(100%-40px)] top-0">
+            <img
+              src="/public/img/img-baloon-full@3x.png"
+              alt="ballon"
+              className="absolute top-0 !w-auto !h-auto left-1/2 -translate-x-1/2"
+            />
+          </div>
         </div>
       </SwiperSlide>
     ))}

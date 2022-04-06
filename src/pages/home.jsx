@@ -15,16 +15,18 @@ const Main = () => {
     <>
       <section className="py-[90px]">
         <div className="border-b border-[#ddd]">
-          <div className="container mx-auto">
-            <div className="grid grid-cols-[270px,auto]">
-              <div className="min-h-[490px] relative">
-                <div className="w-[160px]">
-                  <img
-                    src="/public/img/img-withbts-title@3x.png"
-                    alt="with BTS"
-                  />
-                  <div className="my-[30px]">
-                    <p>BTS가 개발에 직접 참여한 인더섬 업데이트 소식</p>
+          <div className="xl:container mx-auto">
+            <div className="grid xl:grid-cols-[270px,auto]">
+              <div className="xl:min-h-[490px] relative container mx-auto">
+                <div className="flex xl:flex-col justify-between">
+                  <div className="w-[160px]">
+                    <img
+                      src="/public/img/img-withbts-title@3x.png"
+                      alt="with BTS"
+                    />
+                    <div className="my-[30px] hidden xl:block">
+                      <p>BTS가 개발에 직접 참여한 인더섬 업데이트 소식</p>
+                    </div>
                   </div>
                   <a href="#">
                     <img
@@ -36,36 +38,41 @@ const Main = () => {
                 </div>
                 <div className="absolute w-[110px] h-px bottom-[-1px] right-0 bg-white"></div>
               </div>
-              <div className="overflow-hidden">
+              <div className="overflow-hidden xl:mt-0 mt-[35px] h-[500px]">
                 <CharacterSlide />
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section className="overflow-hidden">
-        <div className="container mx-auto">
-          <div className="grid grid-cols-[270px,auto]">
-            <div className="min-h-[490px] relative z-10 bg-gradient-to-r from-white via-white py-[90px]">
+      <section className="overflow-hidden my-[90px]">
+        <div className="container mx-auto relative">
+          <div className="magazine__header xl:h-full xl:absolute top-0 left-0 z-10 bg-gradient-to-r from-white via-white">
+            <div className="flex xl:flex-col justify-between">
               <div className="w-[160px]">
                 <img
                   src="/public/img/img-madebyarmy-title@3x.png"
                   alt="with BTS"
                 />
-                <div className="my-[30px]">
+                <div className="text-[22px] font-bold whitespace-nowrap text-justify">
+                  주간 인더섬 매거진
+                </div>
+                <div className="my-[30px] hidden xl:block">
                   <p>아미와 함께 만드어 나가는 인더섬 이야기</p>
                 </div>
-                <a href="#">
-                  <img
-                    src="/public/img/icon-more-arrow@3x.png"
-                    alt="more view"
-                    className="w-[31px]"
-                  />
-                </a>
               </div>
-              <div className="absolute w-[110px] h-px bottom-[-1px] right-0 bg-white"></div>
+              <a href="#">
+                <img
+                  src="/public/img/icon-more-arrow@3x.png"
+                  alt="more view"
+                  className="w-[31px]"
+                />
+              </a>
             </div>
-            <div className="magazineSlide py-[90px]">
+            <div className="absolute w-[110px] h-px bottom-[-1px] right-0 bg-white hidden xl:block"></div>
+          </div>
+          <div className="magazineSlide mt-[30px] xl:mt-0">
+            <div className="xl:translate-x-[-150px]">
               <MagazineSlide />
             </div>
           </div>
@@ -73,7 +80,7 @@ const Main = () => {
       </section>
       <section className="my-[120px]">
         <div className="container mx-auto">
-          <div className="grid grid-cols-2 gap-x-[20px]">
+          <div className="grid xl:grid-cols-2 gap-[20px]">
             <a
               href="#"
               className="relative rounded-[12px] min-h-[260px] flex p-[50px] pr-[280px] bg-[#EDEDFD]"
@@ -133,7 +140,7 @@ const Main = () => {
               <p>인더섬에서는 과연 어떠한 일이 일어나고 있고 일어날까요?</p>
             </div>
           </div>
-          <div className="mt-[60px] grid grid-cols-2 gap-[60px]">
+          <div className="mt-[60px] grid xl:grid-cols-2 gap-[60px]">
             {[
               {
                 title: '4월 14일(목) 오전 4시 업데이트 점검 안내',

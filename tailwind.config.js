@@ -17,11 +17,17 @@ module.exports = {
       sm: '640px',
       md: '768px',
       lg: '1024px',
-      xl: '1200px',
+      xl: '1280px',
     },
     extend: {
       colors: {
         primary: '#822ce5',
+      },
+      container: {
+        padding: {
+          DEFAULT: '1rem',
+          md: '40px',
+        },
       },
       fontFamily: {
         TmoneyRoundWind: 'TmoneyRoundWind',
