@@ -1,5 +1,6 @@
 import React from 'react';
 import classnames from 'classnames';
+import cardData from './Card.data';
 
 // type props = {
 //   isPin: boolean,
@@ -7,11 +8,11 @@ import classnames from 'classnames';
 //   data: {
 //     title: string,
 //     content: JSX.Element,
-//     thumbnail: string, // image url
+//     thumbnailUrl: string, // image url
 //   },
 // };
-const Card = ({ isPin = false, pin = false, data }) => {
-  const { title, content, thumbnail } = data;
+const Card = ({ isPin = false, pin = false, data = cardData }) => {
+  const { title, content, thumbnailUrl } = data;
   return (
     <div className={classnames('relative group', { 'p-[30px]': isPin })}>
       <div className="grid grid-cols-[140px,auto] gap-x-[30px] relative z-10">
@@ -19,10 +20,10 @@ const Card = ({ isPin = false, pin = false, data }) => {
           <a href="#" className="block relative w-full h-full">
             <img
               className="absolute object-cover object-center w-full h-full"
-              src={thumbnail}
+              src={thumbnailUrl}
               alt=""
             />
-            {isPin && (
+            {isPin && pin && (
               <div className="absolute flex items-center justify-center text-[19.2px] top-0 left-0 -translate-x-1/2 -translate-y-1/2 w-[40px] h-[40px] rounded-full pin bg-gradient-to-r from-[#7833DC] to-[#CF52E8]">
                 <i className="icon-pin text-white"></i>
               </div>

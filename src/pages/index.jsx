@@ -18,19 +18,19 @@ const index = () => {
             <span className="inline-block py-[3px] px-[10px] bg-blue-500 rounded-full mr-[8px] text-sm font-semibold text-white">
               커뮤니티
             </span>
-            <Link to="/community.php">/community.php</Link>
+            <Link to="/community">/community</Link>
           </li>
           <li>
             <span className="inline-block py-[3px] px-[10px] bg-blue-500 rounded-full mr-[8px] text-sm font-semibold text-white">
               커뮤니티/공지사항
             </span>
-            <Link to="/community-news.php">/community-news.php</Link>
+            <Link to="/community/news">/community/news</Link>
           </li>
           <li>
             <span className="inline-block py-[3px] px-[10px] bg-blue-500 rounded-full mr-[8px] text-sm font-semibold text-white">
               커뮤니티/자주묻는 질문
             </span>
-            <Link to="/community-qna.php">/community-qna.php</Link>
+            <Link to="/community/qna">/community/qna</Link>
           </li>
           <li>
             <span className="inline-block py-[3px] px-[10px] bg-green-500 rounded-full mr-[8px] text-sm font-semibold text-white">

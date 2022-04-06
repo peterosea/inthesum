@@ -119,7 +119,7 @@ const Header = () => {
       {/* policy tw-bg-black */}
       <div
         id="dt-menu-wrap"
-        className={classnames('tw-top-0', { active: isMenuOver })}
+        className={classnames('top-0', { active: isMenuOver })}
         onMouseLeave={() => setIsMenuOver(false)}
       >
         <div className="dt-menu">

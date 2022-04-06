@@ -1,13 +1,13 @@
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import './home.scss';
+import '../components/home/home.scss';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
-import MagazineSlide from './home/MagazineSlide';
-import CharacterSlide from './home/CharacterSlide';
-import MainBannerSlide from './home/MainBannerSlide';
+import MagazineSlide from '../components/home/MagazineSlide';
+import CharacterSlide from '../components/home/CharacterSlide';
+import MainBannerSlide from '../components/home/MainBannerSlide';
 import Card from '../components/Card';
 
 const Main = () => {
@@ -152,7 +152,7 @@ const Main = () => {
                     해당 시간동안은 이용이 불가능하며, 이용중 해당 시간이..
                   </p>
                 ),
-                thumbnail: '/public/img/img-sample1@3x.png',
+                thumbnailUrl: '/public/img/img-sample1@3x.png',
               },
               {
                 title: '인더섬 스크린샷 이벤트',
@@ -165,7 +165,7 @@ const Main = () => {
                     많은 참여 부탁드립니다!
                   </p>
                 ),
-                thumbnail: '/public/img/img-sample2@3x.png',
+                thumbnailUrl: '/public/img/img-sample2@3x.png',
               },
               {
                 title: '푸시 알림 이벤트',
@@ -177,7 +177,7 @@ const Main = () => {
                     해당 시간동안은 이용이 불가능하며, 이용중 해당 시간이..
                   </p>
                 ),
-                thumbnail: '/public/img/img-sample3@3x.png',
+                thumbnailUrl: '/public/img/img-sample3@3x.png',
               },
               {
                 title: '1.0.2 커플 베이스캠프 업데이트',
@@ -189,7 +189,7 @@ const Main = () => {
                     해당 시간동안은 이용이 불가능하며, 이용중 해당 시간이..
                   </p>
                 ),
-                thumbnail: '/public/img/img-sample4@3x.png',
+                thumbnailUrl: '/public/img/img-sample4@3x.png',
               },
               {
                 title: '1.0.1 패치 업데이트 안내',
@@ -201,7 +201,7 @@ const Main = () => {
                     해당 시간동안은 이용이 불가능하며, 이용중 해당 시간이..
                   </p>
                 ),
-                thumbnail: '/public/img/img-sample5@3x.png',
+                thumbnailUrl: '/public/img/img-sample5@3x.png',
               },
               {
                 title: '인더섬 with BTS 전세계 오픈',
@@ -213,7 +213,7 @@ const Main = () => {
                     해당 시간동안은 이용이 불가능하며, 이용중 해당 시간이..
                   </p>
                 ),
-                thumbnail: '/public/img/img-sample6@3x.png',
+                thumbnailUrl: '/public/img/img-sample6@3x.png',
               },
             ].map((e, index) => (
               <Card pin={true} data={e} key={`card-index-${index}`} />

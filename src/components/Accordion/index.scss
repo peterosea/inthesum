@@ -1,0 +1,15 @@
+input:checked.accordion-input ~ .accordion-content {
+  max-height: calc(6.4em + (40px * 2));
+}
+
+input:checked.accordion-input ~ label .icon-arrow {
+  opacity: 1;
+  transform: rotate(180deg);
+  color: black;
+}
+
+.accordion-content {
+  max-height: 0;
+  transition: 0.5s;
+  overflow: hidden;
+}
