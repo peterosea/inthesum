@@ -230,7 +230,7 @@ export default () => {
     <>
       <Header />
       <MainBannerSlide />
-      <div className="font-Pretendard">
+      <div className="font-Pretendard mb-[120px]">
         <Main />
       </div>
       <Footer />

@@ -38,7 +38,7 @@ export default () => {
     <>
       <Header />
       <HeaderPage />
-      <div className="font-Pretendard">
+      <div className="font-Pretendard mb-[120px]">
         <Main />
       </div>
       <Footer />

@@ -12,7 +12,7 @@ const Accordion = () => {
             id={`accordion-${i}`}
           />
           <label
-            htmlFor{`accordion-${i}`}
+            htmlFor={`accordion-${i}`}
             className="tab-label cursor-pointer flex justify-between gap-x-4 py-[30px] items-center bg-white hover:bg-gray-50"
           >
             <div className="flex gap-x-[16px]">

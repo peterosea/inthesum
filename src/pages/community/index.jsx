@@ -1,11 +1,11 @@
 import React from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-import Pagination from '../../components/Pagination';
 import HeaderPage from '../../components/HeaderPage';
 import Tab from '../../components/Tab';
 import Accordion from '../../components/Accordion';
 import Card from '../../components/Card';
+import Banner from '../../components/Banner';
 
 const SectionHeader = () => (
   <div className="flex gap-x-[30px] justify-between font-Pretendard">
@@ -55,29 +55,7 @@ const Main = () => {
       </section>
       <section className="mt-[91px] mb-[120px]">
         <div className="container mx-auto">
-          <div className="h-[230px] relative rounded-[12px] overflow-hidden">
-            <img
-              src="https://picsum.photos/1200/230.webp?grayscale?random=$i"
-              className="object-cover w-full h-full absolute object-center"
-              alt=""
-            />
-            <div className="relative z-10 w-full h-full flex items-center">
-              <div className="container mx-auto">
-                <div className="text-center">
-                  <div className="font-TmoneyRoundWind text-[20px] text-white font-extrabold">
-                    COMING SOON
-                  </div>
-                  <div className="font-TmoneyRoundWind text-[36px] text-white font-extrabold tracking-[-1.08px]">
-                    함께 만들어요! 인더섬
-                  </div>
-                  <div className="font-Pretendard text-[16px] text-white tracking-[-0.48px]">
-                    보다 좋은 서비스를 위해 준비중이에요. 빠른 시일내에
-                    오픈할께요
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <Banner />
         </div>
       </section>
     </>
@@ -89,7 +67,7 @@ export default () => {
     <>
       <Header />
       <HeaderPage />
-      <div className="font-Pretendard">
+      <div className="font-Pretendard mb-[120px]">
         <Main />
       </div>
       <Footer />
