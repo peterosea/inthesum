@@ -14,8 +14,9 @@ const Tab = ({ tabList }) => {
           className="relative z-0 grid grid-flow-col divide-x divide-[#e6eaf2] border-x border-[#e6eaf2]"
           aria-label="Tabs"
         >
-          {tabList.map(({ name, isActive = false }) => (
+          {tabList.map(({ name, isActive = false }, index) => (
             <a
+              key={`index-${index}`}
               href="#"
               aria-current="page"
               className={classnames(

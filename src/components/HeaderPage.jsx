@@ -5,10 +5,10 @@ const HeaderPage = () => {
     <div className="h-[720px] relative">
       <img
         src="/public/img/header-community.webp"
-        srcset="/public/img/header-community@2x.webp 2x,
+        srcSet="/public/img/header-community@2x.webp 2x,
               /public/img/header-community@3x.webp 3x"
         className="object-cover w-full h-full absolute object-center"
-      ></img>
+      />
       <div className="bg-black bg-opacity-30 object-cover absolute w-full h-full"></div>
       <div className="relative z-10 w-full h-full flex items-center">
         <div className="container mx-auto">

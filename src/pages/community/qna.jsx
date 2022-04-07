@@ -10,7 +10,7 @@ const Main = () => {
   return (
     <>
       <div className="container mx-auto">
-        <section class="mt-[80px]">
+        <section className="mt-[80px]">
           <div>
             <Tab
               tabList={[
@@ -24,7 +24,7 @@ const Main = () => {
             />
             <Accordion />
           </div>
-          <div class="mt-[40px]">
+          <div className="mt-[40px]">
             <Pagination />
           </div>
         </section>

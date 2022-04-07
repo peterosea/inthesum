@@ -11,14 +11,14 @@ const Pagination = () => {
       </a>
       <a
         href="#"
-        className="font-Pretendard font-bold inline-flex flex items-center justify-center w-[36px] h-[36px] rounded-full bg-[#822ce5] text-white"
+        className="font-Pretendard font-bold inline-flex items-center justify-center w-[36px] h-[36px] rounded-full bg-[#822ce5] text-white"
       >
         1
       </a>
       {[2, 3, 4, 6].map((i) => (
         <a
           href="#"
-          className="font-Pretendard font-bold inline-flex flex items-center justify-center w-[36px] h-[36px] rounded-full"
+          className="font-Pretendard font-bold inline-flex items-center justify-center w-[36px] h-[36px] rounded-full"
         >
           {i}
         </a>

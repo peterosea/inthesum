@@ -36,19 +36,19 @@ const index = () => {
             <span className="inline-block py-[3px] px-[10px] bg-green-500 rounded-full mr-[8px] text-sm font-semibold text-white">
               policy/개인정보처리 방침
             </span>
-            <Link to="/policy-privacy.php">/policy-privacy.php</Link>
+            <Link to="/policy/privacy">/policy/privacy</Link>
           </li>
           <li>
             <span className="inline-block py-[3px] px-[10px] bg-green-500 rounded-full mr-[8px] text-sm font-semibold text-white">
               policy/운영정책
             </span>
-            <Link to="/policy-operation.php">/policy-operation.php</Link>
+            <Link to="/policy/operation">/policy/operation</Link>
           </li>
           <li>
             <span className="inline-block py-[3px] px-[10px] bg-green-500 rounded-full mr-[8px] text-sm font-semibold text-white">
               policy/이용약관
             </span>
-            <Link to="/policy-service.php">/policy-service.php</Link>
+            <Link to="/policy/service">/policy/service</Link>
           </li>
           <li>
             <span className="inline-block py-[3px] px-[10px] bg-amber-400 rounded-full mr-[8px] text-sm font-semibold text-white">
