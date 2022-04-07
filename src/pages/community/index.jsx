@@ -55,7 +55,19 @@ const Main = () => {
       </section>
       <section className="mt-[91px] mb-[120px]">
         <div className="container mx-auto">
-          <Banner />
+          <Banner>
+            <div className="text-center">
+              <div className="font-TmoneyRoundWind text-[20px] text-white font-extrabold">
+                COMING SOON
+              </div>
+              <div className="font-TmoneyRoundWind text-[36px] text-white font-extrabold tracking-[-1.08px]">
+                함께 만들어요! 인더섬
+              </div>
+              <div className="font-Pretendard text-[16px] text-white tracking-[-0.48px]">
+                보다 좋은 서비스를 위해 준비중이에요. 빠른 시일내에 오픈할께요
+              </div>
+            </div>
+          </Banner>
         </div>
       </section>
     </>

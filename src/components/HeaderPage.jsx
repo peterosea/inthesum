@@ -1,14 +1,23 @@
 import React from 'react';
 
-const HeaderPage = () => {
+const BgImg = () => (
+  <img
+    src="/public/img/header-community.webp"
+    srcSet="/public/img/header-community@2x.webp 2x,
+        /public/img/header-community@3x.webp 3x"
+    className="object-cover w-full h-full absolute object-center"
+  />
+);
+/**
+ *
+ * @param {JSX.Element} bgImg
+ * @param {string} title
+ * @returns
+ */
+const HeaderPage = ({ bgImg = BgImg, title, content }) => {
   return (
     <div className="h-[720px] relative">
-      <img
-        src="/public/img/header-community.webp"
-        srcSet="/public/img/header-community@2x.webp 2x,
-              /public/img/header-community@3x.webp 3x"
-        className="object-cover w-full h-full absolute object-center"
-      />
+      {bgImg()}
       <div className="bg-black bg-opacity-30 object-cover absolute w-full h-full"></div>
       <div className="relative z-10 w-full h-full flex items-center">
         <div className="container mx-auto">
