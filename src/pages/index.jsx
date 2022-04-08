@@ -54,7 +54,7 @@ const index = () => {
             <span className="inline-block py-[3px] px-[10px] bg-amber-400 rounded-full mr-[8px] text-sm font-semibold text-white">
               게임소개
             </span>
-            <Link to="/game-introduction.php">/game-introduction.php</Link>
+            <Link to="/game/introduction">/game/introduction</Link>
           </li>
         </ul>
       </div>

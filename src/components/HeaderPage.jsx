@@ -33,12 +33,12 @@ const HeaderPage = ({ bgImg = BgImg, title, content }) => {
       </div>
       <div className="absolute bottom-0 py-[35px] w-full z-20">
         <div className="max-w-[1920px] px-[50px] mx-auto">
-          <div className="flex gap-x-[13px]">
+          <div className="flex gap-x-[13px] items-center">
             <div className="text-white">
               <i className="icon-volume-off text-[24px]"></i>
               <i className="icon-volume text-[24px]"></i>
             </div>
-            <div className="text-white">
+            <div className="text-white leading-none pb-[2px]">
               <span className="font-Pretendard">방탄소년단 - DYNAMITE</span>
             </div>
           </div>
