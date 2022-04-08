@@ -17,7 +17,7 @@ const Main = () => {
         <div className="border-b border-[#ddd]">
           <div className="xl:container mx-auto">
             <div className="grid xl:grid-cols-[270px,auto]">
-              <div className="xl:min-h-[490px] relative container mx-auto">
+              <div className="xl:min-h-[490px] relative">
                 <div className="flex xl:flex-col justify-between">
                   <div className="w-[160px]">
                     <img
@@ -47,7 +47,7 @@ const Main = () => {
       </section>
       <section className="overflow-hidden my-[90px]">
         <div className="container mx-auto relative">
-          <div className="magazine__header xl:h-full xl:absolute top-0 left-0 z-10 bg-gradient-to-r from-white via-white">
+          <div className="magazine__header xl:h-full xl:absolute top-0 left-[var(--container-px)] z-10 bg-gradient-to-r from-white via-white">
             <div className="flex xl:flex-col justify-between">
               <div className="w-[160px]">
                 <img

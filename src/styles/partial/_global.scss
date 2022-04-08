@@ -1,0 +1,6 @@
+:root {
+  --container-px: 1rem;
+  @media (min-width: theme('screens.xl')) {
+    --container-px: 40px;
+  }
+}

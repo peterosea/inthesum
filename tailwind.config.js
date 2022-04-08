@@ -20,14 +20,20 @@ module.exports = {
       xl: '1280px',
     },
     extend: {
-      colors: {
-        primary: '#822ce5',
+      padding: {
+        'cpx': 'var(--container-px)',
+        'cpy': 'var(--container-py)',
+      },
+      margin: {
+        full: 'calc(-1 * var(--container-px))',
       },
       container: {
         padding: {
-          DEFAULT: '1rem',
-          md: '40px',
+          DEFAULT: 'var(--container-px)',
         },
+      },
+      colors: {
+        primary: '#822ce5',
       },
       fontFamily: {
         TmoneyRoundWind: 'TmoneyRoundWind',
