@@ -273,9 +273,9 @@ const Main = () => {
 
 const HeaderBg = () => (
   <img
-    src="/public/img/img-introduce-visual.png"
-    srcSet="/public/img/img-introduce-visual@2x.png 2x,
-        /public/img/img-introduce-visual@3x.png 3x"
+    src="/public/img/game-introduce-visual.png"
+    srcSet="/public/img/game-introduce-visual@2x.png 2x,
+        /public/img/game-introduce-visual@3x.png 3x"
     className="object-cover w-full h-full absolute object-center"
   />
 );
@@ -283,7 +283,11 @@ export default () => {
   return (
     <>
       <Header />
-      <HeaderPage bgImg={HeaderBg} />
+      <HeaderPage
+        bgImg={HeaderBg}
+        title="게임소개"
+        content={() => <>BTS 멤버들이 처음부터 함께한 인더섬에서 만나요</>}
+      />
       <div className="font-Pretendard">
         <Main />
       </div>

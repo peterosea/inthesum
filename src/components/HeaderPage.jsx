@@ -12,21 +12,27 @@ const BgImg = () => (
  *
  * @param {JSX.Element} bgImg
  * @param {string} title
+ * @param {JSX.Element} content
  * @returns
  */
 const HeaderPage = ({ bgImg = BgImg, title, content }) => {
   return (
     <div className="h-[720px] relative">
       {bgImg()}
-      <div className="bg-black bg-opacity-30 object-cover absolute w-full h-full"></div>
+      <div
+        style={{
+          backgroundImage: 'linear-gradient(to bottom, #000, #363636 35%)',
+        }}
+        className="object-cover absolute w-full h-full opacity-20"
+      />
       <div className="relative z-10 w-full h-full flex items-center">
         <div className="container mx-auto">
           <div className="text-center">
             <div className="font-TmoneyRoundWind text-[62px] text-white font-extrabold">
-              커뮤니티
+              {title}
             </div>
             <div className="font-Pretendard text-[18px] text-white">
-              인더섬의 소식과 궁금한 사항을 전해드려요
+              {content()}
             </div>
           </div>
         </div>

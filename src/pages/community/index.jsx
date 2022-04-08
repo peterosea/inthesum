@@ -78,7 +78,10 @@ export default () => {
   return (
     <>
       <Header />
-      <HeaderPage />
+      <HeaderPage
+        title="커뮤니티"
+        content={() => <>인더섬의 소식과 궁금한 사항을 전해드려요</>}
+      />
       <div className="font-Pretendard mb-[120px]">
         <Main />
       </div>

@@ -37,7 +37,18 @@ export default () => {
   return (
     <>
       <Header />
-      <HeaderPage />
+      <HeaderPage
+        title="자주 묻는 질문"
+        content={() => <>질문 전에 확인하시면 빠르게 해결하실 수도 있어요</>}
+        bgImg={() => (
+          <img
+            src="/public/img/bg-community-news.png"
+            srcSet="/public/img/bg-community-news@2x.png 2x,
+                    /public/img/bg-community-news@3x.png 3x"
+            className="object-cover w-full h-full absolute object-center"
+          />
+        )}
+      />
       <div className="font-Pretendard mb-[120px]">
         <Main />
       </div>

@@ -107,7 +107,20 @@ export default () => {
   return (
     <>
       <Header />
-      <HeaderPage />
+      <HeaderPage
+        title="인더섬 뉴스"
+        content={() => (
+          <>인더섬에서는 과연 어떠한 일이 일어나고 있고 일어날까요?</>
+        )}
+        bgImg={() => (
+          <img
+            src="/public/img/bg-community-news.png"
+            srcSet="/public/img/bg-community-news@2x.png 2x,
+                    /public/img/bg-community-news@3x.png 3x"
+            className="object-cover w-full h-full absolute object-center"
+          />
+        )}
+      />
       <div className="font-Pretendard mb-[120px]">
         <Main />
       </div>
