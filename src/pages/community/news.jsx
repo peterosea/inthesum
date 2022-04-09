@@ -4,6 +4,7 @@ import Footer from '../../components/Footer';
 import Card from '../../components/Card';
 import Pagination from '../../components/Pagination';
 import HeaderPage from '../../components/HeaderPage';
+import ScrollTop from '../../components/ScrollTop';
 
 const Main = () => {
   return (
@@ -88,14 +89,7 @@ const Main = () => {
                 정보는 게임 내에서 확인 부탁드립니다.
               </p>
             </article>
-            <div className="relative h-px bg-[#e6eaf2] mt-[80px]">
-              <a
-                href="#"
-                className="w-[80px] h-[80px] bg-[#f4f6fa] flex items-center justify-center absolute right-0 top-1/2 -translate-y-1/2 rounded-full"
-              >
-                <i className="icon-arrow rotate-180 text-[28px] text-[#c3cad5]"></i>
-              </a>
-            </div>
+            <ScrollTop />
           </div>
         </div>
       </div>
