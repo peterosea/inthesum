@@ -56,6 +56,12 @@ const index = () => {
             </span>
             <Link to="/game/introduction">/game/introduction</Link>
           </li>
+          <li>
+            <span className="inline-block py-[3px] px-[10px] bg-teal-500 rounded-full mr-[8px] text-sm font-semibold text-white">
+              인더섬 개발일지
+            </span>
+            <Link to="/devlog">/devlog</Link>
+          </li>
         </ul>
       </div>
     </div>
