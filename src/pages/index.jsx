@@ -22,31 +22,31 @@ const index = () => {
           </li>
           <li>
             <span className="inline-block py-[3px] px-[10px] bg-blue-500 rounded-full mr-[8px] text-sm font-semibold text-white">
-              커뮤니티/공지사항
+              커뮤니티 / 공지사항
             </span>
             <Link to="/community/news">/community/news</Link>
           </li>
           <li>
             <span className="inline-block py-[3px] px-[10px] bg-blue-500 rounded-full mr-[8px] text-sm font-semibold text-white">
-              커뮤니티/자주묻는 질문
+              커뮤니티 / 자주묻는 질문
             </span>
             <Link to="/community/qna">/community/qna</Link>
           </li>
           <li>
             <span className="inline-block py-[3px] px-[10px] bg-green-500 rounded-full mr-[8px] text-sm font-semibold text-white">
-              policy/개인정보처리 방침
+              policy / 개인정보처리 방침
             </span>
             <Link to="/policy/privacy">/policy/privacy</Link>
           </li>
           <li>
             <span className="inline-block py-[3px] px-[10px] bg-green-500 rounded-full mr-[8px] text-sm font-semibold text-white">
-              policy/운영정책
+              policy / 운영정책
             </span>
             <Link to="/policy/operation">/policy/operation</Link>
           </li>
           <li>
             <span className="inline-block py-[3px] px-[10px] bg-green-500 rounded-full mr-[8px] text-sm font-semibold text-white">
-              policy/이용약관
+              policy / 이용약관
             </span>
             <Link to="/policy/service">/policy/service</Link>
           </li>
@@ -64,7 +64,7 @@ const index = () => {
           </li>
           <li>
             <span className="inline-block py-[3px] px-[10px] bg-teal-500 rounded-full mr-[8px] text-sm font-semibold text-white">
-              인더섬 개발일지/with BTS
+              인더섬 개발일지 / with BTS
             </span>
             <Link to="/devlog/with-bts">/devlog/with-bts</Link>
           </li>
