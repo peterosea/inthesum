@@ -134,10 +134,10 @@ export const character = [
     characterImg: () => (
       <img
         className="h-[180px]"
-        src="/public/img/rm2.png"
-        srcset="/public/img/rm2@2x.png 2x,
-                /public/img/rm2@3x.png 3x"
-        alt="RM"
+        src="/public/img/jimin.png"
+        srcset="/public/img/jimin@2x.png 2x,
+                /public/img/jimin@3x.png 3x"
+        alt="jimin"
       />
     ),
   },
@@ -172,8 +172,181 @@ export const character = [
     characterImg: () => (
       <img
         className="h-[180px] w-auto"
-        src="/public/img/img-bts-v@3x.png"
-        alt="슈가 캐릭터"
+        src="/public/img/v.png"
+        srcset="/public/img/v@2x.png 2x,
+                /public/img/v@3x.png 3x"
+        alt="슈가"
+      />
+    ),
+  },
+  {
+    name: '지민',
+    time: '10분전',
+    content: () => (
+      <p>
+        훗~ 이번에는 인더섬의 과일로 카테일을 만들 수 있는 칵테일바를
+        오픈했어요, 무알콜 칵테일도 있으니 걱정은 놉!
+      </p>
+    ),
+    characterImg: () => (
+      <img
+        className="h-[180px]"
+        src="/public/img/jimin.png"
+        srcset="/public/img/jimin@2x.png 2x,
+                /public/img/jimin@3x.png 3x"
+        alt="jimin"
+      />
+    ),
+  },
+  {
+    name: '슈가',
+    time: '1시간',
+    content: () => (
+      <p>
+        훗~ 이번에는 인더섬의 과일로 카테일을 만들 수 있는 칵테일바를
+        오픈했어요, 무알콜 칵테일도 있으니 걱정은 놉!
+      </p>
+    ),
+    characterImg: () => (
+      <img
+        className="h-[180px]"
+        src="/public/img/suga.png"
+        srcset="/public/img/suga@2x.png 2x,
+                /public/img/suga@3x.png 3x"
+        alt="RM"
+      />
+    ),
+  },
+  {
+    name: '뷔',
+    time: '10분전',
+    content: () => (
+      <p>
+        훗~ 이번에는 인더섬의 과일로 카테일을 만들 수 있는 칵테일바를
+        오픈했어요, 무알콜 칵테일도 있으니 걱정은 놉!
+      </p>
+    ),
+    characterImg: () => (
+      <img
+        className="h-[180px] w-auto"
+        src="/public/img/v.png"
+        srcset="/public/img/v@2x.png 2x,
+                /public/img/v@3x.png 3x"
+        alt="슈가"
+      />
+    ),
+  },
+  {
+    name: '지민',
+    time: '10분전',
+    content: () => (
+      <p>
+        훗~ 이번에는 인더섬의 과일로 카테일을 만들 수 있는 칵테일바를
+        오픈했어요, 무알콜 칵테일도 있으니 걱정은 놉!
+      </p>
+    ),
+    characterImg: () => (
+      <img
+        className="h-[180px]"
+        src="/public/img/jimin.png"
+        srcset="/public/img/jimin@2x.png 2x,
+                /public/img/jimin@3x.png 3x"
+        alt="jimin"
+      />
+    ),
+  },
+  {
+    name: '슈가',
+    time: '1시간',
+    content: () => (
+      <p>
+        훗~ 이번에는 인더섬의 과일로 카테일을 만들 수 있는 칵테일바를
+        오픈했어요, 무알콜 칵테일도 있으니 걱정은 놉!
+      </p>
+    ),
+    characterImg: () => (
+      <img
+        className="h-[180px]"
+        src="/public/img/suga.png"
+        srcset="/public/img/suga@2x.png 2x,
+                /public/img/suga@3x.png 3x"
+        alt="RM"
+      />
+    ),
+  },
+  {
+    name: '뷔',
+    time: '10분전',
+    content: () => (
+      <p>
+        훗~ 이번에는 인더섬의 과일로 카테일을 만들 수 있는 칵테일바를
+        오픈했어요, 무알콜 칵테일도 있으니 걱정은 놉!
+      </p>
+    ),
+    characterImg: () => (
+      <img
+        className="h-[180px] w-auto"
+        src="/public/img/v.png"
+        srcset="/public/img/v@2x.png 2x,
+                /public/img/v@3x.png 3x"
+        alt="슈가"
+      />
+    ),
+  },
+  {
+    name: '지민',
+    time: '10분전',
+    content: () => (
+      <p>
+        훗~ 이번에는 인더섬의 과일로 카테일을 만들 수 있는 칵테일바를
+        오픈했어요, 무알콜 칵테일도 있으니 걱정은 놉!
+      </p>
+    ),
+    characterImg: () => (
+      <img
+        className="h-[180px]"
+        src="/public/img/jimin.png"
+        srcset="/public/img/jimin@2x.png 2x,
+                /public/img/jimin@3x.png 3x"
+        alt="jimin"
+      />
+    ),
+  },
+  {
+    name: '슈가',
+    time: '1시간',
+    content: () => (
+      <p>
+        훗~ 이번에는 인더섬의 과일로 카테일을 만들 수 있는 칵테일바를
+        오픈했어요, 무알콜 칵테일도 있으니 걱정은 놉!
+      </p>
+    ),
+    characterImg: () => (
+      <img
+        className="h-[180px]"
+        src="/public/img/suga.png"
+        srcset="/public/img/suga@2x.png 2x,
+                /public/img/suga@3x.png 3x"
+        alt="RM"
+      />
+    ),
+  },
+  {
+    name: '뷔',
+    time: '10분전',
+    content: () => (
+      <p>
+        훗~ 이번에는 인더섬의 과일로 카테일을 만들 수 있는 칵테일바를
+        오픈했어요, 무알콜 칵테일도 있으니 걱정은 놉!
+      </p>
+    ),
+    characterImg: () => (
+      <img
+        className="h-[180px] w-auto"
+        src="/public/img/v.png"
+        srcset="/public/img/v@2x.png 2x,
+                /public/img/v@3x.png 3x"
+        alt="슈가"
       />
     ),
   },
@@ -184,6 +357,15 @@ export const BgImg = () => (
     src="/public/img/devlog-introduce-visual.png"
     srcSet="/public/img/devlog-introduce-visual@2x.png 2x,
         /public/img/devlog-introduce-visual@3x.png 3x"
+    className="object-cover w-full h-full absolute object-center"
+  />
+);
+
+export const BtsBgImg = () => (
+  <img
+    src="/public/img/devlog-with-bts-introduce-visual.png"
+    srcSet="/public/img/devlog-with-bts-introduce-visual@2x.png 2x,
+        /public/img/devlog-with-bts-introduce-visual@3x.png 3x"
     className="object-cover w-full h-full absolute object-center"
   />
 );
