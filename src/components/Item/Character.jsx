@@ -16,7 +16,12 @@ const Character = ({ name, time, content, thumbnail, characterImg }) => {
         <div className="text-[30px] font-extrabold text-left">
           {name}
           <span className="w-[39px] relative inline-block top-[6px] mr-[5px]">
-            <img src="/public/img/new@3x.png" alt="new" />
+            <img
+              src="/public/img/new@3x.png"
+              srcset="/public/img/new@2x.png 2x,
+                  /public/img/new@3x.png 3x"
+              alt="new"
+            />
           </span>
           <span className="text-[14px] font-normal text-[#999]">{time}</span>
         </div>

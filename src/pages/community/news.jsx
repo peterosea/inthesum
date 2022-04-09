@@ -89,7 +89,9 @@ const Main = () => {
                 정보는 게임 내에서 확인 부탁드립니다.
               </p>
             </article>
-            <ScrollTop />
+            <div className="mt-[80px]">
+              <ScrollTop />
+            </div>
           </div>
         </div>
       </div>
