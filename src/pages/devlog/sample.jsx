@@ -4,6 +4,7 @@ import 'keen-slider/keen-slider.min.css';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import HeaderPage from '../../components/HeaderPage';
+import CharacterBanner from '../../components/CharacterBanner';
 
 // data
 import { BtsBgImg } from './data';
@@ -11,7 +12,11 @@ import { BtsBgImg } from './data';
 const Main = () => {
   return (
     <>
-      <section className="mt-[80px] mb-[120px]"></section>
+      <section className="mt-[80px] mb-[120px]">
+        <div className="container mx-auto">
+          <CharacterBanner />
+        </div>
+      </section>
     </>
   );
 };
