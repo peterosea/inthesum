@@ -22,7 +22,7 @@ const Main = () => {
           <div className="mb-[58px]">
             <HeaderSection
               title={() => (
-                <h1 className="text-[36px] mb-[15px] font-TmoneyRoundWind font-bold leading-[0.69]">
+                <h1 className="text-[36px] font-TmoneyRoundWind font-bold leading-[0.69]">
                   인더섬 소개 영상
                 </h1>
               )}
@@ -124,7 +124,11 @@ const Main = () => {
       <section className="mt-[147px] mb-[91px]">
         <div className="container mx-auto">
           <HeaderSection
-            title="인더섬 주요 스토리"
+            title={() => (
+              <h1 className="text-[36px] mb-[15px] font-TmoneyRoundWind font-bold leading-[0.69]">
+                인더섬 주요 스토리
+              </h1>
+            )}
             content={() => (
               <p>BTS가 인더섬에서 생활하게 된 이유는 무엇일까요</p>
             )}
@@ -135,7 +139,7 @@ const Main = () => {
                 <img
                   className="object-cover w-full h-full absolute object-center"
                   src="/public/img/507.jpg"
-                  srcset="/public/img/507@2x.jpg 2x,
+                  srcSet="/public/img/507@2x.jpg 2x,
                         /public/img/507@3x.jpg 3x"
                 />
               )}
@@ -153,7 +157,7 @@ const Main = () => {
                 <img
                   className="object-cover w-full h-full absolute object-center"
                   src="/public/img/img-introduce-2.jpg"
-                  srcset="/public/img/img-introduce-2@2x.jpg 2x,
+                  srcSet="/public/img/img-introduce-2@2x.jpg 2x,
                         /public/img/img-introduce-2@3x.jpg 3x"
                 />
               )}
@@ -169,13 +173,13 @@ const Main = () => {
             <img
               className="max-w-[600px] absolute top-0 left-1/2 -translate-x-1/2"
               src="/public/img/img-introduce-3.png"
-              srcset="/public/img/img-introduce-3@2x.png 2x,
+              srcSet="/public/img/img-introduce-3@2x.png 2x,
                       /public/img/img-introduce-3@3x.png 3x"
             />
             <img
               className="relative z-10"
               src="/public/img/img-introduce-4.png"
-              srcset="/public/img/img-introduce-4@2x.png 2x,
+              srcSet="/public/img/img-introduce-4@2x.png 2x,
                       /public/img/img-introduce-4@3x.png 3x"
             />
           </div>
@@ -185,7 +189,7 @@ const Main = () => {
                 <img
                   className="max-w-[420px]"
                   src="/public/img/img-introduce-5.png"
-                  srcset="/public/img/img-introduce-5@2x.png 2x,
+                  srcSet="/public/img/img-introduce-5@2x.png 2x,
                           /public/img/img-introduce-5@3x.png 3x"
                 />
                 <div className="absolute w-full top-1/2 -translate-y-1/2 text-center font-TmoneyRoundWind text-white font-extrabold text-[42px]">
@@ -200,7 +204,7 @@ const Main = () => {
                 <img
                   className="max-w-[420px]"
                   src="/public/img/img-introduce-6.png"
-                  srcset="/public/img/img-introduce-6@2x.png 2x,
+                  srcSet="/public/img/img-introduce-6@2x.png 2x,
                           /public/img/img-introduce-6@3x.png 3x"
                 />
                 <div className="absolute w-full top-1/2 -translate-y-1/2 text-center font-TmoneyRoundWind text-white font-extrabold text-[42px]">
@@ -216,7 +220,7 @@ const Main = () => {
               <div className="justify-self-center grid gap-y-[50px]">
                 <img
                   src="/public/img/img-introduce-7.png"
-                  srcset="/public/img/img-introduce-7@2x.png 2x,
+                  srcSet="/public/img/img-introduce-7@2x.png 2x,
                           /public/img/img-introduce-7@3x.png 3x"
                 />
                 <div className="text-[36px] font-TmoneyRoundWind font-extrabold text-center">
@@ -226,7 +230,7 @@ const Main = () => {
               <div className="justify-self-center grid gap-y-[50px]">
                 <img
                   src="/public/img/img-introduce-8.png"
-                  srcset="/public/img/img-introduce-8@2x.png 2x,
+                  srcSet="/public/img/img-introduce-8@2x.png 2x,
                           /public/img/img-introduce-8@3x.png 3x"
                 />
                 <div className="text-[36px] font-TmoneyRoundWind font-extrabold text-center">
@@ -236,7 +240,7 @@ const Main = () => {
               <div className="justify-self-center grid gap-y-[50px]">
                 <img
                   src="/public/img/img-introduce-9.png"
-                  srcset="/public/img/img-introduce-9@2x.png 2x,
+                  srcSet="/public/img/img-introduce-9@2x.png 2x,
                           /public/img/img-introduce-9@3x.png 3x"
                 />
                 <div className="text-[36px] font-TmoneyRoundWind font-extrabold text-center">
@@ -251,7 +255,7 @@ const Main = () => {
         <img
           className="absolute h-full object-contain max-w-none w-auto object-center left-1/2 -translate-x-1/2"
           src="/public/img/img-introduce-bottom-bg.png"
-          srcset="/public/img/img-introduce-bottom-bg@2x.png 2x,
+          srcSet="/public/img/img-introduce-bottom-bg@2x.png 2x,
                   /public/img/img-introduce-bottom-bg@3x.png 3x"
         />
         <div className="container mx-auto mt-[90px] relative">
@@ -259,13 +263,13 @@ const Main = () => {
             <img
               className="max-w-[654px]"
               src="/public/img/img-introduce-text.png"
-              srcset="/public/img/img-introduce-text@2x.png 2x,
+              srcSet="/public/img/img-introduce-text@2x.png 2x,
                       /public/img/img-introduce-text@3x.png 3x"
             />
             <img
               className="max-w-[468px]"
               src="/public/img/img-introduce-logo-full.png"
-              srcset="/public/img/img-introduce-logo-full@2x.png 2x,
+              srcSet="/public/img/img-introduce-logo-full@2x.png 2x,
                       /public/img/img-introduce-logo-full@3x.png 3x"
             />
           </div>

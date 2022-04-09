@@ -1,0 +1,17 @@
+.headerSection {
+  display: grid;
+  grid-template-areas:
+    't t t t t t t t t t t a'
+    'c c c c c c c c c c c c';
+  row-gap: 15px;
+}
+.headerSection-arrow {
+  grid-area: a;
+  align-self: center;
+}
+.headerSection-title {
+  grid-area: t;
+}
+.headerSection-content {
+  grid-area: c;
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import classnames from 'classnames';
+import './HeaderSection.scss';
 
 // 임시 기본 값
 const aTitle = () => (
@@ -21,19 +22,12 @@ const HeaderSection = ({
   className,
 }) => {
   return (
-    <div
-      className={classnames(
-        'flex gap-x-[30px] justify-between font-Pretendard',
-        className,
-      )}
-    >
-      <div>
-        {title()}
-        <div className="text-[18px]">{content()}</div>
-      </div>
-      {arrow ?? (
-        <div>
-          <i className="icon-arrow2 text-[31px] rotate-180 inline-block"></i>
+    <div className={classnames('headerSection font-Pretendard', className)}>
+      <div className="headerSection-title">{title()}</div>
+      <div className="headerSection-content text-[18px]">{content()}</div>
+      {arrow && (
+        <div className="headerSection-arrow">
+          <i className="icon-arrow2 text-[31px] rotate-180 inline-block leading-none"></i>
         </div>
       )}
     </div>

@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-import HeaderPage from '../../components/HeaderPage';
 import { PolicyHeader } from './_components';
 
 const Main = () => {
@@ -89,8 +88,7 @@ const Main = () => {
 export default () => {
   return (
     <>
-      <Header />
-      <HeaderPage />
+      <Header isBlack />
       <div className="font-Pretendard mb-[120px]">
         <Main />
       </div>

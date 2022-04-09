@@ -174,9 +174,8 @@ const Main = () => {
 export default () => {
   return (
     <>
-      <Header />
-      <HeaderPage />
-      <div className="font-Pretendard mb-[120px]">
+      <Header isBlack />
+      <div className="font-Pretendard mb-[120px] mt-[120px]">
         <Main />
       </div>
       <Footer />
