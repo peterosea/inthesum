@@ -1,5 +1,7 @@
 import React from 'react';
 import 'keen-slider/keen-slider.min.css';
+import classnames from 'classnames';
+
 // components
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
@@ -13,12 +15,14 @@ import { BtsBgImg } from '../data';
 const Main = () => {
   return (
     <>
-      <section className="mt-[80px]">
+      <section className="xl:mt-[80px]">
         <div className="container mx-auto">
-          <CharacterBanner />
+          <div className="mx-full xl:mx-auto">
+            <CharacterBanner />
+          </div>
         </div>
       </section>
-      <section className="mt-[80px] mb-[120px]">
+      <section className={classnames('mt-[40px]', 'xl:mt-[80px]')}>
         <div className="container mx-auto">
           <article className="prose lg:prose-xl max-w-none">
             <p>
@@ -33,7 +37,7 @@ const Main = () => {
               Also happy new year to yoongi, hope he’s recovering well. Stay
               happy and healthy ❤️
             </p>
-            <div className="grid grid-cols-2 gap-x-[20px] my-[60px]">
+            <div className="grid xl:grid-cols-2 gap-x-[20px] gap-y-[30px] my-[60px]">
               <div className="pt-[100%] relative rounded-[12px] overflow-hidden">
                 <img
                   src="https://picsum.photos/1200/1200.webp?ramdom=1"
@@ -50,7 +54,12 @@ const Main = () => {
               </div>
             </div>
           </article>
-          <div className="mt-[120px] mb-[160px]">
+          <div
+            className={classnames(
+              'mt-[55px] mb-[63px]',
+              'xl:mt-[120px] xl:mb-[160px]',
+            )}
+          >
             <ScrollTop />
           </div>
         </div>
@@ -68,7 +77,7 @@ export default () => {
         title="with BTS"
         content={() => <>BTS가 개발에 직접 참여한 인더섬 업데이트 소식</>}
       />
-      <div className="font-Pretendard mb-[120px]">
+      <div className="font-Pretendard mb-[55px] xl:mb-[120px]">
         <Main />
       </div>
       <Footer />
