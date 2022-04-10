@@ -1,17 +1,24 @@
 import React from 'react';
 import classnames from 'classnames';
-import Select from './Select';
+import './Tab.scss';
 
-const Tab = ({ tabList }) => {
+/**
+ *
+ * @property {[
+ * name: string
+ * isActive: boolean
+ * ]} tabList
+ */
+const Tab = ({ tabList, responsive }) => {
   if (!tabList) return;
   return (
-    <div id="tab" className="font-TmoneyRoundWind font-bold mb-[10px]">
-      <div className="sm:hidden">
-        <Select options={tabList.map((e) => e.name)} />
-      </div>
-      <div className="hidden sm:block">
+    <div id="tab" className="mb-[10px]">
+      <div>
         <nav
-          className="relative z-0 grid grid-flow-col divide-x divide-[#e6eaf2] border-x border-[#e6eaf2]"
+          className={classnames(
+            'relative z-0 grid grid-flow-col divide-x divide-[#e6eaf2] border-x border-[#e6eaf2]',
+            { [`tab-size tab-${tabList.length}`]: responsive },
+          )}
           aria-label="Tabs"
         >
           {tabList.map(({ name, isActive = false }, index) => (
@@ -19,16 +26,19 @@ const Tab = ({ tabList }) => {
               key={`index-${index}`}
               aria-current="page"
               className={classnames(
-                'leading-none flex items-center justify-center min-w-0 text-[18px] group relative overflow-hidden bg-white py-[21px] px-4 text-center hover:bg-gray-50 focus:z-10',
+                'leading-none flex items-center justify-center min-w-0 group relative overflow-hidden bg-white py-[14px] px-4 text-center hover:bg-gray-50 focus:z-10',
+                'xl:py-[21px]',
                 { 'text-primary': isActive },
                 { 'text-[#c3cad5]': !isActive },
               )}
             >
-              <span>{name}</span>
+              <span className="text-[12px] xl:text-[18px] font-extrabold font-TmoneyRoundWind">
+                {name}
+              </span>
               <span
                 aria-hidden="true"
                 className={classnames(
-                  'absolute inset-x-0 top-0 h-px',
+                  'absolute inset-x-0 top-0 h-px sell_border_top',
                   { 'bg-primary': isActive },
                   { 'bg-[#e6eaf2]': !isActive },
                 )}
@@ -36,7 +46,7 @@ const Tab = ({ tabList }) => {
               <span
                 aria-hidden="true"
                 className={classnames(
-                  'absolute inset-x-0 bottom-0 h-px',
+                  'absolute inset-x-0 bottom-0 h-px sell_border_bottom',
                   { 'bg-primary': isActive },
                   { 'bg-[#e6eaf2]': !isActive },
                 )}

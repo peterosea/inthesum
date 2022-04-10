@@ -1,0 +1,146 @@
+@media (max-width: theme('screens.xl')) {
+  .tab-size {
+    @for $i from 1 through 12 {
+      > *:nth-child(#{$i}) {
+        grid-area: t#{$i};
+      }
+    }
+  }
+  .tab-2 {
+    grid-template-areas: 't1 t2';
+  }
+  .tab-3 {
+    grid-template-areas: 't1 t2 t3';
+  }
+  .tab-4 {
+    grid-template-areas: 't1 t2 t4';
+  }
+  .tab-5 {
+    grid-template-areas:
+      't1 t1 t2 t2 t3 t3'
+      't4 t4 t4 t5 t5 t5';
+    > *:nth-child(4),
+    > *:nth-child(5) {
+      .sell_border_top {
+        display: none;
+      }
+    }
+  }
+  .tab-6 {
+    grid-template-areas:
+      't1 t2 t3'
+      't4 t5 t6';
+    > *:nth-child(4),
+    > *:nth-child(5),
+    > *:nth-child(6) {
+      .sell_border_top {
+        display: none;
+      }
+    }
+  }
+  .tab-7 {
+    grid-template-areas:
+      't1 t1 t1 t2 t2 t2 t3 t3 t3 t4 t4 t4'
+      't5 t5 t5 t5 t6 t6 t6 t6 t7 t7 t7 t7';
+    > *:nth-child(5),
+    > *:nth-child(6),
+    > *:nth-child(7) {
+      .sell_border_top {
+        display: none;
+      }
+    }
+  }
+  .tab-8 {
+    grid-template-areas:
+      't1 t2 t3 t4'
+      't5 t6 t7 t8';
+    > *:nth-child(5),
+    > *:nth-child(6),
+    > *:nth-child(7),
+    > *:nth-child(8) {
+      .sell_border_top {
+        display: none;
+      }
+    }
+  }
+  .tab-9 {
+    grid-template-areas:
+      't1 t2 t3'
+      't4 t5 t6'
+      't7 t8 t9';
+    > *:nth-child(4),
+    > *:nth-child(5),
+    > *:nth-child(6),
+    > *:nth-child(7),
+    > *:nth-child(8),
+    > *:nth-child(9) {
+      .sell_border_top {
+        display: none;
+      }
+    }
+  }
+  .tab-t10 {
+    grid-template-areas:
+      't1 t1 t1 t2 t2 t2 t3 t3 t3 t4 t4 t4'
+      't5 t5 t5 t5 t6 t6 t6 t6 t7 t7 t7 t7'
+      't8 t8 t8 t8 t9 t9 t9 t9 t10 t10 t10 t10';
+    > *:nth-child(5),
+    > *:nth-child(6),
+    > *:nth-child(7),
+    > *:nth-child(8),
+    > *:nth-child(9),
+    > *:nth-child(10) {
+      .sell_border_top {
+        display: none;
+      }
+    }
+  }
+  .tab-11 {
+    grid-template-areas:
+      't1 t1 t1 t2 t2 t2 t3 t3 t3 t4 t4 t4'
+      't5 t5 t5 t6 t6 t6 t7 t7 t7 t8 t8 t8'
+      't9 t9 t9 t9 t10 t10 t10 t10 t11 t11 t11 t11';
+    > *:nth-child(5),
+    > *:nth-child(6),
+    > *:nth-child(7),
+    > *:nth-child(8),
+    > *:nth-child(9),
+    > *:nth-child(10),
+    > *:nth-child(11) {
+      .sell_border_top {
+        display: none;
+      }
+    }
+  }
+  .tab-12 {
+    grid-template-areas:
+      't1 t2 t3 t4'
+      't5 t6 t7 t8'
+      't9 t10 t11 t12';
+    > *:nth-child(5),
+    > *:nth-child(6),
+    > *:nth-child(7),
+    > *:nth-child(8),
+    > *:nth-child(9),
+    > *:nth-child(10),
+    > *:nth-child(11),
+    > *:nth-child(12) {
+      .sell_border_top {
+        display: none;
+      }
+    }
+  }
+}
+
+// 탭 2~4
+// 1줄에 4개까지 1열로 표시
+// 탭 5개
+// 3
+// 2
+// 탭 6개33
+// 탭 7개43
+// 탭 8개44
+// 탭 9개333
+// 탭 10개433
+// 탭 11개443
+// 탭 12개444
