@@ -9,26 +9,27 @@ import Accordion from '../../components/Accordion';
 const Main = () => {
   return (
     <>
-      <div className="container mx-auto">
-        <section className="mt-[80px]">
-          <div>
-            <Tab
-              tabList={[
-                { name: '전체', isActive: true },
-                { name: '게임플레이' },
-                { name: '회원' },
-                { name: '홈페이지' },
-                { name: '결제' },
-                { name: '이벤트' },
-              ]}
-            />
-            <Accordion />
-          </div>
-          <div className="mt-[40px]">
-            <Pagination />
-          </div>
-        </section>
-      </div>
+      <section className="mt-[30px] xl:mt-[80px]">
+        <div className="container mx-auto">
+          <Tab
+            tabList={[
+              { id: 'option-1', name: '전체', isActive: true },
+              { id: 'option-2', name: '게임플레이' },
+              { id: 'option-3', name: '회원' },
+              { id: 'option-4', name: '홈페이지' },
+              { id: 'option-5', name: '결제' },
+              { id: 'option-6', name: '이벤트' },
+            ]}
+            responsive
+          />
+        </div>
+        <div className="container mx-auto overflow-x-hidden">
+          <Accordion />
+        </div>
+        <div className="mt-[40px]">
+          <Pagination />
+        </div>
+      </section>
     </>
   );
 };
