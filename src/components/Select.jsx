@@ -72,7 +72,7 @@ const Select = ({ options, button = DefButton, name }) => {
           className={classNames(
             'absolute z-10 w-full bg-white shadow-lg max-h-60 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm',
             { 'mt-1': name === undefined },
-            { 'mb-1 bottom-full mt-0': name === 'mnb' },
+            { 'mb-2 bottom-full mt-0 min-w-[100px] right-0': name === 'mnb' },
             { 'mt-3 min-w-[80px] right-0 top-full': name === 'gnb' },
           )}
         >
