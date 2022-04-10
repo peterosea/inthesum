@@ -1731,6 +1731,11 @@ url-toolkit@^2.2.1:
   resolved "https://registry.yarnpkg.com/url-toolkit/-/url-toolkit-2.2.5.tgz#58406b18e12c58803e14624df5e374f638b0f607"
   integrity sha512-mtN6xk+Nac+oyJ/PrI7tzfmomRVNFIWKUbG8jdYFt52hxbiReFAXIjYskvu64/dvuW71IcB7lV8l0HvZMac6Jg==
 
+usehooks-ts@^2.4.2:
+  version "2.4.2"
+  resolved "https://registry.yarnpkg.com/usehooks-ts/-/usehooks-ts-2.4.2.tgz#a9a5df9d04dcce993d7e8ec088965ba44dfcd9cc"
+  integrity sha512-YqD5HaloGpRSoNaXhAxR+CHTKda44mDtFqNJk5gRuy4qeHVxpp8ycN3LY0txYqNudCVuAk1f8m6M0ojQ5Aph8Q==
+
 util-deprecate@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"

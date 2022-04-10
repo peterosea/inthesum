@@ -113,7 +113,6 @@ export default () => {
             src="/public/img/bg-community-news.png"
             srcSet="/public/img/bg-community-news@2x.png 2x,
                     /public/img/bg-community-news@3x.png 3x"
-            className="object-cover w-full h-full absolute object-center"
           />
         )}
       />
