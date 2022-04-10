@@ -37,9 +37,9 @@ const DefButton = ({ children }) => (
  *  name: string
  * ]} options
  * @property {JSX.Element} button <button>option name</button>
- * @property {string | undefined} direction
+ * @property {string | undefined} name
  */
-const Select = ({ options, button = DefButton, direction }) => {
+const Select = ({ options, button = DefButton, name }) => {
   const ref = useRef(null);
   const [isOpen, setIsOpen] = useState(false);
   const [selectId, setSelectId] = useState(options[0].id);
@@ -61,7 +61,7 @@ const Select = ({ options, button = DefButton, direction }) => {
   return (
     <div ref={ref}>
       <label className="sr-only">Select a tab</label>
-      <div className="mt-1 relative">
+      <div className="relative">
         <Button>{selectName}</Button>
         <Transition
           show={isOpen}
@@ -70,8 +70,9 @@ const Select = ({ options, button = DefButton, direction }) => {
           leaveTo="opacity-0"
           className={classNames(
             'absolute z-10 w-full bg-white shadow-lg max-h-60 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm',
-            { 'mt-1': direction === undefined },
-            { 'mb-1 bottom-full mt-0': direction === 'top' },
+            { 'mt-1': name === undefined },
+            { 'mb-1 bottom-full mt-0': name === 'mnb' },
+            { 'mt-3 min-w-[80px] right-0 top-full': name === 'gnb' },
           )}
         >
           <ul

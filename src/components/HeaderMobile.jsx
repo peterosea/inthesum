@@ -180,7 +180,7 @@ const HeaderMobile = () => {
                   name: '일본어',
                 },
               ]}
-              direction="top"
+              name="mnb"
             />
           </div>
         </div>

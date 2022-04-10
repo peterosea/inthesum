@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import classnames from 'classnames';
 import useShrink from '../hook/useShrink';
 import HeaderMobile from './HeaderMobile';
+import Select from '../components/Select';
 
 const Header = ({ isBlack = false }) => {
   const [isMenuOver, setIsMenuOver] = useState(false);
@@ -115,14 +116,28 @@ const Header = ({ isBlack = false }) => {
                   </a>
                 </li>
                 <li>
-                  <div className="lang">
-                    <span id="lang-txt">KR</span>
-                    <ul className="lang-menu">
-                      <li>KR</li>
-                      <li>JP</li>
-                      <li>US</li>
-                    </ul>
-                  </div>
+                  <Select
+                    button={({ children }) => (
+                      <button className="leading-none pt-[1.5px] focus:outline-none focus:shadow-none focus:ring-0 cursor-pointer flex items-center gap-x-[10px] lang">
+                        {children}
+                      </button>
+                    )}
+                    options={[
+                      {
+                        id: 'option-1',
+                        name: 'KR',
+                      },
+                      {
+                        id: 'option-2',
+                        name: 'JP',
+                      },
+                      {
+                        id: 'option-3',
+                        name: 'US',
+                      },
+                    ]}
+                    name="gnb"
+                  />
                 </li>
               </ul>
             </div>
