@@ -6,6 +6,7 @@ import {
   useOnClickOutside,
   useLockedBody,
 } from 'usehooks-ts';
+import Select from '../components/Select';
 
 const MobileMenu = () => {
   const [select, setSelect] = useState('');
@@ -152,12 +153,35 @@ const HeaderMobile = () => {
         <div className="info-group">
           <a href="#">로그아웃</a>
           <div className="lang" dir="ltr">
-            <label htmlFor="select-lang">언어 : </label>
-            <select id="select-lang" className="select-lang">
-              <option value="kor">한국어</option>
-              <option value="eng">영어</option>
-              <option value="jan">일본어</option>
-            </select>
+            <Select
+              button={({ children }) => (
+                <button className="leading-none pt-[4px] focus:outline-none focus:shadow-none focus:ring-0 cursor-pointer flex items-center gap-x-[10px]">
+                  언어 : {children}
+                  <svg width="8.182" height="6" viewBox="0 0 8.182 6">
+                    <path
+                      d="m4.091 0 4.091 6H0z"
+                      transform="rotate(180 4.091 3)"
+                      style={{ fill: '#fff' }}
+                    />
+                  </svg>
+                </button>
+              )}
+              options={[
+                {
+                  id: 'option-1',
+                  name: '한국어',
+                },
+                {
+                  id: 'option-2',
+                  name: '영어',
+                },
+                {
+                  id: 'option-3',
+                  name: '일본어',
+                },
+              ]}
+              direction="top"
+            />
           </div>
         </div>
         <div className="account-info">

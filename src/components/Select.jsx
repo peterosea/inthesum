@@ -37,8 +37,9 @@ const DefButton = ({ children }) => (
  *  name: string
  * ]} options
  * @property {JSX.Element} button <button>option name</button>
+ * @property {string | undefined} direction
  */
-const Select = ({ options, button = DefButton }) => {
+const Select = ({ options, button = DefButton, direction }) => {
   const ref = useRef(null);
   const [isOpen, setIsOpen] = useState(false);
   const [selectId, setSelectId] = useState(options[0].id);
@@ -67,7 +68,11 @@ const Select = ({ options, button = DefButton }) => {
           leave="transition ease-in duration-100"
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
-          className="absolute z-10 mt-1 w-full bg-white shadow-lg max-h-60 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm"
+          className={classNames(
+            'absolute z-10 w-full bg-white shadow-lg max-h-60 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm',
+            { 'mt-1': direction === undefined },
+            { 'mb-1 bottom-full mt-0': direction === 'top' },
+          )}
         >
           <ul
             tabIndex="-1"
