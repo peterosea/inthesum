@@ -1,0 +1,26 @@
+version: '3.7'
+
+services:
+  app:
+    image: node:lts
+    working_dir: /var/www/html/app/
+    entrypoint: /bin/bash
+    volumes:
+      - ./:/var/www/html/app
+    tty: true
+    deploy:
+      placement:
+        constraints:
+          - node.hostname == ${HOSTNAME}
+      labels:
+        - traefik.enable=true
+        - traefik.http.routers.work-202203__${PROJECT_NAME}.entrypoints=websecure
+        - traefik.http.routers.work-202203__${PROJECT_NAME}.rule=Host(`${PROJECT_NAME}.demo.beeclover.pro`)
+        - traefik.http.routers.work-202203__${PROJECT_NAME}.tls.certresolver=leresolver
+        - traefik.http.services.work-202203__${PROJECT_NAME}.loadbalancer.server.port=3000
+        - traefik.http.routers.work-202203__${PROJECT_NAME}.middlewares=basic-auth@file
+
+networks:
+  default:
+    external:
+      name: proxy-main
