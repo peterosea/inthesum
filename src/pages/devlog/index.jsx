@@ -92,7 +92,7 @@ export default () => {
     <>
       <Header />
       <HeaderPage
-        bgImg={BgImg}
+        bgImg={DevlogBgImg}
         title="인더섬 개발일지"
         content={() => <>BTS 멤버들이 처음부터 함께한 인더섬에서 만나요</>}
       />
