@@ -1,6 +1,6 @@
 export const card = [
   {
-    time: '4월 14일(목) 오전 4시 업데이트 점검 안내',
+    title: '4월 14일(목) 오전 4시 업데이트 점검 안내',
     content: () => (
       <p>
         새로운 버전 업데이트를 위해 6월 4일(목) 오전 4시부터 9시까지 점검을
@@ -12,7 +12,7 @@ export const card = [
     thumbnailUrl: '/public/img/img-sample1@3x.png',
   },
   {
-    time: '인더섬 스크린샷 이벤트',
+    title: '인더섬 스크린샷 이벤트',
     content: () => (
       <p>
         인더섬의 아름다운 풍경을 남겨보세요.
@@ -25,7 +25,7 @@ export const card = [
     thumbnailUrl: '/public/img/img-sample2@3x.png',
   },
   {
-    time: '푸시 알림 이벤트',
+    title: '푸시 알림 이벤트',
     content: () => (
       <p>
         새로운 버전 업데이트를 위해 6월 4일(목) 오전 4시부터 9시까지 점검을
@@ -37,7 +37,7 @@ export const card = [
     thumbnailUrl: '/public/img/img-sample3@3x.png',
   },
   {
-    time: '1.0.2 커플 베이스캠프 업데이트',
+    title: '1.0.2 커플 베이스캠프 업데이트',
     content: () => (
       <p>
         새로운 버전 업데이트를 위해 6월 4일(목) 오전 4시부터 9시까지 점검을
@@ -49,7 +49,7 @@ export const card = [
     thumbnailUrl: '/public/img/img-sample4@3x.png',
   },
   {
-    time: '1.0.1 패치 업데이트 안내',
+    title: '1.0.1 패치 업데이트 안내',
     content: () => (
       <p>
         새로운 버전 업데이트를 위해 6월 4일(목) 오전 4시부터 9시까지 점검을
@@ -61,7 +61,7 @@ export const card = [
     thumbnailUrl: '/public/img/img-sample5@3x.png',
   },
   {
-    time: '인더섬 with BTS 전세계 오픈',
+    title: '인더섬 with BTS 전세계 오픈',
     content: () => (
       <p>
         새로운 버전 업데이트를 위해 6월 4일(목) 오전 4시부터 9시까지 점검을
