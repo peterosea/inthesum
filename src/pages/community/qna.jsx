@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import Pagination from '../../components/Pagination';
+import PaginationBar from '../../components/Pagination/Bar';
 import HeaderPage from '../../components/HeaderPage';
 import Tab from '../../components/Tab';
 import Accordion from '../../components/Accordion';
@@ -27,7 +28,12 @@ const Main = () => {
           <Accordion />
         </div>
         <div className="mt-[40px]">
-          <Pagination />
+          <div className="hidden xl:block">
+            <Pagination />
+          </div>
+          <div className="block xl:hidden pl-cpx">
+            <PaginationBar current={1} all={9} />
+          </div>
         </div>
       </section>
     </>

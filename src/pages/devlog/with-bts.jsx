@@ -24,7 +24,12 @@ const Main = () => {
               );
             })}
           </div>
-          <Pagination />
+          <div className="hidden xl:block">
+            <Pagination />
+          </div>
+          <div className="block xl:hidden pl-cpx">
+            <PaginationBar current={1} all={9} />
+          </div>
         </div>
       </section>
     </>

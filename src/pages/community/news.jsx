@@ -23,7 +23,12 @@ const Main = () => {
               <Card data={e} pin={index < 2} />
             ))}
           </div>
-          <Pagination />
+          <div className="hidden xl:block">
+            <Pagination />
+          </div>
+          <div className="block xl:hidden pl-cpx">
+            <PaginationBar current={1} all={9} />
+          </div>
         </section>
       </div>
       <div className={classnames('h-px bg-[#e6eaf2] hidden', 'xl:block')}></div>

@@ -21,7 +21,12 @@ const Main = () => {
               <Card isPin={true} pin={false} />
             ))}
           </div>
-          <Pagination />
+          <div className="hidden xl:block">
+            <Pagination />
+          </div>
+          <div className="block xl:hidden pl-cpx">
+            <PaginationBar current={1} all={9} />
+          </div>
         </section>
       </div>
       <div className="h-px bg-[#e6eaf2]"></div>
