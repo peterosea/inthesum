@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import classnames from 'classnames';
+import useShrink from '../hook/useShrink';
 
 const Header = ({ isBlack = false }) => {
   const [isMenuOver, setIsMenuOver] = useState(false);
+  const isShrink = useShrink(window.innerHeight * 0.8 - 110);
   return (
     <>
       <header>
@@ -124,6 +126,7 @@ const Header = ({ isBlack = false }) => {
             'top-0',
             { active: isMenuOver },
             { 'bg-black': isBlack },
+            { over: isShrink },
           )}
           onMouseLeave={() => setIsMenuOver(false)}
         >
