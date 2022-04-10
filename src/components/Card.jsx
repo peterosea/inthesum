@@ -15,7 +15,12 @@ const Card = ({ isPin = false, pin = false, data = cardData }) => {
   const { title, content, thumbnailUrl } = data;
   return (
     <div className={classnames('relative group', { 'p-[30px]': isPin })}>
-      <div className="grid grid-cols-[140px,auto] gap-x-[30px] relative z-10">
+      <div
+        className={classnames(
+          'grid grid-cols-[80px,auto] gap-x-[30px] relative z-10',
+          'xl:grid-cols-[140px,auto]',
+        )}
+      >
         <div className="shadow-[20px_20px_40px_rgba(0,0,0,0.1)]">
           <a href="#" className="block relative w-full h-full">
             <img
@@ -32,14 +37,30 @@ const Card = ({ isPin = false, pin = false, data = cardData }) => {
         </div>
         <div className="font-Pretendard flex flex-col">
           <div className="w-full">
-            <a href="#" className="text-[24px] tracking-[-0.72px] line-clamp-1">
+            <a
+              href="#"
+              className={classnames(
+                'text-[16px] tracking-[-0.72px] line-clamp-1',
+                'xl:text-[24px] ',
+              )}
+            >
               {title}
             </a>
-            <div className="text-[#54575d] mt-[12px] line-clamp-3">
+            <div
+              className={classnames(
+                'text-[12px] text-[#54575d] mt-[5px] line-clamp-2',
+                'xl:mt-[12px] xl:text-[16px] xl:line-clamp-3',
+              )}
+            >
               {content()}
             </div>
           </div>
-          <div className="text-[14px] text-[#9ba0a8] mt-[18px]">
+          <div
+            className={classnames(
+              'text-[10px] text-[#9ba0a8] mt-[5px]',
+              'xl:text-[14px] xl:mt-[18px]',
+            )}
+          >
             2022년 4월 12일 오후 6시 53분
           </div>
         </div>
