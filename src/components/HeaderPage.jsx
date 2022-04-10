@@ -5,7 +5,6 @@ const BgImg = () => (
     src="/public/img/header-community.webp"
     srcSet="/public/img/header-community@2x.webp 2x,
         /public/img/header-community@3x.webp 3x"
-    className="object-cover w-full h-full absolute object-center"
   />
 );
 /**
@@ -16,9 +15,13 @@ const BgImg = () => (
  * @returns
  */
 const HeaderPage = ({ bgImg = BgImg, title, content }) => {
+  const ModifyBgImg = () =>
+    React.cloneElement(bgImg(), {
+      className: 'object-cover w-full h-full absolute object-center',
+    });
   return (
     <div className="h-[720px] relative">
-      {bgImg()}
+      <ModifyBgImg />
       <div
         style={{
           backgroundImage: 'linear-gradient(to bottom, #000, #363636 35%)',
