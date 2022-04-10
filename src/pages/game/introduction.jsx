@@ -21,11 +21,7 @@ const Main = () => {
         <div className="container mx-auto">
           <div className="mb-[58px]">
             <HeaderSection
-              title={() => (
-                <h1 className="text-[36px] font-TmoneyRoundWind font-bold leading-[0.69]">
-                  인더섬 소개 영상
-                </h1>
-              )}
+              title={() => <h1>인더섬 소개 영상</h1>}
               content={() => <p>뜻밖의 휴가로 도착한 섬! 인더섬에서 만나요</p>}
             />
           </div>

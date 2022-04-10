@@ -6,39 +6,46 @@ import Tab from '../../components/Tab';
 import Accordion from '../../components/Accordion';
 import Card from '../../components/Card';
 import Banner from '../../components/Banner';
+import HeaderSection from '../../components/HeaderSection';
+import classnames from 'classnames';
 
-const SectionHeader = () => (
-  <div className="flex gap-x-[30px] justify-between font-Pretendard">
-    <div>
-      <h1 className="text-[36px] mb-[15px] font-TmoneyRoundWind font-bold leading-[0.69]">
-        자주 묻는 질문
-      </h1>
-      <div className="text-[18px]">
-        <p>질문 전에 확인하시면 빠르게 해결하실 수도 있어요</p>
-      </div>
-    </div>
-    <div>
-      <i className="icon-arrow2 text-[31px] rotate-180 inline-block"></i>
-    </div>
-  </div>
-);
+// data
+import { card } from '../data';
+
 const Main = () => {
   return (
     <>
-      <section className="my-[96px]">
+      <section className={classnames('xl:my-[96px]', 'mt-[44px] mb-[120px]')}>
         <div className="container mx-auto">
-          <SectionHeader />
-          <div className="grid grid-cols-2 gap-[99px] mt-[60px]">
-            {[1, 2, 3, 4, 5, 6].map(() => (
-              <Card />
+          <HeaderSection
+            title={() => <h1>인더섬 뉴스</h1>}
+            content={() => (
+              <p>인더섬에서는 과연 어떠한 일이 일어나고 있고 일어날까요?</p>
+            )}
+            arrow
+          />
+          <div
+            className={classnames(
+              'grid xl:grid-cols-2 xl:gap-[99px] xl:mt-[60px]',
+              'mt-[42px] gap-[30px]',
+            )}
+          >
+            {card.map((e, index) => (
+              <Card data={e} key={`card-index-${index}`} />
             ))}
           </div>
         </div>
       </section>
-      <section className="my-[96px]">
+      <section className={classnames('xl:my-[96px]', 'my-[44px]')}>
         <div className="container mx-auto">
-          <SectionHeader />
-          <div className="mt-[40px]">
+          <HeaderSection
+            title={() => <h1>자주 묻는 질문</h1>}
+            content={() => (
+              <p>인더섬에서는 과연 어떠한 일이 일어나고 있고 일어날까요?</p>
+            )}
+            arrow
+          />
+          <div className={classnames('xl:mt-[40px]', 'mt-[31px]')}>
             <Tab
               tabList={[
                 { name: '전체', isActive: true },
@@ -53,21 +60,25 @@ const Main = () => {
           </div>
         </div>
       </section>
-      <section className="mt-[91px] mb-[120px]">
-        <div className="container mx-auto">
-          <Banner>
-            <div className="text-center">
-              <div className="font-TmoneyRoundWind text-[20px] text-white font-extrabold">
-                COMING SOON
+      <section
+        className={classnames('xl:mt-[91px] xl:mb-[120px]', 'mt-[60px]')}
+      >
+        <div className="xl:container mx-auto">
+          <div className="xl:rounded-[12px]">
+            <Banner>
+              <div className="text-center">
+                <div className="font-TmoneyRoundWind text-[20px] text-white font-extrabold">
+                  COMING SOON
+                </div>
+                <div className="font-TmoneyRoundWind text-[36px] text-white font-extrabold tracking-[-1.08px]">
+                  함께 만들어요! 인더섬
+                </div>
+                <div className="font-Pretendard text-[16px] text-white tracking-[-0.48px]">
+                  보다 좋은 서비스를 위해 준비중이에요. 빠른 시일내에 오픈할께요
+                </div>
               </div>
-              <div className="font-TmoneyRoundWind text-[36px] text-white font-extrabold tracking-[-1.08px]">
-                함께 만들어요! 인더섬
-              </div>
-              <div className="font-Pretendard text-[16px] text-white tracking-[-0.48px]">
-                보다 좋은 서비스를 위해 준비중이에요. 빠른 시일내에 오픈할께요
-              </div>
-            </div>
-          </Banner>
+            </Banner>
+          </div>
         </div>
       </section>
     </>
@@ -82,7 +93,7 @@ export default () => {
         title="커뮤니티"
         content={() => <>인더섬의 소식과 궁금한 사항을 전해드려요</>}
       />
-      <div className="font-Pretendard mb-[120px]">
+      <div className="font-Pretendard">
         <Main />
       </div>
       <Footer />

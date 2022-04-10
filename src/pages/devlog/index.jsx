@@ -68,11 +68,7 @@ const Main = () => {
       <section className="mt-[160px]">
         <div className="container mx-auto">
           <HeaderSection
-            title={() => (
-              <h1 className="text-[36px] font-TmoneyRoundWind font-bold leading-[0.69]">
-                개발PD 노트
-              </h1>
-            )}
+            title={() => <h1>개발PD 노트</h1>}
             content={() => <>BTS가 개발에 직접 참여한 인더섬 업데이트 소식</>}
             arrow={true}
           />

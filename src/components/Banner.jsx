@@ -16,7 +16,7 @@ const BgImg = () => (
  */
 const Banner = ({ bgImg = BgImg, children }) => {
   return (
-    <div className="h-[230px] relative rounded-[12px] overflow-hidden">
+    <div className="h-[230px] relative overflow-hidden">
       {bgImg()}
       <div className="relative z-10 w-full h-full flex items-center">
         <div className="container mx-auto">{children}</div>

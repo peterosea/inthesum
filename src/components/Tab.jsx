@@ -15,9 +15,8 @@ const Tab = ({ tabList }) => {
           aria-label="Tabs"
         >
           {tabList.map(({ name, isActive = false }, index) => (
-            <a
+            <button
               key={`index-${index}`}
-              href="#"
               aria-current="page"
               className={classnames(
                 'leading-none flex items-center justify-center min-w-0 text-[18px] group relative overflow-hidden bg-white py-[21px] px-4 text-center hover:bg-gray-50 focus:z-10',
@@ -54,7 +53,7 @@ const Tab = ({ tabList }) => {
                   ></span>
                 </>
               )}
-            </a>
+            </button>
           ))}
         </nav>
       </div>
