@@ -56,6 +56,7 @@ const Select = ({ options, button = DefButton, name }) => {
   const Button = ({ children }) =>
     React.cloneElement(button({ children }), {
       onClick: () => setIsOpen(!isOpen),
+      children,
     });
 
   return (
