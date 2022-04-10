@@ -6,6 +6,7 @@ import Footer from '../../components/Footer';
 import HeaderPage from '../../components/HeaderPage';
 import CharacterItem from '../../components/Item/Character';
 import Pagination from '../../components/Pagination';
+import PaginationBar from '../../components/Pagination/Bar';
 
 // data
 import { character, BtsBgImg } from '../data';
@@ -15,10 +16,10 @@ const Main = () => {
     <>
       <section className="mt-[80px] mb-[120px]">
         <div className="container mx-auto">
-          <div className="grid grid-cols-4 gap-x-[40px] gap-y-[120px] mb-[80px]">
+          <div className="flex flex-wrap gap-x-[40px] gap-y-[120px] mb-[80px] justify-center">
             {character.slice(0, 12).map((props, index) => {
               return (
-                <div key={`index-${index}`}>
+                <div key={`index-${index}`} class="w-[270px]">
                   <CharacterItem {...props} />
                 </div>
               );
