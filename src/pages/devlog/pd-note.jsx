@@ -6,7 +6,7 @@ import Pagination from '../../components/Pagination';
 import HeaderPage from '../../components/HeaderPage';
 import ScrollTop from '../../components/ScrollTop';
 // data
-import { BtsBgImg } from './data';
+import { BtsBgImg } from '../data';
 
 const Main = () => {
   return (

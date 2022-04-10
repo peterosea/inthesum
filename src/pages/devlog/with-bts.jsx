@@ -8,7 +8,7 @@ import CharacterItem from '../../components/Item/Character';
 import Pagination from '../../components/Pagination';
 
 // data
-import { character, BtsBgImg } from './data';
+import { character, BtsBgImg } from '../data';
 
 const Main = () => {
   return (

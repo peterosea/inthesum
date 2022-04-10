@@ -10,7 +10,7 @@ import HeaderSection from '../../components/HeaderSection';
 import CharacterItem from '../../components/Item/Character';
 import Card from '../../components/Card';
 // data
-import { character, card, BgImg } from './data';
+import { character, card, DevlogBgImg } from '../data';
 
 function CharacterSlider() {
   const [sliderRef] = useKeenSlider(

@@ -352,7 +352,7 @@ export const character = [
   },
 ];
 
-export const BgImg = () => (
+export const DevlogBgImg = () => (
   <img
     src="/public/img/devlog-introduce-visual.png"
     srcSet="/public/img/devlog-introduce-visual@2x.png 2x,
