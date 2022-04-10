@@ -7,6 +7,92 @@ import {
   useLockedBody,
 } from 'usehooks-ts';
 
+const MobileMenu = () => {
+  const [select, setSelect] = useState('');
+
+  const onMenuClick = (menu) => {
+    setSelect(menu);
+  };
+
+  return (
+    <ul>
+      <li
+        onClick={() => onMenuClick('game')}
+        className={classnames({ active: select === 'game' })}
+      >
+        <div className="menu-wrap">
+          <a href="#1">개임소개</a>
+          <div className="submenu">
+            <div className="items">
+              <a href="#">소개영상</a>
+            </div>
+            <div className="items">
+              <a href="#">주요스토리</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li
+        onClick={() => onMenuClick('devlog')}
+        className={classnames({ active: select === 'devlog' })}
+      >
+        <div className="menu-wrap">
+          <a href="#2">인더섬 개발일지</a>
+          <div className="submenu">
+            <div className="items">
+              <a href="#">with BTS</a>
+            </div>
+            <div className="items">
+              <a href="#">개발 PD 노트</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li
+        onClick={() => onMenuClick('inthesum')}
+        className={classnames({ active: select === 'inthesum' })}
+      >
+        <div className="menu-wrap">
+          <a href="#">made by ARMY</a>
+          <div className="submenu">
+            <div className="items">
+              <a href="#">인더섬 가이드</a>
+            </div>
+            <div className="items">
+              <a href="#">BTS 의상실</a>
+            </div>
+            <div className="items">
+              <a href="#">주간 인더섬 매거진</a>
+            </div>
+            <div className="items">
+              <a href="#">BTS 의뢰 컨텐츠</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li
+        onClick={() => onMenuClick('community')}
+        className={classnames({ active: select === 'community' })}
+      >
+        <div className="menu-wrap">
+          <a href="#">커뮤니티</a>
+          <div className="submenu">
+            <div className="items">
+              <a href="#">공지사항</a>
+            </div>
+            <div className="items">
+              <a href="#">설문공간</a>
+            </div>
+            <div className="items">
+              <a href="#">FAQ</a>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  );
+};
+
 const HeaderMobile = () => {
   const ref = useRef(null);
   const isShrink = useShrink(4);
@@ -61,69 +147,7 @@ const HeaderMobile = () => {
           </a>
         </h1>
         <nav id="m-gnb">
-          <ul>
-            <li>
-              <div className="menu-wrap">
-                <a href="#1">개임소개</a>
-                <div className="submenu">
-                  <div className="items">
-                    <a href="#">소개영상</a>
-                  </div>
-                  <div className="items">
-                    <a href="#">주요스토리</a>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div className="menu-wrap">
-                <a href="#2">인더섬 개발일지</a>
-                <div className="submenu">
-                  <div className="items">
-                    <a href="#">with BTS</a>
-                  </div>
-                  <div className="items">
-                    <a href="#">개발 PD 노트</a>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div className="menu-wrap">
-                <a href="#">made by ARMY</a>
-                <div className="submenu">
-                  <div className="items">
-                    <a href="#">인더섬 가이드</a>
-                  </div>
-                  <div className="items">
-                    <a href="#">BTS 의상실</a>
-                  </div>
-                  <div className="items">
-                    <a href="#">주간 인더섬 매거진</a>
-                  </div>
-                  <div className="items">
-                    <a href="#">BTS 의뢰 컨텐츠</a>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div className="menu-wrap">
-                <a href="#">커뮤니티</a>
-                <div className="submenu">
-                  <div className="items">
-                    <a href="#">공지사항</a>
-                  </div>
-                  <div className="items">
-                    <a href="#">설문공간</a>
-                  </div>
-                  <div className="items">
-                    <a href="#">FAQ</a>
-                  </div>
-                </div>
-              </div>
-            </li>
-          </ul>
+          <MobileMenu />
         </nav>
         <div className="info-group">
           <a href="#">로그아웃</a>
