@@ -6,6 +6,7 @@ import Card from '../../components/Card';
 import Pagination from '../../components/Pagination';
 import HeaderPage from '../../components/HeaderPage';
 import ScrollTop from '../../components/ScrollTop';
+import PaginationBar from '../../components/Pagination/Bar';
 import { card } from '../data';
 
 const Main = () => {
