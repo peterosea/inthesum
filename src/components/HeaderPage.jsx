@@ -1,4 +1,5 @@
 import React from 'react';
+import classnames from 'classnames';
 
 const BgImg = () => (
   <img
@@ -20,7 +21,7 @@ const HeaderPage = ({ bgImg = BgImg, title, content }) => {
       className: 'object-cover w-full h-full absolute object-center',
     });
   return (
-    <div className="h-[720px] relative">
+    <div className="h-[380px] xl:h-[720px] relative">
       <ModifyBgImg />
       <div
         style={{
@@ -31,23 +32,48 @@ const HeaderPage = ({ bgImg = BgImg, title, content }) => {
       <div className="relative z-10 w-full h-full flex items-center">
         <div className="container mx-auto">
           <div className="text-center">
-            <div className="font-TmoneyRoundWind text-[62px] text-white font-extrabold">
+            <div
+              className={classnames(
+                'font-TmoneyRoundWind text-[30px] text-white font-extrabold',
+                'xl:text-[62px]',
+              )}
+            >
               {title}
             </div>
-            <div className="font-Pretendard text-[18px] text-white">
+            <div
+              className={classnames(
+                'font-Pretendard text-[14px] text-white mt-[9px]',
+                'xl:text-[18px]',
+              )}
+            >
               {content()}
             </div>
           </div>
         </div>
       </div>
-      <div className="absolute bottom-0 py-[35px] w-full z-20">
-        <div className="max-w-[1920px] px-[50px] mx-auto">
+      <div className="absolute bottom-0 pb-[28px] xl:pb-[35px] w-full z-20">
+        <div className="container mx-auto">
           <div className="flex gap-x-[13px] items-center">
             <div className="text-white">
-              <i className="icon-volume-off text-[24px]"></i>
-              <i className="icon-volume text-[24px]"></i>
+              <i
+                className={classnames(
+                  'icon-volume-off text-[18px]',
+                  'xl:text-[24px]',
+                )}
+              ></i>
+              <i
+                className={classnames(
+                  'icon-volume text-[18px]',
+                  'xl:text-[24px]',
+                )}
+              ></i>
             </div>
-            <div className="text-white leading-none pb-[2px]">
+            <div
+              className={classnames(
+                'text-white leading-none pb-[2px] text-[12px]',
+                'xl:text-[16px]',
+              )}
+            >
               <span className="font-Pretendard">방탄소년단 - DYNAMITE</span>
             </div>
           </div>
