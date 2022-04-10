@@ -108,14 +108,14 @@ export const character = [
         <img
           className="h-[180px] absolute z-10 top-0 right-[76px]"
           src="/public/img/jung-kook.png"
-          srcset="/public/img/jung-kook@2x.png 2x,
+          srcSet="/public/img/jung-kook@2x.png 2x,
                   /public/img/jung-kook@3x.png 3x"
           alt="JungKook"
         />
         <img
           className="h-[180px]"
           src="/public/img/rm2.png"
-          srcset="/public/img/rm2@2x.png 2x,
+          srcSet="/public/img/rm2@2x.png 2x,
                   /public/img/rm2@3x.png 3x"
           alt="RM"
         />
@@ -135,7 +135,7 @@ export const character = [
       <img
         className="h-[180px]"
         src="/public/img/jimin.png"
-        srcset="/public/img/jimin@2x.png 2x,
+        srcSet="/public/img/jimin@2x.png 2x,
                 /public/img/jimin@3x.png 3x"
         alt="jimin"
       />
@@ -154,7 +154,7 @@ export const character = [
       <img
         className="h-[180px]"
         src="/public/img/suga.png"
-        srcset="/public/img/suga@2x.png 2x,
+        srcSet="/public/img/suga@2x.png 2x,
                 /public/img/suga@3x.png 3x"
         alt="RM"
       />
@@ -173,7 +173,7 @@ export const character = [
       <img
         className="h-[180px] w-auto"
         src="/public/img/v.png"
-        srcset="/public/img/v@2x.png 2x,
+        srcSet="/public/img/v@2x.png 2x,
                 /public/img/v@3x.png 3x"
         alt="슈가"
       />
@@ -192,7 +192,7 @@ export const character = [
       <img
         className="h-[180px]"
         src="/public/img/jimin.png"
-        srcset="/public/img/jimin@2x.png 2x,
+        srcSet="/public/img/jimin@2x.png 2x,
                 /public/img/jimin@3x.png 3x"
         alt="jimin"
       />
@@ -211,7 +211,7 @@ export const character = [
       <img
         className="h-[180px]"
         src="/public/img/suga.png"
-        srcset="/public/img/suga@2x.png 2x,
+        srcSet="/public/img/suga@2x.png 2x,
                 /public/img/suga@3x.png 3x"
         alt="RM"
       />
@@ -230,7 +230,7 @@ export const character = [
       <img
         className="h-[180px] w-auto"
         src="/public/img/v.png"
-        srcset="/public/img/v@2x.png 2x,
+        srcSet="/public/img/v@2x.png 2x,
                 /public/img/v@3x.png 3x"
         alt="슈가"
       />
@@ -249,7 +249,7 @@ export const character = [
       <img
         className="h-[180px]"
         src="/public/img/jimin.png"
-        srcset="/public/img/jimin@2x.png 2x,
+        srcSet="/public/img/jimin@2x.png 2x,
                 /public/img/jimin@3x.png 3x"
         alt="jimin"
       />
@@ -268,7 +268,7 @@ export const character = [
       <img
         className="h-[180px]"
         src="/public/img/suga.png"
-        srcset="/public/img/suga@2x.png 2x,
+        srcSet="/public/img/suga@2x.png 2x,
                 /public/img/suga@3x.png 3x"
         alt="RM"
       />
@@ -287,7 +287,7 @@ export const character = [
       <img
         className="h-[180px] w-auto"
         src="/public/img/v.png"
-        srcset="/public/img/v@2x.png 2x,
+        srcSet="/public/img/v@2x.png 2x,
                 /public/img/v@3x.png 3x"
         alt="슈가"
       />
@@ -306,7 +306,7 @@ export const character = [
       <img
         className="h-[180px]"
         src="/public/img/jimin.png"
-        srcset="/public/img/jimin@2x.png 2x,
+        srcSet="/public/img/jimin@2x.png 2x,
                 /public/img/jimin@3x.png 3x"
         alt="jimin"
       />
@@ -325,7 +325,7 @@ export const character = [
       <img
         className="h-[180px]"
         src="/public/img/suga.png"
-        srcset="/public/img/suga@2x.png 2x,
+        srcSet="/public/img/suga@2x.png 2x,
                 /public/img/suga@3x.png 3x"
         alt="RM"
       />
@@ -344,7 +344,7 @@ export const character = [
       <img
         className="h-[180px] w-auto"
         src="/public/img/v.png"
-        srcset="/public/img/v@2x.png 2x,
+        srcSet="/public/img/v@2x.png 2x,
                 /public/img/v@3x.png 3x"
         alt="슈가"
       />

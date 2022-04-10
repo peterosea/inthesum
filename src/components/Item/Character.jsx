@@ -18,7 +18,7 @@ const Character = ({ name, time, content, thumbnail, characterImg }) => {
           <span className="w-[39px] relative inline-block top-[6px] mr-[5px]">
             <img
               src="/public/img/new@3x.png"
-              srcset="/public/img/new@2x.png 2x,
+              srcSet="/public/img/new@2x.png 2x,
                   /public/img/new@3x.png 3x"
               alt="new"
             />
