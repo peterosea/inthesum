@@ -32,21 +32,24 @@ const DefButton = ({ children }) => (
 );
 /**
  *
- * @property {array} options
+ * @property {[
+ *  id: string,
+ *  name: string
+ * ]} options
  * @property {JSX.Element} button <button>option name</button>
  */
 const Select = ({ options, button = DefButton }) => {
   const ref = useRef(null);
   const [isOpen, setIsOpen] = useState(false);
   const [selectId, setSelectId] = useState(options[0].id);
-  const [selectTitle, setSelectTitle] = useState(options[0].title);
+  const [selectName, setSelectName] = useState(options[0].name);
 
   useOnClickOutside(ref, () => setIsOpen(false));
 
-  const handleOptionSelect = (value, title) => {
+  const handleOptionSelect = (value, name) => {
     setIsOpen(false);
     setSelectId(value);
-    setSelectTitle(title);
+    setSelectName(name);
   };
 
   const Button = ({ children }) =>
@@ -58,7 +61,7 @@ const Select = ({ options, button = DefButton }) => {
     <div ref={ref}>
       <label className="sr-only">Select a tab</label>
       <div className="mt-1 relative">
-        <Button>{selectTitle}</Button>
+        <Button>{selectName}</Button>
         <Transition
           show={isOpen}
           leave="transition ease-in duration-100"
@@ -72,7 +75,7 @@ const Select = ({ options, button = DefButton }) => {
             aria-labelledby="listbox-label"
             aria-activedescendant="listbox-option-3"
           >
-            {options.map(({ id, title }) => {
+            {options.map(({ id, name }) => {
               const isSelect = selectId === id;
               return (
                 <li
@@ -85,7 +88,7 @@ const Select = ({ options, button = DefButton }) => {
                     },
                   )}
                   role="option"
-                  onClick={() => handleOptionSelect(id, title)}
+                  onClick={() => handleOptionSelect(id, name)}
                 >
                   <span
                     className={classNames(
@@ -96,7 +99,7 @@ const Select = ({ options, button = DefButton }) => {
                       { 'font-normal': !isSelect },
                     )}
                   >
-                    {title}
+                    {name}
                   </span>
                   <span
                     className={classNames(
