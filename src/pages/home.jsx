@@ -1,4 +1,5 @@
 import React from 'react';
+import classnames from 'classnames';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import '../components/home/home.scss';
@@ -9,6 +10,7 @@ import MagazineSlide from '../components/home/MagazineSlide';
 import CharacterSlide from '../components/home/CharacterSlide';
 import MainBannerSlide from '../components/home/MainBannerSlide';
 import Card from '../components/Card';
+import { card } from './data';
 
 const Main = () => {
   return (
@@ -140,83 +142,15 @@ const Main = () => {
               <p>인더섬에서는 과연 어떠한 일이 일어나고 있고 일어날까요?</p>
             </div>
           </div>
-          <div className="mt-[60px] grid xl:grid-cols-2 gap-[60px]">
-            {[
-              {
-                title: '4월 14일(목) 오전 4시 업데이트 점검 안내',
-                content: () => (
-                  <p>
-                    새로운 버전 업데이트를 위해 6월 4일(목) 오전 4시부터 9시까지
-                    점검을 실시합니다.
-                    <br />
-                    해당 시간동안은 이용이 불가능하며, 이용중 해당 시간이..
-                  </p>
-                ),
-                thumbnailUrl: '/public/img/img-sample1@3x.png',
-              },
-              {
-                title: '인더섬 스크린샷 이벤트',
-                content: () => (
-                  <p>
-                    인더섬의 아름다운 풍경을 남겨보세요.
-                    <br />
-                    총 100분을 선정해 다이나마이트 코스튬을 선물로 드립니다.
-                    <br />
-                    많은 참여 부탁드립니다!
-                  </p>
-                ),
-                thumbnailUrl: '/public/img/img-sample2@3x.png',
-              },
-              {
-                title: '푸시 알림 이벤트',
-                content: () => (
-                  <p>
-                    새로운 버전 업데이트를 위해 6월 4일(목) 오전 4시부터 9시까지
-                    점검을 실시합니다.
-                    <br />
-                    해당 시간동안은 이용이 불가능하며, 이용중 해당 시간이..
-                  </p>
-                ),
-                thumbnailUrl: '/public/img/img-sample3@3x.png',
-              },
-              {
-                title: '1.0.2 커플 베이스캠프 업데이트',
-                content: () => (
-                  <p>
-                    새로운 버전 업데이트를 위해 6월 4일(목) 오전 4시부터 9시까지
-                    점검을 실시합니다.
-                    <br />
-                    해당 시간동안은 이용이 불가능하며, 이용중 해당 시간이..
-                  </p>
-                ),
-                thumbnailUrl: '/public/img/img-sample4@3x.png',
-              },
-              {
-                title: '1.0.1 패치 업데이트 안내',
-                content: () => (
-                  <p>
-                    새로운 버전 업데이트를 위해 6월 4일(목) 오전 4시부터 9시까지
-                    점검을 실시합니다.
-                    <br />
-                    해당 시간동안은 이용이 불가능하며, 이용중 해당 시간이..
-                  </p>
-                ),
-                thumbnailUrl: '/public/img/img-sample5@3x.png',
-              },
-              {
-                title: '인더섬 with BTS 전세계 오픈',
-                content: () => (
-                  <p>
-                    새로운 버전 업데이트를 위해 6월 4일(목) 오전 4시부터 9시까지
-                    점검을 실시합니다.
-                    <br />
-                    해당 시간동안은 이용이 불가능하며, 이용중 해당 시간이..
-                  </p>
-                ),
-                thumbnailUrl: '/public/img/img-sample6@3x.png',
-              },
-            ].map((e, index) => (
-              <Card pin={true} data={e} key={`card-index-${index}`} />
+          <div
+            className={classnames(
+              'mt-[60px]',
+              'grid grid-cols-1 gap-y-[30px]',
+              'xl:grid-cols-2 xl:gap-[40px] xl:gap-y-[94px]',
+            )}
+          >
+            {card.map((e, index) => (
+              <Card data={e} key={`card-index-${index}`} />
             ))}
           </div>
         </div>
