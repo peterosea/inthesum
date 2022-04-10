@@ -25,6 +25,13 @@
   &-icon {
     grid-area: i;
   }
+
+  &-divider {
+    width: calc(100% + var(--container-px));
+    @media (min-width: theme('screens.xl')) {
+      width: 100%;
+    }
+  }
 }
 
 input:checked.accordion-input ~ .accordion-content {
@@ -40,5 +47,10 @@ input:checked.accordion-input ~ label .icon-arrow {
 .accordion-content {
   max-height: 0;
   transition: 0.5s;
-  overflow: hidden;
+  overflow-y: hidden;
+
+  @media (max-width: theme('screens.xl')) {
+    width: calc(100% + var(--container-px));
+    padding-right: var(--container-px);
+  }
 }

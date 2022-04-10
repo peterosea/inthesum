@@ -6,7 +6,7 @@ const Accordion = () => {
   return (
     <ul>
       {[1, 2, 3, 4, 5].map((i) => (
-        <li className="border-b border-[#e6eaf2] overflow-hidden">
+        <li>
           <input
             className="accordion-input hidden"
             type="checkbox"
@@ -16,7 +16,7 @@ const Accordion = () => {
             htmlFor={`accordion-${i}`}
             className={classnames(
               'accordion__label',
-              'gap-x-[5px] cursor-pointer gap-y-[5px] py-[24px] items-center bg-white hover:bg-gray-50',
+              'gap-x-[5px] cursor-pointer gap-y-[5px] py-[24px] items-center bg-white relative',
               'xl:gap-x-[16px] xl:py-[30px]',
             )}
           >
@@ -49,15 +49,16 @@ const Accordion = () => {
                 <i className="icon-arrow text-[#CECECE] inline-block"></i>
               </div>
             </div>
+            <div className="accordion__label-divider absolute bottom-0 left-0 h-px bg-[#f4f6fa]"></div>
           </label>
-          <div className="accordion-content">
-            <div className="bg-[#f4f6fa] p-[40px] flex gap-x-[20px]">
+          <div className="accordion-content bg-[#f4f6fa]">
+            <div className="p-[30px] xl:p-[40px] flex gap-x-[20px] gap-y-[13px] flex-col xl:flex-row">
               <div>
-                <div className="w-[55px] h-[55px] bg-black rounded-full text-white font-Pretendard font-bold items-center justify-center flex text-[24px]">
+                <div className="w-[23px] h-[23px] xl:w-[55px] xl:h-[55px] bg-black rounded-full text-white font-Pretendard font-bold items-center justify-center flex text-[12px] xl:text-[24px]">
                   <span className="leading-1">A</span>
                 </div>
               </div>
-              <div className="prose">
+              <div className="prose prose-sm xl:prose-base">
                 <p>
                   1.0.1 패치가 업데이트 되었어요.
                   <br />
