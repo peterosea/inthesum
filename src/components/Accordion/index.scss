@@ -1,3 +1,32 @@
+.accordion__label {
+  display: grid;
+  grid-template:
+    'i t a'
+    'c c c'
+    / 23px auto auto;
+
+  @media (min-width: theme('screens.xl')) {
+    grid-template:
+      'i t a'
+      'i c a'
+      / 50px auto auto;
+  }
+
+  &-content {
+    grid-area: c;
+  }
+  &-arrow {
+    grid-area: a;
+    justify-self: flex-end;
+  }
+  &-title {
+    grid-area: t;
+  }
+  &-icon {
+    grid-area: i;
+  }
+}
+
 input:checked.accordion-input ~ .accordion-content {
   max-height: calc(6.4em + (40px * 2));
 }

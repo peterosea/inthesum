@@ -1,3 +1,4 @@
+import classnames from 'classnames';
 import React from 'react';
 import './index.scss';
 
@@ -13,23 +14,38 @@ const Accordion = () => {
           />
           <label
             htmlFor={`accordion-${i}`}
-            className="tab-label cursor-pointer flex justify-between gap-x-4 py-[30px] items-center bg-white hover:bg-gray-50"
+            className={classnames(
+              'accordion__label',
+              'gap-x-[5px] cursor-pointer gap-y-[5px] py-[24px] items-center bg-white hover:bg-gray-50',
+              'xl:gap-x-[16px] xl:py-[30px]',
+            )}
           >
-            <div className="flex gap-x-[16px]">
-              <div className="w-[55px] h-[55px] bg-primary rounded-full text-white font-TmoneyRoundWind font-bold items-center justify-center flex text-[24px]">
+            <div className={classnames('accordion__label-icon')}>
+              <div
+                className={classnames(
+                  'w-[23px] h-[23px] bg-primary rounded-full text-white font-TmoneyRoundWind font-bold items-center justify-center flex text-[12px]',
+                  'xl:w-[55px] xl:h-[55px] xl:text-[24px]',
+                )}
+              >
                 <span className="leading-1">Q</span>
               </div>
-              <div>
-                <div className="font-TmoneyRoundWind font-bold text-primary">
-                  게임플레이
-                </div>
-                <div className="text-[20px] font-Pretendard font-bold tracking-[-0.07px]">
-                  서버 목록이 보이지 않거나 방화벽 오류 메시지가 떠요
-                </div>
+            </div>
+            <div className={classnames('accordion__label-title')}>
+              <div className="font-TmoneyRoundWind font-bold text-primary">
+                게임플레이
               </div>
             </div>
-            <div>
-              <div className="text-[28px]">
+            <div
+              className={classnames(
+                'accordion__label-content',
+                'text-[14px] font-Pretendard font-bold tracking-[-0.07px]',
+                'xl:text-[20px]',
+              )}
+            >
+              서버 목록이 보이지 않거나 방화벽 오류 메시지가 떠요
+            </div>
+            <div className={classnames('accordion__label-arrow')}>
+              <div className={classnames('text-[18px]', 'xl:text-[28px]')}>
                 <i className="icon-arrow text-[#CECECE] inline-block"></i>
               </div>
             </div>
