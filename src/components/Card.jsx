@@ -1,20 +1,21 @@
 import React from 'react';
 import classnames from 'classnames';
+// mockup
 import cardData from './Card.data';
 
-// type props = {
-//   isPin: boolean,
-//   pin: boolean,
-//   data: {
-//     title: string,
-//     content: JSX.Element,
-//     thumbnailUrl: string, // image url
-//   },
-// };
-const Card = ({ isPin = false, pin = false, data = cardData }) => {
+/**
+ *
+ * @property {boolean} pin
+ * @property {{
+ *  title: string
+ * content: JSX.Element
+ * thumbnailUrl: string
+ * }} data
+ */
+const Card = ({ pin = false, data = cardData }) => {
   const { title, content, thumbnailUrl } = data;
   return (
-    <div className={classnames('relative group', { 'p-[30px]': isPin })}>
+    <div className={classnames('relative group', 'px-[30px]')}>
       <div
         className={classnames(
           'grid grid-cols-[80px,auto] gap-x-[30px] relative z-10',
@@ -28,7 +29,7 @@ const Card = ({ isPin = false, pin = false, data = cardData }) => {
               src={thumbnailUrl}
               alt=""
             />
-            {isPin && pin && (
+            {pin && (
               <div className="absolute flex items-center justify-center text-[19.2px] top-0 left-0 -translate-x-1/2 -translate-y-1/2 w-[40px] h-[40px] rounded-full pin bg-gradient-to-r from-[#7833DC] to-[#CF52E8]">
                 <i className="icon-pin text-white"></i>
               </div>
@@ -65,14 +66,12 @@ const Card = ({ isPin = false, pin = false, data = cardData }) => {
           </div>
         </div>
       </div>
-      {isPin && (
-        <div
-          className={classnames(
-            'absolute w-full h-full rounded-[10px] bg-[#f4f6fa] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity',
-            { hidden: !pin },
-          )}
-        />
-      )}
+      <div
+        className={classnames(
+          'absolute w-full h-[calc(100%+40px)] bg-[#f4f6fa] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity',
+          'xl:rounded-[10px] xl:h-[calc(100%+60px)]',
+        )}
+      />
     </div>
   );
 };

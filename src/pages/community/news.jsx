@@ -1,38 +1,49 @@
 import React from 'react';
+import classnames from 'classnames';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import Card from '../../components/Card';
 import Pagination from '../../components/Pagination';
 import HeaderPage from '../../components/HeaderPage';
 import ScrollTop from '../../components/ScrollTop';
+import { card } from '../data';
 
 const Main = () => {
   return (
     <>
-      <div className="container mx-auto">
-        <section className="mt-[70px] mb-[80px]">
-          <div className="grid grid-cols-2 gap-[9px] mb-[80px]">
-            {[1, 2].map(() => (
-              <Card isPin={true} pin={true} />
-            ))}
-            {[3, 4, 5, 6].map(() => (
-              <Card isPin={true} pin={false} />
+      <div className="xl:container mx-auto">
+        <section className={classnames('mt-[40px] mb-[80px]', 'xl:mt-[70px]')}>
+          <div
+            className={classnames(
+              'grid grid-cols-1 gap-y-[30px] mb-[80px]',
+              'xl:grid-cols-2 xl:gap-[40px] xl:gap-y-[94px]',
+            )}
+          >
+            {card.map((e, index) => (
+              <Card data={e} pin={index < 2} />
             ))}
           </div>
           <Pagination />
         </section>
       </div>
-      <div className="h-px bg-[#e6eaf2]"></div>
+      <div className={classnames('h-px bg-[#e6eaf2] hidden', 'xl:block')}></div>
       <div className="mt-[87px]">
         <div className="container mx-auto">
           <div>
-            <div className="mb-[80px]">
-              <h1 className="text-[42px] tracking-[-2.1px] font-bold font-TmoneyRoundWind leading-tight mb-[15px]">
+            <div className={classnames('mb-[40px]', 'xl:mb-[80px]')}>
+              <h1
+                className={classnames(
+                  'text-[24px] tracking-[-2.1px] font-bold font-TmoneyRoundWind leading-tight mb-[15px]',
+                  'xl:text-[42px]',
+                )}
+              >
                 핀 표시 있는 게시물은 고정 게시물
               </h1>
-              <time>2022년 4월 13일 오후 5시 53분</time>
+              <time className={classnames('text-[#9ba0a8]')}>
+                2022년 4월 13일 오후 5시 53분
+              </time>
             </div>
-            <article className="prose lg:prose-2xl max-w-none">
+            <article className="prose prose-sm lg:prose-2xl max-w-none">
               <p>
                 BTS와 함께 하는 힐링 섬 라이프 인더섬 with BTS입니다.
                 <br />
@@ -89,7 +100,7 @@ const Main = () => {
                 정보는 게임 내에서 확인 부탁드립니다.
               </p>
             </article>
-            <div className="mt-[80px]">
+            <div className={classnames('mt-[55px]', 'xl:mt-[80px]')}>
               <ScrollTop />
             </div>
           </div>
@@ -116,7 +127,7 @@ export default () => {
           />
         )}
       />
-      <div className="font-Pretendard mb-[120px]">
+      <div className="font-Pretendard mb-[65px] xl:mb-[120px]">
         <Main />
       </div>
       <Footer />
