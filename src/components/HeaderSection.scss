@@ -8,6 +8,7 @@
 .headerSection-arrow {
   grid-area: a;
   align-self: center;
+  justify-self: flex-end;
 }
 .headerSection-title {
   grid-area: t;

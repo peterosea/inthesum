@@ -357,7 +357,6 @@ export const DevlogBgImg = () => (
     src="/public/img/devlog-introduce-visual.png"
     srcSet="/public/img/devlog-introduce-visual@2x.png 2x,
         /public/img/devlog-introduce-visual@3x.png 3x"
-    className="object-cover w-full h-full absolute object-center"
   />
 );
 
@@ -366,6 +365,5 @@ export const BtsBgImg = () => (
     src="/public/img/devlog-with-bts-introduce-visual.png"
     srcSet="/public/img/devlog-with-bts-introduce-visual@2x.png 2x,
         /public/img/devlog-with-bts-introduce-visual@3x.png 3x"
-    className="object-cover w-full h-full absolute object-center"
   />
 );

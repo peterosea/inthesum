@@ -13,7 +13,7 @@ const Character = ({ name, time, content, thumbnail, characterImg }) => {
   return (
     <div className="relative min-w-[270px] h-full min-h-[380px]">
       <div className="relative z-10">
-        <div className="text-[30px] font-extrabold text-left">
+        <div className="text-[30px] font-extrabold text-left font-TmoneyRoundWind">
           {name}
           <span className="w-[39px] relative inline-block top-[6px] mr-[5px]">
             <img
@@ -47,7 +47,7 @@ const Character = ({ name, time, content, thumbnail, characterImg }) => {
         </div>
       </div>
       <div className="absolute bottom-0 right-0 z-10">{characterImg()}</div>
-      <div className="absolute left-1/2 -translate-x-1/2 w-[calc(100%-40px)] top-0">
+      <div className="absolute left-1/2 -translate-x-1/2 w-full top-0">
         <img
           src="/public/img/img-baloon-full@3x.png"
           alt="ballon"

@@ -1,8 +1,11 @@
 import React from 'react';
 import { useKeenSlider } from 'keen-slider/react';
 import 'keen-slider/keen-slider.min.css';
-import WheelControls from '../../components/Slider/WheelControls';
+import { useWindowSize } from 'usehooks-ts';
+import classnames from 'classnames';
+
 // components
+import WheelControls from '../../components/Slider/WheelControls';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import HeaderPage from '../../components/HeaderPage';
@@ -13,6 +16,7 @@ import Card from '../../components/Card';
 import { character, card, DevlogBgImg } from '../data';
 
 function CharacterSlider() {
+  const { width } = useWindowSize();
   const [sliderRef] = useKeenSlider(
     {
       loop: false,
@@ -20,10 +24,21 @@ function CharacterSlider() {
       slides: {
         perView: 'auto',
         spacing: 40,
+        origin: 'center',
+      },
+      breakpoints: {
+        '(min-width: 640px)': {
+          slides: {
+            perView: 'auto',
+            spacing: 40,
+          },
+        },
       },
     },
     [WheelControls],
   );
+
+  const slideWidth = width >= 1280 ? 270 : 320;
 
   return (
     <div ref={sliderRef} className="keen-slider">
@@ -32,7 +47,7 @@ function CharacterSlider() {
           <div
             key={`index-${index}`}
             className="keen-slider__slide"
-            style={{ maxWidth: '270px', minWidth: '270px' }}
+            style={{ maxWidth: `${slideWidth}px`, minWidth: `${slideWidth}px` }}
           >
             <CharacterItem {...props} />
           </div>
@@ -49,32 +64,41 @@ const Main = () => {
         <div className="container mx-auto">
           <HeaderSection
             title={() => (
-              <div className="w-[160px]">
-                <img
-                  src="/public/img/img-withbts-title.png"
-                  srcSet="/public/img/img-withbts-title@2x.png 2x,
+              <img
+                className="w-[100px] xl:w-[160px]"
+                src="/public/img/img-withbts-title.png"
+                srcSet="/public/img/img-withbts-title@2x.png 2x,
                     /public/img/img-withbts-title@3x.png 3x"
-                />
-              </div>
+              />
             )}
             content={() => <>BTS가 개발에 직접 참여한 인더섬 업데이트 소식</>}
             arrow={true}
           />
+        </div>
+        <div className="xl:container mx-auto mt-[61px] pl-cpx">
           <div className="mt-[61px]">
             <CharacterSlider />
           </div>
         </div>
       </section>
-      <section className="mt-[160px]">
+      <section className="mt-[42px] xl:mt-[160px]">
         <div className="container mx-auto">
           <HeaderSection
             title={() => <h1>개발PD 노트</h1>}
             content={() => <>BTS가 개발에 직접 참여한 인더섬 업데이트 소식</>}
             arrow={true}
           />
-          <div className="grid grid-cols-2 gap-[99px] mt-[60px]">
+        </div>
+        <div className="xl:container mx-auto">
+          <div
+            className={classnames(
+              'mt-[60px]',
+              'grid grid-cols-1 gap-y-[30px]',
+              'xl:grid-cols-2 xl:gap-[40px] xl:gap-y-[94px]',
+            )}
+          >
             {card.map((e, index) => (
-              <Card pin={true} data={e} key={`card-index-${index}`} />
+              <Card data={e} key={`card-index-${index}`} />
             ))}
           </div>
         </div>
@@ -92,7 +116,7 @@ export default () => {
         title="인더섬 개발일지"
         content={() => <>BTS 멤버들이 처음부터 함께한 인더섬에서 만나요</>}
       />
-      <div className="font-Pretendard mb-[120px]">
+      <div className="font-Pretendard mb-[60px] xl:mb-[120px]">
         <Main />
       </div>
       <Footer />
