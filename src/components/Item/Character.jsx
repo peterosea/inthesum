@@ -13,7 +13,7 @@ const Character = ({ name, time, content, thumbnail, characterImg }) => {
   return (
     <div className="relative min-w-[270px] h-full min-h-[380px]">
       <div className="relative z-10">
-        <div className="text-[30px] font-extrabold text-left font-TmoneyRoundWind">
+        <div className="px-[20px] text-[30px] font-extrabold text-left font-TmoneyRoundWind">
           {name}
           <span className="w-[39px] relative inline-block top-[6px] mr-[5px]">
             <img
