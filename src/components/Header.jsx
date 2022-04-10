@@ -6,6 +6,7 @@ import Select from '../components/Select';
 
 const Header = ({ isBlack = false }) => {
   const [isMenuOver, setIsMenuOver] = useState(false);
+  const [isHeaderOver, setIsHeaderOver] = useState(false);
   const isShrink = useShrink(window.innerHeight * 0.8 - 110);
   return (
     <>
@@ -18,9 +19,15 @@ const Header = ({ isBlack = false }) => {
             'top-0',
             { active: isMenuOver },
             { 'bg-black': isBlack },
-            { over: isShrink },
+            { over: isShrink || isHeaderOver },
           )}
-          onMouseLeave={() => setIsMenuOver(false)}
+          onMouseLeave={() => {
+            setIsMenuOver(false);
+            setIsHeaderOver(false);
+          }}
+          onMouseEnter={() => {
+            setIsHeaderOver(true);
+          }}
         >
           <div className="dt-menu">
             <h1 className="logo">
