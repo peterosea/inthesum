@@ -4,11 +4,9 @@ services:
   app:
     image: node:lts
     working_dir: /var/www/html/app/
-    entrypoint: /bin/bash
+    command: yarn dev
     volumes:
       - ./:/var/www/html/app
-    tty: true
-    command: npm run dev
     deploy:
       placement:
         constraints:
