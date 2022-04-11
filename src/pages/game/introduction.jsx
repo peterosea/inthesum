@@ -17,7 +17,7 @@ const Main = () => {
   const swiperNavNext = useRef(null);
   return (
     <>
-      <section className="my-[96px]">
+      <section className="my-[96px] overflow-hidden">
         <div className="container mx-auto">
           <div className="mb-[58px]">
             <HeaderSection

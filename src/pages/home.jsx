@@ -22,11 +22,13 @@ const Main = () => {
             <div className="grid xl:grid-cols-[270px,auto]">
               <div className="xl:min-h-[490px] relative">
                 <div className="flex xl:flex-col justify-between #xl:px-[30px] #xl:container #xl:mx-auto">
-                  <div>
+                  <div className="max-w-[160px]">
                     <img
-                      className="h-[55px] xl:h-[93px] w-auto"
-                      src="/img/img-withbts-title@3x.png"
+                      src="/img/img-withbts-title.png"
+                      srcset="/img/img-withbts-title@2x.png 2x,
+                            /img/img-withbts-title@3x.png 3x"
                       alt="with BTS"
+                      className="h-[55px] xl:h-[93px] w-auto"
                     />
                     <div className="my-[30px] hidden xl:block">
                       <p>BTS가 개발에 직접 참여한 인더섬 업데이트 소식</p>
@@ -54,10 +56,7 @@ const Main = () => {
           <div className="magazine__header xl:h-full xl:absolute top-0 left-[var(--container-px)] z-10 bg-gradient-to-r from-white via-white">
             <div className="flex xl:flex-col justify-between">
               <div className="w-[160px]">
-                <img
-                  src="/img/img-madebyarmy-title@3x.png"
-                  alt="with BTS"
-                />
+                <img src="/img/img-madebyarmy-title@3x.png" alt="with BTS" />
                 <div className="text-[22px] font-bold whitespace-nowrap text-justify">
                   주간 인더섬 매거진
                 </div>
