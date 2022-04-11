@@ -1,3 +1,5 @@
+const plugin = require('tailwindcss/plugin');
+
 module.exports = {
   content: ['./**/*.jsx'],
   theme: {
@@ -55,5 +57,14 @@ module.exports = {
     require('@tailwindcss/forms'),
     require('@tailwindcss/aspect-ratio'),
     require('@tailwindcss/typography'),
+    plugin(function ({ addComponents }) {
+      addComponents({
+        '.text-gradient-primary': {
+          color: 'transparent',
+          backgroundClip: 'text',
+          backgroundImage: 'linear-gradient(to right, #cf52e8, #7833dc)',
+        }
+      });
+    })
   ],
 };

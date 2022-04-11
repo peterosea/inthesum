@@ -25,7 +25,7 @@ const HeaderSection = ({
     if (title().type === 'img') return title();
     return React.cloneElement(title(), {
       className: classnames(
-        'xl:text-[36px] font-TmoneyRoundWind font-bold leading-[0.69]',
+        'xl:text-[36px] font-TmoneyRoundWind font-bold',
         'text-[26px]',
       ),
     });
