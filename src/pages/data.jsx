@@ -9,7 +9,13 @@ export const card = [
         해당 시간동안은 이용이 불가능하며, 이용중 해당 시간이..
       </p>
     ),
-    thumbnailUrl: '/img/img-sample1@3x.png',
+    thumbnailUrl: () => (
+      <img
+        src="/img/img-sample1.png"
+        srcset="/img/img-sample1@2x.png 2x,
+            /img/img-sample1@3x.png 3x"
+      />
+    ),
   },
   {
     title: '인더섬 스크린샷 이벤트',
@@ -22,7 +28,13 @@ export const card = [
         많은 참여 부탁드립니다!
       </p>
     ),
-    thumbnailUrl: '/img/img-sample2@3x.png',
+    thumbnailUrl: () => (
+      <img
+        src="/img/img-sample2.png"
+        srcset="/img/img-sample2@2x.png 2x,
+            /img/img-sample2@3x.png 3x"
+      />
+    ),
   },
   {
     title: '푸시 알림 이벤트',
@@ -34,7 +46,13 @@ export const card = [
         해당 시간동안은 이용이 불가능하며, 이용중 해당 시간이..
       </p>
     ),
-    thumbnailUrl: '/img/img-sample3@3x.png',
+    thumbnailUrl: () => (
+      <img
+        src="/img/img-sample3.png"
+        srcset="/img/img-sample3@2x.png 2x,
+            /img/img-sample3@3x.png 3x"
+      />
+    ),
   },
   {
     title: '1.0.2 커플 베이스캠프 업데이트',
@@ -46,7 +64,13 @@ export const card = [
         해당 시간동안은 이용이 불가능하며, 이용중 해당 시간이..
       </p>
     ),
-    thumbnailUrl: '/img/img-sample4@3x.png',
+    thumbnailUrl: () => (
+      <img
+        src="/img/img-sample4.png"
+        srcset="/img/img-sample4@2x.png 2x,
+            /img/img-sample4@3x.png 3x"
+      />
+    ),
   },
   {
     title: '1.0.1 패치 업데이트 안내',
@@ -58,7 +82,13 @@ export const card = [
         해당 시간동안은 이용이 불가능하며, 이용중 해당 시간이..
       </p>
     ),
-    thumbnailUrl: '/img/img-sample5@3x.png',
+    thumbnailUrl: () => (
+      <img
+        src="/img/img-sample5.png"
+        srcset="/img/img-sample5@2x.png 2x,
+            /img/img-sample5@3x.png 3x"
+      />
+    ),
   },
   {
     title: '인더섬 with BTS 전세계 오픈',
@@ -70,7 +100,13 @@ export const card = [
         해당 시간동안은 이용이 불가능하며, 이용중 해당 시간이..
       </p>
     ),
-    thumbnailUrl: '/img/img-sample6@3x.png',
+    thumbnailUrl: () => (
+      <img
+        src="/img/img-sample6.png"
+        srcset="/img/img-sample6@2x.png 2x,
+            /img/img-sample6@3x.png 3x"
+      />
+    ),
   },
 ];
 

@@ -8,12 +8,16 @@ import cardData from './Card.data';
  * @property {boolean} pin
  * @property {{
  *  title: string
- * content: JSX.Element
- * thumbnailUrl: string
+ *  content: JSX.Element
+ *  thumbnailUrl: JSX.Element
  * }} data
  */
 const Card = ({ pin = false, data = cardData }) => {
   const { title, content, thumbnailUrl } = data;
+  const ModifyThumbnail = () =>
+    React.cloneElement(thumbnailUrl(), {
+      className: 'absolute object-cover object-center w-full h-full',
+    });
   return (
     <div className={classnames('relative group', 'px-[30px]')}>
       <div
@@ -24,11 +28,7 @@ const Card = ({ pin = false, data = cardData }) => {
       >
         <div className="shadow-[20px_20px_40px_rgba(0,0,0,0.1)]">
           <a href="#" className="block relative w-full h-full">
-            <img
-              className="absolute object-cover object-center w-full h-full"
-              src={thumbnailUrl}
-              alt=""
-            />
+            <ModifyThumbnail />
             {pin && (
               <div className="absolute flex items-center justify-center text-[19.2px] top-0 left-0 -translate-x-1/2 -translate-y-1/2 w-[40px] h-[40px] rounded-full pin bg-gradient-to-r from-[#7833DC] to-[#CF52E8]">
                 <i className="icon-pin text-white"></i>
