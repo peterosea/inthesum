@@ -1,66 +1,134 @@
 import React from 'react';
-import './index.scss';
+import classnames from 'classnames';
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="inner">
+    <footer className="bg-[#000000] min-h-[212px] p-[50px] text-white text-opacity-50 text-[14px] leading-[1.79]">
+      <div className="max-w-[1920px] mx-auto flex relative flex-col justify-center">
         <div className="footer-info">
-          <div className="logo-group">
-            <h1>
-              <a href="#">
-                <img src="/img/logo-hybe.png" alt="hybe" />
-              </a>
-              <a href="#">
-                <img src="/img/logo-netmarble.png" alt="netmarble" />
-              </a>
-            </h1>
+          <div>
+            <a href="#">
+              <img
+                className="max-w-[96px]"
+                src="/img/logo-hybeim.png"
+                srcset="/img/logo-hybeim@2x.png 2x,
+                        /img/logo-hybeim@3x.png 3x"
+              />
+            </a>
           </div>
-          <ul className="sitemenu">
-            <li>
-              <a href="#">이용약관</a>
-            </li>
-            <li>
-              <a href="#">개인정보취급방침</a>
-            </li>
-            <li>
-              <a href="#">운영정책</a>
-            </li>
-            <li>
-              <a href="#">고객센터</a>
-            </li>
-            <li>
-              <a href="#">앱다운로드</a>
-            </li>
+          <ul
+            className={classnames(
+              'mt-[13px] mb-[20px] text-white flex items-center',
+              'xl:divide-x xl:divide-gray-400 xl:mt-[20px] xl:mb-[15px]',
+            )}
+          >
+            {['이용약관', '개인정보취급방침', '고객센터'].map((e) => (
+              <li
+                className={classnames(
+                  'px-[15px] first:pl-0 last:pr-0',
+                  'xl:px-[44px] xl:leading-[10px]',
+                )}
+              >
+                <a href="#">{e}</a>
+              </li>
+            ))}
           </ul>
-          <p>COPYRIGHT &copy; HYBE IM. ALL RIGHTS RESERVED.</p>
-          <ul className="info">
-            <li>상호: 하이브 아이엠</li>
-            <li>사업자등록번호: 143-01-09821</li>
-            <li>대표: 김선일</li>
-            <li>통신판매업 신고번호 제2015-경기성남-0971</li>
+          <p>
+            ⓒ HYBEIM. 2022 All Rights Reserved.
+            <br className="xl:hidden" /> 서울특별시 강남구 테헤란로 518, 11층.
+          </p>
+          <ul
+            className={classnames(
+              'mt-[5px] mb-[15px] flex flex-wrap items-center',
+              'xl:divide-x xl:divide-gray-500',
+            )}
+          >
+            {[
+              '상호: (주)하이브 아이엠',
+              '사업자등록번호: 843-86-02224',
+              '통신판매업 신고번호: 제 2022-서울강남-01792호',
+              '대표: 정우용',
+            ].map((e) => (
+              <li
+                className={classnames(
+                  'first:pl-0 last:pr-0',
+                  'xl:leading-[10px] xl:px-[20px]',
+                )}
+              >
+                {e}
+              </li>
+            ))}
           </ul>
         </div>
-        <div className="sns">
-          <ul>
+        <div
+          className={classnames(
+            'flex flex-wrap #xl:flex-col gap-y-[20px]',
+            'xl:absolute xl:right-0 xl:bottom-0',
+          )}
+        >
+          <ul className="mr-[30px] flex items-center gap-x-[30px]">
             <li>
               <a href="#">
-                <img src="/img/logo-facebook.png" alt="facebook" />
+                <img
+                  src="/img/logo-facebook.png"
+                  srcset="/img/logo-facebook@2x.png 2x,
+                            /img/logo-facebook@3x.png 3x"
+                  alt="facebook"
+                />
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="/img/logo-twitter.png" alt="twitter" />
+                <img
+                  src="/img/logo-twitter.png"
+                  srcset="/img/logo-twitter@2x.png 2x,
+                            /img/logo-twitter@3x.png 3x"
+                  alt="twitter"
+                />
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="/img/logo-insta.png" alt="instagram" />
+                <img
+                  src="/img/logo-insta.png"
+                  srcset="/img/logo-insta@2x.png 2x,
+                            /img/logo-insta@3x.png 3x"
+                  alt="instagram"
+                />
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="/img/logo-youtube.png" alt="youtube" />
+                <img
+                  src="/img/logo-youtube.png"
+                  srcset="/img/logo-youtube@2x.png 2x,
+                            /img/logo-youtube@3x.png 3x"
+                  alt="youtube"
+                />
+              </a>
+            </li>
+          </ul>
+          <ul className="flex">
+            <li className="mr-[5px] hidden xl:block">
+              <a href="#">
+                <img
+                  className="h-[40px]"
+                  src="/img/down-appstore.png"
+                  srcset="/img/down-appstore@2x.png 2x,
+                            /img/down-appstore@3x.png 3x"
+                  alt="app store"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  className="h-[40px]"
+                  src="/img/down-googleplay.png"
+                  srcset="/img/down-googleplay@2x.png 2x,
+                            /img/down-googleplay@3x.png 3x"
+                  alt="google play"
+                />
               </a>
             </li>
           </ul>
