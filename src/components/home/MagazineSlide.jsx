@@ -85,7 +85,7 @@ export default function MagazineSlide() {
       {[
         {
           vol: 'Vol.3',
-          imageUrl: '/public/img/img-magazine1@3x.png',
+          imageUrl: '/img/img-magazine1@3x.png',
           name: 'Fishing Life',
           date: '2022.03.02',
           spec: () => (
@@ -97,7 +97,7 @@ export default function MagazineSlide() {
         },
         {
           vol: 'Vol.2',
-          imageUrl: '/public/img/img-magazine2@3x.png',
+          imageUrl: '/img/img-magazine2@3x.png',
           name: 'Healing Camp',
           date: '2022.02.23',
           spec: () => (
@@ -109,7 +109,7 @@ export default function MagazineSlide() {
         },
         {
           vol: 'Vol.1',
-          imageUrl: '/public/img/img-magazine3@3x.png',
+          imageUrl: '/img/img-magazine3@3x.png',
           name: 'Grand Open',
           date: '2022.02.16',
           spec: () => (

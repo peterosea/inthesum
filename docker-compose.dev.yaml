@@ -4,7 +4,7 @@ services:
   app:
     image: node:lts
     working_dir: /var/www/html/app/
-    command: yarn dev
+    command: yarn preview --port 8000 --host
     volumes:
       - ./:/var/www/html/app
     deploy:
@@ -16,7 +16,7 @@ services:
         - traefik.http.routers.work-202203__${PROJECT_NAME}.entrypoints=websecure
         - traefik.http.routers.work-202203__${PROJECT_NAME}.rule=Host(`${PROJECT_NAME}.demo.beeclover.pro`)
         - traefik.http.routers.work-202203__${PROJECT_NAME}.tls.certresolver=leresolver
-        - traefik.http.services.work-202203__${PROJECT_NAME}.loadbalancer.server.port=3000
+        - traefik.http.services.work-202203__${PROJECT_NAME}.loadbalancer.server.port=8000
         - traefik.http.routers.work-202203__${PROJECT_NAME}.middlewares=basic-auth@file
 
 networks:

@@ -9,10 +9,10 @@ const Footer = () => {
           <div className="logo-group">
             <h1>
               <a href="#">
-                <img src="/public/img/logo-hybe.png" alt="hybe" />
+                <img src="/img/logo-hybe.png" alt="hybe" />
               </a>
               <a href="#">
-                <img src="/public/img/logo-netmarble.png" alt="netmarble" />
+                <img src="/img/logo-netmarble.png" alt="netmarble" />
               </a>
             </h1>
           </div>
@@ -45,22 +45,22 @@ const Footer = () => {
           <ul>
             <li>
               <a href="#">
-                <img src="/public/img/logo-facebook.png" alt="facebook" />
+                <img src="/img/logo-facebook.png" alt="facebook" />
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="/public/img/logo-twitter.png" alt="twitter" />
+                <img src="/img/logo-twitter.png" alt="twitter" />
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="/public/img/logo-insta.png" alt="instagram" />
+                <img src="/img/logo-insta.png" alt="instagram" />
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="/public/img/logo-youtube.png" alt="youtube" />
+                <img src="/img/logo-youtube.png" alt="youtube" />
               </a>
             </li>
           </ul>

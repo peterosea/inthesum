@@ -20,7 +20,7 @@ const MainBannerSlide = () => {
         <SwiperSlide>
           <div className="flex justify-center items-center flex-col relative z-10">
             <img
-              src="/public/img/bts_logo.png"
+              src="/img/bts_logo.png"
               alt="BTS"
               className="!w-auto !h-auto"
             />
@@ -32,7 +32,7 @@ const MainBannerSlide = () => {
             </div>
           </div>
           <img
-            src="/public/img/img-main@3x.png"
+            src="/img/img-main@3x.png"
             alt=""
             className="absolute object-cover"
           />
@@ -44,14 +44,14 @@ const MainBannerSlide = () => {
               muted: true,
               controls: true,
               autoplay: true,
-              poster: '/public/video/poster.png',
+              poster: '/video/poster.png',
               sources: [
                 {
-                  src: '/public/video/movie-sample.mp4',
+                  src: '/video/movie-sample.mp4',
                   type: 'video/mp4',
                 },
                 {
-                  src: '/public/video/movie-sample.ogg',
+                  src: '/video/movie-sample.ogg',
                   type: 'video/ogg',
                 },
               ],
@@ -61,7 +61,7 @@ const MainBannerSlide = () => {
         <SwiperSlide>
           <div className="flex justify-center items-center flex-col relative z-10">
             <img
-              src="/public/img/bts_logo.png"
+              src="/img/bts_logo.png"
               alt="BTS"
               className="!w-auto !h-auto"
             />
@@ -73,7 +73,7 @@ const MainBannerSlide = () => {
             </div>
           </div>
           <img
-            src="/public/img/img-video-thumb@3x.png"
+            src="/img/img-video-thumb@3x.png"
             alt=""
             className="absolute object-cover"
           />

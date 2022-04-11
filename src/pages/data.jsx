@@ -9,7 +9,7 @@ export const card = [
         해당 시간동안은 이용이 불가능하며, 이용중 해당 시간이..
       </p>
     ),
-    thumbnailUrl: '/public/img/img-sample1@3x.png',
+    thumbnailUrl: '/img/img-sample1@3x.png',
   },
   {
     title: '인더섬 스크린샷 이벤트',
@@ -22,7 +22,7 @@ export const card = [
         많은 참여 부탁드립니다!
       </p>
     ),
-    thumbnailUrl: '/public/img/img-sample2@3x.png',
+    thumbnailUrl: '/img/img-sample2@3x.png',
   },
   {
     title: '푸시 알림 이벤트',
@@ -34,7 +34,7 @@ export const card = [
         해당 시간동안은 이용이 불가능하며, 이용중 해당 시간이..
       </p>
     ),
-    thumbnailUrl: '/public/img/img-sample3@3x.png',
+    thumbnailUrl: '/img/img-sample3@3x.png',
   },
   {
     title: '1.0.2 커플 베이스캠프 업데이트',
@@ -46,7 +46,7 @@ export const card = [
         해당 시간동안은 이용이 불가능하며, 이용중 해당 시간이..
       </p>
     ),
-    thumbnailUrl: '/public/img/img-sample4@3x.png',
+    thumbnailUrl: '/img/img-sample4@3x.png',
   },
   {
     title: '1.0.1 패치 업데이트 안내',
@@ -58,7 +58,7 @@ export const card = [
         해당 시간동안은 이용이 불가능하며, 이용중 해당 시간이..
       </p>
     ),
-    thumbnailUrl: '/public/img/img-sample5@3x.png',
+    thumbnailUrl: '/img/img-sample5@3x.png',
   },
   {
     title: '인더섬 with BTS 전세계 오픈',
@@ -70,7 +70,7 @@ export const card = [
         해당 시간동안은 이용이 불가능하며, 이용중 해당 시간이..
       </p>
     ),
-    thumbnailUrl: '/public/img/img-sample6@3x.png',
+    thumbnailUrl: '/img/img-sample6@3x.png',
   },
 ];
 
@@ -88,9 +88,9 @@ export const character = [
     characterImg: () => (
       <img
         className="h-[180px] w-auto"
-        src="/public/img/rm.png"
-        srcSet="/public/img/rm@2x.png 2x,
-                /public/img/rm@3x.png 3x"
+        src="/img/rm.png"
+        srcSet="/img/rm@2x.png 2x,
+                /img/rm@3x.png 3x"
       />
     ),
   },
@@ -107,16 +107,16 @@ export const character = [
       <>
         <img
           className="h-[180px] absolute z-10 top-0 right-[76px]"
-          src="/public/img/jung-kook.png"
-          srcSet="/public/img/jung-kook@2x.png 2x,
-                  /public/img/jung-kook@3x.png 3x"
+          src="/img/jung-kook.png"
+          srcSet="/img/jung-kook@2x.png 2x,
+                  /img/jung-kook@3x.png 3x"
           alt="JungKook"
         />
         <img
           className="h-[180px]"
-          src="/public/img/rm2.png"
-          srcSet="/public/img/rm2@2x.png 2x,
-                  /public/img/rm2@3x.png 3x"
+          src="/img/rm2.png"
+          srcSet="/img/rm2@2x.png 2x,
+                  /img/rm2@3x.png 3x"
           alt="RM"
         />
       </>
@@ -134,9 +134,9 @@ export const character = [
     characterImg: () => (
       <img
         className="h-[180px]"
-        src="/public/img/jimin.png"
-        srcSet="/public/img/jimin@2x.png 2x,
-                /public/img/jimin@3x.png 3x"
+        src="/img/jimin.png"
+        srcSet="/img/jimin@2x.png 2x,
+                /img/jimin@3x.png 3x"
         alt="jimin"
       />
     ),
@@ -153,9 +153,9 @@ export const character = [
     characterImg: () => (
       <img
         className="h-[180px]"
-        src="/public/img/suga.png"
-        srcSet="/public/img/suga@2x.png 2x,
-                /public/img/suga@3x.png 3x"
+        src="/img/suga.png"
+        srcSet="/img/suga@2x.png 2x,
+                /img/suga@3x.png 3x"
         alt="RM"
       />
     ),
@@ -172,9 +172,9 @@ export const character = [
     characterImg: () => (
       <img
         className="h-[180px] w-auto"
-        src="/public/img/v.png"
-        srcSet="/public/img/v@2x.png 2x,
-                /public/img/v@3x.png 3x"
+        src="/img/v.png"
+        srcSet="/img/v@2x.png 2x,
+                /img/v@3x.png 3x"
         alt="슈가"
       />
     ),
@@ -191,9 +191,9 @@ export const character = [
     characterImg: () => (
       <img
         className="h-[180px]"
-        src="/public/img/jimin.png"
-        srcSet="/public/img/jimin@2x.png 2x,
-                /public/img/jimin@3x.png 3x"
+        src="/img/jimin.png"
+        srcSet="/img/jimin@2x.png 2x,
+                /img/jimin@3x.png 3x"
         alt="jimin"
       />
     ),
@@ -210,9 +210,9 @@ export const character = [
     characterImg: () => (
       <img
         className="h-[180px]"
-        src="/public/img/suga.png"
-        srcSet="/public/img/suga@2x.png 2x,
-                /public/img/suga@3x.png 3x"
+        src="/img/suga.png"
+        srcSet="/img/suga@2x.png 2x,
+                /img/suga@3x.png 3x"
         alt="RM"
       />
     ),
@@ -229,9 +229,9 @@ export const character = [
     characterImg: () => (
       <img
         className="h-[180px] w-auto"
-        src="/public/img/v.png"
-        srcSet="/public/img/v@2x.png 2x,
-                /public/img/v@3x.png 3x"
+        src="/img/v.png"
+        srcSet="/img/v@2x.png 2x,
+                /img/v@3x.png 3x"
         alt="슈가"
       />
     ),
@@ -248,9 +248,9 @@ export const character = [
     characterImg: () => (
       <img
         className="h-[180px]"
-        src="/public/img/jimin.png"
-        srcSet="/public/img/jimin@2x.png 2x,
-                /public/img/jimin@3x.png 3x"
+        src="/img/jimin.png"
+        srcSet="/img/jimin@2x.png 2x,
+                /img/jimin@3x.png 3x"
         alt="jimin"
       />
     ),
@@ -267,9 +267,9 @@ export const character = [
     characterImg: () => (
       <img
         className="h-[180px]"
-        src="/public/img/suga.png"
-        srcSet="/public/img/suga@2x.png 2x,
-                /public/img/suga@3x.png 3x"
+        src="/img/suga.png"
+        srcSet="/img/suga@2x.png 2x,
+                /img/suga@3x.png 3x"
         alt="RM"
       />
     ),
@@ -286,9 +286,9 @@ export const character = [
     characterImg: () => (
       <img
         className="h-[180px] w-auto"
-        src="/public/img/v.png"
-        srcSet="/public/img/v@2x.png 2x,
-                /public/img/v@3x.png 3x"
+        src="/img/v.png"
+        srcSet="/img/v@2x.png 2x,
+                /img/v@3x.png 3x"
         alt="슈가"
       />
     ),
@@ -305,9 +305,9 @@ export const character = [
     characterImg: () => (
       <img
         className="h-[180px]"
-        src="/public/img/jimin.png"
-        srcSet="/public/img/jimin@2x.png 2x,
-                /public/img/jimin@3x.png 3x"
+        src="/img/jimin.png"
+        srcSet="/img/jimin@2x.png 2x,
+                /img/jimin@3x.png 3x"
         alt="jimin"
       />
     ),
@@ -324,9 +324,9 @@ export const character = [
     characterImg: () => (
       <img
         className="h-[180px]"
-        src="/public/img/suga.png"
-        srcSet="/public/img/suga@2x.png 2x,
-                /public/img/suga@3x.png 3x"
+        src="/img/suga.png"
+        srcSet="/img/suga@2x.png 2x,
+                /img/suga@3x.png 3x"
         alt="RM"
       />
     ),
@@ -343,9 +343,9 @@ export const character = [
     characterImg: () => (
       <img
         className="h-[180px] w-auto"
-        src="/public/img/v.png"
-        srcSet="/public/img/v@2x.png 2x,
-                /public/img/v@3x.png 3x"
+        src="/img/v.png"
+        srcSet="/img/v@2x.png 2x,
+                /img/v@3x.png 3x"
         alt="슈가"
       />
     ),
@@ -354,16 +354,16 @@ export const character = [
 
 export const DevlogBgImg = () => (
   <img
-    src="/public/img/devlog-introduce-visual.png"
-    srcSet="/public/img/devlog-introduce-visual@2x.png 2x,
-        /public/img/devlog-introduce-visual@3x.png 3x"
+    src="/img/devlog-introduce-visual.png"
+    srcSet="/img/devlog-introduce-visual@2x.png 2x,
+        /img/devlog-introduce-visual@3x.png 3x"
   />
 );
 
 export const BtsBgImg = () => (
   <img
-    src="/public/img/devlog-with-bts-introduce-visual.png"
-    srcSet="/public/img/devlog-with-bts-introduce-visual@2x.png 2x,
-        /public/img/devlog-with-bts-introduce-visual@3x.png 3x"
+    src="/img/devlog-with-bts-introduce-visual.png"
+    srcSet="/img/devlog-with-bts-introduce-visual@2x.png 2x,
+        /img/devlog-with-bts-introduce-visual@3x.png 3x"
   />
 );

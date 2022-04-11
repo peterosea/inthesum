@@ -33,7 +33,7 @@ const Header = ({ isBlack = false }) => {
             <h1 className="logo">
               <a href="/">
                 <img
-                  src="/public/img/logo-inthesum-small@3x.png"
+                  src="/img/logo-inthesum-small@3x.png"
                   alt="inthesum logo"
                 />
               </a>
@@ -108,7 +108,7 @@ const Header = ({ isBlack = false }) => {
                 <li>
                   <a href="#">
                     <img
-                      src="/public/img/icon-gnb-my@3x.png"
+                      src="/img/icon-gnb-my@3x.png"
                       alt="account img"
                     />
                   </a>
@@ -117,7 +117,7 @@ const Header = ({ isBlack = false }) => {
                   <a href="#">
                     <img
                       className="logout"
-                      src="/public/img/icon-logout@3x.png"
+                      src="/img/icon-logout@3x.png"
                       alt="logout img"
                     />
                   </a>

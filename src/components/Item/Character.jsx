@@ -17,9 +17,9 @@ const Character = ({ name, time, content, thumbnail, characterImg }) => {
           {name}
           <span className="w-[39px] relative inline-block top-[6px] mr-[5px]">
             <img
-              src="/public/img/new@3x.png"
-              srcSet="/public/img/new@2x.png 2x,
-                  /public/img/new@3x.png 3x"
+              src="/img/new@3x.png"
+              srcSet="/img/new@2x.png 2x,
+                  /img/new@3x.png 3x"
               alt="new"
             />
           </span>
@@ -49,7 +49,7 @@ const Character = ({ name, time, content, thumbnail, characterImg }) => {
       <div className="absolute bottom-0 right-0 z-10">{characterImg()}</div>
       <div className="absolute left-1/2 -translate-x-1/2 w-full top-0">
         <img
-          src="/public/img/img-baloon-full@3x.png"
+          src="/img/img-baloon-full@3x.png"
           alt="ballon"
           className="absolute top-0 !w-auto !h-auto left-1/2 -translate-x-1/2"
         />

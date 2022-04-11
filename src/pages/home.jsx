@@ -24,8 +24,8 @@ const Main = () => {
                 <div className="flex xl:flex-col justify-between #xl:px-[30px] #xl:container #xl:mx-auto">
                   <div>
                     <img
-                      className="h-[55px] xl:h-[93px]"
-                      src="/public/img/img-withbts-title@3x.png"
+                      className="h-[55px] xl:h-[93px] w-auto"
+                      src="/img/img-withbts-title@3x.png"
                       alt="with BTS"
                     />
                     <div className="my-[30px] hidden xl:block">
@@ -34,7 +34,7 @@ const Main = () => {
                   </div>
                   <a href="#" className="#xl:self-center">
                     <img
-                      src="/public/img/icon-more-arrow@3x.png"
+                      src="/img/icon-more-arrow@3x.png"
                       alt="more view"
                       className="w-[16px] xl:w-[31px]"
                     />
@@ -55,7 +55,7 @@ const Main = () => {
             <div className="flex xl:flex-col justify-between">
               <div className="w-[160px]">
                 <img
-                  src="/public/img/img-madebyarmy-title@3x.png"
+                  src="/img/img-madebyarmy-title@3x.png"
                   alt="with BTS"
                 />
                 <div className="text-[22px] font-bold whitespace-nowrap text-justify">
@@ -67,7 +67,7 @@ const Main = () => {
               </div>
               <a href="#">
                 <img
-                  src="/public/img/icon-more-arrow@3x.png"
+                  src="/img/icon-more-arrow@3x.png"
                   alt="more view"
                   className="w-[31px]"
                 />
@@ -107,14 +107,14 @@ const Main = () => {
               </div>
               <img
                 className="h-[150px] w-auto"
-                src="/public/img/banner-pd-note-img@3x.png"
+                src="/img/banner-pd-note-img@3x.png"
                 alt=""
               />
             </a>
             <a
               href="#"
               className={classnames(
-                'relative  min-h-[260px] flex  items-center py-[42px] px-[30px]  bg-[#fdf4ff] flex-wrap gap-y-[35px] justify-end',
+                'relative  min-h-[260px] flex py-[42px] px-[30px] bg-[#fdf4ff] items-center flex-wrap gap-y-[35px] justify-end',
                 'xl:rounded-[12px] xl:p-[50px] xl:justify-between',
               )}
             >
@@ -134,7 +134,7 @@ const Main = () => {
                 </div>
               </div>
               <img
-                src="/public/img/banner-bts-cloth-img@3x.png"
+                src="/img/banner-bts-cloth-img@3x.png"
                 alt=""
                 className="w-auto h-[135px]"
               />

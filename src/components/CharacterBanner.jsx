@@ -18,9 +18,9 @@ const CharacterBanner = () => {
           </span>
           <span className="w-[39px] relative inline-block top-[6px] mr-[5px]">
             <img
-              src="/public/img/new@3x.png"
-              srcSet="/public/img/new@2x.png 2x,
-                  /public/img/new@3x.png 3x"
+              src="/img/new@3x.png"
+              srcSet="/img/new@2x.png 2x,
+                  /img/new@3x.png 3x"
               alt="new"
             />
           </span>
@@ -49,9 +49,9 @@ const CharacterBanner = () => {
       </div>
       <img
         className={classnames('h-[120px] w-auto', 'xl:h-[180px]')}
-        src="/public/img/rm2.png"
-        srcSet="/public/img/rm2@2x.png 2x,
-                  /public/img/rm2@3x.png 3x"
+        src="/img/rm2.png"
+        srcSet="/img/rm2@2x.png 2x,
+                  /img/rm2@3x.png 3x"
         alt="RM"
       />
     </div>

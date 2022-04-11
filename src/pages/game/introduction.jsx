@@ -64,14 +64,14 @@ const Main = () => {
                             muted: true,
                             controls: true,
                             autoplay: true,
-                            poster: '/public/video/poster.png',
+                            poster: '/video/poster.png',
                             sources: [
                               {
-                                src: '/public/video/movie-sample.mp4',
+                                src: '/video/movie-sample.mp4',
                                 type: 'video/mp4',
                               },
                               {
-                                src: '/public/video/movie-sample.ogg',
+                                src: '/video/movie-sample.ogg',
                                 type: 'video/ogg',
                               },
                             ],
@@ -134,9 +134,9 @@ const Main = () => {
               bgImg={() => (
                 <img
                   className="object-cover w-full h-full absolute object-center"
-                  src="/public/img/507.jpg"
-                  srcSet="/public/img/507@2x.jpg 2x,
-                        /public/img/507@3x.jpg 3x"
+                  src="/img/507.jpg"
+                  srcSet="/img/507@2x.jpg 2x,
+                        /img/507@3x.jpg 3x"
                 />
               )}
             >
@@ -152,9 +152,9 @@ const Main = () => {
               bgImg={() => (
                 <img
                   className="object-cover w-full h-full absolute object-center"
-                  src="/public/img/img-introduce-2.jpg"
-                  srcSet="/public/img/img-introduce-2@2x.jpg 2x,
-                        /public/img/img-introduce-2@3x.jpg 3x"
+                  src="/img/img-introduce-2.jpg"
+                  srcSet="/img/img-introduce-2@2x.jpg 2x,
+                        /img/img-introduce-2@3x.jpg 3x"
                 />
               )}
             >
@@ -168,15 +168,15 @@ const Main = () => {
           <div className="mt-[83px] pt-[276px] relative">
             <img
               className="max-w-[600px] absolute top-0 left-1/2 -translate-x-1/2"
-              src="/public/img/img-introduce-3.png"
-              srcSet="/public/img/img-introduce-3@2x.png 2x,
-                      /public/img/img-introduce-3@3x.png 3x"
+              src="/img/img-introduce-3.png"
+              srcSet="/img/img-introduce-3@2x.png 2x,
+                      /img/img-introduce-3@3x.png 3x"
             />
             <img
               className="relative z-10"
-              src="/public/img/img-introduce-4.png"
-              srcSet="/public/img/img-introduce-4@2x.png 2x,
-                      /public/img/img-introduce-4@3x.png 3x"
+              src="/img/img-introduce-4.png"
+              srcSet="/img/img-introduce-4@2x.png 2x,
+                      /img/img-introduce-4@3x.png 3x"
             />
           </div>
           <div className="mt-[165px]">
@@ -184,9 +184,9 @@ const Main = () => {
               <div className="justify-self-center relative">
                 <img
                   className="max-w-[420px]"
-                  src="/public/img/img-introduce-5.png"
-                  srcSet="/public/img/img-introduce-5@2x.png 2x,
-                          /public/img/img-introduce-5@3x.png 3x"
+                  src="/img/img-introduce-5.png"
+                  srcSet="/img/img-introduce-5@2x.png 2x,
+                          /img/img-introduce-5@3x.png 3x"
                 />
                 <div className="absolute w-full top-1/2 -translate-y-1/2 text-center font-TmoneyRoundWind text-white font-extrabold text-[42px]">
                   <p>
@@ -199,9 +199,9 @@ const Main = () => {
               <div className="justify-self-center relative">
                 <img
                   className="max-w-[420px]"
-                  src="/public/img/img-introduce-6.png"
-                  srcSet="/public/img/img-introduce-6@2x.png 2x,
-                          /public/img/img-introduce-6@3x.png 3x"
+                  src="/img/img-introduce-6.png"
+                  srcSet="/img/img-introduce-6@2x.png 2x,
+                          /img/img-introduce-6@3x.png 3x"
                 />
                 <div className="absolute w-full top-1/2 -translate-y-1/2 text-center font-TmoneyRoundWind text-white font-extrabold text-[42px]">
                   <p>
@@ -215,9 +215,9 @@ const Main = () => {
             <div className="grid grid-cols-3">
               <div className="justify-self-center grid gap-y-[50px]">
                 <img
-                  src="/public/img/img-introduce-7.png"
-                  srcSet="/public/img/img-introduce-7@2x.png 2x,
-                          /public/img/img-introduce-7@3x.png 3x"
+                  src="/img/img-introduce-7.png"
+                  srcSet="/img/img-introduce-7@2x.png 2x,
+                          /img/img-introduce-7@3x.png 3x"
                 />
                 <div className="text-[36px] font-TmoneyRoundWind font-extrabold text-center">
                   <span className="text-primary">수영</span>하고
@@ -225,9 +225,9 @@ const Main = () => {
               </div>
               <div className="justify-self-center grid gap-y-[50px]">
                 <img
-                  src="/public/img/img-introduce-8.png"
-                  srcSet="/public/img/img-introduce-8@2x.png 2x,
-                          /public/img/img-introduce-8@3x.png 3x"
+                  src="/img/img-introduce-8.png"
+                  srcSet="/img/img-introduce-8@2x.png 2x,
+                          /img/img-introduce-8@3x.png 3x"
                 />
                 <div className="text-[36px] font-TmoneyRoundWind font-extrabold text-center">
                   <span className="text-primary">낚시</span>하고
@@ -235,9 +235,9 @@ const Main = () => {
               </div>
               <div className="justify-self-center grid gap-y-[50px]">
                 <img
-                  src="/public/img/img-introduce-9.png"
-                  srcSet="/public/img/img-introduce-9@2x.png 2x,
-                          /public/img/img-introduce-9@3x.png 3x"
+                  src="/img/img-introduce-9.png"
+                  srcSet="/img/img-introduce-9@2x.png 2x,
+                          /img/img-introduce-9@3x.png 3x"
                 />
                 <div className="text-[36px] font-TmoneyRoundWind font-extrabold text-center">
                   <span className="text-primary">불꽃놀이</span>까지 함께
@@ -250,23 +250,23 @@ const Main = () => {
       <section className="h-[910px] relative overflow-hidden">
         <img
           className="absolute h-full object-contain max-w-none w-auto object-center left-1/2 -translate-x-1/2"
-          src="/public/img/img-introduce-bottom-bg.png"
-          srcSet="/public/img/img-introduce-bottom-bg@2x.png 2x,
-                  /public/img/img-introduce-bottom-bg@3x.png 3x"
+          src="/img/img-introduce-bottom-bg.png"
+          srcSet="/img/img-introduce-bottom-bg@2x.png 2x,
+                  /img/img-introduce-bottom-bg@3x.png 3x"
         />
         <div className="container mx-auto mt-[90px] relative">
           <div className="grid justify-items-center gap-y-[92px]">
             <img
               className="max-w-[654px]"
-              src="/public/img/img-introduce-text.png"
-              srcSet="/public/img/img-introduce-text@2x.png 2x,
-                      /public/img/img-introduce-text@3x.png 3x"
+              src="/img/img-introduce-text.png"
+              srcSet="/img/img-introduce-text@2x.png 2x,
+                      /img/img-introduce-text@3x.png 3x"
             />
             <img
               className="max-w-[468px]"
-              src="/public/img/img-introduce-logo-full.png"
-              srcSet="/public/img/img-introduce-logo-full@2x.png 2x,
-                      /public/img/img-introduce-logo-full@3x.png 3x"
+              src="/img/img-introduce-logo-full.png"
+              srcSet="/img/img-introduce-logo-full@2x.png 2x,
+                      /img/img-introduce-logo-full@3x.png 3x"
             />
           </div>
         </div>
@@ -277,9 +277,9 @@ const Main = () => {
 
 const HeaderBg = () => (
   <img
-    src="/public/img/game-introduce-visual.png"
-    srcSet="/public/img/game-introduce-visual@2x.png 2x,
-        /public/img/game-introduce-visual@3x.png 3x"
+    src="/img/game-introduce-visual.png"
+    srcSet="/img/game-introduce-visual@2x.png 2x,
+        /img/game-introduce-visual@3x.png 3x"
     className="object-cover w-full h-full absolute object-center"
   />
 );

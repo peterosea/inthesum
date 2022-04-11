@@ -66,9 +66,9 @@ const Main = () => {
             title={() => (
               <img
                 className="w-[100px] xl:w-[160px]"
-                src="/public/img/img-withbts-title.png"
-                srcSet="/public/img/img-withbts-title@2x.png 2x,
-                    /public/img/img-withbts-title@3x.png 3x"
+                src="/img/img-withbts-title.png"
+                srcSet="/img/img-withbts-title@2x.png 2x,
+                    /img/img-withbts-title@3x.png 3x"
               />
             )}
             content={() => <>BTS가 개발에 직접 참여한 인더섬 업데이트 소식</>}

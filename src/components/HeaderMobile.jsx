@@ -127,7 +127,7 @@ const HeaderMobile = () => {
       <h1 className="logo">
         <a href="/">
           <img
-            src="/public/img/logo-inthesum-small@3x.png"
+            src="/img/logo-inthesum-small@3x.png"
             alt="inthesum logo"
           />
         </a>
@@ -142,7 +142,7 @@ const HeaderMobile = () => {
         <h1 className="logo">
           <a href="/">
             <img
-              src="/public/img/logo-inthesum-small@3x.png"
+              src="/img/logo-inthesum-small@3x.png"
               alt="inthesum logo"
             />
           </a>
@@ -187,7 +187,7 @@ const HeaderMobile = () => {
         <div className="account-info">
           <span>마이페이지</span>
           <a href="#">
-            <img src="/public/img/icon-gnb-my@3x.png" alt="account img" />
+            <img src="/img/icon-gnb-my@3x.png" alt="account img" />
           </a>
         </div>
       </div>

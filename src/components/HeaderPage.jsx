@@ -3,9 +3,9 @@ import classnames from 'classnames';
 
 const BgImg = () => (
   <img
-    src="/public/img/header-community.webp"
-    srcSet="/public/img/header-community@2x.webp 2x,
-        /public/img/header-community@3x.webp 3x"
+    src="/img/header-community.webp"
+    srcSet="/img/header-community@2x.webp 2x,
+        /img/header-community@3x.webp 3x"
   />
 );
 /**

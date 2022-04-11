@@ -127,9 +127,9 @@ export default () => {
         )}
         bgImg={() => (
           <img
-            src="/public/img/bg-community-news.png"
-            srcSet="/public/img/bg-community-news@2x.png 2x,
-                    /public/img/bg-community-news@3x.png 3x"
+            src="/img/bg-community-news.png"
+            srcSet="/img/bg-community-news@2x.png 2x,
+                    /img/bg-community-news@3x.png 3x"
           />
         )}
       />
