@@ -66,7 +66,6 @@ export default function MagazineSlide() {
       breakpoints: {
         '(min-width: 1280px)': {
           slides: {
-            origin: 'center',
             perView: 'auto',
             spacing: 100,
           },
@@ -126,10 +125,10 @@ export default function MagazineSlide() {
               <img src={imageUrl} alt="" />
             </div>
             <div className="mt-[36px] leading-none">
-              <div className="text-[18px] text-[#bc83ff] font-extrabold">
+              <div className="text-[18px] text-[#bc83ff] font-extrabold font-TmoneyRoundWind">
                 {vol}
               </div>
-              <div className="mt-[8px] text-[36px] font-extrabold">{name}</div>
+              <div className="mt-[8px] text-[30px] font-extrabold">{name}</div>
               <div className="mt-[10px] font-bold text-black text-[14px]">
                 {date}
               </div>
