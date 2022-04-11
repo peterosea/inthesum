@@ -129,6 +129,29 @@ export const character = [
                 /img/rm@3x.png 3x"
       />
     ),
+    thumbnail: [
+      {
+        img: () => (
+          <img
+            className="h-[180px] w-auto"
+            src="/img/thumb.png"
+            srcSet="/img/thumb@2x.png 2x,
+              /img/thumb@3x.png 3x"
+          />
+        ),
+      },
+      {
+        img: () => (
+          <img
+            className="h-[180px] w-auto"
+            src="/img/thumb.png"
+            srcSet="/img/thumb@2x.png 2x,
+              /img/thumb@3x.png 3x"
+          />
+        ),
+        type: 'video',
+      },
+    ],
   },
   {
     name: 'RM,정국',
@@ -176,6 +199,29 @@ export const character = [
         alt="jimin"
       />
     ),
+    thumbnail: [
+      {
+        img: () => (
+          <img
+            className="h-[180px] w-auto"
+            src="/img/thumb.png"
+            srcSet="/img/thumb@2x.png 2x,
+              /img/thumb@3x.png 3x"
+          />
+        ),
+      },
+      {
+        img: () => (
+          <img
+            className="h-[180px] w-auto"
+            src="/img/thumb.png"
+            srcSet="/img/thumb@2x.png 2x,
+              /img/thumb@3x.png 3x"
+          />
+        ),
+        type: 'video',
+      },
+    ],
   },
   {
     name: '슈가',
@@ -195,6 +241,29 @@ export const character = [
         alt="RM"
       />
     ),
+    thumbnail: [
+      {
+        img: () => (
+          <img
+            className="h-[180px] w-auto"
+            src="/img/thumb.png"
+            srcSet="/img/thumb@2x.png 2x,
+              /img/thumb@3x.png 3x"
+          />
+        ),
+      },
+      {
+        img: () => (
+          <img
+            className="h-[180px] w-auto"
+            src="/img/thumb.png"
+            srcSet="/img/thumb@2x.png 2x,
+              /img/thumb@3x.png 3x"
+          />
+        ),
+        type: 'video',
+      },
+    ],
   },
   {
     name: '뷔',
