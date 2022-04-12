@@ -51,7 +51,7 @@ const Main = () => {
               >
                 핀 표시 있는 게시물은 고정 게시물
               </h1>
-              <time className={classnames('text-[#9ba0a8]')}>
+              <time className={classnames('text-[#9ba0a8] text-[20px]')}>
                 2022년 4월 13일 오후 5시 53분
               </time>
             </div>

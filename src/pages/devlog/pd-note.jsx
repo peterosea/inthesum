@@ -43,7 +43,9 @@ const Main = () => {
               <h1 className="text-[42px] tracking-[-2.1px] font-bold font-TmoneyRoundWind leading-tight mb-[15px]">
                 핀 표시 있는 게시물은 고정 게시물
               </h1>
-              <time>2022년 4월 13일 오후 5시 53분</time>
+              <time className="text-[#9ba0a8] text-[20px]">
+                2022년 4월 13일 오후 5시 53분
+              </time>
             </div>
             <article className="prose lg:prose-2xl max-w-none font-light">
               <p>
