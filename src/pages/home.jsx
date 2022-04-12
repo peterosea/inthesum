@@ -148,6 +148,7 @@ const Main = () => {
             content={() => (
               <p>인더섬에서는 과연 어떠한 일이 일어나고 있고 일어날까요?</p>
             )}
+            arrow
           />
           <div
             className={classnames(
