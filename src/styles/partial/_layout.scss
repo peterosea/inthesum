@@ -81,42 +81,6 @@ body {
   }
 }
 
-@media screen and (max-width: 980px) {
-  header {
-    #dt-menu-wrap {
-      display: none;
-    }
-  }
-  header {
-    #mobile-menu-wrap {
-      display: flex;
-      justify-content: space-between;
-    }
-  }
-  .main-banner {
-    #main-banner-swiper {
-      .swiper-wrapper {
-        .swiper-slide {
-          .slider-text {
-            img {
-              width: 20%;
-              height: 20%;
-              margin-bottom: 10px;
-            }
-            p {
-              color: white;
-              &.title {
-                font-size: 30px;
-                font-weight: 800;
-              }
-              font-size: 14px;
-            }
-          }
-        }
-      }
-    }
-  }
-} //break point 980px
 @media screen and (max-width: 680px) {
   .footer {
     a,

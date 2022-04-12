@@ -4,6 +4,10 @@
   --zindexSliderMenu: 60;
   --zindexFloatBanner: 500;
   --header-g-height: 110px;
+
+@media screen and (max-width: 980px) {
+  --header-g-height: 64px;
+}
 }
 
 header {
@@ -125,7 +129,7 @@ header {
   #mobile-menu-wrap {
     position: fixed;
     width: 100%;
-    height: 64px;
+    height: var(--header-g-height);
     padding: 10px 10px;
     box-sizing: border-box;
     z-index: var(--zindexMobile);
@@ -460,3 +464,40 @@ header {
     }
   }
 }
+
+@media screen and (max-width: 980px) {
+  header {
+    #dt-menu-wrap {
+      display: none;
+    }
+  }
+  header {
+    #mobile-menu-wrap {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  .main-banner {
+    #main-banner-swiper {
+      .swiper-wrapper {
+        .swiper-slide {
+          .slider-text {
+            img {
+              width: 20%;
+              height: 20%;
+              margin-bottom: 10px;
+            }
+            p {
+              color: white;
+              &.title {
+                font-size: 30px;
+                font-weight: 800;
+              }
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+} //break point 980px
