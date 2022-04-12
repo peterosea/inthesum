@@ -92,7 +92,7 @@ const Main = () => {
         <div className="xl:container mx-auto">
           <div
             className={classnames(
-              'mt-[60px]',
+              'mt-[60px] mx-full',
               'grid grid-cols-1 gap-y-[30px]',
               'xl:grid-cols-2 xl:gap-[40px] xl:gap-y-[94px]',
             )}
@@ -116,7 +116,7 @@ export default () => {
         title="인더섬 개발일지"
         content={() => <>BTS 멤버들이 처음부터 함께한 인더섬에서 만나요</>}
       />
-      <div className="font-Pretendard mb-[60px] xl:mb-[120px]">
+      <div className="font-Pretendard mb-[60px] xl:mb-[120px] overflow-x-hidden">
         <Main />
       </div>
       <Footer />
