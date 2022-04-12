@@ -10,12 +10,12 @@ const Thumbnail = ({ img, type }) => {
   if (type === 'video') {
     Cover = () => (
       <div className="absolute w-full h-full bg-black bg-opacity-50 flex items-center justify-center">
-        <i className="icon-right-dir text-[20px] text-white" />
+        <i className="icon-right-dir text-[30px] text-white" />
       </div>
     );
   }
   return (
-    <div className="w-[50px] h-[50px] rounded-[20px] overflow-hidden relative">
+    <div className="w-[70px] h-[70px] rounded-[20px] overflow-hidden relative">
       <ModifyThumbnail />
       <Cover />
     </div>
@@ -34,7 +34,7 @@ const Character = ({ name, time, content, thumbnail, characterImg }) => {
   let Thumbnails = () => <></>;
   if (thumbnail) {
     Thumbnails = () => (
-      <div className="flex gap-x-[10px] mt-[27px] ml-[20px] items-center">
+      <div className="flex gap-x-[10px] mt-[20px] ml-[34px] items-center">
         {thumbnail?.map((t, index) => {
           if (index < 2) return <Thumbnail {...t} key={`index-${index}`} />;
         })}
@@ -49,7 +49,7 @@ const Character = ({ name, time, content, thumbnail, characterImg }) => {
   return (
     <div className="relative min-w-[270px] h-full min-h-[380px]">
       <div className="relative z-10">
-        <div className="px-[20px] text-[30px] font-extrabold text-left font-TmoneyRoundWind">
+        <div className="pl-[34px] text-[30px] font-extrabold text-left font-TmoneyRoundWind leading-none">
           {name}
           <span className="w-[39px] relative inline-block top-[6px] mr-[5px]">
             <img
@@ -61,7 +61,9 @@ const Character = ({ name, time, content, thumbnail, characterImg }) => {
           </span>
           <span className="text-[14px] font-normal text-[#999]">{time}</span>
         </div>
-        <div className="px-[20px] mt-[21px] line-clamp-2">{content()}</div>
+        <div className="px-[34px] mt-[20px] line-clamp-2 text-[14px] leading-[1.2]">
+          {content()}
+        </div>
         <Thumbnails />
       </div>
       <div className="absolute bottom-0 right-0 z-10">{characterImg()}</div>
