@@ -20,7 +20,7 @@ const PolicyHeader = () => {
             <div className="font-bold whitespace-nowrap">버전</div>
             <Select
               button={({ children }) => (
-                <div className="leading-none block w-full focus:outline-none focus:shadow-none focus:ring-0 focus:border-primary border-[#e6eaf2] font-Pretendard text-[14px] pl-[26px] py-[21px] pr-[53px] text-[#333] focus:text-black border relative font-Pretendard">
+                <div className="leading-none block w-full focus:outline-none focus:shadow-none focus:ring-0 focus:border-primary border-[#e6eaf2] font-Pretendard text-[14px] pl-[26px] py-[21px] pr-[53px] text-[#333] focus:text-black border relative">
                   {children}
                   <i className="icon-arrow absolute right-[17px] top-1/2 -translate-y-1/2" />
                 </div>

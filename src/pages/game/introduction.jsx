@@ -54,7 +54,7 @@ const Main = () => {
                         <span className="text-[18px] font-TmoneyRoundWind font-extrabold">
                           인더섬 with BTS 티저
                         </span>
-                        <button className="btn bg-black text-white text-[14px] rounded-full py-[12px] font-TmoneyRoundWind font-extrabold">
+                        <button className="btn bg-black text-white text-[14px] rounded-full py-[14px] px-[20px] font-TmoneyRoundWind font-extrabold leading-none">
                           설명보기
                         </button>
                       </div>

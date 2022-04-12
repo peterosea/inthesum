@@ -3,6 +3,7 @@ import classnames from 'classnames';
 import useShrink from '../hook/useShrink';
 import HeaderMobile from './HeaderMobile';
 import Select from '../components/Select';
+import './Header.scss';
 
 const Header = ({ isBlack = false }) => {
   const [isMenuOver, setIsMenuOver] = useState(false);
@@ -107,10 +108,7 @@ const Header = ({ isBlack = false }) => {
               <ul>
                 <li>
                   <a href="#">
-                    <img
-                      src="/img/icon-gnb-my@3x.png"
-                      alt="account img"
-                    />
+                    <img src="/img/icon-gnb-my@3x.png" alt="account img" />
                   </a>
                 </li>
                 <li>

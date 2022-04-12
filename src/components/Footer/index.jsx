@@ -26,7 +26,7 @@ const Footer = () => {
               <li
                 className={classnames(
                   'px-[15px] first:pl-0 last:pr-0',
-                  'xl:px-[44px] xl:leading-[10px]',
+                  'xl:px-[20px] xl:leading-[10px]',
                 )}
               >
                 <a href="#">{e}</a>

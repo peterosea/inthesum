@@ -4,7 +4,7 @@ import VideoJS from '../../components/Video';
 
 const MainBannerSlide = () => {
   return (
-    <div className="h-[525px] xl:h-[80vh] max-h-[1080px] relative">
+    <div className="h-[525px] xl:h-[860px] relative">
       <Swiper
         modules={[Pagination, Navigation, Autoplay]}
         speed={2500}

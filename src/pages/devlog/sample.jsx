@@ -24,7 +24,7 @@ const Main = () => {
       </section>
       <section className={classnames('mt-[40px]', 'xl:mt-[80px]')}>
         <div className="container mx-auto">
-          <article className="prose lg:prose-xl max-w-none">
+          <article className="prose lg:prose-xl max-w-none font-light">
             <p>
               훗~이번에는 인더섬의 과일로 칵테일을 만들 수 있는 칵테일바를
               오픈했어요.

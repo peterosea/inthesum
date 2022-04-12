@@ -39,8 +39,8 @@ const CharacterBanner = () => {
           </div>
           <span
             className={classnames(
-              'text-[#9ba0a8] text-[14px] font-extrabold',
-              'xl:text-1 xl:font-normal',
+              'text-[#9ba0a8] text-[14px] font-extrabold font-TmoneyRoundWind tracking-[-0.9px]',
+              'xl:text-[18px]',
             )}
           >
             인스타그램에서도 확인하세요

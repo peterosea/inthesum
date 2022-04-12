@@ -26,7 +26,7 @@ const Main = () => {
           />
           <div
             className={classnames(
-              'grid xl:grid-cols-2 xl:gap-[99px] xl:mt-[60px]',
+              'grid xl:grid-cols-2 xl:gap-[99px] xl:mt-[60px] mx-full',
               'mt-[42px] gap-[30px]',
             )}
           >
@@ -64,7 +64,7 @@ const Main = () => {
         className={classnames('xl:mt-[91px] xl:mb-[120px]', 'mt-[60px]')}
       >
         <div className="xl:container mx-auto">
-          <div className="xl:rounded-[12px] h-[230px]">
+          <div className="xl:rounded-[12px] h-[230px] overflow-hidden">
             <Banner>
               <div className="text-center">
                 <div className="font-TmoneyRoundWind text-[20px] text-white font-extrabold">
@@ -93,7 +93,7 @@ export default () => {
         title="커뮤니티"
         content={() => <>인더섬의 소식과 궁금한 사항을 전해드려요</>}
       />
-      <div className="font-Pretendard">
+      <div className="font-Pretendard overflow-x-hidden">
         <Main />
       </div>
       <Footer />

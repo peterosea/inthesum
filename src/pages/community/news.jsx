@@ -12,8 +12,14 @@ import { card } from '../data';
 const Main = () => {
   return (
     <>
-      <div className="xl:container mx-auto">
-        <section className={classnames('mt-[40px] mb-[80px]', 'xl:mt-[70px]')}>
+      <section
+        id="list"
+        className={classnames(
+          'mt-[40px] mb-[80px] scroll-mt-[calc(var(--header-g-height)+100px)]',
+          'xl:mt-[100px]',
+        )}
+      >
+        <div className="xl:container mx-auto">
           <div
             className={classnames(
               'grid grid-cols-1 gap-y-[30px] mb-[80px]',
@@ -30,10 +36,10 @@ const Main = () => {
           <div className="block xl:hidden pl-cpx">
             <PaginationBar current={1} all={9} />
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
       <div className={classnames('h-px bg-[#e6eaf2] hidden', 'xl:block')}></div>
-      <div className="mt-[87px]">
+      <section className="mt-[87px]">
         <div className="container mx-auto">
           <div>
             <div className={classnames('mb-[40px]', 'xl:mb-[80px]')}>
@@ -45,11 +51,11 @@ const Main = () => {
               >
                 핀 표시 있는 게시물은 고정 게시물
               </h1>
-              <time className={classnames('text-[#9ba0a8]')}>
+              <time className={classnames('text-[#9ba0a8] text-[20px]')}>
                 2022년 4월 13일 오후 5시 53분
               </time>
             </div>
-            <article className="prose prose-sm lg:prose-2xl max-w-none">
+            <article className="prose prose-sm lg:prose-2xl max-w-none font-light">
               <p>
                 BTS와 함께 하는 힐링 섬 라이프 인더섬 with BTS입니다.
                 <br />
@@ -111,7 +117,7 @@ const Main = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };

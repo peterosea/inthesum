@@ -6,15 +6,23 @@ import Pagination from '../../components/Pagination';
 import HeaderPage from '../../components/HeaderPage';
 import ScrollTop from '../../components/ScrollTop';
 import PaginationBar from '../../components/Pagination/Bar';
+import classnames from 'classnames';
+
 // data
 import { BtsBgImg, card } from '../data';
 
 const Main = () => {
   return (
     <>
-      <div className="container mx-auto">
-        <section className="mt-[70px] mb-[80px]">
-          <div className="grid grid-cols-2 gap-[9px] mb-[80px]">
+      <section
+        id="list"
+        className={classnames(
+          'mt-[40px] mb-[80px] scroll-mt-[calc(var(--header-g-height)+100px)]',
+          'xl:mt-[100px]',
+        )}
+      >
+        <div className="container mx-auto">
+          <div className="grid xl:grid-cols-2 gap-x-[96px] gap-y-[60px] mb-[80px] mx-full">
             {card.map((e, index) => (
               <Card data={e} key={`card-index-${index}`} pin={index < 2} />
             ))}
@@ -25,19 +33,21 @@ const Main = () => {
           <div className="block xl:hidden pl-cpx">
             <PaginationBar current={1} all={9} />
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
       <div className="h-px bg-[#e6eaf2]"></div>
-      <div className="mt-[87px]">
+      <section className="mt-[87px]">
         <div className="container mx-auto">
           <div>
             <div className="mb-[80px]">
               <h1 className="text-[42px] tracking-[-2.1px] font-bold font-TmoneyRoundWind leading-tight mb-[15px]">
                 핀 표시 있는 게시물은 고정 게시물
               </h1>
-              <time>2022년 4월 13일 오후 5시 53분</time>
+              <time className="text-[#9ba0a8] text-[20px]">
+                2022년 4월 13일 오후 5시 53분
+              </time>
             </div>
-            <article className="prose lg:prose-2xl max-w-none">
+            <article className="prose lg:prose-2xl max-w-none font-light">
               <p>
                 BTS와 함께 하는 힐링 섬 라이프 인더섬 with BTS입니다.
                 <br />
@@ -99,7 +109,7 @@ const Main = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };
@@ -113,7 +123,7 @@ export default () => {
         title="개발 PD 노트"
         content={() => <>BTS가 개발에 직접 참여한 인더섬 업데이트 소식</>}
       />
-      <div className="font-Pretendard mb-[120px]">
+      <div className="font-Pretendard mb-[120px] overflow-x-hidden">
         <Main />
       </div>
       <Footer />

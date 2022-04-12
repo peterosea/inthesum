@@ -57,7 +57,7 @@ const Main = () => {
             <div className="flex xl:flex-col justify-between">
               <div className="w-[160px]">
                 <img src="/img/img-madebyarmy-title@3x.png" alt="with BTS" />
-                <div className="text-[22px] font-bold whitespace-nowrap text-justify">
+                <div className="text-[22px] font-bold whitespace-nowrap text-justify mt-[20px]">
                   주간 인더섬 매거진
                 </div>
                 <div className="my-[30px] hidden xl:block">
@@ -148,13 +148,14 @@ const Main = () => {
             content={() => (
               <p>인더섬에서는 과연 어떠한 일이 일어나고 있고 일어날까요?</p>
             )}
+            arrow
           />
           <div
             className={classnames(
               'mt-[42px] mx-full',
               'xl:mt-[60px]',
               'grid grid-cols-1 gap-y-[30px]',
-              'xl:grid-cols-2 xl:gap-[40px] xl:gap-y-[94px]',
+              'xl:grid-cols-2 xl:gap-[40px] xl:gap-y-[60px]',
             )}
           >
             {card.map((e, index) => (

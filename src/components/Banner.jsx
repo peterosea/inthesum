@@ -15,9 +15,12 @@ const BgImg = () => (
  * @returns
  */
 const Banner = ({ bgImg = BgImg, children }) => {
+  const ModifyBgImg = () => React.cloneElement(bgImg(), {
+    className: 'object-cover w-full h-full absolute object-center',
+  })
   return (
     <div className="relative overflow-hidden h-full">
-      {bgImg()}
+      <ModifyBgImg />
       <div className="relative z-10 w-full h-full flex items-center">
         <div className="container mx-auto">{children}</div>
       </div>

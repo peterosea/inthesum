@@ -52,7 +52,7 @@ const Accordion = () => {
             <div className="accordion__label-divider absolute bottom-0 left-0 h-px bg-[#f4f6fa]"></div>
           </label>
           <div className="accordion-content bg-[#f4f6fa]">
-            <div className="p-[30px] xl:p-[40px] flex gap-x-[20px] gap-y-[13px] flex-col xl:flex-row">
+            <div className="p-[30px] xl:p-[40px] flex gap-x-[20px] gap-y-[13px] flex-col xl:flex-row border-y border-[color:#e6eaf2]">
               <div>
                 <div className="w-[23px] h-[23px] xl:w-[55px] xl:h-[55px] bg-black rounded-full text-white font-Pretendard font-bold items-center justify-center flex text-[12px] xl:text-[24px]">
                   <span className="leading-1">A</span>
