@@ -7,7 +7,7 @@ import HeaderPage from '../../components/HeaderPage';
 import ScrollTop from '../../components/ScrollTop';
 import PaginationBar from '../../components/Pagination/Bar';
 // data
-import { BtsBgImg } from '../data';
+import { BtsBgImg, card } from '../data';
 
 const Main = () => {
   return (
@@ -15,11 +15,8 @@ const Main = () => {
       <div className="container mx-auto">
         <section className="mt-[70px] mb-[80px]">
           <div className="grid grid-cols-2 gap-[9px] mb-[80px]">
-            {[1, 2].map(() => (
-              <Card isPin={true} pin={true} />
-            ))}
-            {[3, 4, 5, 6].map(() => (
-              <Card isPin={true} pin={false} />
+            {card.map((e, index) => (
+              <Card data={e} key={`card-index-${index}`} pin={index < 2} />
             ))}
           </div>
           <div className="hidden xl:block">
