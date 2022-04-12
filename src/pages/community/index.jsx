@@ -26,7 +26,7 @@ const Main = () => {
           />
           <div
             className={classnames(
-              'grid xl:grid-cols-2 xl:gap-[99px] xl:mt-[60px]',
+              'grid xl:grid-cols-2 xl:gap-[99px] xl:mt-[60px] mx-full',
               'mt-[42px] gap-[30px]',
             )}
           >
@@ -93,7 +93,7 @@ export default () => {
         title="커뮤니티"
         content={() => <>인더섬의 소식과 궁금한 사항을 전해드려요</>}
       />
-      <div className="font-Pretendard">
+      <div className="font-Pretendard overflow-x-hidden">
         <Main />
       </div>
       <Footer />
