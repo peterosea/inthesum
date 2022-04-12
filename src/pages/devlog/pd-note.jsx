@@ -22,7 +22,7 @@ const Main = () => {
         )}
       >
         <div className="container mx-auto">
-          <div className="grid grid-cols-2 gap-x-[96px] gap-y-[60px] mb-[80px]">
+          <div className="grid xl:grid-cols-2 gap-x-[96px] gap-y-[60px] mb-[80px] mx-full">
             {card.map((e, index) => (
               <Card data={e} key={`card-index-${index}`} pin={index < 2} />
             ))}
@@ -121,7 +121,7 @@ export default () => {
         title="개발 PD 노트"
         content={() => <>BTS가 개발에 직접 참여한 인더섬 업데이트 소식</>}
       />
-      <div className="font-Pretendard mb-[120px]">
+      <div className="font-Pretendard mb-[120px] overflow-x-hidden">
         <Main />
       </div>
       <Footer />
