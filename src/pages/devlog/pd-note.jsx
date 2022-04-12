@@ -12,9 +12,9 @@ import { BtsBgImg, card } from '../data';
 const Main = () => {
   return (
     <>
-      <div className="container mx-auto">
-        <section className="mt-[70px] mb-[80px]">
-          <div className="grid grid-cols-2 gap-[9px] mb-[80px]">
+      <section className="mt-[100px] mb-[80px]">
+        <div className="container mx-auto">
+          <div className="grid grid-cols-2 gap-x-[96px] gap-y-[60px] mb-[80px]">
             {card.map((e, index) => (
               <Card data={e} key={`card-index-${index}`} pin={index < 2} />
             ))}
@@ -25,10 +25,10 @@ const Main = () => {
           <div className="block xl:hidden pl-cpx">
             <PaginationBar current={1} all={9} />
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
       <div className="h-px bg-[#e6eaf2]"></div>
-      <div className="mt-[87px]">
+      <section className="mt-[87px]">
         <div className="container mx-auto">
           <div>
             <div className="mb-[80px]">
@@ -99,7 +99,7 @@ const Main = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };

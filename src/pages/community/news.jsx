@@ -12,8 +12,8 @@ import { card } from '../data';
 const Main = () => {
   return (
     <>
-      <div className="xl:container mx-auto">
-        <section className={classnames('mt-[40px] mb-[80px]', 'xl:mt-[70px]')}>
+      <section className={classnames('mt-[40px] mb-[80px]', 'xl:mt-[100px]')}>
+        <div className="xl:container mx-auto">
           <div
             className={classnames(
               'grid grid-cols-1 gap-y-[30px] mb-[80px]',
@@ -30,10 +30,10 @@ const Main = () => {
           <div className="block xl:hidden pl-cpx">
             <PaginationBar current={1} all={9} />
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
       <div className={classnames('h-px bg-[#e6eaf2] hidden', 'xl:block')}></div>
-      <div className="mt-[87px]">
+      <section className="mt-[87px]">
         <div className="container mx-auto">
           <div>
             <div className={classnames('mb-[40px]', 'xl:mb-[80px]')}>
@@ -111,7 +111,7 @@ const Main = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };
