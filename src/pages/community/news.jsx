@@ -49,7 +49,7 @@ const Main = () => {
                 2022년 4월 13일 오후 5시 53분
               </time>
             </div>
-            <article className="prose prose-sm lg:prose-2xl max-w-none">
+            <article className="prose prose-sm lg:prose-2xl max-w-none font-light">
               <p>
                 BTS와 함께 하는 힐링 섬 라이프 인더섬 with BTS입니다.
                 <br />
