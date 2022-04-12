@@ -64,7 +64,7 @@ const Main = () => {
         className={classnames('xl:mt-[91px] xl:mb-[120px]', 'mt-[60px]')}
       >
         <div className="xl:container mx-auto">
-          <div className="xl:rounded-[12px] h-[230px]">
+          <div className="xl:rounded-[12px] h-[230px] overflow-hidden">
             <Banner>
               <div className="text-center">
                 <div className="font-TmoneyRoundWind text-[20px] text-white font-extrabold">
