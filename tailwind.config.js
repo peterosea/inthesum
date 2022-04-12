@@ -50,6 +50,9 @@ module.exports = {
         'auto-fit': 'repeat(auto-fit, minmax(0, 1fr))',
         'auto-fill': 'repeat(auto-fill, minmax(0, 1fr))',
       },
+      maxWidth: {
+        'limit': '1920px'
+      }
     },
   },
   plugins: [

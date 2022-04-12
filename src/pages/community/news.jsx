@@ -12,7 +12,13 @@ import { card } from '../data';
 const Main = () => {
   return (
     <>
-      <section className={classnames('mt-[40px] mb-[80px]', 'xl:mt-[100px]')}>
+      <section
+        id="list"
+        className={classnames(
+          'mt-[40px] mb-[80px] scroll-mt-[calc(var(--header-g-height)+100px)]',
+          'xl:mt-[100px]',
+        )}
+      >
         <div className="xl:container mx-auto">
           <div
             className={classnames(

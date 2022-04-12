@@ -6,13 +6,21 @@ import Pagination from '../../components/Pagination';
 import HeaderPage from '../../components/HeaderPage';
 import ScrollTop from '../../components/ScrollTop';
 import PaginationBar from '../../components/Pagination/Bar';
+import classnames from 'classnames';
+
 // data
 import { BtsBgImg, card } from '../data';
 
 const Main = () => {
   return (
     <>
-      <section className="mt-[100px] mb-[80px]">
+      <section
+        id="list"
+        className={classnames(
+          'mt-[40px] mb-[80px] scroll-mt-[calc(var(--header-g-height)+100px)]',
+          'xl:mt-[100px]',
+        )}
+      >
         <div className="container mx-auto">
           <div className="grid grid-cols-2 gap-x-[96px] gap-y-[60px] mb-[80px]">
             {card.map((e, index) => (
