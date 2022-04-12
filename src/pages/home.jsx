@@ -155,7 +155,7 @@ const Main = () => {
               'mt-[42px] mx-full',
               'xl:mt-[60px]',
               'grid grid-cols-1 gap-y-[30px]',
-              'xl:grid-cols-2 xl:gap-[40px] xl:gap-y-[94px]',
+              'xl:grid-cols-2 xl:gap-[40px] xl:gap-y-[60px]',
             )}
           >
             {card.map((e, index) => (
