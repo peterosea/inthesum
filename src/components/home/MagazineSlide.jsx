@@ -67,7 +67,7 @@ export default function MagazineSlide() {
         '(min-width: 1280px)': {
           slides: {
             perView: 'auto',
-            spacing: 100,
+            spacing: 107,
           },
         },
       },
@@ -124,15 +124,13 @@ export default function MagazineSlide() {
             <div className="shadow-[5px_5px_40px_rgb(0,0,0,0.25)]">
               <img src={imageUrl} alt="" />
             </div>
-            <div className="mt-[36px] leading-none">
-              <div className="text-[18px] text-[#bc83ff] font-extrabold font-TmoneyRoundWind">
-                {vol}
+            <div className="mt-[36px] leading-none font-TmoneyRoundWind font-extrabold">
+              <div className="text-[18px] text-[#bc83ff]">{vol}</div>
+              <div className="mt-[8px] text-black text-[30px]">{name}</div>
+              <div className="mt-[10px] text-black text-[14px]">{date}</div>
+              <div className="mt-[20px] font-Pretendard font-normal text-[#6f737a] leading-[1.4]">
+                {spec()}
               </div>
-              <div className="mt-[8px] text-[30px] font-extrabold">{name}</div>
-              <div className="mt-[10px] font-bold text-black text-[14px]">
-                {date}
-              </div>
-              <div className="mt-[20px]">{spec()}</div>
             </div>
           </div>
         );
