@@ -57,7 +57,7 @@ const Main = () => {
             <div className="flex xl:flex-col justify-between">
               <div className="w-[160px]">
                 <img src="/img/img-madebyarmy-title@3x.png" alt="with BTS" />
-                <div className="text-[22px] font-bold whitespace-nowrap text-justify">
+                <div className="text-[22px] font-bold whitespace-nowrap text-justify mt-[20px]">
                   주간 인더섬 매거진
                 </div>
                 <div className="my-[30px] hidden xl:block">
