@@ -112,7 +112,7 @@ const Main = () => {
                 정보는 게임 내에서 확인 부탁드립니다.
               </p>
             </article>
-            <div className={classnames('mt-[55px]', 'xl:mt-[80px]')}>
+            <div className={classnames('my-[55px]', 'xl:my-[80px]')}>
               <ScrollTop />
             </div>
           </div>
@@ -139,7 +139,7 @@ export default () => {
           />
         )}
       />
-      <div className="font-Pretendard mb-[65px] xl:mb-[120px]">
+      <div className="font-Pretendard mb-[15px] xl:mb-[70px]">
         <Main />
       </div>
       <Footer />

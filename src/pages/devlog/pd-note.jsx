@@ -104,7 +104,7 @@ const Main = () => {
                 정보는 게임 내에서 확인 부탁드립니다.
               </p>
             </article>
-            <div className="mt-[80px]">
+            <div className={classnames('my-[55px]', 'xl:my-[80px]')}>
               <ScrollTop />
             </div>
           </div>
@@ -123,7 +123,7 @@ export default () => {
         title="개발 PD 노트"
         content={() => <>BTS가 개발에 직접 참여한 인더섬 업데이트 소식</>}
       />
-      <div className="font-Pretendard mb-[120px] overflow-x-hidden">
+      <div className="font-Pretendard mb-[15px] xl:mb-[70px] overflow-x-hidden">
         <Main />
       </div>
       <Footer />
