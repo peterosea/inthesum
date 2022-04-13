@@ -50,7 +50,6 @@ input:checked.accordion-input ~ label .icon-arrow {
   overflow-y: hidden;
 
   @media (max-width: theme('screens.xl')) {
-    width: calc(100% + var(--container-px));
-    padding-right: var(--container-px);
+    @apply mx-full;
   }
 }
