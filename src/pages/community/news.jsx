@@ -23,7 +23,7 @@ const Main = () => {
           <div
             className={classnames(
               'grid grid-cols-1 gap-y-[30px] mb-[80px]',
-              'xl:grid-cols-2 xl:gap-[40px] xl:gap-y-[94px]',
+              'xl:grid-cols-2 xl:gap-[40px] xl:gap-y-[60px]',
             )}
           >
             {card.map((e, index) => (

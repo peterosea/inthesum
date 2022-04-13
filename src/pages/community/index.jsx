@@ -26,8 +26,8 @@ const Main = () => {
           />
           <div
             className={classnames(
-              'grid xl:grid-cols-2 xl:gap-[99px] xl:mt-[60px] mx-full',
-              'mt-[42px] gap-[30px]',
+              'grid mt-[42px] gap-[30px] mx-full',
+              'xl:grid-cols-2 xl:gap-[99px] xl:gap-y-[60px] xl:mt-[60px]',
             )}
           >
             {card.map((e, index) => (
