@@ -22,7 +22,12 @@ const Main = () => {
         )}
       >
         <div className="container mx-auto">
-          <div className="grid xl:grid-cols-2 gap-x-[96px] gap-y-[60px] mb-[80px] mx-full">
+          <div
+            className={classnames(
+              'grid gap-x-[96px] gap-y-[30px] mx-full mb-[30px]',
+              'xl:grid-cols-2 xl:gap-y-[60px] xl:mb-[80px]',
+            )}
+          >
             {card.map((e, index) => (
               <Card data={e} key={`card-index-${index}`} pin={index < 2} />
             ))}
@@ -35,19 +40,24 @@ const Main = () => {
           </div>
         </div>
       </section>
-      <div className="h-px bg-[#e6eaf2]"></div>
+      <div className="h-px bg-[#e6eaf2] hidden xl:block"></div>
       <section className="mt-[87px]">
         <div className="container mx-auto">
           <div>
-            <div className="mb-[80px]">
-              <h1 className="text-[42px] tracking-[-2.1px] font-bold font-TmoneyRoundWind leading-tight mb-[15px]">
+            <div className={classnames('mb-[40px]', 'xl:mb-[80px]')}>
+              <h1
+                className={classnames(
+                  'text-[24px] tracking-[-2.1px] font-bold font-TmoneyRoundWind leading-tight mb-[15px]',
+                  'xl:text-[42px]',
+                )}
+              >
                 핀 표시 있는 게시물은 고정 게시물
               </h1>
-              <time className="text-[#9ba0a8] text-[20px]">
+              <time className={classnames('text-[#9ba0a8] text-[20px]')}>
                 2022년 4월 13일 오후 5시 53분
               </time>
             </div>
-            <article className="prose lg:prose-2xl max-w-none font-light">
+            <article className="prose prose-sm lg:prose-2xl max-w-none font-light">
               <p>
                 BTS와 함께 하는 힐링 섬 라이프 인더섬 with BTS입니다.
                 <br />
