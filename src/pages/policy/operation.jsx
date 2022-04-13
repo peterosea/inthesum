@@ -7,10 +7,10 @@ const Main = () => {
   return (
     <>
       <PolicyHeader />
-      <section className="my-[80px]">
+      <section className="xl:my-[80px] mb-[61px]">
         <div className="container mx-auto">
-          <article className="prose lg:prose-xl max-w-none">
-            <h2>운영정책</h2>
+          <article className="prose text-[12px] lg:text-[20px] max-w-none">
+            <h2 className="hidden xl:block">운영정책</h2>
             <ul>
               <li>
                 운영정책은 약관에서 정한 사항을 보충하는 역할을 하며, 이용자의

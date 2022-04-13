@@ -1,5 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation, Autoplay } from 'swiper';
+import cx from 'classnames';
+
 import VideoJS from '../../components/Video';
 
 const MainBannerSlide = () => {
@@ -19,30 +21,42 @@ const MainBannerSlide = () => {
       >
         <SwiperSlide>
           <div className="flex justify-center items-center flex-col relative z-20">
-            <img
-              src="/img/bts_logo.png"
-              srcset="/img/bts_logo@2x.png 2x,
-                        /img/bts_logo@3x.png 3x"
-              alt="BTS"
-              className="!w-auto !h-auto"
-            />
+            <div className="h-[116px] xl:h-auto">
+              <img
+                src="/img/bts_logo.png"
+                srcset="/img/bts_logo@2x.png 2x,
+                          /img/bts_logo@3x.png 3x"
+                alt="BTS"
+              />
+            </div>
             <div className="text-white mt-[26px]">
-              <p className="text-[60px] font-extrabold">HEADING ISLAND LIFE</p>
-              <p className="text-[21px]">
-                3DPuzzle Game width BTS character and space decoration
+              <p
+                className={cx(
+                  'text-[30px] font-extrabold font-TmoneyRoundWind',
+                  'xl:text-[60px]',
+                )}
+              >
+                HEADING ISLAND LIFE
+              </p>
+              <p className="text-[14px] xl:text-[21px]">
+                3DPuzzle Game width BTS character
+                <br className="xl:hidden" /> and space decoration
               </p>
             </div>
             <div className="mt-[46px] flex gap-x-[20px]">
               <img
+                className="hidden xl:block"
                 src="/img/btn-googleplay.png"
                 srcset="/img/btn-googleplay@2x.png 2x,
                           /img/btn-googleplay@3x.png 3x"
               />
-              <img
-                src="/img/btn-appstore.png"
-                srcset="/img/btn-appstore@2x.png 2x,
-                          /img/btn-appstore@3x.png 3x"
-              />
+              <div className="h-[40px] xl:h-auto">
+                <img
+                  src="/img/btn-appstore.png"
+                  srcset="/img/btn-appstore@2x.png 2x,
+                            /img/btn-appstore@3x.png 3x"
+                />
+              </div>
             </div>
           </div>
           <div className="absolute max-w-[1920px] w-full h-full z-10 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
@@ -126,7 +140,7 @@ const MainBannerSlide = () => {
           </div>
         </SwiperSlide>
       </Swiper>
-      <div className="h-[57px] absolute bottom-[20px] left-1/2 -translate-x-1/2 z-10">
+      <div className="h-[57px] absolute bottom-[20px] left-1/2 -translate-x-1/2 z-10 hidden xl:block">
         <img
           src="/img/icon-scroll.png"
           srcset="/img/icon-scroll@2x.png 2x,

@@ -94,7 +94,7 @@ const MobileMenu = () => {
   );
 };
 
-const HeaderMobile = () => {
+const HeaderMobile = (props) => {
   const ref = useRef(null);
   const isShrink = useShrink(4);
   const [show, setShow] = useState(false);
@@ -120,8 +120,9 @@ const HeaderMobile = () => {
 
   return (
     <div
+      {...props}
       id="mobile-menu-wrap"
-      className={classnames('z-30', { active: isShrink })}
+      className={classnames('z-30', { active: isShrink }, props.className)}
     >
       <div className={classnames('overlay', { on: show })}></div>
       <h1 className="logo">
@@ -129,6 +130,7 @@ const HeaderMobile = () => {
           <img
             src="/img/logo-inthesum-small@3x.png"
             alt="inthesum logo"
+            className="w-auto"
           />
         </a>
       </h1>
@@ -141,10 +143,7 @@ const HeaderMobile = () => {
         <button className="gnb-toggle-btn close" onClick={handleClose}></button>
         <h1 className="logo">
           <a href="/">
-            <img
-              src="/img/logo-inthesum-small@3x.png"
-              alt="inthesum logo"
-            />
+            <img src="/img/logo-inthesum-small@3x.png" alt="inthesum logo" />
           </a>
         </h1>
         <nav id="m-gnb">

@@ -1,6 +1,7 @@
 // import { Swiper, SwiperSlide } from 'swiper/react';
 // import { Pagination } from 'swiper';
 import { useKeenSlider } from 'keen-slider/react';
+import 'keen-slider/keen-slider.min.css';
 import { useWindowSize } from 'usehooks-ts';
 import WheelControls from '../../components/Slider/WheelControls';
 import CharacterItem from '../../components/Item/Character';

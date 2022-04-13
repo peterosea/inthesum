@@ -49,7 +49,7 @@ const HeaderSection = ({
             className={classnames(
               'icon-arrow2',
               'xl:text-[31px] rotate-180 inline-block leading-none',
-              'text-[14px]',
+              'text-[24px]',
             )}
           />
         </div>

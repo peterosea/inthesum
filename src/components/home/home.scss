@@ -31,30 +31,3 @@
 .swiper-slide .video-js .vjs-tech {
   object-fit: cover;
 }
-
-// magazine
-.magazine__header:after {
-  content: '';
-  position: absolute;
-  width: 100vw;
-  background-color: white;
-  height: 100%;
-  right: 100%;
-  top: 0;
-}
-
-.magazineSlide {
-  .keen-slider:not([data-keen-slider-disabled]) {
-    overflow: visible;
-  }
-  .keen-slider:not([data-keen-slider-disabled]) .keen-slider__slide {
-    overflow: visible;
-    max-width: 460px !important;
-    min-width: 460px !important;
-
-    @media (min-width: theme('screens.xl')) {
-      max-width: 238px !important;
-      min-width: 238px !important;
-    }
-  }
-}

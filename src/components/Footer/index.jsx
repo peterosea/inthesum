@@ -3,7 +3,7 @@ import classnames from 'classnames';
 
 const Footer = () => {
   return (
-    <footer className="bg-[#000000] min-h-[212px] p-[50px] text-white text-opacity-50 text-[14px] leading-[1.79]">
+    <footer className="bg-[#000000] min-h-[212px] py-[50px] px-cpx xl:px-[50px] text-white text-opacity-50 text-[14px] leading-[1.79]">
       <div className="max-w-[1920px] mx-auto flex relative flex-col justify-center">
         <div className="footer-info">
           <div>
