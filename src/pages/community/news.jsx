@@ -22,8 +22,8 @@ const Main = () => {
         <div className="xl:container mx-auto">
           <div
             className={classnames(
-              'grid grid-cols-1 gap-y-[30px] mb-[80px]',
-              'xl:grid-cols-2 xl:gap-[40px] xl:gap-y-[60px]',
+              'grid grid-cols-1 gap-y-[30px] mb-[33px]',
+              'xl:grid-cols-2 xl:gap-[40px] xl:gap-y-[60px] xl:mb-[80px]',
             )}
           >
             {card.map((e, index) => (
