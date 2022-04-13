@@ -51,9 +51,14 @@ const Main = () => {
           </div>
         </div>
       </section>
-      <section className="overflow-hidden py-[64px] xl:py-[90px]">
-        <div className="container mx-auto relative">
-          <div className="magazine__header xl:h-full xl:absolute top-0 left-[var(--container-px)] z-10 bg-gradient-to-r from-white via-white">
+      <section>
+        <div className="xl:container mx-auto relative">
+          <div
+            className={classnames(
+              'px-cpx py-[90] xl:py-[90px]',
+              'xl:h-full xl:absolute xl:top-0 xl:left-0 xl:z-10',
+            )}
+          >
             <div className="flex xl:flex-col justify-between">
               <div className="w-[160px]">
                 <img src="/img/img-madebyarmy-title@3x.png" alt="with BTS" />
@@ -74,10 +79,8 @@ const Main = () => {
             </div>
             <div className="absolute w-[110px] h-px bottom-[-1px] right-0 bg-white hidden xl:block"></div>
           </div>
-          <div className="magazineSlide mt-[30px] xl:mt-0">
-            <div className="xl:pl-[270px]">
-              <MagazineSlide />
-            </div>
+          <div className="xl:pl-[270px]">
+            <MagazineSlide />
           </div>
         </div>
       </section>
