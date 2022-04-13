@@ -36,6 +36,7 @@ const Header = ({ isBlack = false }) => {
                 <img
                   src="/img/logo-inthesum-small@3x.png"
                   alt="inthesum logo"
+                  className="w-auto"
                 />
               </a>
             </h1>

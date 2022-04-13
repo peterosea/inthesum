@@ -129,6 +129,7 @@ const HeaderMobile = () => {
           <img
             src="/img/logo-inthesum-small@3x.png"
             alt="inthesum logo"
+            className="w-auto"
           />
         </a>
       </h1>
@@ -141,10 +142,7 @@ const HeaderMobile = () => {
         <button className="gnb-toggle-btn close" onClick={handleClose}></button>
         <h1 className="logo">
           <a href="/">
-            <img
-              src="/img/logo-inthesum-small@3x.png"
-              alt="inthesum logo"
-            />
+            <img src="/img/logo-inthesum-small@3x.png" alt="inthesum logo" />
           </a>
         </h1>
         <nav id="m-gnb">
