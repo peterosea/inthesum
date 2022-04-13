@@ -92,13 +92,15 @@ const Main = () => {
               )}
             >
               <div className="#xl:w-full">
-                <h4 className="text-[#2e0064] font-bold">개발 PD 노트</h4>
-                <div className="mt-[8px] text-[26px] text-primary font-bold">
+                <h4 className="text-[#2e0064] font-extrabold font-TmoneyRoundWind">
+                  개발 PD 노트
+                </h4>
+                <div className="mt-[8px] text-[26px] text-primary font-extrabold font-TmoneyRoundWind tracking-[-0.78px]">
                   인더섬 with BTS
                   <br />
                   전세계 동시 오픈!!
                 </div>
-                <div className="text-[#39007c] mt-[20px]">
+                <div className="text-[#39007c] mt-[20px] font-Pretendard">
                   인더섬 2022년 4월 1일 GMT 00:00에
                   <br />
                   전세계 양대 마켓에서 동시 오픈합니다.
@@ -118,15 +120,15 @@ const Main = () => {
               )}
             >
               <div className="#xl:w-full">
-                <h4 className="text-[#4d005d] font-bold">
+                <h4 className="text-[#4d005d] font-extrabold font-TmoneyRoundWind">
                   made by ARMY - BTS 의상실
                 </h4>
-                <div className="mt-[8px] text-[36px] xl:text-[26px] text-[#7f0198] font-bold">
+                <div className="mt-[8px] text-[26px] text-[#7f0198] font-extrabold font-TmoneyRoundWind tracking-[-0.78px]">
                   RM의 S/S 신상 의상 투표
                   <br />
                   여러분의 PICK은?
                 </div>
-                <div className="text-[#360041] mt-[20px]">
+                <div className="text-[#360041] mt-[20px] font-Pretendard">
                   여러분의 감성으로 투표해주세요!
                   <br />
                   선택받은 코스튬은 게임에 실제로 반영됩니다!
