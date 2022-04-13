@@ -94,7 +94,7 @@ const MobileMenu = () => {
   );
 };
 
-const HeaderMobile = () => {
+const HeaderMobile = (props) => {
   const ref = useRef(null);
   const isShrink = useShrink(4);
   const [show, setShow] = useState(false);
@@ -120,8 +120,9 @@ const HeaderMobile = () => {
 
   return (
     <div
+      {...props}
       id="mobile-menu-wrap"
-      className={classnames('z-30', { active: isShrink })}
+      className={classnames('z-30', { active: isShrink }, props.className)}
     >
       <div className={classnames('overlay', { on: show })}></div>
       <h1 className="logo">

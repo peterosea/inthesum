@@ -12,7 +12,7 @@ const Header = ({ isBlack = false }) => {
   return (
     <>
       <header>
-        <HeaderMobile />
+        <HeaderMobile className={classnames({ 'bg-black': isBlack })} />
         {/* policy tw-bg-black */}
         <div
           id="dt-menu-wrap"
@@ -150,7 +150,7 @@ const Header = ({ isBlack = false }) => {
           </div>
         </div>
       </header>
-      {isBlack && <div className="h-[110px]" />}
+      {isBlack && <div className="h-[var(--header-g-height)]" />}
     </>
   );
 };
