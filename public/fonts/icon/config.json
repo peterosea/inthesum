@@ -193,6 +193,20 @@
       "css": "right-dir",
       "code": 59406,
       "src": "modernpics"
+    },
+    {
+      "uid": "af3c75ddb4724b0139cff64f99356a37",
+      "css": "top-arrow",
+      "code": 59418,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M1640.2 726.2L953.4 47.4A160.1 160.1 0 0 0 726.2 47.4L47.4 726.2A160.2 160.2 0 1 0 273.1 953.4L839.5 387.1 1406.3 953.8A163.1 163.1 0 0 0 1640 726.6Z",
+        "width": 1684
+      },
+      "search": [
+        "icon-gotop"
+      ]
     }
   ]
 }
