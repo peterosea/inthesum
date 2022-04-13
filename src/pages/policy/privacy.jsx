@@ -7,10 +7,10 @@ const Main = () => {
   return (
     <>
       <PolicyHeader />
-      <section className="my-[80px]">
+      <section className="xl:my-[80px] mb-[61px]">
         <div className="container mx-auto">
-          <article className="prose lg:prose-xl max-w-none">
-            <h2>개인정보처리방침</h2>
+          <article className="prose text-[12px] lg:text-[20px] max-w-none">
+            <h2 className="hidden xl:block">개인정보처리방침</h2>
             <p>
               주식회사 ㅇㅇ소프트(이하 ‘회사’라 합니다.)는 고객님의 개인정보를
               중요시하며, ‘개인정보보호주식회사 ㅇㅇ소프트(이하 ‘회사’라

@@ -8,10 +8,10 @@ const Main = () => {
   return (
     <>
       <PolicyHeader />
-      <section className="my-[80px]">
+      <section className="xl:my-[80px] mb-[61px]">
         <div className="container mx-auto">
-          <article className="prose lg:prose-xl max-w-none">
-            <h2>이용약관</h2>
+          <article className="prose text-[12px] lg:text-[20px] max-w-none">
+            <h2 className="hidden xl:block">이용약관</h2>
             <p>
               제1장 총칙
               <br />
