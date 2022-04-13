@@ -55,6 +55,7 @@ const Main = () => {
                 { name: '결제' },
                 { name: '이벤트' },
               ]}
+              responsive
             />
             <Accordion />
           </div>
