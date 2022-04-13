@@ -144,7 +144,7 @@ const Main = () => {
                 )}
               >
                 <div className="text-center">
-                  <div className="font-TmoneyRoundWind xl:text-[42px] text-white font-extrabold tracking-[-3.36px]">
+                  <div className="font-TmoneyRoundWind xl:text-[42px] text-white font-extrabold xl:tracking-[-3.36px]">
                     뜻밖의 휴가로 도착한 섬!
                   </div>
                 </div>
@@ -164,7 +164,7 @@ const Main = () => {
                 )}
               >
                 <div className="text-center">
-                  <div className="font-TmoneyRoundWind xl:text-[42px] text-white font-extrabold tracking-[-3.36 px]">
+                  <div className="font-TmoneyRoundWind xl:text-[42px] text-white font-extrabold xl:tracking-[-3.36px]">
                     아무것도 없던 섬이었지만…
                   </div>
                 </div>
