@@ -61,7 +61,7 @@ const Character = ({ name, time, content, thumbnail, characterImg }) => {
           </span>
           <span className="text-[14px] font-normal text-[#999]">{time}</span>
         </div>
-        <div className="px-[34px] mt-[20px] line-clamp-2 text-[14px] leading-[1.2]">
+        <div className="px-[34px] mt-[20px] line-clamp-2 text-[14px] leading-[1.36] font-TmoneyRoundWind font-normal">
           {content()}
         </div>
         <Thumbnails />
