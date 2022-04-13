@@ -1,86 +1,6 @@
-import { useKeenSlider } from 'keen-slider/react';
-import 'keen-slider/keen-slider.min.css';
-
-const WheelControls = (slider) => {
-  let touchTimeout;
-  let position;
-  let wheelActive;
-
-  function dispatch(e, name) {
-    position.x -= e.deltaX;
-    position.y -= e.deltaY;
-    slider.container.dispatchEvent(
-      new CustomEvent(name, {
-        detail: {
-          x: position.x,
-          y: position.y,
-        },
-      }),
-    );
-  }
-
-  function wheelStart(e) {
-    position = {
-      x: e.pageX,
-      y: e.pageY,
-    };
-    dispatch(e, 'ksDragStart');
-  }
-
-  function wheel(e) {
-    dispatch(e, 'ksDrag');
-  }
-
-  function wheelEnd(e) {
-    dispatch(e, 'ksDragEnd');
-  }
-
-  function eventWheel(e) {
-    if (e.deltaX != '-0') {
-      e.preventDefault();
-      if (!wheelActive) {
-        wheelStart(e);
-        wheelActive = true;
-      }
-      wheel(e);
-      clearTimeout(touchTimeout);
-      touchTimeout = setTimeout(() => {
-        wheelActive = false;
-        wheelEnd(e);
-      }, 50);
-    }
-  }
-
-  slider.on('created', () => {
-    slider.container.addEventListener('wheel', eventWheel, {
-      passive: false,
-    });
-  });
-};
-
 export default function MagazineSlide() {
-  const [sliderRef] = useKeenSlider(
-    {
-      loop: false,
-      rubberband: false,
-      breakpoints: {
-        '(min-width: 1280px)': {
-          slides: {
-            perView: 'auto',
-            spacing: 107,
-          },
-        },
-      },
-      slides: {
-        perView: 'auto',
-        spacing: 30,
-      },
-    },
-    [WheelControls],
-  );
-
   return (
-    <div ref={sliderRef} className="keen-slider">
+    <div className="flex grow gap-x-[60px]">
       {[
         {
           vol: 'Vol.3',
@@ -120,7 +40,7 @@ export default function MagazineSlide() {
         },
       ].map(({ vol, name, date, spec, imageUrl }, index) => {
         return (
-          <div key={`index-${index}`} className="keen-slider__slide">
+          <div key={`index-${index}`}>
             <div className="shadow-[5px_5px_40px_rgb(0,0,0,0.25)]">
               <img src={imageUrl} alt="" />
             </div>
