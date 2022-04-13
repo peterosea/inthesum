@@ -27,7 +27,7 @@ const Main = () => {
         <div className="container mx-auto overflow-x-hidden">
           <Accordion />
         </div>
-        <div className="mt-[40px]">
+        <div className="mt-[30px] xl:mt-[40px]">
           <div className="hidden xl:block">
             <Pagination />
           </div>
@@ -56,7 +56,7 @@ export default () => {
           />
         )}
       />
-      <div className="font-Pretendard mb-[120px]">
+      <div className="font-Pretendard mb-[25px] xl:mb-[120px]">
         <Main />
       </div>
       <Footer />
