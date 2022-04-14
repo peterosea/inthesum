@@ -7,7 +7,7 @@ import HeaderPage from '../../components/HeaderPage';
 import CharacterItem from '../../components/Item/Character';
 import Pagination from '../../components/Pagination';
 import PaginationBar from '../../components/Pagination/Bar';
-import FlotArea from '../../components/FlotArea';
+import FloatArea from '../../components/FloatArea';
 
 // data
 import { character, BtsBgImg } from '../data';
@@ -49,7 +49,7 @@ export default () => {
       />
       <div className="font-Pretendard mb-[120px] relative">
         <Main />
-        <FlotArea />
+        <FloatArea />
       </div>
       <Footer />
     </>

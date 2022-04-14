@@ -12,7 +12,7 @@ import HeaderPage from '../../components/HeaderPage';
 import HeaderSection from '../../components/HeaderSection';
 import CharacterItem from '../../components/Item/Character';
 import Card from '../../components/Card';
-import FlotArea from '../../components/FlotArea';
+import FloatArea from '../../components/FloatArea';
 // data
 import { character, card, DevlogBgImg } from '../data';
 
@@ -119,7 +119,7 @@ export default () => {
       />
       <div className="font-Pretendard xl:mb-[120px] overflow-x-hidden relative">
         <Main />
-        <FlotArea />
+        <FloatArea />
       </div>
       <Footer />
     </>

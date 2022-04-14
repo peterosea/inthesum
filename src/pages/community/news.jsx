@@ -7,7 +7,7 @@ import Pagination from '../../components/Pagination';
 import HeaderPage from '../../components/HeaderPage';
 import ScrollTop from '../../components/ScrollTop';
 import PaginationBar from '../../components/Pagination/Bar';
-import FlotArea from '../../components/FlotArea';
+import FloatArea from '../../components/FloatArea';
 import { card } from '../data';
 
 const Main = () => {
@@ -142,7 +142,7 @@ export default () => {
       />
       <div className="font-Pretendard mb-[15px] xl:mb-[70px] relative">
         <Main />
-        <FlotArea />
+        <FloatArea />
       </div>
       <Footer />
     </>

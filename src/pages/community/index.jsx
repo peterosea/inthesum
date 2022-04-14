@@ -8,7 +8,7 @@ import Card from '../../components/Card';
 import Banner from '../../components/Banner';
 import HeaderSection from '../../components/HeaderSection';
 import classnames from 'classnames';
-import FlotArea from '../../components/FlotArea';
+import FloatArea from '../../components/FloatArea';
 
 // data
 import { card } from '../data';
@@ -97,7 +97,7 @@ export default () => {
       />
       <div className="font-Pretendard overflow-x-hidden relative">
         <Main />
-        <FlotArea />
+        <FloatArea />
       </div>
       <Footer />
     </>

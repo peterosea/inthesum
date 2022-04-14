@@ -8,7 +8,7 @@ import CharacterSlide from '../components/home/CharacterSlide';
 import MainBannerSlide from '../components/home/MainBannerSlide';
 import Card from '../components/Card';
 import HeaderSection from '../components/HeaderSection';
-import FlotArea from '../components/FlotArea';
+import FloatArea from '../components/FloatArea';
 import { card } from './data';
 
 const Main = () => {
@@ -180,7 +180,7 @@ export default () => {
       </div>
       <div className="font-Pretendard relative">
         <Main />
-        <FlotArea />
+        <FloatArea />
       </div>
       <Footer />
     </>

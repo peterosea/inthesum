@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import { PolicyHeader } from './_components';
-import FlotArea from '../../components/FlotArea';
+import FloatArea from '../../components/FloatArea';
 
 const Main = () => {
   return (
@@ -92,7 +92,7 @@ export default () => {
       <Header isBlack />
       <div className="font-Pretendard mb-[120px] relative">
         <Main />
-        <FlotArea />
+        <FloatArea />
       </div>
       <Footer />
     </>

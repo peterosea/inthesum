@@ -7,7 +7,7 @@ import HeaderPage from '../../components/HeaderPage';
 import ScrollTop from '../../components/ScrollTop';
 import PaginationBar from '../../components/Pagination/Bar';
 import classnames from 'classnames';
-import FlotArea from '../../components/FlotArea';
+import FloatArea from '../../components/FloatArea';
 
 // data
 import { BtsBgImg, card } from '../data';
@@ -136,7 +136,7 @@ export default () => {
       />
       <div className="font-Pretendard mb-[15px] xl:mb-[70px] overflow-x-hidden relative">
         <Main />
-        <FlotArea />
+        <FloatArea />
       </div>
       <Footer />
     </>

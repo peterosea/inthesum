@@ -8,7 +8,7 @@ import Footer from '../../components/Footer';
 import HeaderPage from '../../components/HeaderPage';
 import CharacterBanner from '../../components/CharacterBanner';
 import BackBtn from '../../components/Btn/BackBtn';
-import FlotArea from '../../components/FlotArea';
+import FloatArea from '../../components/FloatArea';
 
 // data
 import { BtsBgImg } from '../data';
@@ -80,7 +80,7 @@ export default () => {
       />
       <div className="font-Pretendard mb-[55px] xl:mb-[120px] relative">
         <Main />
-        <FlotArea />
+        <FloatArea />
       </div>
       <Footer />
     </>

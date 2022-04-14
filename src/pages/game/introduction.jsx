@@ -8,7 +8,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation, Autoplay } from 'swiper';
 import VideoJS from '../../components/Video';
 import classnames from 'classnames';
-import FlotArea from '../../components/FlotArea';
+import FloatArea from '../../components/FloatArea';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -260,7 +260,7 @@ export default () => {
       />
       <div className="font-Pretendard relative">
         <Main />
-        <FlotArea />
+        <FloatArea />
       </div>
       <Footer />
     </>
