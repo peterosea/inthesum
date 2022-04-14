@@ -1,5 +1,10 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation, Autoplay } from 'swiper';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/autoplay';
+import './MainBannerSlide.scss';
+
 import cx from 'classnames';
 
 import VideoJS from '../../components/Video';
@@ -14,21 +19,20 @@ const MainBannerSlide = () => {
         spaceBetween={0}
         loop={true}
         mousewheel={true}
-        // autoplay={true}
+        autoplay={true}
         threshold={100}
         pagination={{ type: 'progressbar' }}
         className="mainBannerSlider"
       >
         <SwiperSlide>
           <div className="flex justify-center items-center flex-col relative z-20">
-            <div className="h-[116px] xl:h-auto">
-              <img
-                src="/img/bts_logo.png"
-                srcset="/img/bts_logo@2x.png 2x,
-                          /img/bts_logo@3x.png 3x"
-                alt="BTS"
-              />
-            </div>
+            <img
+              src="/img/bts_logo.png"
+              srcSet="/img/bts_logo@2x.png 2x,
+                        /img/bts_logo@3x.png 3x"
+              alt="BTS"
+              className="object-none h-[116px] xl:h-auto"
+            />
             <div className="text-white mt-[26px]">
               <p
                 className={cx(
@@ -44,17 +48,20 @@ const MainBannerSlide = () => {
               </p>
             </div>
             <div className="mt-[46px] flex gap-x-[20px]">
-              <img
-                className="hidden xl:block"
-                src="/img/btn-googleplay.png"
-                srcset="/img/btn-googleplay@2x.png 2x,
+              <div className="h-[40px] xl:h-auto">
+                <img
+                  className="hidden xl:block"
+                  src="/img/btn-googleplay.png"
+                  srcSet="/img/btn-googleplay@2x.png 2x,
                           /img/btn-googleplay@3x.png 3x"
-              />
+                />
+              </div>
               <div className="h-[40px] xl:h-auto">
                 <img
                   src="/img/btn-appstore.png"
-                  srcset="/img/btn-appstore@2x.png 2x,
+                  srcSet="/img/btn-appstore@2x.png 2x,
                             /img/btn-appstore@3x.png 3x"
+                  className="!w-auto !h-auto"
                 />
               </div>
             </div>
@@ -118,14 +125,14 @@ const MainBannerSlide = () => {
           <div className="absolute max-w-[1920px] w-full h-full z-10 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
             <img
               src="/img/img-video-thumb.png"
-              srcset="/img/img-video-thumb@2x.png 2x,
+              srcSet="/img/img-video-thumb@2x.png 2x,
                           /img/img-video-thumb@3x.png 3x"
               className="w-full h-full"
             />
             <div className="w-full h-full absolute top-0 left-0 bg-black bg-opacity-30" />
             <img
               src="/img/img-pattern.png"
-              srcset="/img/img-pattern@2x.png 2x,
+              srcSet="/img/img-pattern@2x.png 2x,
                           /img/img-pattern@3x.png 3x"
               className="w-full h-full absolute top-0 left-0"
             />
@@ -143,7 +150,7 @@ const MainBannerSlide = () => {
       <div className="h-[57px] absolute bottom-[20px] left-1/2 -translate-x-1/2 z-10 hidden xl:block">
         <img
           src="/img/icon-scroll.png"
-          srcset="/img/icon-scroll@2x.png 2x,
+          srcSet="/img/icon-scroll@2x.png 2x,
               /img/icon-scroll@3x.png 3x"
         />
       </div>
