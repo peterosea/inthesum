@@ -12,7 +12,7 @@ export const card = [
     thumbnailUrl: () => (
       <img
         src="/img/img-sample1.png"
-        srcset="/img/img-sample1@2x.png 2x,
+        srcSet="/img/img-sample1@2x.png 2x,
             /img/img-sample1@3x.png 3x"
       />
     ),
@@ -31,7 +31,7 @@ export const card = [
     thumbnailUrl: () => (
       <img
         src="/img/img-sample2.png"
-        srcset="/img/img-sample2@2x.png 2x,
+        srcSet="/img/img-sample2@2x.png 2x,
             /img/img-sample2@3x.png 3x"
       />
     ),
@@ -49,7 +49,7 @@ export const card = [
     thumbnailUrl: () => (
       <img
         src="/img/img-sample3.png"
-        srcset="/img/img-sample3@2x.png 2x,
+        srcSet="/img/img-sample3@2x.png 2x,
             /img/img-sample3@3x.png 3x"
       />
     ),
@@ -67,7 +67,7 @@ export const card = [
     thumbnailUrl: () => (
       <img
         src="/img/img-sample4.png"
-        srcset="/img/img-sample4@2x.png 2x,
+        srcSet="/img/img-sample4@2x.png 2x,
             /img/img-sample4@3x.png 3x"
       />
     ),
@@ -85,7 +85,7 @@ export const card = [
     thumbnailUrl: () => (
       <img
         src="/img/img-sample5.png"
-        srcset="/img/img-sample5@2x.png 2x,
+        srcSet="/img/img-sample5@2x.png 2x,
             /img/img-sample5@3x.png 3x"
       />
     ),
@@ -103,7 +103,7 @@ export const card = [
     thumbnailUrl: () => (
       <img
         src="/img/img-sample6.png"
-        srcset="/img/img-sample6@2x.png 2x,
+        srcSet="/img/img-sample6@2x.png 2x,
             /img/img-sample6@3x.png 3x"
       />
     ),

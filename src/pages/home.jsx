@@ -3,9 +3,6 @@ import classnames from 'classnames';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import '../components/home/home.scss';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/autoplay';
 import MagazineSlide from '../components/home/MagazineSlide';
 import CharacterSlide from '../components/home/CharacterSlide';
 import MainBannerSlide from '../components/home/MainBannerSlide';
@@ -25,7 +22,7 @@ const Main = () => {
                   <div className="max-w-[160px]">
                     <img
                       src="/img/img-withbts-title.png"
-                      srcset="/img/img-withbts-title@2x.png 2x,
+                      srcSet="/img/img-withbts-title@2x.png 2x,
                             /img/img-withbts-title@3x.png 3x"
                       alt="with BTS"
                       className="h-[55px] xl:h-[93px] w-auto"
