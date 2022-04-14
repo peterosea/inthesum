@@ -28,63 +28,65 @@ const Main = () => {
             content={() => <p>뜻밖의 휴가로 도착한 섬! 인더섬에서 만나요</p>}
           />
           <div className="relative mt-[31px] xl:mt-[58px]">
-            <Swiper
-              modules={[Pagination, Navigation, Autoplay]}
-              speed={2500}
-              slidesPerView={1}
-              spaceBetween={0}
-              loop={true}
-              mousewheel={true}
-              autoplay={true}
-              threshold={100}
-              pagination={{
-                el: swiperPagination?.current,
-                type: 'fraction',
-              }}
-              navigation={{
-                nextEl: swiperNavNext?.current,
-                prevEl: swiperNavPrev?.current,
-              }}
-            >
-              {[1, 2, 3, 4].map((e, index) => (
-                <SwiperSlide key={`index-${index}`}>
-                  <div className="w-full">
-                    <div className="mb-[20px]">
-                      <div className="flex items-center gap-x-[14px]">
-                        <span className="text-[18px] font-TmoneyRoundWind font-extrabold">
-                          인더섬 with BTS 티저
-                        </span>
-                        <button className="btn bg-black text-white text-[14px] rounded-full py-[14px] px-[20px] font-TmoneyRoundWind font-extrabold leading-none">
-                          설명보기
-                        </button>
+            {swiperPagination.current && (
+              <Swiper
+                modules={[Pagination, Navigation, Autoplay]}
+                speed={2500}
+                slidesPerView={1}
+                spaceBetween={0}
+                loop={true}
+                mousewheel={true}
+                autoplay={true}
+                threshold={100}
+                pagination={{
+                  el: swiperPagination?.current,
+                  type: 'fraction',
+                }}
+                navigation={{
+                  nextEl: swiperNavNext?.current,
+                  prevEl: swiperNavPrev?.current,
+                }}
+              >
+                {[1, 2, 3, 4].map((e, index) => (
+                  <SwiperSlide key={`index-${index}`}>
+                    <div className="w-full">
+                      <div className="mb-[20px]">
+                        <div className="flex items-center gap-x-[14px]">
+                          <span className="text-[18px] font-TmoneyRoundWind font-extrabold">
+                            인더섬 with BTS 티저
+                          </span>
+                          <button className="btn bg-black text-white text-[14px] rounded-full py-[14px] px-[20px] font-TmoneyRoundWind font-extrabold leading-none">
+                            설명보기
+                          </button>
+                        </div>
+                      </div>
+                      <div className="aspect-[16/9] relative overflow-hidden rounded-[16px]">
+                        <div className="absolute w-full h-full">
+                          <VideoJS
+                            options={{
+                              muted: true,
+                              controls: true,
+                              autoplay: true,
+                              poster: '/video/poster.png',
+                              sources: [
+                                {
+                                  src: '/video/movie-sample.mp4',
+                                  type: 'video/mp4',
+                                },
+                                {
+                                  src: '/video/movie-sample.ogg',
+                                  type: 'video/ogg',
+                                },
+                              ],
+                            }}
+                          />
+                        </div>
                       </div>
                     </div>
-                    <div className="aspect-[16/9] relative overflow-hidden rounded-[16px]">
-                      <div className="absolute w-full h-full">
-                        <VideoJS
-                          options={{
-                            muted: true,
-                            controls: true,
-                            autoplay: true,
-                            poster: '/video/poster.png',
-                            sources: [
-                              {
-                                src: '/video/movie-sample.mp4',
-                                type: 'video/mp4',
-                              },
-                              {
-                                src: '/video/movie-sample.ogg',
-                                type: 'video/ogg',
-                              },
-                            ],
-                          }}
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            )}
             <div
               ref={swiperNavNext}
               className="swiper-button-next cursor-pointer translate-y-[62px] translate-x-[100px] absolute top-1/2 right-[10px] stroke-[#e6eaf2] hover:stroke-black"
@@ -194,7 +196,7 @@ const Main = () => {
           <div className="mt-[96px] xl:mt-[160px]">
             <img
               src="/img/img-introduce-polaroid.png"
-              srcset="/img/img-introduce-polaroid@2x.png 2x,
+              srcSet="/img/img-introduce-polaroid@2x.png 2x,
              /img/img-introduce-polaroid@3x.png 3x"
             />
             <div className="text-[26px] xl:text-[42px] font-extrabold font-TmoneyRoundWind mt-[36px] text-center">
