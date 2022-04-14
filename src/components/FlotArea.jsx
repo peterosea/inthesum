@@ -5,7 +5,7 @@ import AppStoreBtn from './Btn/AppStoreBtn';
 
 const FlotArea = () => {
   return (
-    <div className="container mx-auto sticky bottom-0 z-40 h-[3px] bg-blue-500">
+    <div className="container mx-auto sticky bottom-0 z-40">
       <div className="absolute left-full bottom-[130px] grid gap-y-[20px] translate-x-[60px]">
         <AppStoreBtn />
         <GooglePlayBtn />

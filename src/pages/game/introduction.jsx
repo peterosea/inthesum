@@ -8,6 +8,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation, Autoplay } from 'swiper';
 import VideoJS from '../../components/Video';
 import classnames from 'classnames';
+import FlotArea from '../../components/FlotArea';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -257,8 +258,9 @@ export default () => {
         title="게임소개"
         content={() => <>BTS 멤버들이 처음부터 함께한 인더섬에서 만나요</>}
       />
-      <div className="font-Pretendard">
+      <div className="font-Pretendard relative">
         <Main />
+        <FlotArea />
       </div>
       <Footer />
     </>

@@ -7,6 +7,7 @@ import HeaderPage from '../../components/HeaderPage';
 import ScrollTop from '../../components/ScrollTop';
 import PaginationBar from '../../components/Pagination/Bar';
 import classnames from 'classnames';
+import FlotArea from '../../components/FlotArea';
 
 // data
 import { BtsBgImg, card } from '../data';
@@ -115,7 +116,7 @@ const Main = () => {
               </p>
             </article>
             <div className={classnames('my-[55px]', 'xl:my-[80px]')}>
-              <ScrollTop />
+              <ScrollTop link="list" />
             </div>
           </div>
         </div>
@@ -133,8 +134,9 @@ export default () => {
         title="개발 PD 노트"
         content={() => <>BTS가 개발에 직접 참여한 인더섬 업데이트 소식</>}
       />
-      <div className="font-Pretendard mb-[15px] xl:mb-[70px] overflow-x-hidden">
+      <div className="font-Pretendard mb-[15px] xl:mb-[70px] overflow-x-hidden relative">
         <Main />
+        <FlotArea />
       </div>
       <Footer />
     </>

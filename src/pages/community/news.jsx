@@ -7,6 +7,7 @@ import Pagination from '../../components/Pagination';
 import HeaderPage from '../../components/HeaderPage';
 import ScrollTop from '../../components/ScrollTop';
 import PaginationBar from '../../components/Pagination/Bar';
+import FlotArea from '../../components/FlotArea';
 import { card } from '../data';
 
 const Main = () => {
@@ -113,7 +114,7 @@ const Main = () => {
               </p>
             </article>
             <div className={classnames('my-[55px]', 'xl:my-[80px]')}>
-              <ScrollTop />
+              <ScrollTop link="list" />
             </div>
           </div>
         </div>
@@ -139,8 +140,9 @@ export default () => {
           />
         )}
       />
-      <div className="font-Pretendard mb-[15px] xl:mb-[70px]">
+      <div className="font-Pretendard mb-[15px] xl:mb-[70px] relative">
         <Main />
+        <FlotArea />
       </div>
       <Footer />
     </>

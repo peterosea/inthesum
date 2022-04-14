@@ -7,6 +7,7 @@ import HeaderPage from '../../components/HeaderPage';
 import CharacterItem from '../../components/Item/Character';
 import Pagination from '../../components/Pagination';
 import PaginationBar from '../../components/Pagination/Bar';
+import FlotArea from '../../components/FlotArea';
 
 // data
 import { character, BtsBgImg } from '../data';
@@ -46,8 +47,9 @@ export default () => {
         title="with BTS"
         content={() => <>BTS가 개발에 직접 참여한 인더섬 업데이트 소식</>}
       />
-      <div className="font-Pretendard mb-[120px]">
+      <div className="font-Pretendard mb-[120px] relative">
         <Main />
+        <FlotArea />
       </div>
       <Footer />
     </>
