@@ -20,6 +20,8 @@ module.exports = {
       md: '768px',
       lg: '1024px',
       xl: '1280px',
+      xxl: '1440px',
+      hug: '1600px',
     },
     extend: {
       padding: {
@@ -33,6 +35,24 @@ module.exports = {
         padding: {
           DEFAULT: 'var(--container-px)',
         },
+        screens: {
+          '#sm': {
+            max: '639px',
+          },
+          '#md': {
+            max: '767px',
+          },
+          '#lg': {
+            max: '1023px',
+          },
+          '#xl': {
+            max: '1199px',
+          },
+          sm: '640px',
+          md: '768px',
+          lg: '1024px',
+          xl: '1280px',
+        }
       },
       colors: {
         primary: '#822ce5',
