@@ -8,6 +8,7 @@ import CharacterSlide from '../components/home/CharacterSlide';
 import MainBannerSlide from '../components/home/MainBannerSlide';
 import Card from '../components/Card';
 import HeaderSection from '../components/HeaderSection';
+import FlotArea from '../components/FlotArea';
 import { card } from './data';
 
 const Main = () => {
@@ -174,9 +175,12 @@ export default () => {
   return (
     <>
       <Header />
-      <MainBannerSlide />
-      <div className="font-Pretendard">
+      <div className="z-50 relative">
+        <MainBannerSlide />
+      </div>
+      <div className="font-Pretendard relative">
         <Main />
+        <FlotArea />
       </div>
       <Footer />
     </>
