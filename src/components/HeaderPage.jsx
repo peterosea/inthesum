@@ -15,7 +15,7 @@ const BgImg = () => (
  * @param {JSX.Element} content
  * @returns
  */
-const HeaderPage = ({ bgImg = BgImg, title, content }) => {
+const HeaderPage = ({ bgImg = BgImg, title, content, isMusic = false }) => {
   const ModifyBgImg = () =>
     React.cloneElement(bgImg(), {
       className: 'object-cover w-full h-full absolute object-center',
@@ -51,34 +51,36 @@ const HeaderPage = ({ bgImg = BgImg, title, content }) => {
           </div>
         </div>
       </div>
-      <div className="absolute bottom-0 pb-[28px] xl:pb-[35px] w-full z-20">
-        <div className="container mx-auto">
-          <div className="flex gap-x-[13px] items-center">
-            <div className="text-white">
-              <i
+      {isMusic && (
+        <div className="absolute bottom-0 pb-[28px] xl:pb-[35px] w-full z-20">
+          <div className="container mx-auto">
+            <div className="flex gap-x-[13px] items-center">
+              <div className="text-white">
+                <i
+                  className={classnames(
+                    'icon-volume-off text-[18px]',
+                    'xl:text-[24px]',
+                  )}
+                ></i>
+                <i
+                  className={classnames(
+                    'icon-volume text-[18px]',
+                    'xl:text-[24px]',
+                  )}
+                ></i>
+              </div>
+              <div
                 className={classnames(
-                  'icon-volume-off text-[18px]',
-                  'xl:text-[24px]',
+                  'text-white leading-none pb-[2px] text-[12px]',
+                  'xl:text-[16px]',
                 )}
-              ></i>
-              <i
-                className={classnames(
-                  'icon-volume text-[18px]',
-                  'xl:text-[24px]',
-                )}
-              ></i>
-            </div>
-            <div
-              className={classnames(
-                'text-white leading-none pb-[2px] text-[12px]',
-                'xl:text-[16px]',
-              )}
-            >
-              <span className="font-Pretendard">방탄소년단 - DYNAMITE</span>
+              >
+                <span className="font-Pretendard">방탄소년단 - DYNAMITE</span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      )}
     </div>
   );
 };
