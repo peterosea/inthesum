@@ -12,6 +12,7 @@ import HeaderPage from '../../components/HeaderPage';
 import HeaderSection from '../../components/HeaderSection';
 import CharacterItem from '../../components/Item/Character';
 import Card from '../../components/Card';
+import FloatArea from '../../components/FloatArea';
 // data
 import { character, card, DevlogBgImg } from '../data';
 
@@ -116,8 +117,9 @@ export default () => {
         title="인더섬 개발일지"
         content={() => <>BTS 멤버들이 처음부터 함께한 인더섬에서 만나요</>}
       />
-      <div className="font-Pretendard xl:mb-[120px] overflow-x-hidden">
+      <div className="font-Pretendard xl:mb-[120px] overflow-x-hidden relative">
         <Main />
+        <FloatArea />
       </div>
       <Footer />
     </>

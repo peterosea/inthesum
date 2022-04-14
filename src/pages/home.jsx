@@ -3,14 +3,12 @@ import classnames from 'classnames';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import '../components/home/home.scss';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/autoplay';
 import MagazineSlide from '../components/home/MagazineSlide';
 import CharacterSlide from '../components/home/CharacterSlide';
 import MainBannerSlide from '../components/home/MainBannerSlide';
 import Card from '../components/Card';
 import HeaderSection from '../components/HeaderSection';
+import FloatArea from '../components/FloatArea';
 import { card } from './data';
 
 const Main = () => {
@@ -25,7 +23,7 @@ const Main = () => {
                   <div className="max-w-[160px]">
                     <img
                       src="/img/img-withbts-title.png"
-                      srcset="/img/img-withbts-title@2x.png 2x,
+                      srcSet="/img/img-withbts-title@2x.png 2x,
                             /img/img-withbts-title@3x.png 3x"
                       alt="with BTS"
                       className="h-[55px] xl:h-[93px] w-auto"
@@ -177,9 +175,12 @@ export default () => {
   return (
     <>
       <Header />
-      <MainBannerSlide />
-      <div className="font-Pretendard">
+      <div className="z-50 relative">
+        <MainBannerSlide />
+      </div>
+      <div className="font-Pretendard relative">
         <Main />
+        <FloatArea />
       </div>
       <Footer />
     </>

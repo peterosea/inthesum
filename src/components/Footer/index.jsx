@@ -11,7 +11,7 @@ const Footer = () => {
               <img
                 className="max-w-[96px]"
                 src="/img/logo-hybeim.png"
-                srcset="/img/logo-hybeim@2x.png 2x,
+                srcSet="/img/logo-hybeim@2x.png 2x,
                         /img/logo-hybeim@3x.png 3x"
               />
             </a>
@@ -71,7 +71,7 @@ const Footer = () => {
               <a href="#">
                 <img
                   src="/img/logo-facebook.png"
-                  srcset="/img/logo-facebook@2x.png 2x,
+                  srcSet="/img/logo-facebook@2x.png 2x,
                             /img/logo-facebook@3x.png 3x"
                   alt="facebook"
                 />
@@ -81,7 +81,7 @@ const Footer = () => {
               <a href="#">
                 <img
                   src="/img/logo-twitter.png"
-                  srcset="/img/logo-twitter@2x.png 2x,
+                  srcSet="/img/logo-twitter@2x.png 2x,
                             /img/logo-twitter@3x.png 3x"
                   alt="twitter"
                 />
@@ -91,7 +91,7 @@ const Footer = () => {
               <a href="#">
                 <img
                   src="/img/logo-insta.png"
-                  srcset="/img/logo-insta@2x.png 2x,
+                  srcSet="/img/logo-insta@2x.png 2x,
                             /img/logo-insta@3x.png 3x"
                   alt="instagram"
                 />
@@ -101,7 +101,7 @@ const Footer = () => {
               <a href="#">
                 <img
                   src="/img/logo-youtube.png"
-                  srcset="/img/logo-youtube@2x.png 2x,
+                  srcSet="/img/logo-youtube@2x.png 2x,
                             /img/logo-youtube@3x.png 3x"
                   alt="youtube"
                 />
@@ -114,7 +114,7 @@ const Footer = () => {
                 <img
                   className="h-[40px]"
                   src="/img/down-appstore.png"
-                  srcset="/img/down-appstore@2x.png 2x,
+                  srcSet="/img/down-appstore@2x.png 2x,
                             /img/down-appstore@3x.png 3x"
                   alt="app store"
                 />
@@ -125,7 +125,7 @@ const Footer = () => {
                 <img
                   className="h-[40px]"
                   src="/img/down-googleplay.png"
-                  srcset="/img/down-googleplay@2x.png 2x,
+                  srcSet="/img/down-googleplay@2x.png 2x,
                             /img/down-googleplay@3x.png 3x"
                   alt="google play"
                 />

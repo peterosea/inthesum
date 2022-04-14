@@ -1,0 +1,22 @@
+import React from 'react';
+import cx from 'classnames';
+
+const BackBtn = () => {
+  return (
+    <div className="scrolltop relative h-px">
+      <a
+        href="#"
+        className="w-[50px] h-[50px] xl:w-[80px] xl:h-[80px] bg-[#f4f6fa] flex items-center justify-center absolute left-0 top-1/2 -translate-y-1/2 rounded-full"
+      >
+        <i
+          className={cx(
+            'text-[12px] xl:text-[28px] text-[#c3cad5]',
+            'icon-arrow rotate-90',
+          )}
+        ></i>
+      </a>
+    </div>
+  );
+};
+
+export default BackBtn;

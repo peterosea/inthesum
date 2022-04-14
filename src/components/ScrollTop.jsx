@@ -1,29 +1,25 @@
 import React from 'react';
-import { useWindowSize } from 'usehooks-ts';
 import cx from 'classnames';
-import "./ScrollTop.scss";
 
+import './ScrollTop.scss';
 
-const ScrollTop = () => {
-  const { width } = useWindowSize();
-
+const ScrollTop = ({ link }) => {
   return (
-    <div className="scrolltop relative h-px xl:bg-[#e6eaf2]">
-      <a
-        href="#list"
-        className="w-[50px] h-[50px] xl:w-[80px] xl:h-[80px] bg-[#f4f6fa] flex items-center justify-center absolute right-0 top-1/2 -translate-y-1/2 rounded-full"
-      >
-        <i
-          className={cx(
-            'text-[12px] xl:text-[28px] text-[#c3cad5]',
-            {
-              'icon-arrow rotate-180': width >= 1280,
-              'icon-top-arrow': width < 1280,
-            },
-          )}
-        ></i>
-      </a>
-    </div>
+    <a
+      href={`#${link ?? ''}`}
+      className="w-[50px] h-[50px] hug:w-[80px] hug:h-[80px] bg-[#000000] flex items-center justify-center rounded-full"
+    >
+      <div className="fill-white">
+        <div className={cx('w-[12px] h-[7px]', 'hug:w-[20px] hug:h-[12px]')}>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.205 12">
+            <path
+              d="M26.437 17.588 18.2 9.442a1.921 1.921 0 0 0-2.728 0l-8.15 8.146a1.922 1.922 0 0 0 2.709 2.728l6.8-6.8 6.8 6.8a1.957 1.957 0 0 0 2.8-2.728z"
+              transform="translate(-6.754 -8.874)"
+            />
+          </svg>
+        </div>
+      </div>
+    </a>
   );
 };
 

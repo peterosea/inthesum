@@ -6,6 +6,7 @@ import PaginationBar from '../../components/Pagination/Bar';
 import HeaderPage from '../../components/HeaderPage';
 import Tab from '../../components/Tab';
 import Accordion from '../../components/Accordion';
+import FloatArea from '../../components/FloatArea';
 
 const Main = () => {
   return (
@@ -56,8 +57,9 @@ export default () => {
           />
         )}
       />
-      <div className="font-Pretendard mb-[25px] xl:mb-[120px]">
+      <div className="font-Pretendard mb-[25px] xl:mb-[120px] relative">
         <Main />
+        <FloatArea />
       </div>
       <Footer />
     </>
