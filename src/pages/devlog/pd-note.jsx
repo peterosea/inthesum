@@ -4,7 +4,7 @@ import Footer from '../../components/Footer';
 import Card from '../../components/Card';
 import Pagination from '../../components/Pagination';
 import HeaderPage from '../../components/HeaderPage';
-import ScrollTop from '../../components/ScrollTop';
+import BackBtn from '../../components/Btn/BackBtn';
 import PaginationBar from '../../components/Pagination/Bar';
 import classnames from 'classnames';
 import FloatArea from '../../components/FloatArea';
@@ -116,7 +116,7 @@ const Main = () => {
               </p>
             </article>
             <div className={classnames('my-[55px]', 'xl:my-[80px]')}>
-              <ScrollTop link="list" />
+              <BackBtn />
             </div>
           </div>
         </div>
@@ -136,7 +136,7 @@ export default () => {
       />
       <div className="font-Pretendard mb-[15px] xl:mb-[70px] relative">
         <Main />
-        <FloatArea />
+        <FloatArea link="list" />
       </div>
       <Footer />
     </>

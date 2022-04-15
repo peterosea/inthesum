@@ -8,6 +8,7 @@ import HeaderPage from '../../components/HeaderPage';
 import ScrollTop from '../../components/ScrollTop';
 import PaginationBar from '../../components/Pagination/Bar';
 import FloatArea from '../../components/FloatArea';
+import BackBtn from '../../components/Btn/BackBtn';
 import { card } from '../data';
 
 const Main = () => {
@@ -114,7 +115,7 @@ const Main = () => {
               </p>
             </article>
             <div className={classnames('my-[55px]', 'xl:my-[80px]')}>
-              <ScrollTop link="list" />
+              <BackBtn />
             </div>
           </div>
         </div>

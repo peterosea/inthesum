@@ -7,16 +7,8 @@ import ScrollTop from './ScrollTop';
 import GooglePlayBtn from './Btn/GooglePlayBtn';
 import AppStoreBtn from './Btn/AppStoreBtn';
 
-const FloatArea = () => {
-  const topShrink = useShrink(window.innerHeight * 0.8 - 110);
-  const bottomShrink = useShrink(document.body.scrollHeight - 800);
-  let Shrink = false;
-  if (topShrink) {
-    Shrink = true;
-    if (bottomShrink) {
-      Shrink = false;
-    }
-  }
+const FloatArea = ({ link }) => {
+  const Shrink = useShrink(window.innerHeight * 0.8 - 110);
 
   return (
     <Transition
@@ -34,7 +26,7 @@ const FloatArea = () => {
       >
         <AppStoreBtn />
         <GooglePlayBtn />
-        <ScrollTop />
+        <ScrollTop link={link} />
       </div>
     </Transition>
   );
