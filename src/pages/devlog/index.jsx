@@ -117,7 +117,7 @@ export default () => {
         title="인더섬 개발일지"
         content={() => <>BTS 멤버들이 처음부터 함께한 인더섬에서 만나요</>}
       />
-      <div className="font-Pretendard xl:mb-[120px] overflow-x-hidden relative">
+      <div className="font-Pretendard xl:mb-[120px] relative">
         <Main />
         <FloatArea />
       </div>

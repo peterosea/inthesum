@@ -134,7 +134,7 @@ export default () => {
         title="개발 PD 노트"
         content={() => <>BTS가 개발에 직접 참여한 인더섬 업데이트 소식</>}
       />
-      <div className="font-Pretendard mb-[15px] xl:mb-[70px] overflow-x-hidden relative">
+      <div className="font-Pretendard mb-[15px] xl:mb-[70px] relative">
         <Main />
         <FloatArea />
       </div>
