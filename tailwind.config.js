@@ -14,7 +14,13 @@ module.exports = {
         max: '1023px',
       },
       '#xl': {
-        max: '1199px',
+        max: '1279px',
+      },
+      '#xxl': {
+        max: '1439px',
+      },
+      '#hug': {
+        max: '1599px',
       },
       sm: '640px',
       md: '768px',
@@ -46,7 +52,7 @@ module.exports = {
             max: '1023px',
           },
           '#xl': {
-            max: '1199px',
+            max: '1279px',
           },
           sm: '640px',
           md: '768px',
