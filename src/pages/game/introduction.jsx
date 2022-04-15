@@ -211,7 +211,7 @@ const Main = () => {
       </section>
       <section className="h-[350px] xl:h-[910px] relative overflow-hidden mt-[81px] xl:mt-[91px]">
         <img
-          className="absolute #xl:max-h-[200px] #xl:bottom-0 h-full object-contain max-w-none w-auto object-center left-1/2 -translate-x-1/2"
+          className="absolute #xl:bottom-0 h-full object-contain xl:object-contain max-w-none w-full object-bottom left-1/2 -translate-x-1/2"
           src="/img/img-introduce-bottom-bg.png"
           srcSet="/img/img-introduce-bottom-bg@2x.png 2x,
                   /img/img-introduce-bottom-bg@3x.png 3x"
