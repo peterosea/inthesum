@@ -12,5 +12,8 @@
 .icon-more-arrow:before { content: '\e80a'; } /* '' */
 .icon-logout:before { content: '\e80b'; } /* '' */
 .icon-account:before { content: '\e80c'; } /* '' */
+.icon-plus-circled:before { content: '\e80d'; } /* '' */
 .icon-right-dir:before { content: '\e80e'; } /* '' */
+.icon-close:before { content: '\e80f'; } /* '' */
+.icon-download:before { content: '\e810'; } /* '' */
 .icon-top-arrow:before { content: '\e81a'; } /* '' */
