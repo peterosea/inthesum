@@ -61,7 +61,11 @@ const Modals = () => {
       <Modal isOpen={modalType.type1} onClose={() => closeModalType('type1')}>
         <IeDeprecated />
       </Modal>
-      <Modal isOpen={modalType.type2} onClose={() => closeModalType('type2')}>
+      <Modal
+        isOpen={modalType.type2}
+        onClose={() => closeModalType('type2')}
+        timeClose={true}
+      >
         <Notice0407 />
       </Modal>
     </>
