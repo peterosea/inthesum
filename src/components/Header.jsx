@@ -11,7 +11,7 @@ const Header = ({ isBlack = false }) => {
   const isShrink = useShrink(window.innerHeight * 0.8 - 110);
   return (
     <>
-      <header>
+      <header className="z-[90] relative">
         <HeaderMobile className={classnames({ 'bg-black': isBlack })} />
         {/* policy tw-bg-black */}
         <div
