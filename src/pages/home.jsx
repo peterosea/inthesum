@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import classnames from 'classnames';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -11,6 +11,7 @@ import HeaderSection from '../components/HeaderSection';
 import FloatArea from '../components/FloatArea';
 import Modal from '../components/Modal';
 import IeDeprecated from '../components/Modal/IeDeprecated';
+import { ModalContext } from '../main';
 
 import { card } from './data';
 
@@ -175,6 +176,7 @@ const Main = () => {
 };
 
 export default () => {
+  const { type1, closeType1 } = useContext(ModalContext);
   return (
     <>
       <Header />
@@ -186,7 +188,7 @@ export default () => {
         <FloatArea />
       </div>
       <Footer />
-      <Modal>
+      <Modal isOpen={type1} onClose={closeType1}>
         <IeDeprecated />
       </Modal>
     </>
