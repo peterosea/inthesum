@@ -61,12 +61,14 @@ const Modal = ({
             <i className="icon-close text-black text-[18px]"></i>
           </button>
           <div>{children}</div>
-          <div className="absolute left-0 bottom-0 py-[14px] px-[20px] w-full bg-white">
-            <label className="flex items-center gap-x-[6px] text-[#9ba0a8] leading-none">
-              <input id="label" type="checkbox" />
-              <span>오늘 하루 보지 않기</span>
-            </label>
-          </div>
+          {timeClose && (
+            <div className="absolute left-0 bottom-0 py-[14px] px-[20px] w-full bg-white">
+              <label className="flex items-center gap-x-[6px] text-[#9ba0a8] leading-none">
+                <input id="label" type="checkbox" />
+                <span>오늘 하루 보지 않기</span>
+              </label>
+            </div>
+          )}
         </Transition.Child>
       </div>
     </Transition>
