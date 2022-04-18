@@ -20,8 +20,9 @@ const FloatArea = ({ link }) => {
     >
       <div
         className={cx(
-          'absolute flex gap-x-[10px] gap-y-[20px] right-0 bottom-[30px] #hug:pr-cpx',
-          'hug:left-full hug:translate-x-[60px] hug:right-auto hug:bottom-[130px] hug:flex-col',
+          '#hug:pr-cpx',
+          'absolute flex gap-x-[10px] gap-y-[20px] right-0 bottom-[30px] flex-col',
+          'hug:left-full hug:translate-x-[60px] hug:right-auto hug:bottom-[130px]',
         )}
       >
         <AppStoreBtn />

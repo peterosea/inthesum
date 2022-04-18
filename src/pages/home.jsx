@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import classnames from 'classnames';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -9,6 +9,7 @@ import MainBannerSlide from '../components/home/MainBannerSlide';
 import Card from '../components/Card';
 import HeaderSection from '../components/HeaderSection';
 import FloatArea from '../components/FloatArea';
+
 import { card } from './data';
 
 const Main = () => {
