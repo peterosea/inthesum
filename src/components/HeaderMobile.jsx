@@ -154,29 +154,22 @@ const HeaderMobile = (props) => {
           <div className="lang" dir="ltr">
             <Select
               button={({ children }) => (
-                <button className="leading-none pt-[4px] focus:outline-none focus:shadow-none focus:ring-0 cursor-pointer flex items-center gap-x-[10px]">
-                  언어 : {children}
-                  <svg width="8.182" height="6" viewBox="0 0 8.182 6">
-                    <path
-                      d="m4.091 0 4.091 6H0z"
-                      transform="rotate(180 4.091 3)"
-                      style={{ fill: '#fff' }}
-                    />
-                  </svg>
+                <button className="leading-none pt-[1.5px] focus:outline-none focus:shadow-none focus:ring-0 cursor-pointer flex items-center gap-x-[10px] border-[2px] border-white w-[40px] h-[40px] rounded-full justify-center">
+                  {children}
                 </button>
               )}
               options={[
                 {
                   id: 'option-1',
-                  name: '한국어',
+                  name: 'KR',
                 },
                 {
                   id: 'option-2',
-                  name: '영어',
+                  name: 'JP',
                 },
                 {
                   id: 'option-3',
-                  name: '일본어',
+                  name: 'US',
                 },
               ]}
               name="mnb"
