@@ -9,6 +9,9 @@ import MainBannerSlide from '../components/home/MainBannerSlide';
 import Card from '../components/Card';
 import HeaderSection from '../components/HeaderSection';
 import FloatArea from '../components/FloatArea';
+import Modal from '../components/Modal';
+import IeDeprecated from '../components/Modal/IeDeprecated';
+
 import { card } from './data';
 
 const Main = () => {
@@ -183,6 +186,9 @@ export default () => {
         <FloatArea />
       </div>
       <Footer />
+      <Modal>
+        <IeDeprecated />
+      </Modal>
     </>
   );
 };
