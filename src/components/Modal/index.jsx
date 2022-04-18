@@ -1,14 +1,17 @@
 import { Transition } from '@headlessui/react';
 import { useLockedBody } from 'usehooks-ts';
+import cx from 'classnames';
 
 /**
  *
  * @property {boolean} isOpen
  * @property {()=> void} onClose
+ * @property {boolean} timeClose
  */
 const Modal = ({
-  isOpen = true,
+  isOpen = false,
   onClose = () => console.log('test'),
+  timeClose = false,
   children,
 }) => {
   useLockedBody(isOpen);
@@ -46,7 +49,10 @@ const Modal = ({
           leave="ease-in duration-200"
           leaveFrom="opacity-100 translate-y-0 sm:scale-100"
           leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-          className="relative inline-block align-bottom bg-white p-[40px] pt-[46px] text-left overflow-hidden shadow-xl transform transition-all sm:align-middle sm:max-w-[425px] sm:w-full"
+          className={cx(
+            'relative inline-block align-bottom bg-[#F4F6FA] p-[40px] pt-[46px] text-left overflow-hidden shadow-xl transform transition-all sm:align-middle sm:max-w-[425px] sm:w-full',
+            { 'pb-[70px]': timeClose },
+          )}
         >
           <button
             className="absolute top-[20px] right-[17px]"
@@ -55,6 +61,12 @@ const Modal = ({
             <i className="icon-close text-black text-[18px]"></i>
           </button>
           <div>{children}</div>
+          <div className="absolute left-0 bottom-0 py-[14px] px-[20px] w-full bg-white">
+            <label className="flex items-center gap-x-[6px] text-[#9ba0a8] leading-none">
+              <input id="label" type="checkbox" />
+              <span>오늘 하루 보지 않기</span>
+            </label>
+          </div>
         </Transition.Child>
       </div>
     </Transition>
