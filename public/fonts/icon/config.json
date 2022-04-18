@@ -241,6 +241,20 @@
       "search": [
         "icon-download"
       ]
+    },
+    {
+      "uid": "71230c77da51948c2ea19583189cacfe",
+      "css": "arrow-right-w",
+      "code": 59409,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M162.6 974.7L565.8 566.3A95.1 95.1 0 0 0 565.8 431.3L162.6 28.1A95.1 95.1 0 0 0 27.6 162.1L364.2 498.7 27.6 835.3A96.8 96.8 0 0 0 162.6 973.9Z",
+        "width": 594
+      },
+      "search": [
+        "icon-arrow-right-w"
+      ]
     }
   ]
 }
