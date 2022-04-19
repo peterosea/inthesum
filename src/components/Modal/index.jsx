@@ -31,7 +31,7 @@ const Modal = ({
           leave="ease-in duration-200"
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
-          className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"
+          className="fixed inset-0 bg-black bg-opacity-70 transition-opacity"
           aria-hidden="true"
           onClick={onClose}
         />
@@ -50,7 +50,7 @@ const Modal = ({
           leaveFrom="opacity-100 translate-y-0 sm:scale-100"
           leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
           className={cx(
-            'relative inline-block align-bottom bg-[#F4F6FA] p-[40px] pt-[46px] text-left overflow-hidden shadow-xl transform transition-all sm:align-middle sm:max-w-[425px] sm:w-full',
+            'relative inline-block align-bottom bg-[#F4F6FA] p-[40px] pt-[46px] text-left overflow-hidden shadow-xl transform transition-all sm:align-middle sm:max-w-[425px] sm:w-full my-[80px]',
             { 'pb-[70px]': timeClose },
           )}
         >
