@@ -32,7 +32,7 @@ const Tab = ({ tabList, responsive }) => {
                 { 'text-[#c3cad5]': !isActive },
               )}
             >
-              <span className="text-[12px] xl:text-[18px] font-extrabold font-TmoneyRoundWind">
+              <span className="text-[12px] xl:text-[18px] font-bold font-Pretendard">
                 {name}
               </span>
               <span
