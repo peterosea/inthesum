@@ -22,8 +22,9 @@ const Footer = () => {
               'xl:divide-x xl:divide-gray-400 xl:mt-[20px] xl:mb-[15px]',
             )}
           >
-            {['이용약관', '개인정보취급방침', '고객센터'].map((e) => (
+            {['이용약관', '개인정보취급방침', '고객센터'].map((e, index) => (
               <li
+                key={`index-${index}`}
                 className={classnames(
                   'px-[15px] first:pl-0 last:pr-0',
                   'xl:px-[20px] xl:leading-[10px]',
@@ -48,8 +49,9 @@ const Footer = () => {
               '사업자등록번호: 843-86-02224',
               '통신판매업 신고번호: 제 2022-서울강남-01792호',
               '대표: 정우용',
-            ].map((e) => (
+            ].map((e, index) => (
               <li
+                key={`index-${index}`}
                 className={classnames(
                   'first:pl-0 last:pr-0',
                   'xl:leading-[10px] xl:px-[20px]',
