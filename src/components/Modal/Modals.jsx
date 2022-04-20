@@ -2,6 +2,7 @@ import React, { useState, useCallback, useEffect } from 'react';
 import Modal from '.';
 import IeDeprecated from './content/IeDeprecated';
 import Notice0407 from './content/Notice0407';
+import HealingLift from './content/HealingLift';
 
 const Modals = () => {
   const [helpModal, setHelpModal] = useState(false);
@@ -22,6 +23,7 @@ const Modals = () => {
   const [modalType, setModalType] = useState({
     type1: false,
     type2: false,
+    type3: false,
   });
   const openModalType = (type) => {
     const cModalType = Object.assign(modalType);
@@ -56,6 +58,12 @@ const Modals = () => {
           >
             Modal 2
           </button>
+          <button
+            className="inline-block py-[3px] px-[10px] bg-teal-500 rounded-full mr-[8px] text-sm font-semibold text-white"
+            onClick={() => openModalType('type3')}
+          >
+            Modal 3
+          </button>
         </div>
       </Modal>
       <Modal isOpen={modalType.type1} onClose={() => closeModalType('type1')}>
@@ -67,6 +75,13 @@ const Modals = () => {
         timeClose={true}
       >
         <Notice0407 />
+      </Modal>
+      <Modal
+        isOpen={modalType.type3}
+        onClose={() => closeModalType('type3')}
+        timeClose={true}
+      >
+        <HealingLift />
       </Modal>
     </>
   );
