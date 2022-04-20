@@ -31,7 +31,7 @@ const ToolTip = () => {
         className="btn bg-black text-white text-[14px] rounded-full py-[14px] px-[20px] font-TmoneyRoundWind font-extrabold leading-none"
         onClick={handleToggle}
       >
-        설명보기
+        {active ? '설명닫기' : '설명보기'}
       </button>
       <Transition
         show={active}
@@ -80,64 +80,62 @@ const Main = () => {
             content={() => <p>뜻밖의 휴가로 도착한 섬! 인더섬에서 만나요</p>}
           />
           <div className="relative #xl:!mx-full">
-            {swiperPagination.current && (
-              <Swiper
-                modules={[Pagination, Navigation, Autoplay]}
-                speed={2500}
-                slidesPerView={1}
-                spaceBetween={0}
-                loop={true}
-                mousewheel={true}
-                // autoplay={true}
-                threshold={100}
-                pagination={{
-                  el: swiperPagination.current,
-                  type: 'fraction',
-                }}
-                navigation={{
-                  nextEl: swiperNavNext?.current,
-                  prevEl: swiperNavPrev?.current,
-                }}
-                className="!pt-[31px] xl:!pt-[58px]"
-              >
-                {[1, 2, 3, 4].map((e, index) => (
-                  <SwiperSlide key={`index-${index}`}>
-                    <div className="w-full">
-                      <div className="mb-[20px] #xl:container mx-auto">
-                        <div className="flex items-center gap-x-[14px]">
-                          <span className="text-[18px] font-TmoneyRoundWind font-extrabold">
-                            인더섬 with BTS 티저
-                          </span>
-                          <ToolTip />
-                        </div>
-                      </div>
-                      <div className="aspect-[16/9] relative overflow-hidden xl:rounded-[16px]">
-                        <div className="absolute w-full h-full">
-                          <VideoJS
-                            options={{
-                              muted: true,
-                              controls: true,
-                              autoplay: true,
-                              poster: '/video/poster.png',
-                              sources: [
-                                {
-                                  src: '/video/movie-sample.mp4',
-                                  type: 'video/mp4',
-                                },
-                                {
-                                  src: '/video/movie-sample.ogg',
-                                  type: 'video/ogg',
-                                },
-                              ],
-                            }}
-                          />
-                        </div>
+            <Swiper
+              modules={[Pagination, Navigation, Autoplay]}
+              speed={2500}
+              slidesPerView={1}
+              spaceBetween={100}
+              loop={true}
+              mousewheel={true}
+              autoplay={true}
+              threshold={100}
+              pagination={{
+                el: swiperPagination.current,
+                type: 'fraction',
+              }}
+              navigation={{
+                nextEl: swiperNavNext?.current,
+                prevEl: swiperNavPrev?.current,
+              }}
+              className="!pt-[31px] xl:!pt-[58px]"
+            >
+              {[1, 2, 3, 4].map((e, index) => (
+                <SwiperSlide key={`index-${index}`}>
+                  <div className="w-full">
+                    <div className="mb-[20px] #xl:container mx-auto">
+                      <div className="flex items-center gap-x-[14px]">
+                        <span className="text-[18px] font-TmoneyRoundWind font-extrabold">
+                          인더섬 with BTS 티저
+                        </span>
+                        <ToolTip />
                       </div>
                     </div>
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-            )}
+                    <div className="aspect-[16/9] relative overflow-hidden xl:rounded-[16px]">
+                      <div className="absolute w-full h-full">
+                        <VideoJS
+                          options={{
+                            muted: true,
+                            controls: true,
+                            autoplay: true,
+                            poster: '/video/poster.png',
+                            sources: [
+                              {
+                                src: '/video/movie-sample.mp4',
+                                type: 'video/mp4',
+                              },
+                              {
+                                src: '/video/movie-sample.ogg',
+                                type: 'video/ogg',
+                              },
+                            ],
+                          }}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
             <div
               ref={swiperNavNext}
               className="swiper-button-next cursor-pointer translate-y-[62px] translate-x-[100px] absolute top-1/2 right-[10px] stroke-[#e6eaf2] hover:stroke-black"
