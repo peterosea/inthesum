@@ -1,4 +1,6 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
+import { Transition } from '@headlessui/react';
+
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import HeaderPage from '../../components/HeaderPage';
@@ -14,6 +16,55 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 
+const ToolTip = () => {
+  const [active, setActive] = useState(false);
+
+  const handleToggle = () => {
+    setActive(!active);
+  };
+
+  const onClose = () => setActive(false);
+
+  return (
+    <div className="relative z-20 text-left">
+      <button
+        className="btn bg-black text-white text-[14px] rounded-full py-[14px] px-[20px] font-TmoneyRoundWind font-extrabold leading-none"
+        onClick={handleToggle}
+      >
+        설명보기
+      </button>
+      <Transition
+        show={active}
+        enter="ease-out duration-300"
+        enterFrom="opacity-0"
+        enterTo="opacity-100"
+        leave="ease-in duration-200"
+        leaveFrom="opacity-100"
+        leaveTo="opacity-0"
+        className="absolute left-full top-0 w-[480px] translate-x-[18px] hidden xl:block p-[30px] border border-[#c3cad5] z-20 bg-white shadow-[10px_20px_30px_0_rgba(0,0,0,0.16)]"
+      >
+        <button
+          className="w-[36px] h-[36px] rounded-full bg-black absolute text-white right-0 top-0 translate-x-1/2 -translate-y-1/2"
+          onClick={onClose}
+        >
+          <i className="icon-close"></i>
+        </button>
+        <div>
+          2013년 데뷔해 국내외 신인상을 휩쓴 방탄소년단은 명실상부 한국을
+          대표하는 최정상 보이 그룹으로 성장했다. 전 세계적으로 방탄소년단
+          열풍을 일으키며 ‘21세기 팝 아이콘’으로 불린다. 미국 빌보드, 영국
+          오피셜 차트, 일본 오리콘을 비롯해 아이튠즈, 스포티파이, 애플뮤직 등
+          세계 유수의 차트 정상에 올랐고, 음반 판매량과 뮤직비디오 조회수, SNS
+          지수 등에서도 독보적인 기록을 써 내려가고 있다. 특히, 방탄소년단은 한
+          주에 빌보드 ‘핫 100’ 차트와 ‘빌보드 200’ 차트 정상을 동시 정복한
+          최초의 그룹이며, 통산 ‘빌보드 200’ 5차례, ‘핫 100’ 5차례 1위를
+          차지했다.
+        </div>
+      </Transition>
+    </div>
+  );
+};
+
 const Main = () => {
   const swiperPagination = useRef(null);
   const swiperNavPrev = useRef(null);
@@ -28,7 +79,7 @@ const Main = () => {
             title={() => <h1>인더섬 소개 영상</h1>}
             content={() => <p>뜻밖의 휴가로 도착한 섬! 인더섬에서 만나요</p>}
           />
-          <div className="relative mt-[31px] xl:mt-[58px]">
+          <div className="relative #xl:!mx-full">
             {swiperPagination.current && (
               <Swiper
                 modules={[Pagination, Navigation, Autoplay]}
@@ -37,31 +88,30 @@ const Main = () => {
                 spaceBetween={0}
                 loop={true}
                 mousewheel={true}
-                autoplay={true}
+                // autoplay={true}
                 threshold={100}
                 pagination={{
-                  el: swiperPagination?.current,
+                  el: swiperPagination.current,
                   type: 'fraction',
                 }}
                 navigation={{
                   nextEl: swiperNavNext?.current,
                   prevEl: swiperNavPrev?.current,
                 }}
+                className="!pt-[31px] xl:!pt-[58px]"
               >
                 {[1, 2, 3, 4].map((e, index) => (
                   <SwiperSlide key={`index-${index}`}>
                     <div className="w-full">
-                      <div className="mb-[20px]">
+                      <div className="mb-[20px] #xl:container mx-auto">
                         <div className="flex items-center gap-x-[14px]">
                           <span className="text-[18px] font-TmoneyRoundWind font-extrabold">
                             인더섬 with BTS 티저
                           </span>
-                          <button className="btn bg-black text-white text-[14px] rounded-full py-[14px] px-[20px] font-TmoneyRoundWind font-extrabold leading-none">
-                            설명보기
-                          </button>
+                          <ToolTip />
                         </div>
                       </div>
-                      <div className="aspect-[16/9] relative overflow-hidden rounded-[16px]">
+                      <div className="aspect-[16/9] relative overflow-hidden xl:rounded-[16px]">
                         <div className="absolute w-full h-full">
                           <VideoJS
                             options={{
@@ -117,7 +167,7 @@ const Main = () => {
             </div>
             <div
               ref={swiperPagination}
-              className="swiper-pagination absolute h-[50px] top-0 flex items-center justify-center right-0 !w-auto !bottom-auto !left-auto pl-[30px] bg-gradient-to-l from-white via-white"
+              className="swiper-pagination absolute h-[50px] top-[31px] xl:top-[52px] flex items-center justify-center right-0 !w-auto !bottom-auto !left-auto pl-[30px] bg-gradient-to-l from-white via-white"
             ></div>
           </div>
         </div>
