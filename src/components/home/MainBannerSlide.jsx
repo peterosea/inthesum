@@ -37,14 +37,12 @@ const MainBannerSlide = () => {
               <p
                 className={cx(
                   'text-[30px] font-extrabold font-TmoneyRoundWind',
-                  'xl:text-[60px]',
+                  'xl:text-[42px]',
                 )}
               >
-                HEADING ISLAND LIFE
-              </p>
-              <p className="text-[14px] xl:text-[21px]">
-                3DPuzzle Game width BTS character
-                <br className="xl:hidden" /> and space decoration
+                사전예약하고 [인더섬 with BTS]에서
+                <br />
+                아미밤 스탠드(데코 아이템) 받으세요!
               </p>
             </div>
             <div className="mt-[46px] flex gap-x-[20px]">
