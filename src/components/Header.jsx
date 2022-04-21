@@ -70,7 +70,16 @@ const Header = ({ isBlack = false }) => {
                 </li>
                 <li>
                   <div className="menu-wrap">
-                    <a href="#">made by ARMY</a>
+                    <a href="#" className="relative">
+                      made by ARMY
+                      <img
+                        src="/img/coming-soon.png"
+                        srcSet="/img/coming-soon@2x.png 2x,
+                              /img/coming-soon@3x.png 3x"
+                        alt="comming soon"
+                        className="xl:h-[38px] w-auto absolute bottom-full right-0 translate-x-[10px] translate-y-[13px]"
+                      />
+                    </a>
                     <div className="submenu">
                       <div className="items">
                         <a href="#">인더섬 가이드</a>
