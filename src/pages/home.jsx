@@ -107,15 +107,15 @@ const Main = () => {
                 <h4 className="text-[#2e0064] font-extrabold font-TmoneyRoundWind">
                   개발 PD 노트
                 </h4>
-                <div className="mt-[8px] text-[26px] text-primary font-extrabold font-TmoneyRoundWind tracking-[-0.78px]">
-                  인더섬 with BTS
+                <div className="mt-[8px] text-[22px] text-primary font-extrabold font-TmoneyRoundWind tracking-[-1.1px]">
+                  인더섬 with BTS에서
                   <br />
-                  전세계 동시 오픈!!
+                  여러분께 전하고 싶은 이야기
                 </div>
-                <div className="text-[#39007c] mt-[20px] font-Pretendard">
-                  인더섬 2022년 4월 1일 GMT 00:00에
+                <div className="text-[#39007c] mt-[20px] font-Pretendard  tracking-[-0.8px]">
+                  여러분과의 이야기를 만들어가고 싶습니다.
                   <br />
-                  전세계 양대 마켓에서 동시 오픈합니다.
+                  PD가 직접 들려주는 인더섬 이야기를 만나보세요!
                 </div>
               </div>
               <img
@@ -132,30 +132,34 @@ const Main = () => {
               )}
             >
               <div className="#xl:w-full">
-                <h4 className="text-[#4d005d] font-extrabold font-TmoneyRoundWind relative">
+                <h4 className="text-[#4d005d] font-extrabold font-TmoneyRoundWind">
                   made by ARMY - BTS 의상실
-                  <img
-                    src="/img/coming-soon.png"
-                    srcSet="/img/coming-soon@2x.png 2x,
-                              /img/coming-soon@3x.png 3x"
-                    alt="comming soon"
-                    className="xl:h-[38px] w-auto absolute bottom-full right-0"
-                  />
                 </h4>
-                <div className="mt-[8px] text-[26px] text-[#7f0198] font-extrabold font-TmoneyRoundWind tracking-[-0.78px]">
+                <div className="mt-[8px] text-[22px] text-[#7f0198] font-extrabold font-TmoneyRoundWind tracking-[-1.1px]">
                   아미의 PICK!
                   <br />
                   멋진 의상들을 준비하고 있어요!
                 </div>
-                <div className="text-[#360041] mt-[20px] font-Pretendard">
+                <div className="text-[#360041] mt-[20px] font-Pretendard tracking-[-0.8px]">
                   멋진 의상들로 곧 찾아뵐꼐요.
                 </div>
               </div>
-              <img
-                src="/img/banner-bts-cloth-img@3x.png"
-                alt=""
-                className="w-auto h-[135px]"
-              />
+              <div className="relative">
+                <img
+                  src="/img/3706.png"
+                  srcSet="/img/3706@2x.png 2x,
+                            /img/3706@3x.png 3x"
+                  alt=""
+                  className="w-auto h-[135px]"
+                />
+                <img
+                  src="/img/coming-soon.png"
+                  srcSet="/img/coming-soon@2x.png 2x,
+                            /img/coming-soon@3x.png 3x"
+                  alt="comming soon"
+                  className="xl:h-[38px] w-auto absolute bottom-full right-0"
+                />
+              </div>
             </a>
           </div>
         </div>
