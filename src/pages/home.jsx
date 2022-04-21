@@ -18,8 +18,8 @@ const Main = () => {
       <section className="mt-[38px] mb-[60px] xl:my-[90px]">
         <div className="">
           <div className="xl:container mx-auto">
-            <div className="w-full h-full flex items-center relative min-h-[380px]">
-              <div className="relative z-20 text-white pl-[60px]">
+            <div className="w-full h-full flex items-center relative">
+              <div className="absolute z-20 text-white pl-[60px]">
                 <div className="relative">
                   <img
                     src="/img/img-withbts-title-white.png"
@@ -44,19 +44,18 @@ const Main = () => {
                 </div>
               </div>
               <img
-                src="/img/madebyarmi-comingsoon.png"
-                srcSet="/img/madebyarmi-comingsoon@2x.png 2x,
-                              /img/madebyarmi-comingsoon@3x.png 3x"
+                src="/img/madebyarmi-comingsoon1.png"
+                srcSet="/img/madebyarmi-comingsoon1@2x.png 2x,
+                              /img/madebyarmi-comingsoon1@3x.png 3x"
                 alt="comming soon"
-                className="absolute inset-0 object-cover"
               />
             </div>
           </div>
         </div>
         <div className="mt-[20px]">
           <div className="xl:container mx-auto">
-            <div className="w-full h-full flex items-center relative min-h-[380px]">
-              <div className="relative z-20 text-white pl-[60px]">
+            <div className="w-full h-full flex items-center relative">
+              <div className="absolute z-20 text-white pl-[60px]">
                 <div className="relative">
                   <img
                     src="/img/img-madebyarmy-title-w.png"
@@ -89,7 +88,6 @@ const Main = () => {
                 srcSet="/img/madebyarmi-comingsoon@2x.png 2x,
                               /img/madebyarmi-comingsoon@3x.png 3x"
                 alt="comming soon"
-                className="absolute inset-0 object-cover"
               />
             </div>
           </div>
@@ -102,7 +100,7 @@ const Main = () => {
               href="#"
               className={classnames(
                 'relative min-h-[260px] flex py-[42px] px-[30px] bg-[#EDEDFD] items-center flex-wrap gap-y-[35px] justify-end',
-                'xl:rounded-[12px] xl:p-[50px] xl:justify-between',
+                'xl:rounded-[12px] xl:p-[50px] xl:pl-[60px] xl:pr-[40px] xl:justify-between xl:grid xl:grid-cols-[290px,170px] xl:gap-x[40px]',
               )}
             >
               <div className="#xl:w-full">
@@ -129,23 +127,28 @@ const Main = () => {
             <a
               href="#"
               className={classnames(
-                'relative  min-h-[260px] flex py-[42px] px-[30px] bg-[#fdf4ff] items-center flex-wrap gap-y-[35px] justify-end',
-                'xl:rounded-[12px] xl:p-[50px] xl:justify-between',
+                'relative min-h-[260px] flex py-[42px] px-[30px] bg-[#FDF4FF] items-center flex-wrap gap-y-[35px] justify-end',
+                'xl:rounded-[12px] xl:p-[50px] xl:pl-[60px] xl:pr-[40px] xl:justify-between xl:grid xl:grid-cols-[290px,170px] xl:gap-x[40px]',
               )}
             >
               <div className="#xl:w-full">
-                <h4 className="text-[#4d005d] font-extrabold font-TmoneyRoundWind">
+                <h4 className="text-[#4d005d] font-extrabold font-TmoneyRoundWind relative">
                   made by ARMY - BTS 의상실
+                  <img
+                    src="/img/coming-soon.png"
+                    srcSet="/img/coming-soon@2x.png 2x,
+                              /img/coming-soon@3x.png 3x"
+                    alt="comming soon"
+                    className="xl:h-[38px] w-auto absolute bottom-full right-0"
+                  />
                 </h4>
                 <div className="mt-[8px] text-[26px] text-[#7f0198] font-extrabold font-TmoneyRoundWind tracking-[-0.78px]">
-                  RM의 S/S 신상 의상 투표
+                  아미의 PICK!
                   <br />
-                  여러분의 PICK은?
+                  멋진 의상들을 준비하고 있어요!
                 </div>
                 <div className="text-[#360041] mt-[20px] font-Pretendard">
-                  여러분의 감성으로 투표해주세요!
-                  <br />
-                  선택받은 코스튬은 게임에 실제로 반영됩니다!
+                  멋진 의상들로 곧 찾아뵐꼐요.
                 </div>
               </div>
               <img
