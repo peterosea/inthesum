@@ -16,70 +16,82 @@ const Main = () => {
   return (
     <>
       <section className="mt-[38px] mb-[60px] xl:my-[90px]">
-        <div className="border-b border-[#ddd]">
+        <div className="">
           <div className="xl:container mx-auto">
-            <div className="grid xl:grid-cols-[270px,auto]">
-              <div className="xl:min-h-[490px] relative">
-                <div className="flex xl:flex-col justify-between #xl:px-[30px] #xl:container #xl:mx-auto">
-                  <div className="max-w-[160px]">
-                    <img
-                      src="/img/img-withbts-title.png"
-                      srcSet="/img/img-withbts-title@2x.png 2x,
-                            /img/img-withbts-title@3x.png 3x"
-                      alt="with BTS"
-                      className="h-[55px] xl:h-[93px] w-auto"
-                    />
-                    <div className="my-[30px] hidden xl:block">
-                      <p>BTS가 개발에 직접 참여한 인더섬 업데이트 소식</p>
-                    </div>
-                  </div>
-                  <a href="#" className="#xl:self-center">
-                    <img
-                      src="/img/icon-more-arrow@3x.png"
-                      alt="more view"
-                      className="w-[16px] xl:w-[31px]"
-                    />
-                  </a>
+            <div className="w-full h-full flex items-center relative min-h-[380px]">
+              <div className="relative z-20 text-white pl-[60px]">
+                <div className="relative">
+                  <img
+                    src="/img/img-withbts-title-white.png"
+                    srcSet="/img/img-withbts-title-white@2x.png 2x,
+                                /img/img-withbts-title-white@3x.png 3x"
+                    alt="with BTS"
+                    className="h-[55px] xl:h-[93px] w-auto"
+                  />
+                  <img
+                    src="/img/coming-soon.png"
+                    srcSet="/img/coming-soon@2x.png 2x,
+                              /img/coming-soon@3x.png 3x"
+                    alt="comming soon"
+                    className="xl:h-[38px] w-auto absolute bottom-full left-0"
+                  />
                 </div>
-                <div className="absolute w-[110px] h-px bottom-[-1px] right-0 bg-white"></div>
+                <div className="mt-[30px] hidden xl:block">
+                  <p>
+                    BTS와 인더섬을 즐기는 방법!
+                    <br />곧 찾아옵니다.
+                  </p>
+                </div>
               </div>
-              <div className="overflow-hidden xl:mt-0 mt-[35px] h-[500px]">
-                <CharacterSlide />
-              </div>
+              <img
+                src="/img/madebyarmi-comingsoon.png"
+                srcSet="/img/madebyarmi-comingsoon@2x.png 2x,
+                              /img/madebyarmi-comingsoon@3x.png 3x"
+                alt="comming soon"
+                className="absolute inset-0 object-cover"
+              />
             </div>
           </div>
         </div>
-      </section>
-      <section>
-        <div className="xl:container mx-auto relative">
-          <div
-            className={classnames(
-              'px-cpx py-[90] xl:py-[90px]',
-              'xl:h-full xl:absolute xl:top-0 xl:left-0 xl:z-10',
-            )}
-          >
-            <div className="flex xl:flex-col justify-between">
-              <div className="w-[160px]">
-                <img src="/img/img-madebyarmy-title@3x.png" alt="with BTS" />
-                <div className="text-[22px] font-bold whitespace-nowrap text-justify mt-[20px]">
-                  주간 인더섬 매거진
+        <div className="mt-[20px]">
+          <div className="xl:container mx-auto">
+            <div className="w-full h-full flex items-center relative min-h-[380px]">
+              <div className="relative z-20 text-white pl-[60px]">
+                <div className="relative">
+                  <img
+                    src="/img/img-madebyarmy-title-w.png"
+                    srcSet="/img/img-madebyarmy-title-w@2x.png 2x,
+                                /img/img-madebyarmy-title-w@3x.png 3x"
+                    alt="with BTS"
+                    className="h-[55px] xl:h-[93px] w-auto"
+                  />
+                  <div className="text-[22px] text-white font-TmoneyRoundWind font-extrabold mt-[20px]">
+                    주간 인더섬 매거진
+                  </div>
+                  <img
+                    src="/img/coming-soon.png"
+                    srcSet="/img/coming-soon@2x.png 2x,
+                              /img/coming-soon@3x.png 3x"
+                    alt="comming soon"
+                    className="xl:h-[38px] w-auto absolute bottom-full left-0"
+                  />
                 </div>
-                <div className="my-[30px] hidden xl:block">
-                  <p>아미와 함께 만드어 나가는 인더섬 이야기</p>
+                <div className="mt-[30px] hidden xl:block">
+                  <p>
+                    아미가 만들어가는 새로운 이야기!
+                    <br />
+                    기대해주세요!
+                  </p>
                 </div>
               </div>
-              <a href="#">
-                <img
-                  src="/img/icon-more-arrow@3x.png"
-                  alt="more view"
-                  className="w-[31px]"
-                />
-              </a>
+              <img
+                src="/img/madebyarmi-comingsoon.png"
+                srcSet="/img/madebyarmi-comingsoon@2x.png 2x,
+                              /img/madebyarmi-comingsoon@3x.png 3x"
+                alt="comming soon"
+                className="absolute inset-0 object-cover"
+              />
             </div>
-            <div className="absolute w-[110px] h-px bottom-[-1px] right-0 bg-white hidden xl:block"></div>
-          </div>
-          <div className="xl:pl-[270px]">
-            <MagazineSlide />
           </div>
         </div>
       </section>

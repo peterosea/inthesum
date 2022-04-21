@@ -67,7 +67,15 @@ const Main = () => {
       >
         <div className="xl:container mx-auto">
           <div className="xl:rounded-[12px] h-[230px] overflow-hidden">
-            <Banner>
+            <Banner
+              bgImg={
+                () => <img
+                  src="/img/banner-comingsoon-request@3x.jpg"
+                  srcSet="/img/banner-comingsoon-request@2x.jpg 2x,
+                      /img/banner-comingsoon-request@3x.jpg 3x"
+                  alt="banner-comingsoon-request"
+                />}
+            >
               <div className="text-center">
                 <div className="font-TmoneyRoundWind text-[20px] text-white font-extrabold">
                   COMING SOON
