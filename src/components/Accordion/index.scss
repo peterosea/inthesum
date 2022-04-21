@@ -35,7 +35,8 @@
 }
 
 input:checked.accordion-input ~ .accordion-content {
-  max-height: calc(6.4em + (40px * 2));
+  max-height: 100vh;
+  overflow-y: auto;
 }
 
 input:checked.accordion-input ~ label .icon-arrow {
