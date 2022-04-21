@@ -7,7 +7,7 @@ const ScrollTop = ({ link }) => {
   return (
     <a
       href={`#${link ?? ''}`}
-      className="w-[50px] h-[50px] hug:w-[80px] hug:h-[80px] bg-[#000000] flex items-center justify-center rounded-full"
+      className="w-[50px] h-[50px] hug:w-[80px] hug:h-[80px] bg-[#000000] flex items-center justify-center rounded-full shadow-[3px_3px_12px_0_rgba(11,0,25,0.07)]"
     >
       <div className="fill-white">
         <div className={cx('w-[12px] h-[7px]', 'hug:w-[20px] hug:h-[12px]')}>
