@@ -127,7 +127,7 @@ const ToolTip = () => {
 
 const Pagination = ({ current, total }) => {
   return (
-    <div className="xl:absolute h-[50px] top-[31px] xl:top-[50px] flex items-center justify-center right-0 !w-auto !bottom-auto !left-auto pl-[30px] bg-gradient-to-l from-white via-white z-20">
+    <div className="xl:absolute h-[60px] top-[31px] xl:top-[50px] flex items-center justify-center right-0 !w-auto !bottom-auto !left-auto pl-[30px] bg-gradient-to-l from-white via-white z-20">
       <div className="hidden xl:flex">
         {current} / {total}
       </div>
