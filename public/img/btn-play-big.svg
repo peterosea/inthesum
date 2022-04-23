@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="178" height="188" viewBox="0 0 178 188">
+    <defs>
+        <filter id="kko6f44ovb" x="5.536" y="18.643" width="150" height="150" filterUnits="userSpaceOnUse">
+            <feOffset dx="-5" dy="-5"/>
+            <feGaussianBlur result="blur"/>
+            <feFlood flood-color="#b45aff" result="color"/>
+            <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+            <feComposite operator="in" in="color"/>
+            <feComposite operator="in" in2="SourceGraphic"/>
+        </filter>
+        <filter id="uzt3f9e5pc" x="0" y="0" width="178" height="188" filterUnits="userSpaceOnUse">
+            <feOffset/>
+            <feGaussianBlur stdDeviation="20" result="blur-2"/>
+            <feFlood flood-color="#c400ff" flood-opacity=".275"/>
+            <feComposite operator="in" in2="blur-2"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <linearGradient id="d5r8xu4fsa" x1=".15" y1=".168" x2=".852" y2=".803" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#da72ef"/>
+            <stop offset="1" stop-color="#bc7ffa"/>
+        </linearGradient>
+    </defs>
+    <g data-type="innerShadowGroup" transform="translate(-935.464 -306.357)">
+        <circle data-name="타원 2" cx="75" cy="75" r="75" transform="translate(941 325)" style="fill:url(#d5r8xu4fsa)"/>
+        <g style="filter:url(#kko6f44ovb)">
+            <circle data-name="타원 2" cx="75" cy="75" r="75" transform="translate(941 325)" style="fill:#fff"/>
+        </g>
+    </g>
+    <g style="filter:url(#uzt3f9e5pc)">
+        <path data-name="다각형 1" d="m34 0 34 58H0z" transform="rotate(90 28.996 89)" style="fill:#fff"/>
+    </g>
+</svg>
