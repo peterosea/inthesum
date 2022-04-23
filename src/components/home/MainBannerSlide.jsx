@@ -60,7 +60,27 @@ const Video = () => {
   );
 };
 
+function SlideNextButton() {
+  const swiper = useSwiper();
+
+  return (
+    <button onClick={() => swiper.slideNext()}>
+      <img src="/img/slider-arrow.svg" alt="" className="!w-auto" />
+    </button>
+  );
+}
+function SlidePrevButton() {
+  const swiper = useSwiper();
+
+  return (
+    <button onClick={() => swiper.slidePrev()}>
+      <img src="/img/slider-arrow.svg" alt="" className="!w-auto" />
+    </button>
+  );
+}
+
 const MainBannerSlide = () => {
+  const swiper = useSwiper();
   return (
     <div className="h-[525px] xl:h-[860px] relative">
       <Swiper
@@ -182,6 +202,12 @@ const MainBannerSlide = () => {
             <div className="w-full h-full absolute bg-black top-0 left-0 opacity-50"></div>
           </div>
         </SwiperSlide>
+        <div className="absolute h-[60px] right-0 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 hidden xl:block">
+          <SlideNextButton />
+        </div>
+        <div className="absolute h-[60px] left-0 rotate-180 top-1/2 translate-x-1/2 -translate-y-1/2 z-10 hidden xl:block">
+          <SlidePrevButton />
+        </div>
       </Swiper>
       <div className="h-[57px] absolute bottom-[20px] left-1/2 -translate-x-1/2 z-10 hidden xl:block">
         <img
