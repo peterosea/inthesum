@@ -11,7 +11,10 @@ import './MainBannerSlide.scss';
 
 import cx from 'classnames';
 
-const Video = () => {
+const Video = ({
+  src = '/video/movie-sample.mp4',
+  poster = '/video/poster.png',
+}) => {
   const [onPlay, setOnPlay] = useState(false);
   const videoRef = useRef();
   const swiper = useSwiper();
@@ -28,14 +31,21 @@ const Video = () => {
     setOnPlay(true);
   };
 
+  const videoClick = () => {
+    setOnPlay(false);
+    videoRef.current.pause();
+    swiper.autoplay.start();
+  };
+
   return (
     <div className="relative h-full">
       <video
         className="absolute object-cover inset-0 h-full w-full"
         ref={videoRef}
         muted
-        src="/video/movie-sample.mp4"
-      ></video>
+        src={src}
+        onClick={videoClick}
+      />
       <Transition
         show={!onPlay}
         enter="ease-out duration-300"
@@ -47,7 +57,7 @@ const Video = () => {
       >
         <img
           className="absolute object-cover w-full h-full"
-          src="/video/poster.png"
+          src={poster}
           alt=""
         />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 max-w-[80px] xl:max-w-[150px]">

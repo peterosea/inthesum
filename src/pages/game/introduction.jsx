@@ -17,7 +17,10 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 
-const Video = ({ src, poster }) => {
+const Video = ({
+  src = '/video/movie-sample.mp4',
+  poster = '/video/poster.png',
+}) => {
   const [onPlay, setOnPlay] = useState(false);
   const videoRef = useRef();
   const swiper = useSwiper();
@@ -34,14 +37,21 @@ const Video = ({ src, poster }) => {
     setOnPlay(true);
   };
 
+  const videoClick = () => {
+    setOnPlay(false);
+    videoRef.current.pause();
+    swiper.autoplay.start();
+  };
+
   return (
     <div className="relative h-full">
       <video
-        className="absolute object-cover inset-0"
+        className="absolute object-cover inset-0 h-full w-full"
         ref={videoRef}
         muted
         src={src}
-      ></video>
+        onClick={videoClick}
+      />
       <Transition
         show={!onPlay}
         enter="ease-out duration-300"
