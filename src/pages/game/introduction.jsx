@@ -126,7 +126,6 @@ const ToolTip = () => {
 };
 
 const Pagination = ({ current, total }) => {
-  const swiper = useSwiper();
   return (
     <div className="xl:absolute h-[50px] top-[31px] xl:top-[50px] flex items-center justify-center right-0 !w-auto !bottom-auto !left-auto pl-[30px] bg-gradient-to-l from-white via-white z-20">
       <div className="hidden xl:flex">
@@ -175,8 +174,14 @@ const Main = () => {
                 prevEl: swiperNavPrev?.current,
               }}
               className="!pt-[31px] xl:!pt-[58px]"
-              onSlideChange={(swiper) => {
-                setCurrent(swiper.activeIndex - 1);
+              onActiveIndexChange={(swiper) => {
+                if (swiper.activeIndex > swiper.slides.length - 2) {
+                  setCurrent(1);
+                } else if (swiper.activeIndex === 0) {
+                  setCurrent(swiper.slides.length - 2);
+                } else {
+                  setCurrent(swiper.activeIndex);
+                }
               }}
               onInit={(swiper) => {
                 setTotal(swiper.slides.length - 2);
@@ -187,8 +192,8 @@ const Main = () => {
                 <SwiperSlide key={`index-${index}`}>
                   <div className="w-full">
                     <div className="mb-[20px] #xl:container mx-auto">
-                      <div className="flex items-center gap-x-[14px]">
-                        <span className="text-[18px] font-TmoneyRoundWind font-extrabold line-clamp-1">
+                      <div className="flex items-center gap-x-[30px] min-h-[2.8em]">
+                        <span className="text-[18px] font-TmoneyRoundWind font-extrabold line-clamp-2">
                           인더섬 with BTS 티저
                         </span>
                         <ToolTip />
