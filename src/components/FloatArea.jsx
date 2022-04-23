@@ -2,13 +2,16 @@ import React from 'react';
 import useShrink from '../hook/useShrink';
 import { Transition } from '@headlessui/react';
 import cx from 'classnames';
+import { useWindowSize } from 'usehooks-ts';
+
 // components
 import ScrollTop from './ScrollTop';
 import GooglePlayBtn from './Btn/GooglePlayBtn';
 import AppStoreBtn from './Btn/AppStoreBtn';
 
 const FloatArea = ({ link }) => {
-  const Shrink = useShrink(window.innerHeight * 0.8 - 110);
+  const { width } = useWindowSize();
+  const Shrink = useShrink(width > 1280 ? 720 : 100);
 
   return (
     <Transition
