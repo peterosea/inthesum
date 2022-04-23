@@ -114,7 +114,7 @@ const MainBannerSlide = () => {
               srcSet="/img/bts_logo@2x.png 2x,
                         /img/bts_logo@3x.png 3x"
               alt="BTS"
-              className="!h-[116px] xl:!h-auto !w-auto"
+              className="!h-[116px] xl:!h-auto !w-auto opacity-0"
             />
             <div className="text-white mt-[26px]">
               <p
