@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { Transition } from '@headlessui/react';
+import { useSwiper } from 'swiper/react';
 
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
@@ -7,14 +8,63 @@ import HeaderPage from '../../components/HeaderPage';
 import HeaderSection from '../../components/HeaderSection';
 import Banner from '../../components/Banner';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Navigation, Autoplay } from 'swiper';
-import VideoJS from '../../components/Video';
+import { Navigation, Autoplay } from 'swiper';
 import classnames from 'classnames';
 import FloatArea from '../../components/FloatArea';
+import PaginationBar from '../../components/Pagination/Bar';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
+
+const Video = ({ src, poster }) => {
+  const [onPlay, setOnPlay] = useState(false);
+  const videoRef = useRef();
+  const swiper = useSwiper();
+
+  const onClick = () => {
+    swiper.autoplay.stop();
+
+    videoRef.current.play();
+    videoRef.current.addEventListener('ended', () => {
+      setOnPlay(false);
+      swiper.autoplay.start();
+      swiper.slideNext();
+    });
+    setOnPlay(true);
+  };
+
+  return (
+    <div className="relative h-full">
+      <video
+        className="absolute object-cover inset-0"
+        ref={videoRef}
+        muted
+        src={src}
+      ></video>
+      <Transition
+        show={!onPlay}
+        enter="ease-out duration-300"
+        enterFrom="opacity-0"
+        enterTo="opacity-100"
+        leave="ease-in duration-200"
+        leaveFrom="opacity-100"
+        leaveTo="opacity-0"
+      >
+        <img
+          className="absolute object-cover w-full h-full"
+          src={poster}
+          alt=""
+        />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 max-w-[80px] xl:max-w-[150px]">
+          <button onClick={onClick}>
+            <img src="/img/btn-play-big.svg" alt="" />
+          </button>
+        </div>
+      </Transition>
+    </div>
+  );
+};
 
 const ToolTip = () => {
   const [active, setActive] = useState(false);
@@ -28,7 +78,7 @@ const ToolTip = () => {
   return (
     <div className="relative z-20 text-left">
       <button
-        className="btn bg-black text-white text-[14px] rounded-full py-[14px] px-[20px] font-TmoneyRoundWind font-extrabold leading-none"
+        className="btn bg-black text-white text-[14px] rounded-full py-[14px] px-[20px] font-TmoneyRoundWind font-extrabold leading-none whitespace-nowrap"
         onClick={handleToggle}
       >
         {active ? '설명닫기' : '설명보기'}
@@ -65,10 +115,25 @@ const ToolTip = () => {
   );
 };
 
+const Pagination = ({ current, total }) => {
+  const swiper = useSwiper();
+  return (
+    <div className="xl:absolute h-[50px] top-[31px] xl:top-[50px] flex items-center justify-center right-0 !w-auto !bottom-auto !left-auto pl-[30px] bg-gradient-to-l from-white via-white z-20">
+      <div className="hidden xl:flex">
+        {current} / {total}
+      </div>
+      <div className="xl:hidden w-full">
+        <PaginationBar current={current} all={total} />
+      </div>
+    </div>
+  );
+};
 const Main = () => {
   const swiperPagination = useRef(null);
   const swiperNavPrev = useRef(null);
   const swiperNavNext = useRef(null);
+  const [current, setCurrent] = useState(0);
+  const [total, setTotal] = useState(0);
   return (
     <>
       <section
@@ -81,13 +146,15 @@ const Main = () => {
           />
           <div className="relative #xl:!mx-full">
             <Swiper
-              modules={[Pagination, Navigation, Autoplay]}
+              modules={[Navigation, Autoplay]}
               speed={2500}
               slidesPerView={1}
-              spaceBetween={100}
               loop={true}
               mousewheel={true}
-              autoplay={true}
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
               threshold={100}
               pagination={{
                 el: swiperPagination.current,
@@ -98,13 +165,20 @@ const Main = () => {
                 prevEl: swiperNavPrev?.current,
               }}
               className="!pt-[31px] xl:!pt-[58px]"
+              onSlideChange={(swiper) => {
+                setCurrent(swiper.activeIndex - 1);
+              }}
+              onInit={(swiper) => {
+                setTotal(swiper.slides.length - 2);
+                setCurrent(swiper.activeIndex);
+              }}
             >
               {[1, 2, 3, 4].map((e, index) => (
                 <SwiperSlide key={`index-${index}`}>
                   <div className="w-full">
                     <div className="mb-[20px] #xl:container mx-auto">
                       <div className="flex items-center gap-x-[14px]">
-                        <span className="text-[18px] font-TmoneyRoundWind font-extrabold">
+                        <span className="text-[18px] font-TmoneyRoundWind font-extrabold line-clamp-1">
                           인더섬 with BTS 티저
                         </span>
                         <ToolTip />
@@ -112,29 +186,16 @@ const Main = () => {
                     </div>
                     <div className="aspect-[16/9] relative overflow-hidden xl:rounded-[16px]">
                       <div className="absolute w-full h-full">
-                        <VideoJS
-                          options={{
-                            muted: true,
-                            controls: true,
-                            autoplay: true,
-                            poster: '/video/poster.png',
-                            sources: [
-                              {
-                                src: '/video/movie-sample.mp4',
-                                type: 'video/mp4',
-                              },
-                              {
-                                src: '/video/movie-sample.ogg',
-                                type: 'video/ogg',
-                              },
-                            ],
-                          }}
+                        <Video
+                          src="/video/movie-sample.mp4"
+                          poster="/video/poster.png"
                         />
                       </div>
                     </div>
                   </div>
                 </SwiperSlide>
               ))}
+              <Pagination total={total} current={current} />
             </Swiper>
             <div
               ref={swiperNavNext}
@@ -163,10 +224,6 @@ const Main = () => {
                 />
               </svg>
             </div>
-            <div
-              ref={swiperPagination}
-              className="swiper-pagination absolute h-[50px] top-[31px] xl:top-[52px] flex items-center justify-center right-0 !w-auto !bottom-auto !left-auto pl-[30px] bg-gradient-to-l from-white via-white"
-            ></div>
           </div>
         </div>
       </section>
