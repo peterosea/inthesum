@@ -50,7 +50,7 @@ const Video = () => {
           src="/video/poster.png"
           alt=""
         />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 max-w-[80px] xl:max-w-[150px]">
           <button onClick={onClick}>
             <img src="/img/btn-play-big.svg" alt="" />
           </button>
@@ -84,7 +84,7 @@ const MainBannerSlide = () => {
               srcSet="/img/bts_logo@2x.png 2x,
                         /img/bts_logo@3x.png 3x"
               alt="BTS"
-              className="object-none h-[116px] xl:h-auto"
+              className="!h-[116px] xl:!h-auto !w-auto"
             />
             <div className="text-white mt-[26px]">
               <p
@@ -98,13 +98,13 @@ const MainBannerSlide = () => {
                 아미밤 스탠드(데코 아이템) 받으세요!
               </p>
             </div>
-            <div className="mt-[46px] flex gap-x-[20px]">
+            <div className="mt-[24px] xl:mt-[46px] flex gap-x-[20px]">
               <div className="h-[40px] xl:h-auto">
                 <img
-                  className="hidden xl:block"
                   src="/img/btn-googleplay.png"
                   srcSet="/img/btn-googleplay@2x.png 2x,
                           /img/btn-googleplay@3x.png 3x"
+                  className="hidden xl:block !w-auto !h-auto max-h-[40px] xl:max-h-[80px]"
                 />
               </div>
               <div className="h-[40px] xl:h-auto">
@@ -112,7 +112,7 @@ const MainBannerSlide = () => {
                   src="/img/btn-appstore.png"
                   srcSet="/img/btn-appstore@2x.png 2x,
                             /img/btn-appstore@3x.png 3x"
-                  className="!w-auto !h-auto"
+                  className="!w-auto !h-auto max-h-[40px] xl:max-h-[80px]"
                 />
               </div>
             </div>
