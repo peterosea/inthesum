@@ -1,6 +1,8 @@
 import React, { useRef, useState } from 'react';
 import { Transition } from '@headlessui/react';
 import { useSwiper } from 'swiper/react';
+import { useWindowSize } from 'usehooks-ts';
+import ReactDOM from 'react-dom';
 
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
@@ -12,10 +14,15 @@ import { Navigation, Autoplay } from 'swiper';
 import classnames from 'classnames';
 import FloatArea from '../../components/FloatArea';
 import PaginationBar from '../../components/Pagination/Bar';
+import Modal from '../../components/Modal';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
+
+const Portal = ({ children }) => {
+  return ReactDOM.createPortal(children, document.querySelector('body'));
+};
 
 const Video = ({
   src = '/video/movie-sample.mp4',
@@ -78,6 +85,7 @@ const Video = ({
 
 const ToolTip = () => {
   const [active, setActive] = useState(false);
+  const { width } = useWindowSize();
 
   const handleToggle = () => {
     setActive(!active);
@@ -121,6 +129,21 @@ const ToolTip = () => {
           차지했다.
         </div>
       </Transition>
+      <Portal>
+        <Modal isOpen={width < 1280 && active} onClose={() => setActive(false)}>
+          <div>
+            2013년 데뷔해 국내외 신인상을 휩쓴 방탄소년단은 명실상부 한국을
+            대표하는 최정상 보이 그룹으로 성장했다. 전 세계적으로 방탄소년단
+            열풍을 일으키며 ‘21세기 팝 아이콘’으로 불린다. 미국 빌보드, 영국
+            오피셜 차트, 일본 오리콘을 비롯해 아이튠즈, 스포티파이, 애플뮤직 등
+            세계 유수의 차트 정상에 올랐고, 음반 판매량과 뮤직비디오 조회수, SNS
+            지수 등에서도 독보적인 기록을 써 내려가고 있다. 특히, 방탄소년단은
+            한 주에 빌보드 ‘핫 100’ 차트와 ‘빌보드 200’ 차트 정상을 동시 정복한
+            최초의 그룹이며, 통산 ‘빌보드 200’ 5차례, ‘핫 100’ 5차례 1위를
+            차지했다.
+          </div>
+        </Modal>
+      </Portal>
     </div>
   );
 };
@@ -160,10 +183,6 @@ const Main = () => {
               slidesPerView={1}
               loop={true}
               mousewheel={true}
-              autoplay={{
-                delay: 2500,
-                disableOnInteraction: false,
-              }}
               threshold={100}
               pagination={{
                 el: swiperPagination.current,
@@ -294,7 +313,7 @@ const Main = () => {
               </Banner>
             </div>
           </div>
-          <div className="mt-[25px] xl:mt-[83px] pt-[125px] xl:pt-[276px] relative">
+          <div className="mt-[25px] xl:mt-[83px] pt-[300px] xl:pt-[276px] relative">
             <img
               className="w-[80%] max-w-[600px] absolute top-0 left-1/2 -translate-x-1/2"
               src="/img/img-introduce-3.png"
