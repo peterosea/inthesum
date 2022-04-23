@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import useDebounce from './useDebounce';
+import { useEffect, useState } from 'react';
 
 const useShrink = (topPx = 20) => {
   const [isShrunk, setShrunk] = useState(false);
