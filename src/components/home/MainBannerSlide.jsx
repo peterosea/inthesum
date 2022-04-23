@@ -31,7 +31,7 @@ const Video = () => {
   return (
     <div className="relative h-full">
       <video
-        className="absolute object-cover inset-0"
+        className="absolute object-cover inset-0 h-full w-full"
         ref={videoRef}
         muted
         src="/video/movie-sample.mp4"
