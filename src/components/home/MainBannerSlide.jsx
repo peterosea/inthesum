@@ -1,5 +1,9 @@
+import { useState, useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation, Autoplay } from 'swiper';
+import { Transition } from '@headlessui/react';
+import { useSwiper } from 'swiper/react';
+
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
@@ -7,7 +11,54 @@ import './MainBannerSlide.scss';
 
 import cx from 'classnames';
 
-import VideoJS from '../../components/Video';
+const Video = () => {
+  const [onPlay, setOnPlay] = useState(false);
+  const videoRef = useRef();
+  const swiper = useSwiper();
+
+  const onClick = () => {
+    swiper.autoplay.stop();
+
+    videoRef.current.play();
+    videoRef.current.addEventListener('ended', () => {
+      setOnPlay(false);
+      swiper.autoplay.start();
+      swiper.slideNext();
+    });
+    setOnPlay(true);
+  };
+
+  return (
+    <div className="relative h-full">
+      <video
+        className="absolute object-cover inset-0"
+        ref={videoRef}
+        muted
+        src="/video/movie-sample.mp4"
+      ></video>
+      <Transition
+        show={!onPlay}
+        enter="ease-out duration-300"
+        enterFrom="opacity-0"
+        enterTo="opacity-100"
+        leave="ease-in duration-200"
+        leaveFrom="opacity-100"
+        leaveTo="opacity-0"
+      >
+        <img
+          className="absolute object-cover w-full h-full"
+          src="/video/poster.png"
+          alt=""
+        />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20">
+          <button onClick={onClick}>
+            <img src="/img/btn-play-big.svg" alt="" />
+          </button>
+        </div>
+      </Transition>
+    </div>
+  );
+};
 
 const MainBannerSlide = () => {
   return (
@@ -17,9 +68,11 @@ const MainBannerSlide = () => {
         speed={2500}
         slidesPerView={1}
         spaceBetween={0}
-        loop={true}
-        mousewheel={true}
-        autoplay={true}
+        loop
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         threshold={100}
         pagination={{ type: 'progressbar' }}
         className="mainBannerSlider"
@@ -80,22 +133,7 @@ const MainBannerSlide = () => {
           {/* <!-- chrome 정책으로 영상 자동 재생 시 muted 상태로 autoplay 재생가능 참고문서: https://developer.chrome.com/blog/autoplay/--> */}
           <div className="w-full h-full absolute bg-black"></div>
           <div className="w-full h-full max-w-[1920px] relative z-20">
-            <VideoJS
-              options={{
-                muted: true,
-                poster: '/video/poster.png',
-                sources: [
-                  {
-                    src: '/video/movie-sample.mp4',
-                    type: 'video/mp4',
-                  },
-                  {
-                    src: '/video/movie-sample.ogg',
-                    type: 'video/ogg',
-                  },
-                ],
-              }}
-            />
+            <Video />
           </div>
           <div className="absolute w-full h-full overflow-hidden">
             <img
