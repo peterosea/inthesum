@@ -50,7 +50,7 @@ const Card = ({ pin = false, data = cardData }) => {
             <div
               className={classnames(
                 'text-[12px] text-[#6f737a] mt-[5px] line-clamp-2 font-normal',
-                'xl:mt-[12px] xl:text-[16px] xl:line-clamp-3 xl:text-[#54575d]',
+                'xl:mt-[12px] xl:text-[16px] xl:line-clamp-3 xl:text-[#54575d] min-h-[3em]',
               )}
             >
               {content()}
