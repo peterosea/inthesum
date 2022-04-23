@@ -19,28 +19,30 @@ const Main = () => {
         <div className="">
           <div className="xl:container mx-auto">
             <div className="w-full h-full flex items-center relative">
-              <div className="absolute z-20 text-white pl-[60px]">
-                <div className="relative">
-                  <img
-                    src="/img/img-withbts-title-white.png"
-                    srcSet="/img/img-withbts-title-white@2x.png 2x,
-                                /img/img-withbts-title-white@3x.png 3x"
-                    alt="with BTS"
-                    className="h-[55px] xl:h-[93px] w-auto"
-                  />
-                  <img
-                    src="/img/coming-soon.png"
-                    srcSet="/img/coming-soon@2x.png 2x,
-                              /img/coming-soon@3x.png 3x"
-                    alt="comming soon"
-                    className="xl:h-[38px] w-auto absolute bottom-full left-0"
-                  />
-                </div>
-                <div className="mt-[30px] hidden xl:block">
-                  <p>
-                    BTS와 인더섬을 즐기는 방법!
-                    <br />곧 찾아옵니다.
-                  </p>
+              <div className="text-white pl-[60px] h-[380px] flex items-center relative z-10 w-[500px] bg-gradient-to-l to-[rgba(0,0,0,0.3)] from-transparent">
+                <div>
+                  <div className="relative">
+                    <img
+                      src="/img/img-withbts-title-white.png"
+                      srcSet="/img/img-withbts-title-white@2x.png 2x,
+                                  /img/img-withbts-title-white@3x.png 3x"
+                      alt="with BTS"
+                      className="h-[55px] xl:h-[93px] w-auto"
+                    />
+                    <img
+                      src="/img/coming-soon.png"
+                      srcSet="/img/coming-soon@2x.png 2x,
+                                /img/coming-soon@3x.png 3x"
+                      alt="comming soon"
+                      className="xl:h-[38px] w-auto absolute bottom-full left-0"
+                    />
+                  </div>
+                  <div className="mt-[30px] hidden xl:block">
+                    <p>
+                      BTS와 인더섬을 즐기는 방법!
+                      <br />곧 찾아옵니다.
+                    </p>
+                  </div>
                 </div>
               </div>
               <img
@@ -48,6 +50,7 @@ const Main = () => {
                 srcSet="/img/madebyarmi-comingsoon1@2x.png 2x,
                               /img/madebyarmi-comingsoon1@3x.png 3x"
                 alt="comming soon"
+                className="absolute h-full object-cover"
               />
             </div>
           </div>
@@ -55,32 +58,34 @@ const Main = () => {
         <div className="mt-[20px]">
           <div className="xl:container mx-auto">
             <div className="w-full h-full flex items-center relative">
-              <div className="absolute z-20 text-white pl-[60px]">
-                <div className="relative">
-                  <img
-                    src="/img/img-madebyarmy-title-w.png"
-                    srcSet="/img/img-madebyarmy-title-w@2x.png 2x,
-                                /img/img-madebyarmy-title-w@3x.png 3x"
-                    alt="with BTS"
-                    className="h-[55px] xl:h-[93px] w-auto"
-                  />
-                  <div className="text-[22px] text-white font-TmoneyRoundWind font-extrabold mt-[20px]">
-                    주간 인더섬 매거진
+              <div className="text-white pl-[60px] h-[380px] flex items-center relative z-10 w-[500px] bg-gradient-to-l to-[rgba(0,0,0,0.3)] from-transparent">
+                <div>
+                  <div className="relative">
+                    <img
+                      src="/img/img-madebyarmy-title-w.png"
+                      srcSet="/img/img-madebyarmy-title-w@2x.png 2x,
+                                  /img/img-madebyarmy-title-w@3x.png 3x"
+                      alt="with BTS"
+                      className="h-[55px] xl:h-[93px] w-auto"
+                    />
+                    <div className="text-[22px] text-white font-TmoneyRoundWind font-extrabold mt-[20px]">
+                      주간 인더섬 매거진
+                    </div>
+                    <img
+                      src="/img/coming-soon.png"
+                      srcSet="/img/coming-soon@2x.png 2x,
+                                /img/coming-soon@3x.png 3x"
+                      alt="comming soon"
+                      className="xl:h-[38px] w-auto absolute bottom-full left-0"
+                    />
                   </div>
-                  <img
-                    src="/img/coming-soon.png"
-                    srcSet="/img/coming-soon@2x.png 2x,
-                              /img/coming-soon@3x.png 3x"
-                    alt="comming soon"
-                    className="xl:h-[38px] w-auto absolute bottom-full left-0"
-                  />
-                </div>
-                <div className="mt-[30px] hidden xl:block">
-                  <p>
-                    아미가 만들어가는 새로운 이야기!
-                    <br />
-                    기대해주세요!
-                  </p>
+                  <div className="mt-[30px] hidden xl:block">
+                    <p>
+                      아미가 만들어가는 새로운 이야기!
+                      <br />
+                      기대해주세요!
+                    </p>
+                  </div>
                 </div>
               </div>
               <img
@@ -88,6 +93,7 @@ const Main = () => {
                 srcSet="/img/madebyarmi-comingsoon@2x.png 2x,
                               /img/madebyarmi-comingsoon@3x.png 3x"
                 alt="comming soon"
+                className="absolute h-full object-cover"
               />
             </div>
           </div>
