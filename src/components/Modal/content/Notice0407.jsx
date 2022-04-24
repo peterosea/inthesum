@@ -32,6 +32,13 @@ const Notice0407 = () => {
         <br />
         <p>자세한 내용은 공지사항에서 확인하시기 바랍니다.</p>
       </div>
+      <div className="mt-[23px] mb-[25px] aspect-[16/9] relative">
+        <img
+          src="https://picsum.photos/1200/230.webp?grayscale?random=$i"
+          className="object-cover w-full h-full absolute object-center"
+          alt=""
+        />
+      </div>
       <div className="mt-[30px]">
         <button className="bg-[#803ad3] py-[17px] px-[20px] pr-[17px] text-white flex items-center gap-x-[8px] font-Pretendard font-bold text-[14px]">
           <span>자세히 보기</span>
