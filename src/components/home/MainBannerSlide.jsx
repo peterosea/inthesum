@@ -60,6 +60,7 @@ const Video = ({
           src={poster}
           alt=""
         />
+        <div className="absolute w-full h-full bg-black bg-opacity-30"></div>
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 max-w-[80px] xl:max-w-[150px]">
           <button onClick={onClick}>
             <img src="/img/btn-play-big.svg" alt="" />
