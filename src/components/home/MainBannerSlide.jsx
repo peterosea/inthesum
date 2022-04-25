@@ -40,6 +40,7 @@ const Video = ({
   return (
     <div className="relative h-full">
       <video
+        controls
         className="absolute object-cover inset-0 h-full w-full"
         ref={videoRef}
         muted
@@ -60,6 +61,7 @@ const Video = ({
           src={poster}
           alt=""
         />
+        <div className="absolute w-full h-full bg-black bg-opacity-30"></div>
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 max-w-[80px] xl:max-w-[150px]">
           <button onClick={onClick}>
             <img src="/img/btn-play-big.svg" alt="" />
@@ -92,7 +94,7 @@ function SlidePrevButton() {
 const MainBannerSlide = () => {
   const swiper = useSwiper();
   return (
-    <div className="h-[525px] xl:h-[860px] relative">
+    <div className="h-[380px] xl:h-[870px] relative">
       <Swiper
         modules={[Pagination, Navigation, Autoplay]}
         speed={2500}
@@ -119,7 +121,7 @@ const MainBannerSlide = () => {
             <div className="text-white mt-[26px]">
               <p
                 className={cx(
-                  'text-[30px] font-extrabold font-TmoneyRoundWind',
+                  'text-[22px] font-extrabold font-TmoneyRoundWind',
                   'xl:text-[42px]',
                 )}
               >
