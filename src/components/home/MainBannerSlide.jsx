@@ -39,9 +39,10 @@ const Video = ({
 
   return (
     <div className="relative h-full">
+      <div className="absolute w-full h-full bg-black" />
       <video
         controls
-        className="absolute object-cover inset-0 h-full w-full"
+        className="absolute w-full top-1/2 -translate-y-1/2"
         ref={videoRef}
         muted
         src={src}
@@ -94,17 +95,17 @@ function SlidePrevButton() {
 const MainBannerSlide = () => {
   const swiper = useSwiper();
   return (
-    <div className="h-[380px] xl:h-[870px] relative">
+    <div className="h-[380px] md:h-[540px] xl:h-[870px] relative">
       <Swiper
         modules={[Pagination, Navigation, Autoplay]}
         speed={2500}
         slidesPerView={1}
         spaceBetween={0}
         loop
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
+        // autoplay={{
+        //   delay: 2500,
+        //   disableOnInteraction: false,
+        // }}
         threshold={100}
         pagination={{ type: 'progressbar' }}
         className="mainBannerSlider"
