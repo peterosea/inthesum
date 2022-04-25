@@ -120,7 +120,7 @@ const MainBannerSlide = () => {
             <div className="text-white mt-[26px]">
               <p
                 className={cx(
-                  'text-[30px] font-extrabold font-TmoneyRoundWind',
+                  'text-[22px] font-extrabold font-TmoneyRoundWind',
                   'xl:text-[42px]',
                 )}
               >
