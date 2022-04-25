@@ -33,7 +33,6 @@ const Video = ({
 
   const onPause = () => {
     setOnPlay(false);
-    videoRef.current.pause();
     swiper.autoplay.start();
   };
 
