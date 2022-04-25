@@ -31,7 +31,7 @@ const Video = ({
     setOnPlay(true);
   };
 
-  const videoClick = () => {
+  const onPause = () => {
     setOnPlay(false);
     videoRef.current.pause();
     swiper.autoplay.start();
@@ -42,11 +42,11 @@ const Video = ({
       <div className="absolute w-full h-full bg-black" />
       <video
         controls
-        className="absolute w-full top-1/2 -translate-y-1/2"
+        className="absolute w-full top-1/2 -translate-y-1/2 disabledFullscreen"
         ref={videoRef}
         muted
         src={src}
-        onClick={videoClick}
+        onPause={onPause}
       />
       <Transition
         show={!onPlay}
