@@ -5,6 +5,7 @@ import {
   useEventListener,
   useOnClickOutside,
   useLockedBody,
+  useWindowSize
 } from 'usehooks-ts';
 import Select from '../components/Select';
 
@@ -99,9 +100,13 @@ const HeaderMobile = (props) => {
   const isShrink = useShrink(4);
   const [show, setShow] = useState(false);
   const [locked, setLocked] = useState(false);
+  const { width } = useWindowSize();
 
   useEventListener('resize', () => {
-    setShow(false);
+    if (width > 980) {
+      setShow(false);
+      setLocked(false);
+    }
   });
 
   const handleOpen = (e) => {
