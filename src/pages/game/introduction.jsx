@@ -44,7 +44,7 @@ const Video = ({
     setOnPlay(true);
   };
 
-  const videoClick = () => {
+  const onPause = () => {
     setOnPlay(false);
     videoRef.current.pause();
     swiper.autoplay.start();
@@ -57,7 +57,7 @@ const Video = ({
         ref={videoRef}
         muted
         src={src}
-        onClick={videoClick}
+        onPause={onPause}
       />
       <Transition
         show={!onPlay}
