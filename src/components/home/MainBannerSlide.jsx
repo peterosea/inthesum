@@ -40,6 +40,7 @@ const Video = ({
   return (
     <div className="relative h-full">
       <video
+        controls
         className="absolute object-cover inset-0 h-full w-full"
         ref={videoRef}
         muted
