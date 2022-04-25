@@ -313,7 +313,7 @@ const Main = () => {
               </Banner>
             </div>
           </div>
-          <div className="mt-[25px] xl:mt-[83px] pt-[300px] xl:pt-[276px] relative">
+          <div className="mt-[25px] xl:mt-[83px] pt-[130px] xl:pt-[276px] relative">
             <img
               className="w-[80%] max-w-[600px] absolute top-0 left-1/2 -translate-x-1/2"
               src="/img/img-introduce-3.png"
