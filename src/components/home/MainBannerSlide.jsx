@@ -102,10 +102,10 @@ const MainBannerSlide = () => {
         slidesPerView={1}
         spaceBetween={0}
         loop
-        // autoplay={{
-        //   delay: 2500,
-        //   disableOnInteraction: false,
-        // }}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         threshold={100}
         pagination={{ type: 'progressbar' }}
         className="mainBannerSlider"
@@ -205,6 +205,30 @@ const MainBannerSlide = () => {
                           /img/img-pattern@3x.png 3x"
               className="w-full h-full absolute top-0 left-0"
             />
+          </div>
+          <div className="absolute w-full h-full overflow-hidden">
+            <img
+              src="/img/img-video-thumb@3x.png"
+              alt=""
+              className="blur-[50px]"
+            />
+            <div className="w-full h-full absolute bg-black top-0 left-0 opacity-50"></div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="flex justify-center items-center flex-col relative z-10">
+            <div className="text-white">
+              {/* contnet */}
+            </div>
+          </div>
+          <div className="absolute max-w-[1920px] w-full h-full z-10 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+            {/* 예시용 클래스 bg-gray-600 */}
+            <div className="absolute w-full h-full bg-gray-600">
+              {/* img */}
+            </div>
+            <button className="flex items-center gap-x-[20px] px-[40px] py-[26px] border-[3px] border-white rounded-full text-white absolute text-[20px] font-Pretendard font-bold bottom-[91px] left-[50px]">자세히 보러가기 <i className='icon-arrow-right-w' /></button>
+            <button className="flex items-center gap-x-[20px] px-[40px] py-[26px] border-[3px] border-white rounded-full text-white absolute text-[20px] font-Pretendard font-bold bottom-[128px] left-1/2 -translate-x-1/2">자세히 보러가기 <i className='icon-arrow-right-w' /></button>
+            <button className="flex items-center gap-x-[20px] px-[40px] py-[26px] border-[3px] border-white rounded-full text-white absolute text-[20px] font-Pretendard font-bold bottom-[39px] right-[40px]">자세히 보러가기 <i className='icon-arrow-right-w' /></button>
           </div>
           <div className="absolute w-full h-full overflow-hidden">
             <img
