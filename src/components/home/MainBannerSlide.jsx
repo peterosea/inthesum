@@ -94,7 +94,7 @@ function SlidePrevButton() {
 const MainBannerSlide = () => {
   const swiper = useSwiper();
   return (
-    <div className="h-[525px] xl:h-[870px] relative">
+    <div className="h-[380px] xl:h-[870px] relative">
       <Swiper
         modules={[Pagination, Navigation, Autoplay]}
         speed={2500}
