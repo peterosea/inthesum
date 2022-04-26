@@ -22,7 +22,7 @@ const Card = ({ pin = false, data = cardData }) => {
     <div className={classnames('relative group', 'px-[30px]')}>
       <div
         className={classnames(
-          'grid grid-cols-[80px,auto] gap-x-[30px] relative z-10',
+          'grid grid-cols-[80px,auto] gap-x-[30px] relative z-10 h-full',
           'xl:grid-cols-[140px,auto]',
         )}
       >
@@ -36,12 +36,12 @@ const Card = ({ pin = false, data = cardData }) => {
             )}
           </a>
         </div>
-        <div className="font-Pretendard flex flex-col">
+        <div className="font-Pretendard flex flex-col justify-between">
           <div className="w-full">
             <a
               href="#"
               className={classnames(
-                'text-[16px] tracking-[-0.72px] line-clamp-1',
+                'text-[16px] tracking-[-0.72px]',
                 'xl:text-[24px] ',
               )}
             >
