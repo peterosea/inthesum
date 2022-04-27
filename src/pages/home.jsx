@@ -246,7 +246,7 @@ const Main = () => {
           <div className="xl:container mx-auto">
             <div className="grid xl:grid-cols-[270px,auto]">
               <div className="xl:min-h-[490px] relative">
-                <div className="flex xl:flex-col justify-between #xl:px-[30px] #xl:container #xl:mx-auto">
+                <div className="flex xl:flex-col xl:justify-between #xl:px-[30px] #xl:container #xl:mx-auto">
                   <div className="max-w-[160px]">
                     <img
                       src="/img/img-withbts-title.png"
@@ -255,11 +255,11 @@ const Main = () => {
                       alt="with BTS"
                       className="h-[55px] xl:h-[93px] w-auto"
                     />
-                    <div className="my-[30px] hidden xl:block">
+                    <div className="my-[30px]">
                       <p>BTS가 개발에 직접 참여한 인더섬 업데이트 소식</p>
                     </div>
                   </div>
-                  <a href="#" className="#xl:self-center">
+                  <a href="#" className="#xl:self-center #xl:absolute #xl:top-[28px] #xl:right-[var(--container-px)]">
                     <img
                       src="/img/icon-more-arrow@3x.png"
                       alt="more view"
