@@ -159,6 +159,26 @@ const Pagination = ({ current, total }) => {
     </div>
   );
 };
+
+function SlideNextButton() {
+  const swiper = useSwiper();
+
+  return (
+    <button onClick={() => swiper.slideNext()} className="h-full">
+      <img src="/img/3721.svg" alt="" className="h-full !w-auto" />
+    </button>
+  );
+}
+function SlidePrevButton() {
+  const swiper = useSwiper();
+
+  return (
+    <button onClick={() => swiper.slidePrev()} className="h-full">
+      <img src="/img/3720.svg" alt="" className="h-full !w-auto" />
+    </button>
+  );
+}
+
 const Main = () => {
   const swiperPagination = useRef(null);
   const swiperNavPrev = useRef(null);
@@ -229,6 +249,10 @@ const Main = () => {
                 </SwiperSlide>
               ))}
               <Pagination total={total} current={current} />
+              <div className="absolute h-[30px] top-[56px] flex gap-x-[3px] items-center justify-center right-[var(--container-px)] !w-auto !bottom-auto !left-auto pl-[30px] bg-gradient-to-l from-white via-white z-20 -translate-y-1/2 xl:hidden">
+                <SlidePrevButton />
+                <SlideNextButton />
+              </div>
             </Swiper>
             <div
               ref={swiperNavNext}
