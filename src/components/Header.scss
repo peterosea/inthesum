@@ -156,11 +156,6 @@ header {
 
       background-color: rgba(0, 0, 0, 0.6);
 
-      @supports (backdrop-filter: blur(25px)) {
-        -webkit-backdrop-filter: blur(25px);
-        backdrop-filter: blur(25px);
-        background: none;
-      }
       &.on {
         display: inline-block;
       }
@@ -186,11 +181,6 @@ header {
 
       background-color: rgba(0, 0, 0, 0.6);
 
-      @supports (backdrop-filter: blur(25px)) {
-        -webkit-backdrop-filter: blur(25px);
-        backdrop-filter: blur(25px);
-        background: rgba(70, 26, 79, 0.3);
-      }
       &.on {
         right: 0;
       }
@@ -330,11 +320,6 @@ header {
 
       background-color: rgba(0, 0, 0, 0.8);
 
-      @supports (backdrop-filter: blur(25px)) {
-        -webkit-backdrop-filter: blur(25px);
-        backdrop-filter: blur(25px);
-        background: rgba(70, 26, 79, 0.3);
-      }
       #gnb ul li .menu-wrap .submenu {
         opacity: 1;
         top: 64px;
@@ -344,12 +329,6 @@ header {
       box-shadow: 0 15px 30px 0 rgba(28, 0, 60, 0.35);
 
       background-color: rgba(0, 0, 0, 0.8);
-
-      @supports (backdrop-filter: blur(25px)) {
-        -webkit-backdrop-filter: blur(25px);
-        backdrop-filter: blur(25px);
-        background: rgba(70, 26, 79, 0.3);
-      }
     }
     display: flex;
     z-index: var(--zindexSliderMenu);
