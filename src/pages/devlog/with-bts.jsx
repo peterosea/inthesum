@@ -1,10 +1,13 @@
 import React from 'react';
-import 'keen-slider/keen-slider.min.css';
+import { useWindowSize } from 'usehooks-ts';
+import cx from 'classnames';
+
 // components
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import HeaderPage from '../../components/HeaderPage';
 import CharacterItem from '../../components/Item/Character';
+import ResponsiveCharacterItem from '../../components/Item/ResponsiveCharacter';
 import Pagination from '../../components/Pagination';
 import PaginationBar from '../../components/Pagination/Bar';
 import FloatArea from '../../components/FloatArea';
@@ -13,15 +16,25 @@ import FloatArea from '../../components/FloatArea';
 import { character, BtsBgImg } from '../data';
 
 const Main = () => {
+  const { width } = useWindowSize();
   return (
     <>
       <section className="mt-[80px] mb-[120px]">
         <div className="container mx-auto">
-          <div className="flex flex-wrap gap-x-[40px] gap-y-[120px] mb-[80px] justify-center">
+          <div
+            className={cx('gap-x-[40px] gap-y-[120px] mb-[80px]', {
+              grid: 480 < width && width < 768,
+              'flex flex-wrap justify-center': !(480 < width && width < 768),
+            })}
+          >
             {character.slice(0, 12).map((props, index) => {
               return (
-                <div key={`index-${index}`} class="w-[270px]">
-                  <CharacterItem {...props} />
+                <div key={`index-${index}`}>
+                  {480 < width && width < 768 ? (
+                    <ResponsiveCharacterItem {...props} />
+                  ) : (
+                    <CharacterItem {...props} />
+                  )}
                 </div>
               );
             })}

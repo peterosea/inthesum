@@ -1,5 +1,6 @@
 import React from 'react';
 import classnames from 'classnames';
+import './index.scss';
 
 const Footer = () => {
   return (
@@ -40,12 +41,14 @@ const Footer = () => {
           </p>
           <ul
             className={classnames(
-              'mt-[5px] mb-[15px] flex flex-wrap items-center',
+              'footerMenu1',
+              'mt-[5px] mb-[15px] flex flex-wrap items-center gap-x-[10px]',
               'xl:divide-x xl:divide-gray-500',
             )}
           >
             {[
               '상호: (주)하이브 아이엠',
+              '서울특별시 강남구 테헤란로 518, 11층',
               '사업자등록번호: 843-86-02224',
               '통신판매업 신고번호: 제 2022-서울강남-01792호',
               '대표: 정우용',
@@ -53,7 +56,7 @@ const Footer = () => {
               <li
                 key={`index-${index}`}
                 className={classnames(
-                  'first:pl-0 last:pr-0',
+                  'xl:first:pl-0 last:pr-0',
                   'xl:leading-[10px] xl:px-[20px]',
                 )}
               >

@@ -30,7 +30,13 @@ const Thumbnail = ({ img, type }) => {
  * @param {JSX.Element} characterImg
  * @returns
  */
-const Character = ({ name, time, content, thumbnail, characterImg }) => {
+const ResponsiveCharacterItem = ({
+  name,
+  time,
+  content,
+  thumbnail,
+  characterImg,
+}) => {
   let Thumbnails = () => <></>;
   if (thumbnail) {
     Thumbnails = () => (
@@ -47,7 +53,7 @@ const Character = ({ name, time, content, thumbnail, characterImg }) => {
     );
   }
   return (
-    <div className="relative w-[320px] xl:w-[270px] h-full min-h-[380px]">
+    <div className="rr relative h-full min-h-[240px] grid grid-cols-[1fr,auto]">
       <div className="relative z-10">
         <div className="pl-[34px] text-[30px] font-extrabold text-left font-TmoneyRoundWind leading-none">
           {name}
@@ -66,16 +72,16 @@ const Character = ({ name, time, content, thumbnail, characterImg }) => {
         </div>
         <Thumbnails />
       </div>
-      <div className="absolute bottom-0 right-0 z-10">{characterImg()}</div>
-      <div className="absolute left-1/2 -translate-x-1/2 w-full top-0">
+      <div className="relative z-10 self-end">{characterImg()}</div>
+      <div className="absolute left-1/2 -translate-x-1/2 w-full h-full top-0">
         <img
           src="/img/img-baloon-full@3x.png"
           alt="ballon"
-          className="absolute top-0 !w-auto !h-auto left-1/2 -translate-x-1/2"
+          className="absolute top-0 !w-[60%] !h-full left-0"
         />
       </div>
     </div>
   );
 };
 
-export default Character;
+export default ResponsiveCharacterItem;

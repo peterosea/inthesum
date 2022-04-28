@@ -230,7 +230,7 @@ const Main = () => {
                 <SwiperSlide key={`index-${index}`}>
                   <div className="w-full">
                     <div className="mb-[20px] #xl:container mx-auto">
-                      <div className="flex items-center gap-x-[30px] min-h-[2.8em]">
+                      <div className="flex items-center gap-x-[30px] min-h-[2.8em] pr-[100px]">
                         <span className="text-[18px] font-TmoneyRoundWind font-extrabold line-clamp-2">
                           인더섬 with BTS 티저
                         </span>
