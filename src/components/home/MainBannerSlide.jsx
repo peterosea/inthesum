@@ -216,18 +216,25 @@ const MainBannerSlide = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div className="flex justify-center items-center flex-col relative z-10">
-            <div className="text-white">
-              {/* contnet */}
-            </div>
+            <div className="text-white">{/* contnet */}</div>
           </div>
           <div className="absolute max-w-[1920px] w-full h-full z-10 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
             {/* 예시용 클래스 bg-gray-600 */}
             <div className="absolute w-full h-full bg-gray-600">
               {/* img */}
             </div>
-            <button className="flex items-center gap-x-[20px] px-[40px] py-[26px] border-[3px] border-white rounded-full text-white absolute text-[20px] font-Pretendard font-bold bottom-[91px] left-[50px]">자세히 보러가기 <i className='icon-arrow-right-w' /></button>
-            <button className="flex items-center gap-x-[20px] px-[40px] py-[26px] border-[3px] border-white rounded-full text-white absolute text-[20px] font-Pretendard font-bold bottom-[128px] left-1/2 -translate-x-1/2">자세히 보러가기 <i className='icon-arrow-right-w' /></button>
-            <button className="flex items-center gap-x-[20px] px-[40px] py-[26px] border-[3px] border-white rounded-full text-white absolute text-[20px] font-Pretendard font-bold bottom-[39px] right-[40px]">자세히 보러가기 <i className='icon-arrow-right-w' /></button>
+            <button className="flex items-center gap-x-[12px] xl:gap-x-[20px] px-[18px] xl:px-[40px] py-[11px] xl:py-[26px] border xl:border-[3px] border-white rounded-full text-white absolute text-[14px] xl:text-[20px] font-Pretendard font-bold bottom-[60px] xl:bottom-[91px] left-[20px] xl:left-[50px]">
+              자세히 보러가기{' '}
+              <i className="icon-arrow-right-w text-[10px] xl:text-[12px]" />
+            </button>
+            <button className="flex items-center gap-x-[12px] xl:gap-x-[20px] px-[18px] xl:px-[40px] py-[11px] xl:py-[26px] border xl:border-[3px] border-white rounded-full text-white absolute text-[14px] xl:text-[20px] font-Pretendard font-bold bottom-[70px] xl:bottom-[128px] left-1/2 -translate-x-1/2">
+              자세히 보러가기{' '}
+              <i className="icon-arrow-right-w text-[10px] xl:text-[12px]" />
+            </button>
+            <button className="flex items-center gap-x-[12px] xl:gap-x-[20px] px-[18px] xl:px-[40px] py-[11px] xl:py-[26px] border xl:border-[3px] border-white rounded-full text-white absolute text-[14px] xl:text-[20px] font-Pretendard font-bold bottom-[30px] xl:bottom-[39px] right-[20px] xl:right-[40px]">
+              자세히 보러가기{' '}
+              <i className="icon-arrow-right-w text-[10px] xl:text-[12px]" />
+            </button>
           </div>
           <div className="absolute w-full h-full overflow-hidden">
             <img
