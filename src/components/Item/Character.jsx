@@ -47,7 +47,7 @@ const Character = ({ name, time, content, thumbnail, characterImg }) => {
     );
   }
   return (
-    <div className="relative min-w-[270px] h-full min-h-[380px]">
+    <div className="relative min-w-[320px] xl:min-w-[270px] h-full min-h-[380px]">
       <div className="relative z-10">
         <div className="pl-[34px] text-[30px] font-extrabold text-left font-TmoneyRoundWind leading-none">
           {name}
