@@ -26,8 +26,8 @@ const Card = ({ pin = false, data = cardData }) => {
           'xl:grid-cols-[140px,auto]',
         )}
       >
-        <div className="shadow-[20px_20px_40px_rgba(0,0,0,0.1)]">
-          <a href="#" className="block relative w-full h-full">
+        <div>
+          <a href="#" className="block relative w-full aspect-1 shadow-[20px_20px_40px_rgba(0,0,0,0.1)]">
             <ModifyThumbnail />
             {pin && (
               <div className="absolute flex items-center justify-center text-[19.2px] top-0 left-0 -translate-x-1/2 -translate-y-1/2 w-[40px] h-[40px] rounded-full pin bg-gradient-to-r from-[#7833DC] to-[#CF52E8]">
