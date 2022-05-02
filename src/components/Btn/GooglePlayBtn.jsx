@@ -7,7 +7,7 @@ const GooglePlayBtn = () => {
       href=""
       className="w-[50px] h-[50px] hug:w-[80px] hug:h-[80px] bg-[#f4f6fa] flex items-center justify-center rounded-full"
     >
-      <div className={cx('w-[20px] h-[21px]', 'hug:w-[29px] hug:h-[39px]')}>
+      <div className={cx('w-[20px] h-[21px]', 'hug:w-[29px] hug:h-[39px] flex')}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 29.715 34"
