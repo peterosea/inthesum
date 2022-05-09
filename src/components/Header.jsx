@@ -1,26 +1,21 @@
 import React, { useState } from 'react';
 import classnames from 'classnames';
-import useShrink from '../hook/useShrink';
 import HeaderMobile from './HeaderMobile';
 import Select from '../components/Select';
 import './Header.scss';
 
-const Header = ({ isBlack = false }) => {
+const Header = () => {
   const [isMenuOver, setIsMenuOver] = useState(false);
-  const [isHeaderOver, setIsHeaderOver] = useState(false);
-  const isShrink = useShrink(window.innerHeight * 0.8 - 110);
   return (
     <>
       <header className="z-[90] relative">
-        <HeaderMobile className={classnames({ 'bg-black': isBlack })} />
-        {/* policy tw-bg-black */}
+        <HeaderMobile className={classnames('bg-white')} />
+        {/* policy tw-bg-white */}
         <div
           id="dt-menu-wrap"
           className={classnames(
-            'top-0',
+            'top-0 bg-white border-b border-[#f1f1f1]',
             { active: isMenuOver },
-            { 'bg-black': isBlack },
-            { over: isShrink || isHeaderOver },
           )}
           onMouseLeave={() => {
             setIsMenuOver(false);
@@ -118,14 +113,14 @@ const Header = ({ isBlack = false }) => {
               <ul>
                 <li>
                   <a href="#">
-                    <img src="/img/icon-gnb-my@3x.png" alt="account img" />
+                    <img src="/img/icon-gnb-my.svg" alt="account img" />
                   </a>
                 </li>
                 <li>
                   <a href="#">
                     <img
                       className="logout"
-                      src="/img/icon-logout@3x.png"
+                      src="/img/icon-logout.svg"
                       alt="logout img"
                     />
                   </a>
@@ -159,7 +154,7 @@ const Header = ({ isBlack = false }) => {
           </div>
         </div>
       </header>
-      {isBlack && <div className="h-[var(--header-g-height)]" />}
+      <div className="h-[var(--header-g-height)]" />
     </>
   );
 };

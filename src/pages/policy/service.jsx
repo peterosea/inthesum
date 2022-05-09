@@ -174,7 +174,7 @@ const Main = () => {
 export default () => {
   return (
     <>
-      <Header isBlack />
+      <Header />
       <div className="font-Pretendard mb-[120px] mt-[120px] relative">
         <Main />
         <FloatArea />

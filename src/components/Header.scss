@@ -20,12 +20,11 @@ header {
       height: 30px;
       justify-content: center;
       align-items: center;
-      border: 2px solid white;
+      border: 2px solid #222;
       border-radius: 100%;
       box-sizing: border-box;
       font-family: 'Nunito Sans';
       font-size: 11px;
-      color: white;
       &.active {
         .lang-menu {
           display: flex;
@@ -50,7 +49,7 @@ header {
           line-height: 24px;
           border-bottom: 1px solid #f1f1f1;
           padding: 0 10px;
-          background: white;
+          background: #222;
           box-sizing: border-box;
           &:hover {
             background: #f9f9f9;
@@ -82,7 +81,7 @@ header {
         top: 50%;
         right: 0;
         border-radius: 1.5px;
-        background-color: white;
+        background: #222;
       }
       &:before {
         transform: translateY(-50%) rotate(-45deg);
@@ -98,7 +97,6 @@ header {
       height: 2px;
       right: 0;
       border-radius: 1px;
-      background-color: white;
     }
     &:before {
       content: '';
@@ -115,7 +113,6 @@ header {
       display: block;
       height: 2px;
       border-radius: 1px;
-      background-color: white;
       width: 15px;
       top: calc(50% - 1px);
       right: 0;
@@ -134,15 +131,13 @@ header {
     box-sizing: border-box;
     z-index: var(--zindexMobile);
     display: none;
-    &.active {
-      background: rgba(255, 255, 255, 0.95);
-      border-bottom: 1px solid #f9f9f9;
-      & > .gnb-toggle-btn {
-        span,
-        &:after,
-        &:before {
-          background: #000000;
-        }
+    background: rgb(255, 255, 255);
+    border-bottom: 1px solid #f9f9f9;
+    & > .gnb-toggle-btn {
+      span,
+      &:after,
+      &:before {
+        background: #222;
       }
     }
     .overlay {
@@ -218,11 +213,10 @@ header {
                   }
                   a {
                     font-size: 18px;
-                    color: white;
                     opacity: 1;
                     transition: 0.3s;
                     letter-spacing: -1.5px;
-                    text-shadow: 1px 1px rgba(0, 0, 0, 0.7);
+                    text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
                   }
                 }
               }
@@ -253,7 +247,6 @@ header {
         padding: 0 20px 0 30px;
         a,
         div {
-          color: white;
           font-size: 14px;
           font-weight: bold;
           letter-spacing: -0.28px;
@@ -273,9 +266,7 @@ header {
             background-position: right center;
             background-repeat: no-repeat;
             padding-right: 20px;
-            color: white;
             option {
-              color: black;
             }
           }
         }
@@ -295,7 +286,6 @@ header {
         background-image: -o-linear-gradient(left, #da72ef, #b981fc);
         background-image: linear-gradient(to right, #da72ef, #b981fc);
         span {
-          color: white;
           font-size: 18px;
           font-weight: bold;
           letter-spacing: -0.36px;
@@ -314,21 +304,14 @@ header {
     height: var(--header-g-height);
     padding: 0px 25px;
     box-sizing: border-box;
+    background-color: #fff;
     &.active {
       height: 310px;
-      box-shadow: 0 15px 30px 0 rgba(28, 0, 60, 0.35);
-
-      background-color: rgba(0, 0, 0, 0.8);
 
       #gnb ul li .menu-wrap .submenu {
         opacity: 1;
         top: 64px;
       }
-    }
-    &.over {
-      box-shadow: 0 15px 30px 0 rgba(28, 0, 60, 0.35);
-
-      background-color: rgba(0, 0, 0, 0.8);
     }
     display: flex;
     z-index: var(--zindexSliderMenu);
@@ -380,11 +363,10 @@ header {
           .menu-wrap {
             position: relative;
             & > a {
-              @apply text-white font-Pretendard;
+              @apply text-black font-Pretendard;
               font-size: 24px;
               font-weight: bold;
               line-height: 1;
-              text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
               transition: 0.3s;
             }
             .submenu {
@@ -405,11 +387,9 @@ header {
                 }
                 a {
                   font-size: 18px;
-                  color: white;
                   opacity: 1;
                   transition: 0.3s;
                   letter-spacing: -1.5px;
-                  text-shadow: 1px 1px rgba(0, 0, 0, 0.7);
                 }
               }
             }
@@ -488,7 +468,6 @@ header {
               margin-bottom: 10px;
             }
             p {
-              color: white;
               &.title {
                 font-size: 30px;
                 font-weight: 800;
