@@ -336,21 +336,21 @@ const Main = () => {
               </Banner>
             </div>
           </div>
-          <div className="mt-[25px] xl:mt-[83px] pt-[130px] xl:pt-[276px] relative">
+          <div className="mt-[25px] xl:mt-[83px] relative">
             <img
-              className="w-[80%] max-w-[600px] absolute top-0 left-1/2 -translate-x-1/2"
+              className="w-full sm:w-[80%] max-w-[600px] mx-auto"
               src="/img/img-introduce-3.png"
               srcSet="/img/img-introduce-3@2x.png 2x,
                       /img/img-introduce-3@3x.png 3x"
             />
             <img
-              className="relative z-10 hidden xl:block"
+              className="relative z-10 hidden xl:block translate-y-[-100px]"
               src="/img/img-introduce-4.png"
               srcSet="/img/img-introduce-4@2x.png 2x,
                       /img/img-introduce-4@3x.png 3x"
             />
             <img
-              className="relative z-10 xl:hidden block"
+              className="relative z-10 xl:hidden block mx-auto translate-y-[-40px]"
               src="/img/img-introduce-4-mobile.png"
               srcSet="/img/img-introduce-4-mobile@2x.png 2x,
                       /img/img-introduce-4-mobile@3x.png 3x"
