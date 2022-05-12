@@ -21,6 +21,7 @@ const Main = () => {
               { id: 'option-4', name: '홈페이지' },
               { id: 'option-5', name: '결제' },
               { id: 'option-6', name: '이벤트' },
+              { id: 'option-7', name: '이벤트', isActive: true },
             ]}
             responsive
           />

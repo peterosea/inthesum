@@ -35,24 +35,16 @@ const Tab = ({ tabList, responsive }) => {
               <span className="text-[12px] xl:text-[18px] font-bold font-Pretendard">
                 {name}
               </span>
-              <span
-                aria-hidden="true"
-                className={classnames(
-                  'absolute inset-x-0 top-0 h-px sell_border_top',
-                  { 'bg-primary': isActive },
-                  { 'bg-[#e6eaf2]': !isActive },
-                )}
-              />
-              <span
-                aria-hidden="true"
-                className={classnames(
-                  'absolute inset-x-0 bottom-0 h-px sell_border_bottom',
-                  { 'bg-primary': isActive },
-                  { 'bg-[#e6eaf2]': !isActive },
-                )}
-              />
-              {isActive && (
+              {isActive ? (
                 <>
+                  <span
+                    aria-hidden="true"
+                    className="absolute inset-x-0 top-0 h-px sell_border_top bg-primary !block"
+                  />
+                  <span
+                    aria-hidden="true"
+                    className="absolute inset-x-0 bottom-0 h-px sell_border_bottom bg-primary"
+                  />
                   <span
                     aria-hidden="true"
                     className="bg-primary absolute inset-y-0 right-0 w-px h-full"
@@ -61,6 +53,17 @@ const Tab = ({ tabList, responsive }) => {
                     aria-hidden="true"
                     className="bg-primary absolute inset-y-0 left-0 w-px h-full"
                   ></span>
+                </>
+              ) : (
+                <>
+                  <span
+                    aria-hidden="true"
+                    className="absolute inset-x-0 top-0 h-px sell_border_top bg-[#e6eaf2]"
+                  />
+                  <span
+                    aria-hidden="true"
+                    className="absolute inset-x-0 bottom-0 h-px sell_border_bottom bg-[#e6eaf2]"
+                  />
                 </>
               )}
             </button>
