@@ -67,7 +67,7 @@ const ResponsiveCharacterItem = ({
           </span>
           <span className="text-[14px] font-normal text-[#999]">{time}</span>
         </div>
-        <div className="px-[34px] mt-[20px] line-clamp-2 text-[14px] leading-[1.36] font-TmoneyRoundWind font-normal">
+        <div className="px-[34px] mt-[20px] line-clamp-2 text-[14px] leading-[1.36] font-TmoneyRoundWind font-normal max-w-[348px]">
           {content()}
         </div>
         <Thumbnails />
