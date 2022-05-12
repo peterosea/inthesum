@@ -5,7 +5,7 @@ import {
   useEventListener,
   useOnClickOutside,
   useLockedBody,
-  useWindowSize
+  useWindowSize,
 } from 'usehooks-ts';
 import Select from '../components/Select';
 
@@ -132,7 +132,9 @@ const HeaderMobile = (props) => {
       <h1 className="logo">
         <a href="/">
           <img
-            src="/img/logo-inthesum-small@3x.png"
+            src="/img/logo-inthesum-small.webp"
+            srcSet="/img/logo-inthesum-small@2x.webp 2x,
+                      /img/logo-inthesum-small@3x.webp 3x"
             alt="inthesum logo"
             className="w-auto"
           />

@@ -13,10 +13,9 @@ const Header = () => {
         {/* policy tw-bg-white */}
         <div
           id="dt-menu-wrap"
-          className={classnames(
-            'top-0 bg-white border-b border-[#f1f1f1]',
-            { active: isMenuOver },
-          )}
+          className={classnames('top-0 bg-white border-b border-[#f1f1f1]', {
+            active: isMenuOver,
+          })}
           onMouseLeave={() => {
             setIsMenuOver(false);
             setIsHeaderOver(false);
@@ -29,7 +28,9 @@ const Header = () => {
             <h1 className="logo">
               <a href="/">
                 <img
-                  src="/img/logo-inthesum-small@3x.png"
+                  src="/img/logo-inthesum-small.webp"
+                  srcSet="/img/logo-inthesum-small@2x.webp 2x,
+                      /img/logo-inthesum-small@3x.webp 3x"
                   alt="inthesum logo"
                   className="w-auto"
                 />
