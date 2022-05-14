@@ -10,7 +10,7 @@ const BackBtn = () => {
       >
         <i
           className={cx(
-            'text-[12px] xl:text-[28px] text-[#2c333e]',
+            'text-[12px] xl:text-[16px] text-[#2c333e]',
             'icon-top-arrow -rotate-90',
           )}
         ></i>
