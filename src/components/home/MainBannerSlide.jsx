@@ -46,6 +46,7 @@ const Video = ({
         muted
         src={src}
         onPause={onPause}
+        playsinline
       />
       <Transition
         show={!onPlay}
@@ -94,58 +95,61 @@ function SlidePrevButton() {
 const MainBannerSlide = () => {
   const swiper = useSwiper();
   return (
-    <div className="h-[380px] md:h-[540px] xl:h-[870px] relative">
+    <div className="relative">
       <Swiper
         modules={[Pagination, Navigation, Autoplay]}
         speed={2500}
         slidesPerView={1}
         spaceBetween={0}
         loop
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
+        // autoplay={{
+        //   delay: 2500,
+        //   disableOnInteraction: false,
+        // }}
         threshold={100}
         pagination={{ type: 'progressbar' }}
         className="mainBannerSlider"
       >
         <SwiperSlide>
-          <div className="flex justify-center items-center flex-col relative z-20">
-            <img
-              src="/img/bts_logo.png"
-              srcSet="/img/bts_logo@2x.png 2x,
-                        /img/bts_logo@3x.png 3x"
-              alt="BTS"
-              className="!h-[116px] xl:!h-auto !w-auto opacity-0"
-            />
-            <div className="text-white mt-[26px]">
-              <p
-                className={cx(
-                  'text-[22px] font-extrabold font-TmoneyRoundWind',
-                  'xl:text-[42px]',
-                )}
-              >
-                사전예약하고 [인더섬 with BTS]에서
-                <br />
-                아미밤 스탠드(데코 아이템) 받으세요!
-              </p>
-            </div>
-            <div className="mt-[24px] xl:mt-[46px] flex gap-x-[20px]">
-              <div className="h-[40px] xl:h-auto">
-                <img
-                  src="/img/btn-googleplay.png"
-                  srcSet="/img/btn-googleplay@2x.png 2x,
-                          /img/btn-googleplay@3x.png 3x"
-                  className="hidden xl:block !w-auto !h-auto max-h-[40px] xl:max-h-[80px]"
-                />
+          <div className="relative z-20 w-full max-w-[1920px] max-h-[870px] overflow-hidden">
+            <div className="pt-[56.25%]" />
+            <div className="absolute top-0 left-0 flex flex-col justify-center items-center w-full h-full">
+              <img
+                src="/img/bts_logo.png"
+                srcSet="/img/bts_logo@2x.png 2x,
+                          /img/bts_logo@3x.png 3x"
+                alt="BTS"
+                className="!h-[20px] xl:!h-auto !w-auto opacity-0 #sm:hidden"
+              />
+              <div className="text-white mt-[26px]">
+                <p
+                  className={cx(
+                    'text-[18px] sm:text-[22px] font-extrabold font-TmoneyRoundWind px-cpx',
+                    'xl:text-[42px]',
+                  )}
+                >
+                  사전예약하고 [인더섬 with BTS]에서
+                  <br />
+                  아미밤 스탠드 받으세요!
+                </p>
               </div>
-              <div className="h-[40px] xl:h-auto">
-                <img
-                  src="/img/btn-appstore.png"
-                  srcSet="/img/btn-appstore@2x.png 2x,
-                            /img/btn-appstore@3x.png 3x"
-                  className="!w-auto !h-auto max-h-[40px] xl:max-h-[80px]"
-                />
+              <div className="mt-[12px] sm:mt-[24px] xl:mt-[46px] flex gap-x-[20px] justify-center">
+                <div className="h-[40px] xl:h-auto">
+                  <img
+                    src="/img/btn-googleplay.png"
+                    srcSet="/img/btn-googleplay@2x.png 2x,
+                            /img/btn-googleplay@3x.png 3x"
+                    className="hidden xl:block !w-auto !h-auto max-h-[40px] xl:max-h-[80px]"
+                  />
+                </div>
+                <div className="h-[40px] xl:h-auto">
+                  <img
+                    src="/img/btn-appstore.png"
+                    srcSet="/img/btn-appstore@2x.png 2x,
+                              /img/btn-appstore@3x.png 3x"
+                    className="!w-auto !h-auto max-h-[40px] xl:max-h-[80px]"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -163,9 +167,14 @@ const MainBannerSlide = () => {
         </SwiperSlide>
         <SwiperSlide>
           {/* <!-- chrome 정책으로 영상 자동 재생 시 muted 상태로 autoplay 재생가능 참고문서: https://developer.chrome.com/blog/autoplay/--> */}
-          <div className="w-full h-full absolute bg-black"></div>
-          <div className="w-full h-full max-w-[1920px] relative z-20">
-            <Video />
+          <div className="relative z-20 w-full max-w-[1920px] max-h-[870px] overflow-hidden">
+            <div className="pt-[56.25%]" />
+            <div className="absolute top-0 left-0 flex flex-col justify-center items-center w-full h-full">
+              <div className="w-full h-full absolute bg-black"></div>
+              <div className="w-full h-full max-w-[1920px] relative z-20">
+                <Video />
+              </div>
+            </div>
           </div>
           <div className="absolute w-full h-full overflow-hidden">
             <img
@@ -177,17 +186,24 @@ const MainBannerSlide = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="flex justify-center items-center flex-col relative z-10">
-            <img
-              src="/img/bts_logo.png"
-              alt="BTS"
-              className="!w-auto !h-auto"
-            />
-            <div className="text-white">
-              <p className="text-[60px] font-extrabold">HEADING ISLAND LIFE</p>
-              <p className="text-[21px]">
-                3DPuzzle Game width BTS character and space decoration
-              </p>
+          <div className="relative z-20 w-full max-w-[1920px] max-h-[870px] overflow-hidden">
+            <div className="pt-[56.25%]" />
+            <div className="absolute top-0 left-0 flex flex-col justify-center items-center w-full h-full">
+              <div className="flex justify-center items-center flex-col relative z-10 px-cpx">
+                <img
+                  src="/img/bts_logo.png"
+                  alt="BTS"
+                  className="#sm:max-h-[80px] !w-auto !h-auto"
+                />
+                <div className="text-white mt-[8px]">
+                  <div className="text-[22px] sm:text-[30px] xl:text-[60px] font-extrabold leading-[1.1]">
+                    HEADING ISLAND LIFE
+                  </div>
+                  <p className="text-[12px] xl:text-[21px]">
+                    3DPuzzle Game width BTS character and space decoration
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
           <div className="absolute max-w-[1920px] w-full h-full z-10 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
@@ -215,8 +231,13 @@ const MainBannerSlide = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="flex justify-center items-center flex-col relative z-10">
-            <div className="text-white">{/* contnet */}</div>
+          <div className="relative z-20 w-full max-w-[1920px] max-h-[870px] overflow-hidden">
+            <div className="pt-[56.25%]" />
+            <div className="absolute top-0 left-0 flex flex-col justify-center items-center w-full h-full">
+              <div className="flex justify-center items-center flex-col relative z-10">
+                <div className="text-white">{/* contnet */}</div>
+              </div>
+            </div>
           </div>
           <div className="absolute max-w-[1920px] w-full h-full z-10 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
             {/* 예시용 클래스 bg-gray-600 */}
