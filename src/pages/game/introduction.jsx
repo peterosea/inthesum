@@ -3,6 +3,7 @@ import { Transition } from '@headlessui/react';
 import { useSwiper } from 'swiper/react';
 import { useWindowSize } from 'usehooks-ts';
 import ReactDOM from 'react-dom';
+import cx from 'classnames';
 
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
@@ -95,7 +96,11 @@ const ToolTip = () => {
   return (
     <div className="relative z-20 text-left">
       <button
-        className="btn bg-black text-white text-[14px] rounded-full py-[14px] px-[20px] font-TmoneyRoundWind font-extrabold leading-none whitespace-nowrap"
+        className={cx(
+          'font-TmoneyRoundWind font-extrabold leading-none whitespace-nowrap',
+          'text-[#666] text-[14px] underline decoration-2 underline-offset-4 decoration-[#666]',
+          'xl:btn xl:bg-black xl:text-white xl:text-[14px] xl:rounded-full xl:py-[14px] xl:px-[20px] xl:no-underline',
+        )}
         onClick={handleToggle}
       >
         {active ? '설명닫기' : '설명보기'}
@@ -179,12 +184,98 @@ function SlidePrevButton() {
   );
 }
 
-const Main = () => {
+const Slider = () => {
   const swiperPagination = useRef(null);
   const swiperNavPrev = useRef(null);
   const swiperNavNext = useRef(null);
   const [current, setCurrent] = useState(0);
   const [total, setTotal] = useState(0);
+
+  return (
+    <div className="relative #xl:!mx-full">
+      <Swiper
+        modules={[Navigation, Autoplay]}
+        speed={2500}
+        slidesPerView={1}
+        loop={true}
+        mousewheel={true}
+        threshold={100}
+        pagination={{
+          el: swiperPagination.current,
+          type: 'fraction',
+        }}
+        navigation={{
+          nextEl: swiperNavNext?.current,
+          prevEl: swiperNavPrev?.current,
+        }}
+        className="!pt-[31px] xl:!pt-[58px]"
+        onActiveIndexChange={(swiper) => {
+          if (swiper.activeIndex > swiper.slides.length - 2) {
+            setCurrent(1);
+          } else if (swiper.activeIndex === 0) {
+            setCurrent(swiper.slides.length - 2);
+          } else {
+            setCurrent(swiper.activeIndex);
+          }
+        }}
+        onInit={(swiper) => {
+          setTotal(swiper.slides.length - 2);
+          setCurrent(swiper.activeIndex);
+        }}
+      >
+        {[1, 2, 3, 4].map((e, index) => (
+          <SwiperSlide key={`index-${index}`}>
+            <div className="w-full">
+              <div className="mb-[20px] #xl:container mx-auto">
+                <div className="flex xl:items-center gap-x-[30px] xl:pr-[100px] #xl:flex-col #xl:text-left">
+                  <div className="text-[18px] #xl:min-h-[2.8em] #xl:mb-[22px] flex items-end">
+                    <span className="font-TmoneyRoundWind font-extrabold line-clamp-2">
+                      인더섬 with BTS 티저
+                    </span>
+                  </div>
+                  <ToolTip />
+                </div>
+              </div>
+              <div className="aspect-[16/9] relative overflow-hidden xl:rounded-[16px]">
+                <div className="absolute w-full h-full">
+                  <Video
+                    src="/video/movie-sample.mp4"
+                    poster="/video/poster.png"
+                  />
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+        ))}
+        <Pagination total={total} current={current} />
+        <div className="absolute h-[30px] top-[112px] flex gap-x-[3px] items-center justify-center right-[var(--container-px)] !w-auto !bottom-auto !left-auto pl-[30px] z-20 -translate-y-1/2 xl:hidden">
+          <SlidePrevButton />
+          <SlideNextButton />
+        </div>
+      </Swiper>
+      <div
+        ref={swiperNavNext}
+        className="swiper-button-next cursor-pointer translate-y-[62px] translate-x-[100px] absolute top-1/2 right-[10px] stroke-[#e6eaf2] hover:stroke-black"
+      >
+        <svg width="29.24" height="60.345">
+          <path transform="rotate(180 14.439 29.947)" d="M28.516 0 0 29.966" />
+          <path transform="rotate(180 14.439 15.155)" d="M28.516 29.966 0 0" />
+        </svg>
+      </div>
+      <div
+        ref={swiperNavPrev}
+        className="swiper-button-prev cursor-pointer translate-y-[62px] translate-x-[-100px] absolute top-1/2 left-[10px] stroke-[#e6eaf2] hover:stroke-black"
+      >
+        <svg width="29.24" height="60.345">
+          <path transform="translate(.362 .452)" d="M28.516 0 0 29.966" />
+          <path transform="translate(.362 30.034)" d="M28.516 29.966 0 0" />
+        </svg>
+      </div>
+    </div>
+  );
+};
+
+const Main = () => {
   return (
     <>
       <section
@@ -195,93 +286,7 @@ const Main = () => {
             title={() => <h1>인더섬 소개 영상</h1>}
             content={() => <p>뜻밖의 휴가로 도착한 섬! 인더섬에서 만나요</p>}
           />
-          <div className="relative #xl:!mx-full">
-            <Swiper
-              modules={[Navigation, Autoplay]}
-              speed={2500}
-              slidesPerView={1}
-              loop={true}
-              mousewheel={true}
-              threshold={100}
-              pagination={{
-                el: swiperPagination.current,
-                type: 'fraction',
-              }}
-              navigation={{
-                nextEl: swiperNavNext?.current,
-                prevEl: swiperNavPrev?.current,
-              }}
-              className="!pt-[31px] xl:!pt-[58px]"
-              onActiveIndexChange={(swiper) => {
-                if (swiper.activeIndex > swiper.slides.length - 2) {
-                  setCurrent(1);
-                } else if (swiper.activeIndex === 0) {
-                  setCurrent(swiper.slides.length - 2);
-                } else {
-                  setCurrent(swiper.activeIndex);
-                }
-              }}
-              onInit={(swiper) => {
-                setTotal(swiper.slides.length - 2);
-                setCurrent(swiper.activeIndex);
-              }}
-            >
-              {[1, 2, 3, 4].map((e, index) => (
-                <SwiperSlide key={`index-${index}`}>
-                  <div className="w-full">
-                    <div className="mb-[20px] #xl:container mx-auto">
-                      <div className="flex items-center gap-x-[30px] min-h-[2.8em] pr-[100px]">
-                        <span className="text-[18px] font-TmoneyRoundWind font-extrabold line-clamp-2">
-                          인더섬 with BTS 티저
-                        </span>
-                        <ToolTip />
-                      </div>
-                    </div>
-                    <div className="aspect-[16/9] relative overflow-hidden xl:rounded-[16px]">
-                      <div className="absolute w-full h-full">
-                        <Video
-                          src="/video/movie-sample.mp4"
-                          poster="/video/poster.png"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
-              ))}
-              <Pagination total={total} current={current} />
-              <div className="absolute h-[30px] top-[56px] flex gap-x-[3px] items-center justify-center right-[var(--container-px)] !w-auto !bottom-auto !left-auto pl-[30px] bg-gradient-to-l from-white via-white z-20 -translate-y-1/2 xl:hidden">
-                <SlidePrevButton />
-                <SlideNextButton />
-              </div>
-            </Swiper>
-            <div
-              ref={swiperNavNext}
-              className="swiper-button-next cursor-pointer translate-y-[62px] translate-x-[100px] absolute top-1/2 right-[10px] stroke-[#e6eaf2] hover:stroke-black"
-            >
-              <svg width="29.24" height="60.345">
-                <path
-                  transform="rotate(180 14.439 29.947)"
-                  d="M28.516 0 0 29.966"
-                />
-                <path
-                  transform="rotate(180 14.439 15.155)"
-                  d="M28.516 29.966 0 0"
-                />
-              </svg>
-            </div>
-            <div
-              ref={swiperNavPrev}
-              className="swiper-button-prev cursor-pointer translate-y-[62px] translate-x-[-100px] absolute top-1/2 left-[10px] stroke-[#e6eaf2] hover:stroke-black"
-            >
-              <svg width="29.24" height="60.345">
-                <path transform="translate(.362 .452)" d="M28.516 0 0 29.966" />
-                <path
-                  transform="translate(.362 30.034)"
-                  d="M28.516 29.966 0 0"
-                />
-              </svg>
-            </div>
-          </div>
+          <Slider />
         </div>
       </section>
       <section className="mt-[83px] xl:mt-[147px]">
@@ -371,14 +376,14 @@ const Main = () => {
           </div>
         </div>
       </section>
-      <section className="h-[350px] xl:h-[910px] relative overflow-hidden mt-[81px] xl:mt-[91px]">
+      <section className="xl:h-[910px] relative overflow-hidden mt-[81px] xl:mt-[91px]">
         <img
           className="absolute #xl:bottom-0 h-full object-contain xl:object-contain max-w-none w-full object-bottom left-1/2 -translate-x-1/2"
           src="/img/img-introduce-bottom-bg.png"
           srcSet="/img/img-introduce-bottom-bg@2x.png 2x,
                   /img/img-introduce-bottom-bg@3x.png 3x"
         />
-        <div className="container mx-auto xl:mt-[90px] relative">
+        <div className="container mx-auto xl:mt-[90px] relative #xl:pb-[80px]">
           <div className="grid justify-items-center gap-y-[42px] xl:gap-y-[92px]">
             <div className="font-extrabold font-TmoneyRoundWind text-center tracking-[-1px]">
               <div className="text-[#9ba0a8] xl:text-gradient-primary text-[18px] xl:text-[36px] mb-[13px]">
@@ -391,7 +396,7 @@ const Main = () => {
               </div>
             </div>
             <img
-              className="max-w-[160px] xl:max-w-[468px]"
+              className="max-w-[160px] sm:max-w-[240px] xl:max-w-[468px]"
               src="/img/img-introduce-logo-full.png"
               srcSet="/img/img-introduce-logo-full@2x.png 2x,
                       /img/img-introduce-logo-full@3x.png 3x"

@@ -18,7 +18,7 @@ const Modal = ({
   return (
     <Transition
       show={isOpen}
-      className="fixed z-[100] inset-0 overflow-y-auto"
+      className="fixed z-[100] inset-0 overflow-y-auto shadow-md"
       aria-labelledby="modal-title"
       role="dialog"
       aria-modal="true"
@@ -55,7 +55,7 @@ const Modal = ({
           )}
         >
           <button
-            className="absolute top-[20px] right-[17px]"
+            className="absolute top-[20px] right-[17px] z-20"
             onClick={onClose}
           >
             <i className="icon-close text-black text-[18px]"></i>
