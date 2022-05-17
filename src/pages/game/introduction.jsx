@@ -371,14 +371,14 @@ const Main = () => {
           </div>
         </div>
       </section>
-      <section className="h-[350px] xl:h-[910px] relative overflow-hidden mt-[81px] xl:mt-[91px]">
+      <section className="xl:h-[910px] relative overflow-hidden mt-[81px] xl:mt-[91px]">
         <img
           className="absolute #xl:bottom-0 h-full object-contain xl:object-contain max-w-none w-full object-bottom left-1/2 -translate-x-1/2"
           src="/img/img-introduce-bottom-bg.png"
           srcSet="/img/img-introduce-bottom-bg@2x.png 2x,
                   /img/img-introduce-bottom-bg@3x.png 3x"
         />
-        <div className="container mx-auto xl:mt-[90px] relative">
+        <div className="container mx-auto xl:mt-[90px] relative #xl:pb-[80px]">
           <div className="grid justify-items-center gap-y-[42px] xl:gap-y-[92px]">
             <div className="font-extrabold font-TmoneyRoundWind text-center tracking-[-1px]">
               <div className="text-[#9ba0a8] xl:text-gradient-primary text-[18px] xl:text-[36px] mb-[13px]">
@@ -391,7 +391,7 @@ const Main = () => {
               </div>
             </div>
             <img
-              className="max-w-[160px] xl:max-w-[468px]"
+              className="max-w-[160px] sm:max-w-[240px] xl:max-w-[468px]"
               src="/img/img-introduce-logo-full.png"
               srcSet="/img/img-introduce-logo-full@2x.png 2x,
                       /img/img-introduce-logo-full@3x.png 3x"
