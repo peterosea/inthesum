@@ -2,12 +2,12 @@ export const card = [
   {
     title: '4월 14일(목) 오전 4시 업데이트 점검 안내',
     content: () => (
-      <p>
+      <>
         새로운 버전 업데이트를 위해 6월 4일(목) 오전 4시부터 9시까지 점검을
         실시합니다.
         <br />
         해당 시간동안은 이용이 불가능하며, 이용중 해당 시간이..
-      </p>
+      </>
     ),
     thumbnailUrl: () => (
       <img
@@ -20,13 +20,13 @@ export const card = [
   {
     title: '인더섬 스크린샷 이벤트',
     content: () => (
-      <p>
+      <>
         인더섬의 아름다운 풍경을 남겨보세요.
         <br />
         총 100분을 선정해 다이나마이트 코스튬을 선물로 드립니다.
         <br />
         많은 참여 부탁드립니다!
-      </p>
+      </>
     ),
     thumbnailUrl: () => (
       <img
@@ -39,12 +39,12 @@ export const card = [
   {
     title: '푸시 알림 이벤트',
     content: () => (
-      <p>
+      <>
         새로운 버전 업데이트를 위해 6월 4일(목) 오전 4시부터 9시까지 점검을
         실시합니다.
         <br />
         해당 시간동안은 이용이 불가능하며, 이용중 해당 시간이..
-      </p>
+      </>
     ),
     thumbnailUrl: () => (
       <img
@@ -57,12 +57,12 @@ export const card = [
   {
     title: '1.0.2 커플 베이스캠프 업데이트',
     content: () => (
-      <p>
+      <>
         새로운 버전 업데이트를 위해 6월 4일(목) 오전 4시부터 9시까지 점검을
         실시합니다.
         <br />
         해당 시간동안은 이용이 불가능하며, 이용중 해당 시간이..
-      </p>
+      </>
     ),
     thumbnailUrl: () => (
       <img
@@ -75,12 +75,12 @@ export const card = [
   {
     title: '1.0.1 패치 업데이트 안내',
     content: () => (
-      <p>
+      <>
         새로운 버전 업데이트를 위해 6월 4일(목) 오전 4시부터 9시까지 점검을
         실시합니다.
         <br />
         해당 시간동안은 이용이 불가능하며, 이용중 해당 시간이..
-      </p>
+      </>
     ),
     thumbnailUrl: () => (
       <img
@@ -93,12 +93,12 @@ export const card = [
   {
     title: '인더섬 with BTS 전세계 오픈',
     content: () => (
-      <p>
+      <>
         새로운 버전 업데이트를 위해 6월 4일(목) 오전 4시부터 9시까지 점검을
         실시합니다.
         <br />
         해당 시간동안은 이용이 불가능하며, 이용중 해당 시간이..
-      </p>
+      </>
     ),
     thumbnailUrl: () => (
       <img
@@ -115,11 +115,11 @@ export const character = [
     name: 'BTS',
     time: '10분전',
     content: () => (
-      <p>
+      <>
         인더섬 with BTS 오픈!!
         <br />
         제목은 두줄까지 표시를 기본으로…
-      </p>
+      </>
     ),
     characterImg: () => (
       <img
@@ -157,10 +157,10 @@ export const character = [
     name: 'RM,정국',
     time: '10분전',
     content: () => (
-      <p>
+      <>
         훗~ 이번에는 인더섬의 과일로 카테일을 만들 수 있는 칵테일바를
         오픈했어요, 무알콜 칵테일도 있으니 걱정은 놉!
-      </p>
+      </>
     ),
     characterImg: () => (
       <>
@@ -185,10 +185,10 @@ export const character = [
     name: '지민',
     time: '10분전',
     content: () => (
-      <p>
+      <>
         훗~ 이번에는 인더섬의 과일로 카테일을 만들 수 있는 칵테일바를
         오픈했어요, 무알콜 칵테일도 있으니 걱정은 놉!
-      </p>
+      </>
     ),
     characterImg: () => (
       <img
@@ -227,10 +227,10 @@ export const character = [
     name: '슈가',
     time: '1시간',
     content: () => (
-      <p>
+      <>
         훗~ 이번에는 인더섬의 과일로 카테일을 만들 수 있는 칵테일바를
         오픈했어요, 무알콜 칵테일도 있으니 걱정은 놉!
-      </p>
+      </>
     ),
     characterImg: () => (
       <img
@@ -269,10 +269,10 @@ export const character = [
     name: '뷔',
     time: '10분전',
     content: () => (
-      <p>
+      <>
         훗~ 이번에는 인더섬의 과일로 카테일을 만들 수 있는 칵테일바를
         오픈했어요, 무알콜 칵테일도 있으니 걱정은 놉!
-      </p>
+      </>
     ),
     characterImg: () => (
       <img
@@ -288,10 +288,10 @@ export const character = [
     name: '지민',
     time: '10분전',
     content: () => (
-      <p>
+      <>
         훗~ 이번에는 인더섬의 과일로 카테일을 만들 수 있는 칵테일바를
         오픈했어요, 무알콜 칵테일도 있으니 걱정은 놉!
-      </p>
+      </>
     ),
     characterImg: () => (
       <img
@@ -307,10 +307,10 @@ export const character = [
     name: '슈가',
     time: '1시간',
     content: () => (
-      <p>
+      <>
         훗~ 이번에는 인더섬의 과일로 카테일을 만들 수 있는 칵테일바를
         오픈했어요, 무알콜 칵테일도 있으니 걱정은 놉!
-      </p>
+      </>
     ),
     characterImg: () => (
       <img
@@ -326,10 +326,10 @@ export const character = [
     name: '뷔',
     time: '10분전',
     content: () => (
-      <p>
+      <>
         훗~ 이번에는 인더섬의 과일로 카테일을 만들 수 있는 칵테일바를
         오픈했어요, 무알콜 칵테일도 있으니 걱정은 놉!
-      </p>
+      </>
     ),
     characterImg: () => (
       <img
@@ -345,10 +345,10 @@ export const character = [
     name: '지민',
     time: '10분전',
     content: () => (
-      <p>
+      <>
         훗~ 이번에는 인더섬의 과일로 카테일을 만들 수 있는 칵테일바를
         오픈했어요, 무알콜 칵테일도 있으니 걱정은 놉!
-      </p>
+      </>
     ),
     characterImg: () => (
       <img
@@ -364,10 +364,10 @@ export const character = [
     name: '슈가',
     time: '1시간',
     content: () => (
-      <p>
+      <>
         훗~ 이번에는 인더섬의 과일로 카테일을 만들 수 있는 칵테일바를
         오픈했어요, 무알콜 칵테일도 있으니 걱정은 놉!
-      </p>
+      </>
     ),
     characterImg: () => (
       <img
@@ -383,10 +383,10 @@ export const character = [
     name: '뷔',
     time: '10분전',
     content: () => (
-      <p>
+      <>
         훗~ 이번에는 인더섬의 과일로 카테일을 만들 수 있는 칵테일바를
         오픈했어요, 무알콜 칵테일도 있으니 걱정은 놉!
-      </p>
+      </>
     ),
     characterImg: () => (
       <img
@@ -402,10 +402,10 @@ export const character = [
     name: '지민',
     time: '10분전',
     content: () => (
-      <p>
+      <>
         훗~ 이번에는 인더섬의 과일로 카테일을 만들 수 있는 칵테일바를
         오픈했어요, 무알콜 칵테일도 있으니 걱정은 놉!
-      </p>
+      </>
     ),
     characterImg: () => (
       <img
@@ -421,10 +421,10 @@ export const character = [
     name: '슈가',
     time: '1시간',
     content: () => (
-      <p>
+      <>
         훗~ 이번에는 인더섬의 과일로 카테일을 만들 수 있는 칵테일바를
         오픈했어요, 무알콜 칵테일도 있으니 걱정은 놉!
-      </p>
+      </>
     ),
     characterImg: () => (
       <img
@@ -440,10 +440,10 @@ export const character = [
     name: '뷔',
     time: '10분전',
     content: () => (
-      <p>
+      <>
         훗~ 이번에는 인더섬의 과일로 카테일을 만들 수 있는 칵테일바를
         오픈했어요, 무알콜 칵테일도 있으니 걱정은 놉!
-      </p>
+      </>
     ),
     characterImg: () => (
       <img
