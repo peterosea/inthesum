@@ -41,7 +41,7 @@ const Card = ({ pin = false, data = cardData }) => {
             <a
               href="#"
               className={classnames(
-                'text-[16px] tracking-[-0.72px]',
+                'text-[16px] break-all',
                 'xl:text-[24px] ',
               )}
             >
@@ -49,7 +49,7 @@ const Card = ({ pin = false, data = cardData }) => {
             </a>
             <div
               className={classnames(
-                'text-[12px] text-[#6f737a] mt-[5px] line-clamp-2 font-normal',
+                'text-[12px] text-[#6f737a] mt-[5px] line-clamp-2 font-normal break-all',
                 'xl:mt-[12px] xl:text-[16px] xl:line-clamp-3 xl:text-[#54575d] min-h-[3.8em]',
               )}
             >

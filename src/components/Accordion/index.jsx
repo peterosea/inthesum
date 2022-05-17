@@ -38,7 +38,7 @@ const Accordion = () => {
             <div
               className={classnames(
                 'accordion__label-content',
-                'text-[14px] font-Pretendard font-bold tracking-[-0.07px]',
+                'text-[14px] font-Pretendard font-bold tracking-[-0.07px] break-all',
                 'xl:text-[20px]',
               )}
             >
