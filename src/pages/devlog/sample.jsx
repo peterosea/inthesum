@@ -16,7 +16,7 @@ import { BtsBgImg } from '../data';
 const Main = () => {
   return (
     <>
-      <section className="xl:mt-[80px]">
+      <section className="sm:mt-[40px] xl:mt-[80px]">
         <div className="container mx-auto">
           <div className="mx-full xl:mx-auto">
             <CharacterBanner />
