@@ -5,19 +5,19 @@ import 'keen-slider/keen-slider.min.css';
 
 // components
 
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import '../components/home/home.scss';
-import MagazineSlide from '../components/home/MagazineSlide';
-import CharacterSlide from '../components/home/CharacterSlide';
-import MainBannerSlide from '../components/home/MainBannerSlide';
-import Card from '../components/Card';
-import HeaderSection from '../components/HeaderSection';
-import FloatArea from '../components/FloatArea';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import '../../components/home/home.scss';
+import MagazineSlide from '../../components/home/MagazineSlide';
+import CharacterSlide from '../../components/home/CharacterSlide';
+import MainBannerSlide from '../../components/home/MainBannerSlide';
+import Card from '../../components/Card';
+import HeaderSection from '../../components/HeaderSection';
+import FloatArea from '../../components/FloatArea';
 
 // data
 
-import { card } from './data';
+import { card } from '../data';
 
 function Arrow(props) {
   const disabeld = props.disabled ? ' arrow--disabled' : '';
