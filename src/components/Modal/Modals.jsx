@@ -47,8 +47,8 @@ const Modals = () => {
   return (
     <>
       <Modal isOpen={helpModal} onClose={() => setHelpModal(false)}>
-        <div className='bg-[#F4F6FA] p-[40px] pt-[46px] text-left  border-t-[3px] border-primary'>
-          <div className="flex gap-x-[8px]">
+        <div className="bg-[#F4F6FA] p-[40px] pt-[46px] text-left  border-t-[3px] border-primary">
+          <div className="flex gap-[8px] flex-wrap">
             <button
               className="inline-block py-[3px] px-[10px] bg-teal-500 rounded-full mr-[8px] text-sm font-semibold text-white"
               onClick={() => openModalType('type1')}
@@ -93,10 +93,7 @@ const Modals = () => {
       >
         <HealingLift />
       </Modal>
-      <Modal
-        isOpen={modalType.type4}
-        onClose={() => closeModalType('type4')}
-      >
+      <Modal isOpen={modalType.type4} onClose={() => closeModalType('type4')}>
         <Login />
       </Modal>
     </>

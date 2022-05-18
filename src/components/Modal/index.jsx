@@ -49,7 +49,7 @@ const Modal = ({
           leave="ease-in duration-200"
           leaveFrom="opacity-100 translate-y-0 sm:scale-100"
           leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-          className='relative inline-block align-bottom overflow-hidden shadow-xl transform transition-all sm:align-middle sm:max-w-[425px] sm:w-full my-[80px]'
+          className="relative inline-block align-bottom overflow-hidden shadow-xl transform transition-all sm:align-middle sm:max-w-[425px] sm:w-full my-[80px] mx-[10px]"
         >
           <button
             className="absolute top-[20px] right-[17px] z-20"
