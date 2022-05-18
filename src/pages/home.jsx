@@ -40,14 +40,30 @@ function Arrow(props) {
   );
 }
 
+const ResizePlugin = (slider) => {
+  const observer = new ResizeObserver(function () {
+    slider.update();
+  });
+
+  slider.on('created', () => {
+    observer.observe(slider.container);
+  });
+  slider.on('destroyed', () => {
+    observer.unobserve(slider.container);
+  });
+};
+
 const PDBanner = () => {
   const [loaded, setLoaded] = useState(false);
-  const [sliderRef, instanceRef] = useKeenSlider({
-    loop: true,
-    created() {
-      setLoaded(true);
+  const [sliderRef, instanceRef] = useKeenSlider(
+    {
+      loop: true,
+      created() {
+        setLoaded(true);
+      },
     },
-  });
+    [ResizePlugin],
+  );
 
   return (
     <div className="relative xl:rounded-[12px] h-full overflow-hidden">
@@ -132,12 +148,15 @@ const PDBanner = () => {
 
 const ClothesBanner = () => {
   const [loaded, setLoaded] = useState(false);
-  const [sliderRef, instanceRef] = useKeenSlider({
-    loop: true,
-    created() {
-      setLoaded(true);
+  const [sliderRef, instanceRef] = useKeenSlider(
+    {
+      loop: true,
+      created() {
+        setLoaded(true);
+      },
     },
-  });
+    [ResizePlugin],
+  );
 
   return (
     <div className="relative xl:rounded-[12px] h-full overflow-hidden">
@@ -259,7 +278,10 @@ const Main = () => {
                       <p>BTS가 개발에 직접 참여한 인더섬 업데이트 소식</p>
                     </div>
                   </div>
-                  <a href="#" className="#xl:self-center #xl:absolute #xl:top-[28px] #xl:right-[var(--container-px)]">
+                  <a
+                    href="#"
+                    className="#xl:self-center #xl:absolute #xl:top-[28px] #xl:right-[var(--container-px)]"
+                  >
                     <img
                       src="/img/icon-more-arrow@3x.png"
                       alt="more view"
@@ -312,12 +334,8 @@ const Main = () => {
       <section className="mb-[64px] xl:mb-[120px]">
         <div className="container mx-auto">
           <div className="grid xl:grid-cols-2 gap-x-[20px] #xl:mx-full overflow-hidden">
-            <div>
-              <PDBanner />
-            </div>
-            <div>
-              <ClothesBanner />
-            </div>
+            <PDBanner />
+            <ClothesBanner />
           </div>
         </div>
       </section>
