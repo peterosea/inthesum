@@ -20,13 +20,20 @@ const Main = () => {
   return (
     <>
       <section className="mt-[80px] mb-[120px]">
-        <div className="container mx-auto">
+        <div className="md:container mx-auto">
           <div
             className={cx(
-              'gap-y-[60px] sm:gap-[40px] md:gap-[20px] mb-[80px] grid sm:grid-cols-2 #md:justify-center',
+              'gap-y-[10px] mb-[80px] grid lg:grid-cols-2',
+              'sm:gap-[40px]',
+              'md:gap-[20px] #md:justify-center md:gap-y-[60px]',
             )}
           >
             {character.slice(0, 12).map((props, index) => {
+              return (
+                <div key={`index-${index}`} className="h-full">
+                  <CharacterFlatItem {...props} />
+                </div>
+              );
               switch (true) {
                 case width > 1024:
                   return (

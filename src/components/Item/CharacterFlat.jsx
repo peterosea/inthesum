@@ -1,26 +1,6 @@
 import React from 'react';
+import cx from 'classnames';
 
-const Thumbnail = ({ img, type }) => {
-  const ModifyThumbnail = () =>
-    React.cloneElement(img(), {
-      className: 'absolute object-cover',
-    });
-
-  let Cover = () => <></>;
-  if (type === 'video') {
-    Cover = () => (
-      <div className="absolute w-full h-full bg-black bg-opacity-50 flex items-center justify-center">
-        <i className="icon-right-dir text-[30px] text-white" />
-      </div>
-    );
-  }
-  return (
-    <div className="w-[70px] h-[70px] rounded-[20px] overflow-hidden relative">
-      <ModifyThumbnail />
-      <Cover />
-    </div>
-  );
-};
 /**
  *
  * @param {string} name
@@ -31,13 +11,17 @@ const Thumbnail = ({ img, type }) => {
  * @returns
  */
 const CharacterFlatItem = ({ name, time, content, characterImg }) => {
+  const ModifyCharacterImgg = () =>
+    React.cloneElement(characterImg(), {
+      className: 'h-full max-h-[135px] md:max-h-[180px] w-auto',
+    });
   return (
     <div className="grid grid-cols-[1fr,auto] bg-[#f4f6fa] rounded-[12px] px-[36px] py-[34px] gap-x-[40px] h-full">
       <div className="flex flex-col justify-between">
-        <div>
+        <div className="relative">
           <div className="text-[30px] font-extrabold text-left font-TmoneyRoundWind leading-none">
             {name}
-            <span className="w-[39px] relative inline-block top-[6px] mr-[5px]">
+            <span className="w-[39px] absolute ring-0 -translate-y-1/3">
               <img
                 src="/img/new@3x.png"
                 srcSet="/img/new@2x.png 2x,
@@ -46,13 +30,20 @@ const CharacterFlatItem = ({ name, time, content, characterImg }) => {
               />
             </span>
           </div>
-          <div className="mt-[20px] text-[18px] line-clamp-3 leading-[1.36] font-TmoneyRoundWind font-normal">
+          <div
+            className={cx(
+              'mt-[18px] text-[14px] line-clamp-3 leading-[1.36] font-TmoneyRoundWind font-normal',
+              'md:text-[18px] md:mt-[20px]',
+            )}
+          >
             {content()}
           </div>
         </div>
         <span className="text-[14px] font-normal text-[#999]">{time}</span>
       </div>
-      <div className="relative">{characterImg()}</div>
+      <div className="relative">
+        <ModifyCharacterImgg />
+      </div>
     </div>
   );
 };

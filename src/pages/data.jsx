@@ -123,7 +123,6 @@ export const character = [
     ),
     characterImg: () => (
       <img
-        className="h-[180px] w-auto"
         src="/img/rm.png"
         srcSet="/img/rm@2x.png 2x,
                 /img/rm@3x.png 3x"
@@ -133,7 +132,6 @@ export const character = [
       {
         img: () => (
           <img
-            className="h-[180px] w-auto"
             src="/img/thumb.png"
             srcSet="/img/thumb@2x.png 2x,
               /img/thumb@3x.png 3x"
@@ -143,7 +141,6 @@ export const character = [
       {
         img: () => (
           <img
-            className="h-[180px] w-auto"
             src="/img/thumb.png"
             srcSet="/img/thumb@2x.png 2x,
               /img/thumb@3x.png 3x"
@@ -192,7 +189,6 @@ export const character = [
     ),
     characterImg: () => (
       <img
-        className="h-[180px]"
         src="/img/jimin.png"
         srcSet="/img/jimin@2x.png 2x,
                 /img/jimin@3x.png 3x"
@@ -203,7 +199,6 @@ export const character = [
       {
         img: () => (
           <img
-            className="h-[180px] w-auto"
             src="/img/thumb.png"
             srcSet="/img/thumb@2x.png 2x,
               /img/thumb@3x.png 3x"
@@ -213,7 +208,6 @@ export const character = [
       {
         img: () => (
           <img
-            className="h-[180px] w-auto"
             src="/img/thumb.png"
             srcSet="/img/thumb@2x.png 2x,
               /img/thumb@3x.png 3x"
@@ -234,7 +228,6 @@ export const character = [
     ),
     characterImg: () => (
       <img
-        className="h-[180px]"
         src="/img/suga.png"
         srcSet="/img/suga@2x.png 2x,
                 /img/suga@3x.png 3x"
@@ -245,7 +238,6 @@ export const character = [
       {
         img: () => (
           <img
-            className="h-[180px] w-auto"
             src="/img/thumb.png"
             srcSet="/img/thumb@2x.png 2x,
               /img/thumb@3x.png 3x"
@@ -255,7 +247,6 @@ export const character = [
       {
         img: () => (
           <img
-            className="h-[180px] w-auto"
             src="/img/thumb.png"
             srcSet="/img/thumb@2x.png 2x,
               /img/thumb@3x.png 3x"
@@ -276,7 +267,6 @@ export const character = [
     ),
     characterImg: () => (
       <img
-        className="h-[180px] w-auto"
         src="/img/v.png"
         srcSet="/img/v@2x.png 2x,
                 /img/v@3x.png 3x"
@@ -314,7 +304,6 @@ export const character = [
     ),
     characterImg: () => (
       <img
-        className="h-[180px]"
         src="/img/suga.png"
         srcSet="/img/suga@2x.png 2x,
                 /img/suga@3x.png 3x"
@@ -333,7 +322,6 @@ export const character = [
     ),
     characterImg: () => (
       <img
-        className="h-[180px] w-auto"
         src="/img/v.png"
         srcSet="/img/v@2x.png 2x,
                 /img/v@3x.png 3x"
@@ -352,7 +340,6 @@ export const character = [
     ),
     characterImg: () => (
       <img
-        className="h-[180px]"
         src="/img/jimin.png"
         srcSet="/img/jimin@2x.png 2x,
                 /img/jimin@3x.png 3x"
@@ -371,7 +358,6 @@ export const character = [
     ),
     characterImg: () => (
       <img
-        className="h-[180px]"
         src="/img/suga.png"
         srcSet="/img/suga@2x.png 2x,
                 /img/suga@3x.png 3x"
@@ -390,7 +376,6 @@ export const character = [
     ),
     characterImg: () => (
       <img
-        className="h-[180px] w-auto"
         src="/img/v.png"
         srcSet="/img/v@2x.png 2x,
                 /img/v@3x.png 3x"
@@ -409,7 +394,6 @@ export const character = [
     ),
     characterImg: () => (
       <img
-        className="h-[180px]"
         src="/img/jimin.png"
         srcSet="/img/jimin@2x.png 2x,
                 /img/jimin@3x.png 3x"
@@ -428,7 +412,6 @@ export const character = [
     ),
     characterImg: () => (
       <img
-        className="h-[180px]"
         src="/img/suga.png"
         srcSet="/img/suga@2x.png 2x,
                 /img/suga@3x.png 3x"
@@ -447,7 +430,6 @@ export const character = [
     ),
     characterImg: () => (
       <img
-        className="h-[180px] w-auto"
         src="/img/v.png"
         srcSet="/img/v@2x.png 2x,
                 /img/v@3x.png 3x"
