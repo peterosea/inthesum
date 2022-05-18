@@ -2,7 +2,7 @@ import React from 'react';
 
 const Notice0407 = () => {
   return (
-    <>
+    <div className='bg-[#F4F6FA] p-[40px] pt-[46px] pb-[70px] text-left  border-t-[3px] border-primary'>
       <div className="text-[#803ad3] font-Pretendard text-[36px] font-bold mb-[30px]">
         2022.04.07(목)
         <br />
@@ -44,7 +44,7 @@ const Notice0407 = () => {
           <i className="icon-arrow-right-w text-[11px] inline-block"></i>
         </button>
       </div>
-    </>
+    </div>
   );
 };
 

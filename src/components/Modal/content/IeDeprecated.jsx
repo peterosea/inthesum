@@ -2,7 +2,7 @@ import React from 'react';
 
 const IeDeprecated = () => {
   return (
-    <>
+    <div className='bg-[#F4F6FA] p-[40px] pt-[46px] text-left  border-t-[3px] border-primary relative'>
       <div className="text-primary font-Pretendard text-[36px] font-bold mb-[30px]">
         인터넷익스플로러
         <br />
@@ -102,7 +102,7 @@ const IeDeprecated = () => {
           </a>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
