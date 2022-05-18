@@ -1,4 +1,5 @@
 import React from 'react';
+import cx from 'classnames';
 
 const Thumbnail = ({ img, type }) => {
   const ModifyThumbnail = () =>
@@ -30,11 +31,11 @@ const Thumbnail = ({ img, type }) => {
  * @param {JSX.Element} characterImg
  * @returns
  */
-const Character = ({ name, time, content, thumbnail, characterImg }) => {
+const CharacterItem = ({ name, time, content, thumbnail, characterImg }) => {
   let Thumbnails = () => <></>;
   if (thumbnail) {
     Thumbnails = () => (
-      <div className="flex gap-x-[10px] mt-[20px] ml-[34px] items-center">
+      <div className="flex gap-x-[10px] mt-[20px] items-center">
         {thumbnail?.map((t, index) => {
           if (index < 2) return <Thumbnail {...t} key={`index-${index}`} />;
         })}
@@ -46,10 +47,16 @@ const Character = ({ name, time, content, thumbnail, characterImg }) => {
       </div>
     );
   }
+  console.log(thumbnail);
   return (
-    <div className="relative w-[320px] xl:w-[270px] h-full min-h-[380px]">
-      <div className="relative z-10">
-        <div className="pl-[34px] text-[30px] font-extrabold text-left font-TmoneyRoundWind leading-none">
+    <div
+      className={cx('relative max-w-[320px] xl:max-w-[270px]', {
+        'min-h-[320px] md:min-h-[380px]': thumbnail === undefined,
+        'min-h-[420px]': thumbnail !== undefined,
+      })}
+    >
+      <div className="relative z-10 px-[36px] py-[34px] bg-[#f4f6fa] rounded-[30px]">
+        <div className="text-[30px] font-extrabold text-left font-TmoneyRoundWind leading-none">
           {name}
           <span className="w-[39px] relative inline-block top-[6px] mr-[5px]">
             <img
@@ -61,21 +68,14 @@ const Character = ({ name, time, content, thumbnail, characterImg }) => {
           </span>
           <span className="text-[14px] font-normal text-[#999]">{time}</span>
         </div>
-        <div className="px-[34px] mt-[20px] line-clamp-2 text-[14px] leading-[1.36] font-TmoneyRoundWind font-normal">
+        <div className="mt-[20px] line-clamp-2 text-[14px] leading-[1.36] font-TmoneyRoundWind font-normal">
           {content()}
         </div>
         <Thumbnails />
       </div>
       <div className="absolute bottom-0 right-0 z-10">{characterImg()}</div>
-      <div className="absolute left-1/2 -translate-x-1/2 w-full top-0">
-        <img
-          src="/img/img-baloon-full@3x.png"
-          alt="ballon"
-          className="absolute top-0 !w-auto !h-auto left-1/2 -translate-x-1/2"
-        />
-      </div>
     </div>
   );
 };
 
-export default Character;
+export default CharacterItem;

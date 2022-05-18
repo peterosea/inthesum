@@ -7,7 +7,7 @@ import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import HeaderPage from '../../components/HeaderPage';
 import CharacterItem from '../../components/Item/Character';
-import ResponsiveCharacterItem from '../../components/Item/ResponsiveCharacter';
+import CharacterFlatItem from '../../components/Item/CharacterFlat';
 import Pagination from '../../components/Pagination';
 import PaginationBar from '../../components/Pagination/Bar';
 import FloatArea from '../../components/FloatArea';
@@ -22,21 +22,25 @@ const Main = () => {
       <section className="mt-[80px] mb-[120px]">
         <div className="container mx-auto">
           <div
-            className={cx('gap-x-[40px] gap-y-[120px] mb-[80px]', {
-              grid: 480 < width && width < 768,
-              'flex flex-wrap justify-center': !(480 < width && width < 768),
-            })}
+            className={cx(
+              'gap-y-[60px] sm:gap-[40px] md:gap-[20px] mb-[80px] grid sm:grid-cols-2 #md:justify-center',
+            )}
           >
             {character.slice(0, 12).map((props, index) => {
-              return (
-                <div key={`index-${index}`}>
-                  {480 < width && width < 768 ? (
-                    <ResponsiveCharacterItem {...props} />
-                  ) : (
-                    <CharacterItem {...props} />
-                  )}
-                </div>
-              );
+              switch (true) {
+                case width > 1024:
+                  return (
+                    <div key={`index-${index}`} className="h-full">
+                      <CharacterFlatItem {...props} />
+                    </div>
+                  );
+                default:
+                  return (
+                    <div key={`index-${index}`}>
+                      <CharacterItem {...props} />
+                    </div>
+                  );
+              }
             })}
           </div>
           <div className="hidden xl:block">

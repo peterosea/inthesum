@@ -25,7 +25,7 @@ const HeaderSection = ({
     if (title().type === 'img') return title();
     return React.cloneElement(title(), {
       className: classnames(
-        'xl:text-[36px] font-TmoneyRoundWind font-bold',
+        'md:text-[36px] font-TmoneyRoundWind font-bold',
         'text-[26px]',
       ),
     });
@@ -48,7 +48,7 @@ const HeaderSection = ({
           <i
             className={classnames(
               'icon-arrow2',
-              'xl:text-[31px] rotate-180 inline-block leading-none',
+              'md:text-[31px] rotate-180 inline-block leading-none',
               'text-[24px]',
             )}
           />

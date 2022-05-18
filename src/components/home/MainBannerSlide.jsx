@@ -46,7 +46,7 @@ const Video = ({
         muted
         src={src}
         onPause={onPause}
-        playsinline
+        playsInline
       />
       <Transition
         show={!onPlay}
@@ -102,10 +102,10 @@ const MainBannerSlide = () => {
         slidesPerView={1}
         spaceBetween={0}
         loop
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
+        // autoplay={{
+        //   delay: 2500,
+        //   disableOnInteraction: false,
+        // }}
         threshold={100}
         pagination={{ type: 'progressbar' }}
         className="mainBannerSlider"
@@ -241,7 +241,7 @@ const MainBannerSlide = () => {
               </div>
             </div>
           </div>
-          <div className="absolute max-w-[1920px] w-full h-full z-30 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 container">
+          <div className="absolute w-full h-full z-30 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 container">
             {/* 예시용 클래스 bg-gray-600 */}
             <div className="absolute w-full h-full bg-gray-600">
               {/* img */}
