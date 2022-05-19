@@ -34,20 +34,6 @@ const Main = () => {
                   <CharacterFlatItem {...props} />
                 </div>
               );
-              switch (true) {
-                case width > 1024:
-                  return (
-                    <div key={`index-${index}`} className="h-full">
-                      <CharacterFlatItem {...props} />
-                    </div>
-                  );
-                default:
-                  return (
-                    <div key={`index-${index}`}>
-                      <CharacterItem {...props} />
-                    </div>
-                  );
-              }
             })}
           </div>
           <div className="hidden xl:block">

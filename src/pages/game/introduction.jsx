@@ -135,7 +135,7 @@ const ToolTip = () => {
       </Transition>
       <Portal>
         <Modal isOpen={width < 1280 && active} onClose={() => setActive(false)}>
-          <div>
+          <div className='bg-[#F4F6FA] p-[40px] pt-[46px] pb-[70px] text-left  border-t-[3px] border-primary'>
             2013년 데뷔해 국내외 신인상을 휩쓴 방탄소년단은 명실상부 한국을
             대표하는 최정상 보이 그룹으로 성장했다. 전 세계적으로 방탄소년단
             열풍을 일으키며 ‘21세기 팝 아이콘’으로 불린다. 미국 빌보드, 영국
