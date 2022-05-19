@@ -16,13 +16,12 @@ import { character, BtsBgImg } from '../data';
 const Main = () => {
   return (
     <>
-      <section className="mt-[80px] mb-[120px]">
+      <section className="md:mt-[80px] mb-[120px]">
         <div className="md:container mx-auto">
           <div
             className={cx(
               'gap-y-[10px] mb-[80px] grid lg:grid-cols-2',
-              'sm:gap-[40px]',
-              'md:gap-[20px] #md:justify-center md:gap-y-[60px]',
+              'lg:gap-[20px] #md:justify-center md:gap-y-[60px]',
             )}
           >
             {character.slice(0, 12).map((props, index) => {
