@@ -366,6 +366,7 @@ const Main = () => {
               src="/img/img-introduce-polaroid.png"
               srcSet="/img/img-introduce-polaroid@2x.png 2x,
              /img/img-introduce-polaroid@3x.png 3x"
+              className='mx-auto'
             />
             <div className="text-[26px] xl:text-[42px] font-extrabold font-TmoneyRoundWind mt-[36px] text-center">
               <span className="text-primary">수영</span>하고,{' '}
