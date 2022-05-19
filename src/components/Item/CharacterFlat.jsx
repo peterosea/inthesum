@@ -16,11 +16,13 @@ const CharacterFlatItem = ({ name, time, content, characterImg }) => {
       className: 'h-full max-h-[135px] md:max-h-[180px] w-auto',
     });
   return (
-    <div className="grid grid-cols-[1fr,auto] bg-[#f4f6fa] md:rounded-[12px] px-[36px] py-[34px] gap-x-[40px] h-full">
+    <div className="grid xs:grid-cols-[1fr,auto] bg-[#f4f6fa] md:rounded-[12px] px-[36px] py-[34px] gap-x-[40px] h-full #xs:gap-y-[20px]">
       <div className="flex flex-col justify-between">
         <div className="relative">
           <div className="text-[30px] font-extrabold text-left font-TmoneyRoundWind leading-none">
+            <span>
             {name}
+            </span>
             <span className="w-[39px] absolute ring-0 -translate-y-1/3">
               <img
                 src="/img/new@3x.png"
@@ -41,7 +43,7 @@ const CharacterFlatItem = ({ name, time, content, characterImg }) => {
         </div>
         <span className="text-[14px] font-normal text-[#999]">{time}</span>
       </div>
-      <div className="relative">
+      <div className="relative #xs:justify-self-start">
         <ModifyCharacterImgg />
       </div>
     </div>
