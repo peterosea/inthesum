@@ -30,7 +30,18 @@ function CharacterSlide() {
     [WheelControls],
   );
 
-  const slideWidth = width >= 1280 ? 270 : 320;
+  let slideWidth = 0;
+  switch (true) {
+    case width < 640:
+      slideWidth = 270;
+      break;
+    case width < 1280:
+      slideWidth = 320;
+      break;
+    default:
+      slideWidth = 270;
+      break;
+  }
 
   return (
     <div ref={sliderRef} className="keen-slider">
