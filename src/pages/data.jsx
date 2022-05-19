@@ -150,34 +150,34 @@ export const character = [
       },
     ],
   },
-  // {
-  //   name: 'RM,정국',
-  //   time: '10분전',
-  //   content: () => (
-  //     <>
-  //       훗~ 이번에는 인더섬의 과일로 카테일을 만들 수 있는 칵테일바를
-  //       오픈했어요, 무알콜 칵테일도 있으니 걱정은 놉!
-  //     </>
-  //   ),
-  //   characterImg: () => (
-  //     <>
-  //       <img
-  //         className="h-[180px] absolute z-10 top-0 right-[76px]"
-  //         src="/img/jung-kook.png"
-  //         srcSet="/img/jung-kook@2x.png 2x,
-  //                 /img/jung-kook@3x.png 3x"
-  //         alt="JungKook"
-  //       />
-  //       <img
-  //         className="h-[180px]"
-  //         src="/img/rm2.png"
-  //         srcSet="/img/rm2@2x.png 2x,
-  //                 /img/rm2@3x.png 3x"
-  //         alt="RM"
-  //       />
-  //     </>
-  //   ),
-  // },
+  {
+    name: 'RM,정국',
+    time: '10분전',
+    content: () => (
+      <>
+        훗~ 이번에는 인더섬의 과일로 카테일을 만들 수 있는 칵테일바를
+        오픈했어요, 무알콜 칵테일도 있으니 걱정은 놉!
+      </>
+    ),
+    characterImg: () => (
+      <>
+        <img
+          className="h-[180px] absolute z-10 top-0 right-[76px]"
+          src="/img/jung-kook.png"
+          srcSet="/img/jung-kook@2x.png 2x,
+                  /img/jung-kook@3x.png 3x"
+          alt="JungKook"
+        />
+        <img
+          className="h-[180px]"
+          src="/img/rm2.png"
+          srcSet="/img/rm2@2x.png 2x,
+                  /img/rm2@3x.png 3x"
+          alt="RM"
+        />
+      </>
+    ),
+  },
   {
     name: '지민',
     time: '10분전',
