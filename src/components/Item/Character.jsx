@@ -18,7 +18,7 @@ const CharacterItem = ({ name, time, content, characterImg }) => {
   return (
     <div
       className={cx(
-        'relative max-w-[320px] xl:max-w-[270px] min-h-[390px] md:min-h-[320px]',
+        'relative max-w-[320px] xl:max-w-[270px] min-h-[390px]',
       )}
     >
       <div className="relative z-10 p-[28px] sm:p-[34px] bg-[#f4f6fa] rounded-[30px] min-h-[230px]">

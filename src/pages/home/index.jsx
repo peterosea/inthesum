@@ -10,7 +10,7 @@ import MainBannerSlide from '../../components/home/MainBannerSlide';
 import Card from '../../components/Card';
 import HeaderSection from '../../components/HeaderSection';
 import FloatArea from '../../components/FloatArea';
-import { PDBanner, ClothesBanner } from './section4';
+import { ClothesBanner } from './section4';
 import Section3 from './section3';
 
 // data
@@ -22,10 +22,10 @@ const Main = () => {
     <>
       <section className="mt-[38px] mb-[60px] md:mt-[81px] md:mb-[90px] xl:my-[90px]">
         <div className="border-b border-[#ddd]">
-          <div className="lg:container mx-auto sm:pl-cpx">
+          <div className="xl:container #sm:container #sm:px-0 #xl:pl-[60px] mx-auto">
             <div className="grid md:grid-cols-[270px,auto]">
               <div className="md:min-h-[490px] relative">
-                <div className="flex md:flex-col md:justify-between #md:px-[30px] #md:container #md:mx-auto">
+                <div className="flex md:flex-col md:justify-between #sm:container #md:mx-auto">
                   <div className="max-w-[160px]">
                     <img
                       src="/img/img-withbts-title.svg"
@@ -76,15 +76,14 @@ const Main = () => {
       </section>
       <Section3 />
       <section className="mb-[64px] xl:mb-[120px]">
-        <div className="container mx-auto">
+        <div className="xl:container #sm:container #sm:px-cpx #xl:px-[60px] mx-auto">
           <div className="grid xl:grid-cols-2 gap-x-[20px] md:gap-y-[20px] #md:mx-full overflow-hidden">
-            <PDBanner />
             <ClothesBanner />
           </div>
         </div>
       </section>
       <section className="my-[64px] xl:my-[120px]">
-        <div className="container mx-auto">
+        <div className="xl:container #sm:container #sm:px-cpx #xl:px-[60px] mx-auto">
           <HeaderSection
             title={() => <h1>인더섬 뉴스</h1>}
             content={() => (

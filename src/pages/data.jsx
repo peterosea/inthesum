@@ -162,14 +162,14 @@ export const character = [
     characterImg: () => (
       <>
         <img
-          className="h-[180px] absolute z-10 top-0 right-[76px]"
+          className="absolute z-10 top-0 right-[76px] h-full max-h-[180px] w-auto"
           src="/img/jung-kook.png"
           srcSet="/img/jung-kook@2x.png 2x,
                   /img/jung-kook@3x.png 3x"
           alt="JungKook"
         />
         <img
-          className="h-[180px]"
+          className="h-full max-h-[180px] w-auto pl-[76px]"
           src="/img/rm2.png"
           srcSet="/img/rm2@2x.png 2x,
                   /img/rm2@3x.png 3x"

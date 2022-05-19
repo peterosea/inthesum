@@ -4,24 +4,28 @@ module.exports = {
   content: ['./**/*.jsx'],
   theme: {
     screens: {
-      '#sm': {
-        max: '639px',
-      },
-      '#md': {
-        max: '767px',
-      },
-      '#lg': {
-        max: '1023px',
-      },
-      '#xl': {
-        max: '1279px',
+      '#hug': {
+        max: '1599px',
       },
       '#xxl': {
         max: '1439px',
       },
-      '#hug': {
-        max: '1599px',
+      '#xl': {
+        max: '1279px',
       },
+      '#lg': {
+        max: '1023px',
+      },
+      '#md': {
+        max: '767px',
+      },
+      '#sm': {
+        max: '639px',
+      },
+      '#xs': {
+        max: '479px',
+      },
+      xs: '480px',
       sm: '640px',
       md: '768px',
       lg: '1024px',

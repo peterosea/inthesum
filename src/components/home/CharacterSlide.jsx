@@ -15,8 +15,7 @@ function CharacterSlide() {
       rubberband: false,
       slides: {
         perView: 'auto',
-        spacing: 40,
-        origin: 'center',
+        spacing: 10,
       },
       breakpoints: {
         '(min-width: 640px)': {
@@ -49,7 +48,7 @@ function CharacterSlide() {
         return (
           <div
             key={`index-${index}`}
-            className="keen-slider__slide"
+            className="keen-slider__slide  #sm:pl-cpx #sm:last:pr-cpx"
             style={{ maxWidth: `${slideWidth}px`, minWidth: `${slideWidth}px` }}
           >
             <CharacterItem {...props} />
