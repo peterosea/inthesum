@@ -4,6 +4,8 @@ import IeDeprecated from './content/IeDeprecated';
 import Notice0407 from './content/Notice0407';
 import HealingLift from './content/HealingLift';
 import Login from './content/Login';
+import Logout from './content/Logout';
+import AccountError from './content/AccountError';
 
 const Modals = () => {
   const [helpModal, setHelpModal] = useState(false);
@@ -26,6 +28,8 @@ const Modals = () => {
     type2: false,
     type3: false,
     type4: false,
+    type5: false,
+    type6: false,
   });
   const openModalType = (type) => {
     const cModalType = Object.assign(modalType);
@@ -73,6 +77,18 @@ const Modals = () => {
             >
               로그인
             </button>
+            <button
+              className="inline-block py-[3px] px-[10px] bg-teal-500 rounded-full mr-[8px] text-sm font-semibold text-white"
+              onClick={() => openModalType('type5')}
+            >
+              계정 오류 알림
+            </button>
+            <button
+              className="inline-block py-[3px] px-[10px] bg-teal-500 rounded-full mr-[8px] text-sm font-semibold text-white"
+              onClick={() => openModalType('type6')}
+            >
+              로그아웃
+            </button>
           </div>
         </div>
       </Modal>
@@ -95,6 +111,20 @@ const Modals = () => {
       </Modal>
       <Modal isOpen={modalType.type4} onClose={() => closeModalType('type4')}>
         <Login />
+      </Modal>
+      <Modal
+        isOpen={modalType.type5}
+        onClose={() => closeModalType('type5')}
+        closeBtn={false}
+      >
+        <AccountError />
+      </Modal>
+      <Modal
+        isOpen={modalType.type6}
+        onClose={() => closeModalType('type6')}
+        closeBtn={false}
+      >
+        <Logout />
       </Modal>
     </>
   );

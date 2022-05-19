@@ -92,6 +92,11 @@ module.exports = {
           color: 'transparent',
           backgroundClip: 'text',
           backgroundImage: 'linear-gradient(to right, #cf52e8, #7833dc)',
+        },
+        '.btn': {
+          padding: '20px',
+          borderRadius: '8px',
+          fontFamily: 'Pretendard'
         }
       });
     })

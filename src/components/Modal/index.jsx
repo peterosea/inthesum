@@ -12,6 +12,7 @@ const Modal = ({
   isOpen = false,
   onClose = () => console.log('test'),
   timeClose = false,
+  closeBtn = true,
   children,
 }) => {
   useLockedBody(isOpen);
@@ -51,12 +52,14 @@ const Modal = ({
           leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
           className="relative inline-block align-bottom overflow-hidden shadow-xl transform transition-all sm:align-middle sm:max-w-[425px] sm:w-full my-[80px] mx-[10px] w-full"
         >
-          <button
-            className="absolute top-[20px] right-[17px] z-20"
-            onClick={onClose}
-          >
-            <i className="icon-close text-black text-[18px]"></i>
-          </button>
+          {closeBtn && (
+            <button
+              className="absolute top-[20px] right-[17px] z-20"
+              onClick={onClose}
+            >
+              <i className="icon-close text-black text-[18px]"></i>
+            </button>
+          )}
           <div>{children}</div>
           {timeClose && (
             <div className="absolute left-0 bottom-0 py-[14px] px-[20px] w-full bg-white">
