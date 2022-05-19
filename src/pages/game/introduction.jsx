@@ -135,7 +135,7 @@ const ToolTip = () => {
       </Transition>
       <Portal>
         <Modal isOpen={width < 1280 && active} onClose={() => setActive(false)}>
-          <div className='bg-[#F4F6FA] p-[40px] pt-[46px] pb-[70px] text-left  border-t-[3px] border-primary'>
+          <div className="bg-[#F4F6FA] p-[40px] pt-[46px] pb-[70px] text-left border-t-[3px] border-primary">
             2013년 데뷔해 국내외 신인상을 휩쓴 방탄소년단은 명실상부 한국을
             대표하는 최정상 보이 그룹으로 성장했다. 전 세계적으로 방탄소년단
             열풍을 일으키며 ‘21세기 팝 아이콘’으로 불린다. 미국 빌보드, 영국
@@ -226,14 +226,14 @@ const Slider = () => {
         {[1, 2, 3, 4].map((e, index) => (
           <SwiperSlide key={`index-${index}`}>
             <div className="w-full">
-              <div className="mb-[20px] #xl:container mx-auto">
+              <div className="mb-[20px] #xl:container mx-auto h-[100px]">
                 <div className="flex xl:items-center gap-x-[30px] xl:pr-[100px] #xl:flex-col #xl:text-left">
                   <div className="text-[18px] #xl:min-h-[2.8em] #xl:mb-[22px] flex items-end">
                     <span className="font-TmoneyRoundWind font-extrabold line-clamp-2">
                       인더섬 with BTS 티저
                     </span>
                   </div>
-                  <ToolTip />
+                  {index % 2 === 0 && <ToolTip />}
                 </div>
               </div>
               <div className="aspect-[16/9] relative overflow-hidden xl:rounded-[16px]">
@@ -366,7 +366,7 @@ const Main = () => {
               src="/img/img-introduce-polaroid.png"
               srcSet="/img/img-introduce-polaroid@2x.png 2x,
              /img/img-introduce-polaroid@3x.png 3x"
-              className='mx-auto'
+              className="mx-auto"
             />
             <div className="text-[26px] xl:text-[42px] font-extrabold font-TmoneyRoundWind mt-[36px] text-center">
               <span className="text-primary">수영</span>하고,{' '}
