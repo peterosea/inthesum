@@ -22,7 +22,7 @@ const Main = () => {
     <>
       <section className="mt-[38px] mb-[60px] md:mt-[81px] md:mb-[90px] xl:my-[90px]">
         <div className="border-b border-[#ddd]">
-          <div className="lg:container mx-auto pl-cpx">
+          <div className="lg:container mx-auto sm:pl-cpx">
             <div className="grid md:grid-cols-[270px,auto]">
               <div className="md:min-h-[490px] relative">
                 <div className="flex md:flex-col md:justify-between #md:px-[30px] #md:container #md:mx-auto">
