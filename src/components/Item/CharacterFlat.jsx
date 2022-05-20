@@ -19,11 +19,11 @@ const CharacterFlatItem = ({ name, time, content, characterImg }) => {
     <div className="grid xs:grid-cols-[1fr,auto] bg-[#f4f6fa] md:rounded-[12px] px-[36px] py-[34px] gap-x-[40px] h-full #xs:gap-y-[20px]">
       <div className="flex flex-col justify-between">
         <div className="relative">
-          <div className="text-[30px] font-extrabold text-left font-TmoneyRoundWind leading-none">
-            <span>
+          <div className="text-[30px] font-extrabold text-left font-TmoneyRoundWind leading-[1.3em] align-bottom">
+            <span className='break-all'>
             {name}
             </span>
-            <span className="w-[39px] absolute ring-0 -translate-y-1/3">
+            <span className="w-[39px] ring-0 inline-block">
               <img
                 src="/img/new@3x.png"
                 srcSet="/img/new@2x.png 2x,
