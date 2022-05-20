@@ -32,6 +32,12 @@ const index = () => {
                 </span>
                 <Link to="/community/qna">/community/qna</Link>
               </li>
+              <li>
+                <span className="inline-block py-[3px] px-[10px] bg-blue-500 rounded-full mr-[8px] text-sm font-semibold text-white">
+                  설문공간
+                </span>
+                <Link to="/community/survey">/community/survey</Link>
+              </li>
             </ul>
           </li>
           <li>

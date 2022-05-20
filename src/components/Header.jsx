@@ -18,10 +18,6 @@ const Header = () => {
           })}
           onMouseLeave={() => {
             setIsMenuOver(false);
-            setIsHeaderOver(false);
-          }}
-          onMouseEnter={() => {
-            setIsHeaderOver(true);
           }}
         >
           <div className="dt-menu">
